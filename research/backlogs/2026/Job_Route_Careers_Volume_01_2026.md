@@ -321,3 +321,4 @@ python scripts/smoke.py
 ## 文档与仓库状态
 
 本目录旨在安排待研究职业，不会自动生成网站正式职业条目。请勿将此Markdown放入 `data/*/*/route.json` 以绕开审核。保持结构化名单供后续批次去重和维护。
+
