@@ -1,26 +1,33 @@
 flowchart TB
     %% 成为法院司法警察领导干部 — 2026-11-11
-    n_exam["公务员职位招录"]
-    n_police["正式司法警察"]
-    n_veteran["基层警务骨干"]
-    n_battalion["法警大队领导"]
-    n_staff["警务管理机关岗位"]
-    n_detachment["法警支队领导"]
-    n_corps["法警总队领导"]
-    n_exam -.->|"考试录用"| n_police
-    n_police -.->|"经验积累"| n_veteran
-    n_veteran -.->|"领导选拔"| n_battalion
-    n_battalion -.->|"跨级交流"| n_detachment
-    n_detachment -.->|"跨级任用"| n_corps
-    n_police -.->|"岗位交流"| n_staff
-    n_staff -.->|"任职选拔"| n_detachment
+    n_exam["法院法警公务员招录"]
+    n_police["正式法院司法警察"]
+    n_training["新警入职培训"]
+    n_frontline["基层司法警务岗位"]
+    n_grade["执法勤务职级发展"]
+    n_battalion["基层法院法警大队领导"]
+    n_staff["警务管理与教育训练岗位"]
+    n_detachment["中级法院法警支队领导"]
+    n_corps["高级法院法警总队领导"]
+    n_exam -.->|"考试与录用"| n_police
+    n_police -.->|"入警训练"| n_training
+    n_training -.->|"警务履职"| n_frontline
+    n_frontline -.->|"干部选拔任用"| n_battalion
+    n_battalion -.->|"跨院交流任职"| n_detachment
+    n_detachment -.->|"高级岗位选拔"| n_corps
+    n_police -.->|"执法勤务职级"| n_grade
+    n_grade -.->|"可能岗位交流"| n_staff
+    n_staff -.->|"择优选任"| n_detachment
+    n_frontline -.->|"警务管理历练"| n_staff
     classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
     classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
     classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
     classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
     class n_exam entry
     class n_police milestone
-    class n_veteran role
+    class n_training milestone
+    class n_frontline role
+    class n_grade role
     class n_battalion role
     class n_staff role
     class n_detachment target
