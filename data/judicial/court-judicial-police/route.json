@@ -1,10 +1,10 @@
 {
   "id": "court-judicial-police",
   "title": "成为法院司法警察领导干部",
-  "subtitle": "法院法警正式入职与警务领导岗位",
+  "subtitle": "法院法警入职、执法勤务职级与警务领导岗位发展",
   "category": "judicial",
-  "jurisdiction": "中国大陆 · 法院系统",
-  "summary": "分析正式司法警察入职、基层警务与大队、支队、总队领导岗位之间的区别，强调警衔和领导职务不能混用。",
+  "jurisdiction": "中国大陆 · 人民法院系统（以山东招录公告为地方示例）",
+  "summary": "区分正式司法警察录用、入警训练、执法勤务职级和法院警务领导职务，分析基层法警通过业务任职、警务管理或组织交流发展的条件性路径，不混淆警衔与领导职位。",
   "target": "detachment",
   "entry_points": [
     "exam"
@@ -12,57 +12,82 @@
   "nodes": [
     {
       "id": "exam",
-      "label": "公务员职位招录",
+      "label": "法院法警公务员招录",
       "kind": "entry",
-      "description": "根据法警公务员招录公告参加相应程序。",
-      "source_ids": []
+      "description": "按所在地当年度公务员招录公告及职位表报考法院司法警察职位。",
+      "source_ids": [
+        "recruit_2027"
+      ]
     },
     {
       "id": "police",
-      "label": "正式司法警察",
+      "label": "正式法院司法警察",
       "kind": "milestone",
-      "description": "正式法警身份不等于聘用制警务辅助人员。",
-      "source_ids": []
+      "description": "法院司法警察依法使用国家专项编制，属于人民警察，不能与聘用制警务辅助人员混淆。",
+      "source_ids": [
+        "regulation_2012",
+        "police_law"
+      ]
     },
     {
-      "id": "veteran",
-      "label": "基层警务骨干",
+      "id": "training",
+      "label": "新警入职培训",
+      "kind": "milestone",
+      "description": "新任司法警察应接受相应入警训练，培养规范执法和警务保障能力。",
+      "source_ids": [
+        "training_2026"
+      ]
+    },
+    {
+      "id": "frontline",
+      "label": "基层司法警务岗位",
       "kind": "role",
-      "description": "积累警务保障与队伍管理工作经验。",
-      "source_ids": []
+      "description": "承担庭审安全、押解看管、安全检查、协助执行等依法规定的警务职责。",
+      "source_ids": [
+        "duties_2022"
+      ]
+    },
+    {
+      "id": "grade",
+      "label": "执法勤务职级发展",
+      "kind": "role",
+      "description": "人民法院改革纲要强调落实司法警察执法勤务职级序列制度；职级不等于领导职务。",
+      "source_ids": [
+        "reform_2024"
+      ]
     },
     {
       "id": "battalion",
-      "label": "法警大队领导",
+      "label": "基层法院法警大队领导",
       "kind": "role",
-      "description": "基层人民法院司法警察大队的领导岗位。",
+      "description": "基层法院司法警察大队的管理领导岗位；具体领导职数与组织设置按规定确定。",
       "source_ids": [
-        "court"
+        "regulation_2012"
       ]
     },
     {
       "id": "staff",
-      "label": "警务管理机关岗位",
+      "label": "警务管理与教育训练岗位",
       "kind": "role",
-      "description": "警务管理岗位可以形成不同职业经历。",
+      "description": "可能经本级或上级警务管理、教育训练等岗位积累组织管理经验。",
       "source_ids": []
     },
     {
       "id": "detachment",
-      "label": "法警支队领导",
+      "label": "中级法院法警支队领导",
       "kind": "target",
-      "description": "中级人民法院司法警察支队的领导岗位。",
+      "description": "中级法院司法警察支队的领导岗位，需按岗位资格、职数和组织选拔程序任用。",
       "source_ids": [
-        "court"
+        "regulation_2012"
       ]
     },
     {
       "id": "corps",
-      "label": "法警总队领导",
+      "label": "高级法院法警总队领导",
       "kind": "role",
-      "description": "高级人民法院司法警察总队的领导岗位。",
+      "description": "高级法院司法警察总队领导岗位，与基层法警大队、中院支队属于不同法院层级。",
       "source_ids": [
-        "court"
+        "regulation_2012"
       ]
     }
   ],
@@ -71,56 +96,88 @@
       "from": "exam",
       "to": "police",
       "evidence": "conditional",
-      "label": "考试录用",
-      "note": "依法通过当年岗位招录与考察程序。",
-      "source_ids": []
+      "label": "考试与录用",
+      "note": "满足职位表学历、年龄、体能、体检及政考要求并通过录用程序。",
+      "source_ids": [
+        "recruit_2027"
+      ]
     },
     {
       "from": "police",
-      "to": "veteran",
-      "evidence": "illustrative",
-      "label": "经验积累",
-      "note": "骨干为经验描述，不是统一法定职级。",
-      "source_ids": []
+      "to": "training",
+      "evidence": "official_description",
+      "label": "入警训练",
+      "note": "2026年最高法院公布的跨省入警训练是新任法警培养的公开实例。",
+      "source_ids": [
+        "training_2026"
+      ]
     },
     {
-      "from": "veteran",
+      "from": "training",
+      "to": "frontline",
+      "evidence": "illustrative",
+      "label": "警务履职",
+      "note": "培训后依工作安排承担基层司法警察日常职责。",
+      "source_ids": [
+        "duties_2022"
+      ]
+    },
+    {
+      "from": "frontline",
       "to": "battalion",
       "evidence": "conditional",
-      "label": "领导选拔",
-      "note": "需要岗位职数与组织任用。",
+      "label": "干部选拔任用",
+      "note": "岗位与领导职数存在，并符合任职条件及组织选拔程序。",
       "source_ids": []
     },
     {
       "from": "battalion",
       "to": "detachment",
       "evidence": "conditional",
-      "label": "跨级交流",
-      "note": "不同法院领导岗位不能自动递升。",
+      "label": "跨院交流任职",
+      "note": "跨法院层级领导岗位并非自然连续晋升，须依干部任用安排。",
       "source_ids": []
     },
     {
       "from": "detachment",
       "to": "corps",
       "evidence": "conditional",
-      "label": "跨级任用",
-      "note": "岗位层次不同，任职还需资格和组织选拔。",
+      "label": "高级岗位选拔",
+      "note": "支队和总队分别隶属于不同层级法院，人员并非自动晋升。",
       "source_ids": []
     },
     {
       "from": "police",
+      "to": "grade",
+      "evidence": "official_description",
+      "label": "执法勤务职级",
+      "note": "改革纲要规定落实司法警察执法勤务职级序列制度。",
+      "source_ids": [
+        "reform_2024"
+      ]
+    },
+    {
+      "from": "grade",
       "to": "staff",
       "evidence": "illustrative",
-      "label": "岗位交流",
-      "note": "警务管理工作由实际组织安排。",
+      "label": "可能岗位交流",
+      "note": "职级发展本身不提供任领导的资格保证，机关岗位以实际安排为准。",
       "source_ids": []
     },
     {
       "from": "staff",
       "to": "detachment",
       "evidence": "conditional",
-      "label": "任职选拔",
-      "note": "需符合领导岗位资格和职位空缺。",
+      "label": "择优选任",
+      "note": "机关任职经历不等于直接取得中级法院支队领导职务。",
+      "source_ids": []
+    },
+    {
+      "from": "frontline",
+      "to": "staff",
+      "evidence": "illustrative",
+      "label": "警务管理历练",
+      "note": "从业务岗位到管理岗位需依单位实际岗位需要。",
       "source_ids": []
     }
   ],
@@ -128,45 +185,106 @@
     {
       "id": "grassroots",
       "title": "基层警务领导路线",
-      "description": "由正式法警经基层经验与选拔进入不同层级领导岗位。",
+      "description": "正式入警和基层警务经验后，经组织选拔可能担任大队、支队及总队领导。",
       "node_ids": [
         "exam",
         "police",
-        "veteran",
+        "training",
+        "frontline",
         "battalion",
         "detachment",
         "corps"
       ]
     },
     {
-      "id": "staff_path",
-      "title": "警务管理路线",
-      "description": "经警务管理岗位后争取相应领导岗位。",
+      "id": "grade_staff",
+      "title": "职级与警务管理路线",
+      "description": "职级制度与警务领导职务并行；如有岗位安排，可能积累机关管理经历。",
       "node_ids": [
         "exam",
         "police",
+        "grade",
+        "staff",
+        "detachment"
+      ]
+    },
+    {
+      "id": "professional_management",
+      "title": "警务业务到管理路线",
+      "description": "通过警务实务和警务管理历练走向领导岗位，但须经过选任程序。",
+      "node_ids": [
+        "exam",
+        "police",
+        "training",
+        "frontline",
         "staff",
         "detachment"
       ]
     }
   ],
   "requirements": [
-    "关注省级公务员职位表中的法院司法警察正式职位。",
-    "领导职务和警衔、警员职级属于不同维度。",
-    "按当年岗位条件完成笔试、面试、体检及考察。"
+    "正式法院司法警察主要通过符合职位要求的公务员招录程序进入；具体条件以当年、当地职位公告为准。",
+    "以山东2027年度招录为例，法院司法警察职位年龄一般为18—30周岁，应届硕博可放宽至35周岁；法院系统总体要求大学本科以上学历。",
+    "山东2027年度法院法警职位需参加人民警察岗位体检、体能测评并符合相关政治考察要求，具体职位限制以职位表和公告为准。",
+    "执法勤务职级属于职业发展的一种制度方向，不代表获得法警大队长、支队长、总队长等领导职务。",
+    "领导岗位的选拔任用受资格、职位、编制职数及实际组织程序约束。"
   ],
   "caveats": [
-    "大队、支队、总队是机构层级，不是个人必经晋升顺序。",
-    "引用的公开暂行条例发布时间较早，使用时需核对现行效力。",
-    "聘用制辅助岗位不能自动转为正式法警。"
+    "2012年《人民法院司法警察条例》已取代1997年《人民法院司法警察暂行条例》，不能沿用旧条例的准入学历与跨部门调任年龄条款。",
+    "2027年度山东省招录公告是地方当年度示例，不能把本科要求和年龄条件推导为所有地区的永久统一标准。",
+    "法院法警与检察院法警属于不同机关序列；检察院司法警察适用自身制度，不能互相套用。",
+    "警衔、执法勤务职级、领导职务及机关层级分属不同维度，图中箭头只表示条件性或示例发展。",
+    "聘用制警务辅助人员不自动转为正式法警；图谱不推定晋升年龄、速度或成功概率。"
   ],
   "sources": [
     {
-      "id": "court",
-      "title": "人民法院司法警察暂行条例",
+      "id": "regulation_2012",
+      "title": "最高人民法院：《人民法院司法警察条例》正式颁布施行（明确废止旧条例）",
       "publisher": "最高人民法院",
-      "url": "https://www.court.gov.cn/jianshe/xiangqing/147.html",
-      "published": "2010-02-21"
+      "url": "https://www.court.gov.cn/zixun/xiangqing/4687.html",
+      "published": "2012-11-28"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法（人民警察范围）",
+      "publisher": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "2019-04-27"
+    },
+    {
+      "id": "duties_2022",
+      "title": "最高人民法院关于人民法院司法警察依法履行职权的规定",
+      "publisher": "山东省高级人民法院网站转载",
+      "url": "https://www.sdcourt.gov.cn/ythyfy/388645/388577/388621/8624693/index.html",
+      "published": "2022-07-09"
+    },
+    {
+      "id": "reform_2024",
+      "title": "人民法院第六个五年改革纲要（2024—2028年）",
+      "publisher": "最高人民法院",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/451191.html",
+      "published": "2024-12-26"
+    },
+    {
+      "id": "training_2026",
+      "title": "2026年人民法院新任司法警察跨省集中入警训练在杭州举办",
+      "publisher": "最高人民法院",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/508691.html",
+      "published": "2026-08-14"
+    },
+    {
+      "id": "recruit_2027",
+      "title": "2027年度山东省法院系统考试录用公务员简章",
+      "publisher": "烟台市人民政府（转载山东省招录政策）",
+      "url": "https://www.yantai.gov.cn/col/col51398/art/2026/art_d457296a166c40178dea4a9cc2726930.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "procuratorate",
+      "title": "人民检察院司法警察条例",
+      "publisher": "最高人民检察院",
+      "url": "https://www.spp.gov.cn/spp/gfwj/201305/t20130523_365598.shtml",
+      "published": "2013-05-23"
     }
   ],
   "schema_version": "1.0.0",
