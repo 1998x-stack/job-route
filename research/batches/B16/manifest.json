@@ -1,0 +1,112 @@
+{
+  "batch": "B16",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "research_status": "published",
+  "method": "deep-source-research-v3",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "skill": "skills/job-route/SKILL.md",
+  "items": 10,
+  "roles": [
+    {
+      "id": "JR-103",
+      "category": "military",
+      "slug": "military-space-specialist",
+      "title": "军队航天专业技术人员",
+      "route_file": "data/military/military-space-specialist/route.json",
+      "report_file": "data/military/military-space-specialist/report.md",
+      "mermaid_file": "data/military/military-space-specialist/route.mmd",
+      "svg_file": "data/military/military-space-specialist/route.svg"
+    },
+    {
+      "id": "JR-108",
+      "category": "judicial",
+      "slug": "cross-border-lawyer",
+      "title": "涉外法律服务律师",
+      "route_file": "data/judicial/cross-border-lawyer/route.json",
+      "report_file": "data/judicial/cross-border-lawyer/report.md",
+      "mermaid_file": "data/judicial/cross-border-lawyer/route.mmd",
+      "svg_file": "data/judicial/cross-border-lawyer/route.svg"
+    },
+    {
+      "id": "JR-127",
+      "category": "government",
+      "slug": "national-statistics-officer",
+      "title": "国家统计系统公务员",
+      "route_file": "data/government/national-statistics-officer/route.json",
+      "report_file": "data/government/national-statistics-officer/report.md",
+      "mermaid_file": "data/government/national-statistics-officer/route.mmd",
+      "svg_file": "data/government/national-statistics-officer/route.svg"
+    },
+    {
+      "id": "JR-137",
+      "category": "public-safety",
+      "slug": "maritime-administrative-enforcement",
+      "title": "海事行政执法人员",
+      "route_file": "data/public-safety/maritime-administrative-enforcement/route.json",
+      "report_file": "data/public-safety/maritime-administrative-enforcement/report.md",
+      "mermaid_file": "data/public-safety/maritime-administrative-enforcement/route.mmd",
+      "svg_file": "data/public-safety/maritime-administrative-enforcement/route.svg"
+    },
+    {
+      "id": "JR-152",
+      "category": "education",
+      "slug": "education-technology-specialist",
+      "title": "教育技术应用工程师",
+      "route_file": "data/education/education-technology-specialist/route.json",
+      "report_file": "data/education/education-technology-specialist/report.md",
+      "mermaid_file": "data/education/education-technology-specialist/route.mmd",
+      "svg_file": "data/education/education-technology-specialist/route.svg"
+    },
+    {
+      "id": "JR-159",
+      "category": "healthcare",
+      "slug": "midwife",
+      "title": "助产士",
+      "route_file": "data/healthcare/midwife/route.json",
+      "report_file": "data/healthcare/midwife/report.md",
+      "mermaid_file": "data/healthcare/midwife/route.mmd",
+      "svg_file": "data/healthcare/midwife/route.svg"
+    },
+    {
+      "id": "JR-165",
+      "category": "healthcare",
+      "slug": "hospital-infection-control-officer",
+      "title": "医院感染管理专员",
+      "route_file": "data/healthcare/hospital-infection-control-officer/route.json",
+      "report_file": "data/healthcare/hospital-infection-control-officer/report.md",
+      "mermaid_file": "data/healthcare/hospital-infection-control-officer/route.mmd",
+      "svg_file": "data/healthcare/hospital-infection-control-officer/route.svg"
+    },
+    {
+      "id": "JR-172",
+      "category": "technology",
+      "slug": "recommender-systems-engineer",
+      "title": "推荐算法工程师",
+      "route_file": "data/technology/recommender-systems-engineer/route.json",
+      "report_file": "data/technology/recommender-systems-engineer/report.md",
+      "mermaid_file": "data/technology/recommender-systems-engineer/route.mmd",
+      "svg_file": "data/technology/recommender-systems-engineer/route.svg"
+    },
+    {
+      "id": "JR-191",
+      "category": "business",
+      "slug": "compensation-performance-manager",
+      "title": "薪酬绩效经理",
+      "route_file": "data/business/compensation-performance-manager/route.json",
+      "report_file": "data/business/compensation-performance-manager/report.md",
+      "mermaid_file": "data/business/compensation-performance-manager/route.mmd",
+      "svg_file": "data/business/compensation-performance-manager/route.svg"
+    },
+    {
+      "id": "JR-200",
+      "category": "public-service",
+      "slug": "intangible-cultural-heritage-officer",
+      "title": "非物质文化遗产保护专员",
+      "route_file": "data/public-service/intangible-cultural-heritage-officer/route.json",
+      "report_file": "data/public-service/intangible-cultural-heritage-officer/report.md",
+      "mermaid_file": "data/public-service/intangible-cultural-heritage-officer/route.mmd",
+      "svg_file": "data/public-service/intangible-cultural-heritage-officer/route.svg"
+    }
+  ]
+}
