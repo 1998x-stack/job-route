@@ -1,0 +1,33 @@
+flowchart TB
+    %% 医院感染管理专员 — 2026-11-11
+    n_clinician["注册护士或合法医护人员转岗"]
+    n_publichealth["公共卫生、流行病与检验背景人员"]
+    n_recruit["医院岗位选聘及专业职责核验"]
+    n_training["院感法规与规范化培训"]
+    n_surveillance["感染风险监测与质量分析"]
+    n_feedback["风险反馈、培训与流程改进"]
+    n_standards["2026新版评价标准生效期管理"]
+    n_lead["院感质量项目与专业骨干"]
+    n_target["医院感染管理专业岗位"]
+    n_clinician -.->|"程序资格"| n_recruit
+    n_recruit -.->|"程序资格"| n_training
+    n_training -.->|"典型技能积累"| n_surveillance
+    n_surveillance -.->|"典型技能积累"| n_feedback
+    n_feedback -.->|"典型技能积累"| n_standards
+    n_standards -.->|"资格满足后任职"| n_target
+    n_publichealth -.->|"程序资格"| n_recruit
+    n_feedback -.->|"典型技能积累"| n_lead
+    n_lead -.->|"资格满足后任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_clinician entry
+    class n_publichealth entry
+    class n_recruit milestone
+    class n_training milestone
+    class n_surveillance role
+    class n_feedback role
+    class n_standards role
+    class n_lead role
+    class n_target target

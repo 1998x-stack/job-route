@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0.0",
+  "id": "compensation-performance-manager",
+  "title": "薪酬绩效经理",
+  "subtitle": "薪酬体系、绩效考核、2025人社职业标准及员工个人信息合规",
+  "category": "business",
+  "jurisdiction": "中国大陆企业人力资源管理部门；2026雇主招聘为实证案例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "薪酬绩效经理是企业任命的人力资源专业管理岗位，涉及薪酬预算、工资福利、绩效目标及奖金政策。企业人力资源管理师职业标准提供有关知识能力评价，不能代替企业经理职务；薪酬和绩效资料常涉及可识别员工信息，个人信息保护法允许在法定条件下实施必要的人力资源管理，但不意味着可以无限制收集或公开。",
+  "target": "target",
+  "entry_points": [
+    "hr_specialist",
+    "data_finance"
+  ],
+  "nodes": [
+    {
+      "id": "hr_specialist",
+      "label": "薪酬专员或HR运营背景",
+      "kind": "entry",
+      "description": "从员工薪酬核算、福利管理、薪酬调研和劳动关系合规工作积累人力资源运营技能。",
+      "source_ids": [
+        "hr_standard"
+      ]
+    },
+    {
+      "id": "data_finance",
+      "label": "财务分析、HRIS或绩效运营背景",
+      "kind": "entry",
+      "description": "从财务预算、组织绩效、人力资源信息系统和数据分析实践转型，按雇主岗位条件补足劳动用工知识。",
+      "source_ids": [
+        "performance_job"
+      ]
+    },
+    {
+      "id": "fundamentals",
+      "label": "劳动法规与薪酬绩效知识体系",
+      "kind": "milestone",
+      "description": "了解薪酬等级、岗位价值评估、绩效指标设计、劳动合同与个人信息保护的适用条件。",
+      "source_ids": [
+        "hr_standard",
+        "pipl"
+      ]
+    },
+    {
+      "id": "payroll",
+      "label": "薪酬、福利与人工成本预算管理",
+      "kind": "role",
+      "description": "维护薪酬数据准确性、福利方案与预算规则，限制敏感薪酬信息访问与错误披露。",
+      "source_ids": [
+        "pipl",
+        "pay_job"
+      ]
+    },
+    {
+      "id": "performance",
+      "label": "目标管理与绩效指标体系设计",
+      "kind": "role",
+      "description": "参与KPI/OKR、绩效沟通、校准、奖惩关联与申诉处理，保留可审计的政策记录。",
+      "source_ids": [
+        "performance_job"
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "公平性分析与薪酬绩效数据治理",
+      "kind": "role",
+      "description": "以合法必要为原则分析薪酬带宽、绩效分布及内部公平性，做好访问控制与数据保留。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "id": "compliance",
+      "label": "劳动关系与数据保护合规评审",
+      "kind": "role",
+      "description": "依法制定劳动规章制度和员工信息处理政策，评估涉及重大员工权益的决策流程。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "薪酬绩效项目和团队管理",
+      "kind": "role",
+      "description": "根据公司用人标准和真实岗位授权，统筹薪酬绩效项目；职称、职业技能等级与经理头衔独立。",
+      "source_ids": [
+        "hr_standard"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "企业薪酬绩效经理岗位",
+      "kind": "target",
+      "description": "在雇主合法聘任下统筹薪酬制度、绩效治理、预算和员工数据安全相关人力资源职责。",
+      "source_ids": [
+        "hr_standard",
+        "pipl"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "hr_specialist",
+      "to": "fundamentals",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「薪酬专员或HR运营背景」至「劳动法规与薪酬绩效知识体系」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "hr_standard",
+        "pipl"
+      ]
+    },
+    {
+      "from": "fundamentals",
+      "to": "payroll",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「劳动法规与薪酬绩效知识体系」至「薪酬、福利与人工成本预算管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "pipl",
+        "pay_job"
+      ]
+    },
+    {
+      "from": "payroll",
+      "to": "performance",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「薪酬、福利与人工成本预算管理」至「目标管理与绩效指标体系设计」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "performance_job"
+      ]
+    },
+    {
+      "from": "performance",
+      "to": "analytics",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「目标管理与绩效指标体系设计」至「公平性分析与薪酬绩效数据治理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "from": "analytics",
+      "to": "compliance",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「公平性分析与薪酬绩效数据治理」至「劳动关系与数据保护合规评审」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "from": "compliance",
+      "to": "management",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「劳动关系与数据保护合规评审」至「薪酬绩效项目和团队管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "hr_standard"
+      ]
+    },
+    {
+      "from": "management",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「薪酬绩效项目和团队管理」至「企业薪酬绩效经理岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "hr_standard",
+        "pipl"
+      ]
+    },
+    {
+      "from": "data_finance",
+      "to": "fundamentals",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「财务分析、HRIS或绩效运营背景」至「劳动法规与薪酬绩效知识体系」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "hr_standard",
+        "pipl"
+      ]
+    },
+    {
+      "from": "analytics",
+      "to": "management",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「公平性分析与薪酬绩效数据治理」至「薪酬绩效项目和团队管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "hr_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "payroll_track",
+      "title": "薪酬运营发展为经理",
+      "description": "HR专员从薪酬预算和流程执行逐步积累员工绩效制度与数据保护专业能力，依法聘任经理岗位。",
+      "node_ids": [
+        "hr_specialist",
+        "fundamentals",
+        "payroll",
+        "performance",
+        "analytics",
+        "compliance",
+        "management",
+        "target"
+      ]
+    },
+    {
+      "id": "finance_track",
+      "title": "财务分析／绩效体系转向HR管理",
+      "description": "已有财务数据背景者学习劳动法与薪酬政策、绩效设计及数据合规后在公司内部任职。",
+      "node_ids": [
+        "data_finance",
+        "fundamentals",
+        "payroll",
+        "performance",
+        "analytics",
+        "management",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2025年人社部职业标准通知列出企业人力资源管理师相关职业标准，职业技能等级或标准不等于企业薪酬绩效经理法定个人执业许可。",
+    "《个人信息保护法》第十三条允许为订立履行合同所必需，或依依法制定的劳动规章制度和集体合同实施人力资源管理所必需，处理必要的个人信息；仍须遵守最小必要等原则。",
+    "2026年蓝月亮绩效管理和薪酬激励岗位公告明确KPI/OKR、指标维护、数据核验、薪酬激励方案等技能，学历要求仅为该雇主岗位案例。",
+    "企业员工工资和绩效奖金涉及劳动合同、企业规章和绩效程序，不存在全国一张证书即可取得公司经理职位的制度。"
+  ],
+  "caveats": [
+    "不能以“人力资源管理必需”为由无期限收集、对外泄露或跨部门滥用员工健康、薪酬与评价信息。",
+    "雇主可以将证书作为招聘参考，但企业HR职务任命不是职业技能资格证书的自动转换。",
+    "不同企业可能将薪酬与绩效分设两个经理，报告所示为组合职能样例，具体职责按组织架构确定。"
+  ],
+  "sources": [
+    {
+      "id": "hr_standard",
+      "title": "人社部颁布33个国家职业标准通知（含企业人力资源管理师）",
+      "publisher": "中华人民共和国人力资源和社会保障部",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/202510/t20251016_560431.html",
+      "published": "2025-08-27"
+    },
+    {
+      "id": "pipl",
+      "title": "中华人民共和国个人信息保护法",
+      "publisher": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "published": "2021-08-20"
+    },
+    {
+      "id": "performance_job",
+      "title": "蓝月亮2026人资管培生—绩效管理招聘",
+      "publisher": "南开大学就业服务中心（转载企业招聘）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/119956.html",
+      "published": "2026-10-21"
+    },
+    {
+      "id": "pay_job",
+      "title": "蓝月亮2026人资管培生—薪酬激励招聘",
+      "publisher": "南开大学就业服务中心（转载企业招聘）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/119957.html",
+      "published": "2026-10-21"
+    }
+  ]
+}

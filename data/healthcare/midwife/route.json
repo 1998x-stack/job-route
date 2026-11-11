@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0.0",
+  "id": "midwife",
+  "title": "助产士",
+  "subtitle": "注册护士资格、母婴保健专项技术考核与有资质助产机构的双重门槛",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆开展助产技术的合法医疗机构；依据2025年国家卫健委基本标准及专项考核要求",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "助产士通常是经护士执业注册并取得助产技术类《母婴保健技术考核合格证书》的注册护士，在有开展助产技术资质的医疗机构依技术规范工作。2025年国家卫健委标准明确了助产技术人员的机构配备和证件要求；助产学历、护士执业证与专项母婴技术考核证是不同层次。",
+  "target": "target",
+  "entry_points": [
+    "nursing",
+    "existing_nurse"
+  ],
+  "nodes": [
+    {
+      "id": "nursing",
+      "label": "护理／助产相关教育与护士资格路径",
+      "kind": "entry",
+      "description": "完成法定认可的护理教育和资格考试，依法办理护士执业注册，再申请助产岗位培训及考核。",
+      "source_ids": [
+        "nurse_reg",
+        "institution_standard"
+      ]
+    },
+    {
+      "id": "existing_nurse",
+      "label": "已有护士执业注册的专科转岗",
+      "kind": "entry",
+      "description": "具有有效护士执业证的临床护士可按所在机构和卫生行政部门要求申请助产技术培训考核。",
+      "source_ids": [
+        "credential_rules"
+      ]
+    },
+    {
+      "id": "registration",
+      "label": "取得有效护士执业注册",
+      "kind": "milestone",
+      "description": "符合护士执业资格、注册地点及有效状态要求；护理学历或培训合格不自动替代护士执业证。",
+      "source_ids": [
+        "nurse_reg"
+      ]
+    },
+    {
+      "id": "maternal_exam",
+      "label": "县级卫生健康部门助产技术考核",
+      "kind": "milestone",
+      "description": "按母婴保健专项技术许可规章及2025标准考核合格，取得助产技术类《母婴保健技术考核合格证书》。",
+      "source_ids": [
+        "credential_rules",
+        "institution_standard"
+      ]
+    },
+    {
+      "id": "institution",
+      "label": "确认助产机构与岗位服务资质",
+      "kind": "milestone",
+      "description": "所服务的医疗机构必须符合开展助产技术的机构基本标准，岗位人员条件、执业地点独立核查。",
+      "source_ids": [
+        "institution_standard"
+      ]
+    },
+    {
+      "id": "normal_delivery",
+      "label": "正常分娩助产与母婴照护",
+      "kind": "role",
+      "description": "在技术资质及能力范围依法提供正常经阴道分娩相关助产、监测、沟通与安全照护。",
+      "source_ids": [
+        "credential_rules"
+      ]
+    },
+    {
+      "id": "escalation",
+      "label": "产科团队协作及异常情形转诊",
+      "kind": "role",
+      "description": "对能力范围外或异常分娩情况依法及时在具资质妇产科医师指导下处理或转介，遵守临床指南。",
+      "source_ids": [
+        "credential_rules"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "专科带教及母婴安全质量改善",
+      "kind": "role",
+      "description": "依据机构工作安排承担培训与质量改进，护理职称、护士长职务和助产技术资格分别管理。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法执业助产士岗位",
+      "kind": "target",
+      "description": "具有效护士执业证、助产专项技术资格并在适当资质机构从事安全、合规的助产护理。",
+      "source_ids": [
+        "institution_standard",
+        "credential_rules"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "nursing",
+      "to": "registration",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「护理／助产相关教育与护士资格路径」至「取得有效护士执业注册」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "nurse_reg"
+      ]
+    },
+    {
+      "from": "registration",
+      "to": "maternal_exam",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「取得有效护士执业注册」至「县级卫生健康部门助产技术考核」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "credential_rules",
+        "institution_standard"
+      ]
+    },
+    {
+      "from": "maternal_exam",
+      "to": "institution",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「县级卫生健康部门助产技术考核」至「确认助产机构与岗位服务资质」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "institution_standard"
+      ]
+    },
+    {
+      "from": "institution",
+      "to": "normal_delivery",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「确认助产机构与岗位服务资质」至「正常分娩助产与母婴照护」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "credential_rules"
+      ]
+    },
+    {
+      "from": "normal_delivery",
+      "to": "escalation",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「正常分娩助产与母婴照护」至「产科团队协作及异常情形转诊」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "credential_rules"
+      ]
+    },
+    {
+      "from": "escalation",
+      "to": "training",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「产科团队协作及异常情形转诊」至「专科带教及母婴安全质量改善」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "training",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「专科带教及母婴安全质量改善」至「合法执业助产士岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "institution_standard",
+        "credential_rules"
+      ]
+    },
+    {
+      "from": "existing_nurse",
+      "to": "registration",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「已有护士执业注册的专科转岗」至「取得有效护士执业注册」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "nurse_reg"
+      ]
+    },
+    {
+      "from": "escalation",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「产科团队协作及异常情形转诊」至「合法执业助产士岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "institution_standard",
+        "credential_rules"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "entry",
+      "title": "护理／助产教育与专项资格路线",
+      "description": "从护理资格和注册出发，参加助产技术考核并匹配已获资质的助产机构，依法开展母婴照护。",
+      "node_ids": [
+        "nursing",
+        "registration",
+        "maternal_exam",
+        "institution",
+        "normal_delivery",
+        "escalation",
+        "training",
+        "target"
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "注册护士转向助产服务路线",
+      "description": "从已注册护士岗位经助产专项技术考核及机构资格确认后，承担助产护理职责。",
+      "node_ids": [
+        "existing_nurse",
+        "registration",
+        "maternal_exam",
+        "institution",
+        "normal_delivery",
+        "escalation",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2025年国家卫健委《开展助产技术医疗机构基本标准》把助产士界定为取得助产资质的注册护士，并对机构需配备人员提出基本要求。",
+    "同一标准规定护士从事助产技术服务须经县级卫生健康部门考核合格，并取得助产技术类《母婴保健技术考核合格证书》。",
+    "2021年国家卫健委专项管理通知对资质人员在正常经阴道分娩等活动中的适用范围作出解释，其他助产技术受能力和医师指导限制。",
+    "助产医疗机构的专项资质与助产士个人证书不能互相替代；孕产妇安全、知情同意和临床规范必须遵守。"
+  ],
+  "caveats": [
+    "取得护士执业证但未经过适用助产专项考核的人员，不得仅凭一般护理资格声称可独立提供法定助产技术。",
+    "产科执业医师可按规则在《医师执业证书》加注专项考核合格；这与注册护士的助产技术考核证形式不同。",
+    "本研究不提供分娩操作教程、医学处置步骤或任何代替临床专业人员判断的指导。"
+  ],
+  "sources": [
+    {
+      "id": "institution_standard",
+      "title": "国家卫健委关于印发开展助产技术医疗机构基本标准的通知（地方转载全文）",
+      "publisher": "国家卫生健康委员会／甘肃省景宁县政府转载",
+      "url": "https://www.gsjn.gov.cn/zfxxgk/zfbmxxgk/wjj/zcwj/art/2025/art_caf409de2d63469eb8b2fc93c250e761.html",
+      "published": "2025-01-09"
+    },
+    {
+      "id": "qualification_explain",
+      "title": "《助产技术服务人员资格考核标准》国家卫健委解读",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/fys/c100077/202501/fb6590b6486447469c9b5699cb915aae.shtml",
+      "published": "2025-01-09"
+    },
+    {
+      "id": "credential_rules",
+      "title": "进一步加强母婴保健专项技术服务管理的通知",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/fys/c100078/202110/87b1e5eee81040c09267bef07500d6e6.shtml",
+      "published": "2021-10-22"
+    },
+    {
+      "id": "nurse_reg",
+      "title": "护士执业注册管理办法（2021年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202104/t20210416_356323.html",
+      "published": "2021-01-08"
+    }
+  ]
+}
