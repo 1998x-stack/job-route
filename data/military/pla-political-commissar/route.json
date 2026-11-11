@@ -1,0 +1,231 @@
+{
+  "id": "pla-political-commissar",
+  "title": "在部队担任政治委员",
+  "subtitle": "政治军官入口与政治主官任职路线",
+  "category": "military",
+  "jurisdiction": "中国大陆 · 中国人民解放军",
+  "summary": "从军队院校、高校毕业招录或优秀士兵选拔成为军官，认识基层政治主官到旅团政治委员之间需要组织选拔的职业发展关系。",
+  "target": "commissar",
+  "entry_points": [
+    "academy",
+    "graduate",
+    "soldier"
+  ],
+  "nodes": [
+    {
+      "id": "academy",
+      "label": "军队院校培养",
+      "kind": "entry",
+      "description": "军队院校毕业学员是现役军官的法定来源之一。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "graduate",
+      "label": "高校毕业招录",
+      "kind": "entry",
+      "description": "普通高校应届毕业生是法定军官来源之一。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "soldier",
+      "label": "优秀士兵选拔",
+      "kind": "entry",
+      "description": "优秀现役士兵可按条件参加军官选拔。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "officer",
+      "label": "取得现役军官身份",
+      "kind": "milestone",
+      "description": "军官身份不等于必然获得政治主官岗位。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "company",
+      "label": "连政治指导员",
+      "kind": "role",
+      "description": "连级政治主官，对连队政治工作负主要责任。",
+      "source_ids": [
+        "rules"
+      ]
+    },
+    {
+      "id": "battalion",
+      "label": "营政治教导员",
+      "kind": "role",
+      "description": "营级政治主官，对营队政治工作负主要责任。",
+      "source_ids": [
+        "rules"
+      ]
+    },
+    {
+      "id": "staff",
+      "label": "政治工作机关岗位",
+      "kind": "role",
+      "description": "可能通过机关任职积累政治工作经验。",
+      "source_ids": []
+    },
+    {
+      "id": "commissar",
+      "label": "旅（团）政治委员",
+      "kind": "target",
+      "description": "旅团单位政治主官职位，具体任命依组织安排。",
+      "source_ids": [
+        "rules"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "academy",
+      "to": "officer",
+      "evidence": "normative",
+      "label": "来源与任命",
+      "note": "军校毕业生是军官来源，任命应按规定进行。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "graduate",
+      "to": "officer",
+      "evidence": "normative",
+      "label": "依法招录",
+      "note": "高校应届毕业生是军官来源之一。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "soldier",
+      "to": "officer",
+      "evidence": "normative",
+      "label": "依法选拔",
+      "note": "优秀士兵是军官来源之一。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "officer",
+      "to": "company",
+      "evidence": "conditional",
+      "label": "组织任用",
+      "note": "须符合岗位资格与单位编制要求。",
+      "source_ids": []
+    },
+    {
+      "from": "company",
+      "to": "battalion",
+      "evidence": "illustrative",
+      "label": "可能晋任",
+      "note": "仅为典型岗位序列，不是必经步骤。",
+      "source_ids": []
+    },
+    {
+      "from": "battalion",
+      "to": "commissar",
+      "evidence": "conditional",
+      "label": "选拔任用",
+      "note": "可能还须其他中间岗位和培训经历。",
+      "source_ids": []
+    },
+    {
+      "from": "officer",
+      "to": "staff",
+      "evidence": "conditional",
+      "label": "岗位安排",
+      "note": "政治机关任职按工作需要安排。",
+      "source_ids": []
+    },
+    {
+      "from": "staff",
+      "to": "commissar",
+      "evidence": "conditional",
+      "label": "条件性交流",
+      "note": "需要资格和组织任用，不是直接晋升捷径。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "academy_path",
+      "title": "军校与基层政治工作",
+      "description": "军校进入军官队伍，积累基层政治工作经验。",
+      "node_ids": [
+        "academy",
+        "officer",
+        "company",
+        "battalion",
+        "commissar"
+      ]
+    },
+    {
+      "id": "graduate_path",
+      "title": "高校招录与政治机关",
+      "description": "高校招录进入军官队伍，可能交流到机关岗位。",
+      "node_ids": [
+        "graduate",
+        "officer",
+        "staff",
+        "commissar"
+      ]
+    },
+    {
+      "id": "soldier_path",
+      "title": "优秀士兵成长",
+      "description": "通过选拔成为军官后再接受政治主官岗位选任。",
+      "node_ids": [
+        "soldier",
+        "officer",
+        "company",
+        "battalion",
+        "commissar"
+      ]
+    }
+  ],
+  "requirements": [
+    "依法取得现役军官身份，并具备对应岗位任职资格。",
+    "政治指导员、政治教导员、政治委员属于不同层级岗位。",
+    "关注当年军校招生和军官招录正式公告。"
+  ],
+  "caveats": [
+    "岗位与军衔不等同，不能据此推断固定军衔。",
+    "箭头仅表示可能或典型发展关系，并非保证晋升。",
+    "不应编造未公开岗位名额、考核标准或个人晋升概率。"
+  ],
+  "sources": [
+    {
+      "id": "law",
+      "title": "中华人民共和国兵役法（第三十三条）",
+      "publisher": "退役军人事务部",
+      "url": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/fgzc/202112/t20211224_54634.html",
+      "published": "2021-08-20"
+    },
+    {
+      "id": "rules",
+      "title": "中国人民解放军内务条令",
+      "publisher": "国防部",
+      "url": "https://www.mod.gov.cn/gfbw/qwfb/16371391.html",
+      "published": "2025-02-26"
+    },
+    {
+      "id": "nudt",
+      "title": "国防科技大学新设政治工作本科专业",
+      "publisher": "国防科技大学",
+      "url": "https://www.nudt.edu.cn/xwgg/xydt/a915fafcb6314b56a0cff4aef16f18c8.htm",
+      "published": "2026-06-18"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "last_verified": "2026-11-11",
+  "status": "published"
+}

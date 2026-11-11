@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "military",
+      "name": "军队与国防",
+      "order": 1
+    },
+    {
+      "id": "judicial",
+      "name": "司法与法治",
+      "order": 2
+    },
+    {
+      "id": "government",
+      "name": "党政与公共管理",
+      "order": 3
+    },
+    {
+      "id": "public-safety",
+      "name": "公共安全",
+      "order": 4
+    },
+    {
+      "id": "education",
+      "name": "教育与学术",
+      "order": 5
+    },
+    {
+      "id": "healthcare",
+      "name": "医疗与卫生",
+      "order": 6
+    },
+    {
+      "id": "technology",
+      "name": "科技与工程",
+      "order": 7
+    },
+    {
+      "id": "business",
+      "name": "商业与金融",
+      "order": 8
+    },
+    {
+      "id": "public-service",
+      "name": "社会事业",
+      "order": 9
+    }
+  ]
+}

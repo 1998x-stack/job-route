@@ -1,0 +1,175 @@
+{
+  "id": "court-judicial-police",
+  "title": "成为法院司法警察领导干部",
+  "subtitle": "法院法警正式入职与警务领导岗位",
+  "category": "judicial",
+  "jurisdiction": "中国大陆 · 法院系统",
+  "summary": "分析正式司法警察入职、基层警务与大队、支队、总队领导岗位之间的区别，强调警衔和领导职务不能混用。",
+  "target": "detachment",
+  "entry_points": [
+    "exam"
+  ],
+  "nodes": [
+    {
+      "id": "exam",
+      "label": "公务员职位招录",
+      "kind": "entry",
+      "description": "根据法警公务员招录公告参加相应程序。",
+      "source_ids": []
+    },
+    {
+      "id": "police",
+      "label": "正式司法警察",
+      "kind": "milestone",
+      "description": "正式法警身份不等于聘用制警务辅助人员。",
+      "source_ids": []
+    },
+    {
+      "id": "veteran",
+      "label": "基层警务骨干",
+      "kind": "role",
+      "description": "积累警务保障与队伍管理工作经验。",
+      "source_ids": []
+    },
+    {
+      "id": "battalion",
+      "label": "法警大队领导",
+      "kind": "role",
+      "description": "基层人民法院司法警察大队的领导岗位。",
+      "source_ids": [
+        "court"
+      ]
+    },
+    {
+      "id": "staff",
+      "label": "警务管理机关岗位",
+      "kind": "role",
+      "description": "警务管理岗位可以形成不同职业经历。",
+      "source_ids": []
+    },
+    {
+      "id": "detachment",
+      "label": "法警支队领导",
+      "kind": "target",
+      "description": "中级人民法院司法警察支队的领导岗位。",
+      "source_ids": [
+        "court"
+      ]
+    },
+    {
+      "id": "corps",
+      "label": "法警总队领导",
+      "kind": "role",
+      "description": "高级人民法院司法警察总队的领导岗位。",
+      "source_ids": [
+        "court"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "exam",
+      "to": "police",
+      "evidence": "conditional",
+      "label": "考试录用",
+      "note": "依法通过当年岗位招录与考察程序。",
+      "source_ids": []
+    },
+    {
+      "from": "police",
+      "to": "veteran",
+      "evidence": "illustrative",
+      "label": "经验积累",
+      "note": "骨干为经验描述，不是统一法定职级。",
+      "source_ids": []
+    },
+    {
+      "from": "veteran",
+      "to": "battalion",
+      "evidence": "conditional",
+      "label": "领导选拔",
+      "note": "需要岗位职数与组织任用。",
+      "source_ids": []
+    },
+    {
+      "from": "battalion",
+      "to": "detachment",
+      "evidence": "conditional",
+      "label": "跨级交流",
+      "note": "不同法院领导岗位不能自动递升。",
+      "source_ids": []
+    },
+    {
+      "from": "detachment",
+      "to": "corps",
+      "evidence": "conditional",
+      "label": "跨级任用",
+      "note": "岗位层次不同，任职还需资格和组织选拔。",
+      "source_ids": []
+    },
+    {
+      "from": "police",
+      "to": "staff",
+      "evidence": "illustrative",
+      "label": "岗位交流",
+      "note": "警务管理工作由实际组织安排。",
+      "source_ids": []
+    },
+    {
+      "from": "staff",
+      "to": "detachment",
+      "evidence": "conditional",
+      "label": "任职选拔",
+      "note": "需符合领导岗位资格和职位空缺。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "grassroots",
+      "title": "基层警务领导路线",
+      "description": "由正式法警经基层经验与选拔进入不同层级领导岗位。",
+      "node_ids": [
+        "exam",
+        "police",
+        "veteran",
+        "battalion",
+        "detachment",
+        "corps"
+      ]
+    },
+    {
+      "id": "staff_path",
+      "title": "警务管理路线",
+      "description": "经警务管理岗位后争取相应领导岗位。",
+      "node_ids": [
+        "exam",
+        "police",
+        "staff",
+        "detachment"
+      ]
+    }
+  ],
+  "requirements": [
+    "关注省级公务员职位表中的法院司法警察正式职位。",
+    "领导职务和警衔、警员职级属于不同维度。",
+    "按当年岗位条件完成笔试、面试、体检及考察。"
+  ],
+  "caveats": [
+    "大队、支队、总队是机构层级，不是个人必经晋升顺序。",
+    "引用的公开暂行条例发布时间较早，使用时需核对现行效力。",
+    "聘用制辅助岗位不能自动转为正式法警。"
+  ],
+  "sources": [
+    {
+      "id": "court",
+      "title": "人民法院司法警察暂行条例",
+      "publisher": "最高人民法院",
+      "url": "https://www.court.gov.cn/jianshe/xiangqing/147.html",
+      "published": "2010-02-21"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "last_verified": "2026-11-11",
+  "status": "published"
+}

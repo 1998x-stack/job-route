@@ -1,0 +1,232 @@
+{
+  "id": "county-magistrate",
+  "title": "从公务员走向县长",
+  "subtitle": "乡科级岗位、县处级领导与人大选举",
+  "category": "government",
+  "jurisdiction": "中国大陆 · 普通县",
+  "summary": "比较乡镇基层和市直机关交流两种职业经历，区分干部任职资格、组织选拔推荐与县人大依法选举。",
+  "target": "county_head",
+  "entry_points": [
+    "exam",
+    "selection"
+  ],
+  "nodes": [
+    {
+      "id": "exam",
+      "label": "公务员考试录用",
+      "kind": "entry",
+      "description": "依招录政策报考并取得公务员身份。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "选调生招录",
+      "kind": "entry",
+      "description": "高校毕业生根据地区选调公告参加考试。",
+      "source_ids": []
+    },
+    {
+      "id": "civil_worker",
+      "label": "基层公务员",
+      "kind": "milestone",
+      "description": "基层机关岗位积累治理与行政执行经历。",
+      "source_ids": []
+    },
+    {
+      "id": "town_deputy",
+      "label": "乡科级副职",
+      "kind": "role",
+      "description": "副乡镇长等通常属于乡科级副职岗位。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "town_leader",
+      "label": "乡科级正职",
+      "kind": "role",
+      "description": "乡镇长、县直部门正职等常见领导岗位。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "city_staff",
+      "label": "市直机关任职",
+      "kind": "role",
+      "description": "市级机关经历可能通过交流任职衔接县级领导职位。",
+      "source_ids": []
+    },
+    {
+      "id": "county_deputy",
+      "label": "县处级副职",
+      "kind": "role",
+      "description": "副县长等通常属于县处级副职层次。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "county_head",
+      "label": "县人民政府县长",
+      "kind": "target",
+      "description": "普通县长一般为县处级正职，依法由本级人大选举。",
+      "source_ids": [
+        "constitution"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "exam",
+      "to": "civil_worker",
+      "evidence": "conditional",
+      "label": "考试录用",
+      "note": "进入公务员岗位以招录结果为准。",
+      "source_ids": []
+    },
+    {
+      "from": "selection",
+      "to": "civil_worker",
+      "evidence": "conditional",
+      "label": "按选调政策录用",
+      "note": "选调政策因地区和年度而异。",
+      "source_ids": []
+    },
+    {
+      "from": "civil_worker",
+      "to": "town_deputy",
+      "evidence": "illustrative",
+      "label": "干部选拔",
+      "note": "需考核任用而非工龄自动递升。",
+      "source_ids": []
+    },
+    {
+      "from": "town_deputy",
+      "to": "town_leader",
+      "evidence": "conditional",
+      "label": "提任",
+      "note": "岗位任用依组织规定程序。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "from": "town_leader",
+      "to": "county_deputy",
+      "evidence": "conditional",
+      "label": "提任",
+      "note": "具备资历不等于必然晋升。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "from": "county_deputy",
+      "to": "county_head",
+      "evidence": "conditional",
+      "label": "提名与选举",
+      "note": "组织程序与人大依法选举均须履行。",
+      "source_ids": [
+        "cadre",
+        "constitution"
+      ]
+    },
+    {
+      "from": "civil_worker",
+      "to": "city_staff",
+      "evidence": "illustrative",
+      "label": "跨部门交流",
+      "note": "依工作需要通过组织交流任职。",
+      "source_ids": []
+    },
+    {
+      "from": "city_staff",
+      "to": "county_deputy",
+      "evidence": "conditional",
+      "label": "跨级交流",
+      "note": "县级岗位须经资格审核与组织选任。",
+      "source_ids": [
+        "cadre"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "township",
+      "title": "基层乡镇路线",
+      "description": "历经基层、乡科级和县处级相关岗位。",
+      "node_ids": [
+        "exam",
+        "civil_worker",
+        "town_deputy",
+        "town_leader",
+        "county_deputy",
+        "county_head"
+      ]
+    },
+    {
+      "id": "selected",
+      "title": "选调生路线",
+      "description": "通过选调生渠道进入基层，再参与干部选任。",
+      "node_ids": [
+        "selection",
+        "civil_worker",
+        "town_deputy",
+        "town_leader",
+        "county_deputy",
+        "county_head"
+      ]
+    },
+    {
+      "id": "city",
+      "title": "市直机关交流路线",
+      "description": "市直机关履历与县级岗位选任相结合。",
+      "node_ids": [
+        "exam",
+        "civil_worker",
+        "city_staff",
+        "county_deputy",
+        "county_head"
+      ]
+    }
+  ],
+  "requirements": [
+    "县处级领导职位属于公务员法规定的领导职务层次。",
+    "提任县处级等职务须满足干部选任条例中相应的一般资历要求。",
+    "县长依法由本级人民代表大会选举产生。"
+  ],
+  "caveats": [
+    "最低任职资格不等于自动晋升或当选。",
+    "普通县与特殊行政区划的机构层级可能不同。",
+    "不对具体政治职位晋升机会作概率预测。"
+  ],
+  "sources": [
+    {
+      "id": "civil",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    },
+    {
+      "id": "cadre",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "新华社",
+      "url": "https://www.xinhuanet.com/politics/2019-03/17/c_1124245012.htm",
+      "published": "2019-03-17"
+    },
+    {
+      "id": "constitution",
+      "title": "中华人民共和国宪法（第一百零一条）",
+      "publisher": "中国外交部",
+      "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt/qtzt/twwt/stflgf/202206/t20220606_10698959.html",
+      "published": "2018-03-11"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "last_verified": "2026-11-11",
+  "status": "published"
+}

@@ -1,0 +1,30 @@
+flowchart TB
+    %% 在部队担任政治委员 — 2026-11-11
+    n_academy["军队院校培养"]
+    n_graduate["高校毕业招录"]
+    n_soldier["优秀士兵选拔"]
+    n_officer["取得现役军官身份"]
+    n_company["连政治指导员"]
+    n_battalion["营政治教导员"]
+    n_staff["政治工作机关岗位"]
+    n_commissar["旅（团）政治委员"]
+    n_academy -->|"来源与任命"| n_officer
+    n_graduate -->|"依法招录"| n_officer
+    n_soldier -->|"依法选拔"| n_officer
+    n_officer -.->|"组织任用"| n_company
+    n_company -.->|"可能晋任"| n_battalion
+    n_battalion -.->|"选拔任用"| n_commissar
+    n_officer -.->|"岗位安排"| n_staff
+    n_staff -.->|"条件性交流"| n_commissar
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_academy entry
+    class n_graduate entry
+    class n_soldier entry
+    class n_officer milestone
+    class n_company role
+    class n_battalion role
+    class n_staff role
+    class n_commissar target
