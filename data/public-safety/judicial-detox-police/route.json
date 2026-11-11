@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "id": "judicial-detox-police",
+  "title": "司法行政强制隔离戒毒警察",
+  "subtitle": "司法行政系统人民警察招录、执法岗位与警务发展",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆；以江苏省2027年度司法行政系统公务员招录为地方实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "司法行政强制隔离戒毒人民警察是司法行政系统的正式人民警察职位，按省级公务员录用与人民警察专项条件进入；与法院法警、公安民警、监狱警察、聘用辅警不同。",
+  "target": "target",
+  "entry_points": [
+    "open_exam",
+    "police_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "open_exam",
+      "label": "戒毒系统人民警察公开招录",
+      "kind": "entry",
+      "description": "报考省级年度司法行政系统的强制隔离戒毒单位人民警察职位，依当年职位表审查。",
+      "source_ids": [
+        "jiangsu_2027"
+      ]
+    },
+    {
+      "id": "police_transfer",
+      "label": "符合规定的正式警察交流转任",
+      "kind": "entry",
+      "description": "已是正式人民警察且符合人员管理条件者，可能通过组织交流转任至戒毒系统警察岗位。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "资格审查与专项体能健康测评",
+      "kind": "milestone",
+      "description": "按照人民警察职位要求完成专业学历条件、体能测评、体检及考察等程序。",
+      "source_ids": [
+        "jiangsu_2027"
+      ]
+    },
+    {
+      "id": "formal_police",
+      "label": "取得正式司法行政人民警察身份",
+      "kind": "milestone",
+      "description": "依法录用和任职取得人民警察身份，区别于警务辅助聘用劳动身份。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "entry_training",
+      "label": "岗位入警教育与规范训练",
+      "kind": "role",
+      "description": "按单位规定接受执法规范、安全管理、戒毒法律服务与管理相关培训。",
+      "source_ids": []
+    },
+    {
+      "id": "detox_duty",
+      "label": "强制隔离戒毒场所执法勤务",
+      "kind": "role",
+      "description": "依法在强制隔离戒毒场所履职，保障法定管理、权益和安全，不涉及战术或敏感布防。",
+      "source_ids": [
+        "detox_law"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "业务骨干与警务管理",
+      "kind": "role",
+      "description": "在岗位考核与组织选拔条件下，可能发展为业务骨干或警务管理岗位。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "正式戒毒人民警察职业岗位",
+      "kind": "target",
+      "description": "在符合人民警察录用、任用及戒毒场所法律管理规则后依法履行警务职责。",
+      "source_ids": [
+        "jiangsu_2027",
+        "police_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "open_exam",
+      "to": "qualification",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「戒毒系统人民警察公开招录」转向「资格审查与专项体能健康测评」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "jiangsu_2027"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "formal_police",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「资格审查与专项体能健康测评」转向「取得正式司法行政人民警察身份」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "formal_police",
+      "to": "entry_training",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「取得正式司法行政人民警察身份」转向「岗位入警教育与规范训练」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "entry_training",
+      "to": "detox_duty",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「岗位入警教育与规范训练」转向「强制隔离戒毒场所执法勤务」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "detox_law"
+      ]
+    },
+    {
+      "from": "detox_duty",
+      "to": "management",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「强制隔离戒毒场所执法勤务」转向「业务骨干与警务管理」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "management",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「业务骨干与警务管理」转向「正式戒毒人民警察职业岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "jiangsu_2027",
+        "police_law"
+      ]
+    },
+    {
+      "from": "police_transfer",
+      "to": "qualification",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「符合规定的正式警察交流转任」转向「资格审查与专项体能健康测评」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "jiangsu_2027"
+      ]
+    },
+    {
+      "from": "formal_police",
+      "to": "detox_duty",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「取得正式司法行政人民警察身份」转向「强制隔离戒毒场所执法勤务」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "detox_law"
+      ]
+    },
+    {
+      "from": "detox_duty",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「强制隔离戒毒场所执法勤务」转向「正式戒毒人民警察职业岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "jiangsu_2027",
+        "police_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "recruit_path",
+      "title": "省级司法行政警察招录路线",
+      "description": "经适用省级招录、专项测评与任职程序进入戒毒系统岗位，工作后接受规范培训和业务考核。",
+      "node_ids": [
+        "open_exam",
+        "qualification",
+        "formal_police",
+        "entry_training",
+        "detox_duty",
+        "management",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer_path",
+      "title": "符合条件的正式民警交流方向",
+      "description": "已有合法人民警察身份且组织安排允许时，需核对戒毒单位岗位资格再转任。",
+      "node_ids": [
+        "police_transfer",
+        "qualification",
+        "formal_police",
+        "detox_duty",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "江苏省2027年度司法行政系统公务员（人民警察）简章要求戒毒系统岗位满足人民警察专项政治、年龄、专业、身心等条件；属于江苏2027年度地方示例。",
+    "江苏省该轮报名期为2026年11月3日至9日，现已结束；未来报考应按下一轮公告和具体职位表办理。",
+    "司法行政机关强制隔离戒毒单位的警察与监狱人民警察、法院司法警察机构有所不同；警衔、警员职级和领导职务独立管理。"
+  ],
+  "caveats": [
+    "关于强制隔离戒毒法律制度的存续与适用须持续核对最新国家立法和地方规定，不推定所有地区均有同一岗位编制。",
+    "基层辅助民警或事业编聘用身份不自动变成正式人民警察。",
+    "不提供安全部署、战术处置、内部警力配置等非公开执法细节。"
+  ],
+  "sources": [
+    {
+      "id": "jiangsu_2027",
+      "title": "江苏省2027年度司法行政系统公务员（人民警察）简章",
+      "publisher": "江苏省人力资源和社会保障厅",
+      "url": "https://jshrss.jiangsu.gov.cn/art/2026/10/30/art_93733_11852171.html",
+      "published": "2026-10-30"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法",
+      "publisher": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "1995-02-28"
+    },
+    {
+      "id": "detox_law",
+      "title": "戒毒条例（2018年修订）",
+      "publisher": "中国政府网",
+      "url": "https://www.gov.cn/zhengce/content/2018-09/20/content_5324047.htm",
+      "published": "2018-09-18"
+    }
+  ]
+}

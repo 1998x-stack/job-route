@@ -1,0 +1,31 @@
+flowchart TB
+    %% 司法行政强制隔离戒毒警察 — 2026-11-11
+    n_open_exam["戒毒系统人民警察公开招录"]
+    n_police_transfer["符合规定的正式警察交流转任"]
+    n_qualification["资格审查与专项体能健康测评"]
+    n_formal_police["取得正式司法行政人民警察身份"]
+    n_entry_training["岗位入警教育与规范训练"]
+    n_detox_duty["强制隔离戒毒场所执法勤务"]
+    n_management["业务骨干与警务管理"]
+    n_target["正式戒毒人民警察职业岗位"]
+    n_open_exam -.->|"资格与程序"| n_qualification
+    n_qualification -.->|"资格与程序"| n_formal_police
+    n_formal_police -.->|"岗位发展"| n_entry_training
+    n_entry_training -.->|"岗位发展"| n_detox_duty
+    n_detox_duty -.->|"岗位发展"| n_management
+    n_management -.->|"符合条件发展"| n_target
+    n_police_transfer -.->|"资格与程序"| n_qualification
+    n_formal_police -.->|"岗位发展"| n_detox_duty
+    n_detox_duty -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_open_exam entry
+    class n_police_transfer entry
+    class n_qualification milestone
+    class n_formal_police milestone
+    class n_entry_training role
+    class n_detox_duty role
+    class n_management role
+    class n_target target

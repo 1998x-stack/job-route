@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "id": "military-pilot",
+  "title": "军队飞行员",
+  "subtitle": "空军招飞、飞行学员培养和部队飞行岗位任用",
+  "category": "military",
+  "jurisdiction": "中国大陆；以2026年度空军招飞华东地区公告及2026军校政策为实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "军队飞行员是军事飞行岗位方向而非民航飞行员资格；2026年度空军招飞覆盖高中毕业生及符合条件的军校应届青年学员，经历初选、复选、定选与培养，但录取或毕业不保证固定机型或具体部队岗位。",
+  "target": "target",
+  "entry_points": [
+    "high_school",
+    "cadet"
+  ],
+  "nodes": [
+    {
+      "id": "high_school",
+      "label": "普通高中毕业生招飞",
+      "kind": "entry",
+      "description": "按所在地当年空军招飞公告报名，核查年龄、选考科目、政治条件与飞行身体心理条件。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "id": "cadet",
+      "label": "军校应届本科青年学员招飞",
+      "kind": "entry",
+      "description": "2026年度东部空军招飞另列符合专业和年龄等要求的军队院校应届青年学员。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "id": "initial",
+      "label": "初选与复选",
+      "kind": "milestone",
+      "description": "接受分阶段招飞检测及综合筛查，具体测试和时间以年度区域招飞安排为准。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "id": "final",
+      "label": "定选与择优录取",
+      "kind": "milestone",
+      "description": "飞行学员通常需参加定选，综合高考或有关学员条件以及招飞选拔结果。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "id": "flight_study",
+      "label": "航空理论与飞行学员培养",
+      "kind": "role",
+      "description": "进入相应培养体系接受航空理论、军政素质和训练课程；不预设录取者均完成全部飞行训练。",
+      "source_ids": [
+        "military_college"
+      ]
+    },
+    {
+      "id": "flying_duty",
+      "label": "军队飞行岗位任用",
+      "kind": "role",
+      "description": "在满足后续培养、考核与组织分配条件后从事有关部队飞行岗位工作。",
+      "source_ids": []
+    },
+    {
+      "id": "growth",
+      "label": "飞行能力与任职发展",
+      "kind": "role",
+      "description": "服役期间依培训、岗位资格、飞行经验和组织选拔参与后续专业或管理任职。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "军队飞行员职业方向",
+      "kind": "target",
+      "description": "完成适用培养与任用程序后依法在军队飞行岗位发展，军衔、飞行等级和岗位职务分别管理。",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "high_school",
+      "to": "initial",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「普通高中毕业生招飞」转向「初选与复选」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "from": "initial",
+      "to": "final",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「初选与复选」转向「定选与择优录取」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "from": "final",
+      "to": "flight_study",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「定选与择优录取」转向「航空理论与飞行学员培养」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "military_college"
+      ]
+    },
+    {
+      "from": "flight_study",
+      "to": "flying_duty",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「航空理论与飞行学员培养」转向「军队飞行岗位任用」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "flying_duty",
+      "to": "growth",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「军队飞行岗位任用」转向「飞行能力与任职发展」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "growth",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「飞行能力与任职发展」转向「军队飞行员职业方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "cadet",
+      "to": "initial",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「军校应届本科青年学员招飞」转向「初选与复选」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "airforce_2026"
+      ]
+    },
+    {
+      "from": "flying_duty",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「军队飞行岗位任用」转向「军队飞行员职业方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "school_path",
+      "title": "高中毕业生招飞路线",
+      "description": "从符合地区条件的高中生报名，到招飞定选、学员培养及军队飞行岗位的条件性发展。",
+      "node_ids": [
+        "high_school",
+        "initial",
+        "final",
+        "flight_study",
+        "flying_duty",
+        "growth",
+        "target"
+      ]
+    },
+    {
+      "id": "cadet_path",
+      "title": "军校青年学员选拔路线",
+      "description": "东部空军2026年招生公告中的另一法定公告人群，须按其专门条件审核后再培养或分配。",
+      "node_ids": [
+        "cadet",
+        "initial",
+        "final",
+        "flight_study",
+        "flying_duty",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年度东部空军招飞简章明示高中生、符合条件的军校应届本科青年学员两类选拔对象；该年度年龄、性别、科目条件不应推定为全国永久统一标准。",
+    "高中生一般经过初选、复选、定选及综合择优录取，招飞同时受到政治、身体、心理等专项条件约束。",
+    "军队院校军官培养与飞行岗位专业训练不是民航商业驾驶员执照训练，军衔与飞行等级不得合并建模。"
+  ],
+  "caveats": [
+    "2026年华东六省市招飞说明是地区和年度案例，2027及其他地区公告需另核。",
+    "飞行岗位涉及人员安全与非公开军事资料，本报告不收集战备部署、飞行战术、装备参数或敏感编制。",
+    "未被定选录取、培训不合格或未获得相应岗位任用的人员不得视为已成为军队飞行员。"
+  ],
+  "sources": [
+    {
+      "id": "airforce_2026",
+      "title": "2026年度空军招收飞行学员简章（华东五省一市）",
+      "publisher": "教育部阳光高考平台／东部空军招飞",
+      "url": "https://gaokao.chsi.com.cn/gkxx/kjzf/202509/20250905/2293401119.html",
+      "published": "2025-09-05"
+    },
+    {
+      "id": "military_college",
+      "title": "2026年军校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "published": "2026-06-23"
+    }
+  ]
+}

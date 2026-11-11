@@ -1,0 +1,30 @@
+flowchart TB
+    %% 乡镇党委组织委员 — 2026-11-11
+    n_party_cadre["乡镇党务和基层机关工作"]
+    n_cross_cadre["符合条件的干部交流"]
+    n_party_member["党员身份与履职资格核验"]
+    n_nomination["党委委员候选人推荐与审查"]
+    n_committee_election["乡镇党委委员依法选举产生"]
+    n_org_assignment["党委组织委员职责分工"]
+    n_professional["基层组织工作专业积累"]
+    n_target["乡镇党委组织委员岗位"]
+    n_party_cadre -.->|"资格与程序"| n_party_member
+    n_party_member -.->|"资格与程序"| n_nomination
+    n_nomination -.->|"资格与程序"| n_committee_election
+    n_committee_election -.->|"岗位发展"| n_org_assignment
+    n_org_assignment -.->|"岗位发展"| n_professional
+    n_professional -.->|"符合条件发展"| n_target
+    n_cross_cadre -.->|"资格与程序"| n_party_member
+    n_org_assignment -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_party_cadre entry
+    class n_cross_cadre entry
+    class n_party_member milestone
+    class n_nomination milestone
+    class n_committee_election milestone
+    class n_org_assignment role
+    class n_professional role
+    class n_target target

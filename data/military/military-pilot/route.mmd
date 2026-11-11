@@ -1,0 +1,30 @@
+flowchart TB
+    %% 军队飞行员 — 2026-11-11
+    n_high_school["普通高中毕业生招飞"]
+    n_cadet["军校应届本科青年学员招飞"]
+    n_initial["初选与复选"]
+    n_final["定选与择优录取"]
+    n_flight_study["航空理论与飞行学员培养"]
+    n_flying_duty["军队飞行岗位任用"]
+    n_growth["飞行能力与任职发展"]
+    n_target["军队飞行员职业方向"]
+    n_high_school -.->|"资格与程序"| n_initial
+    n_initial -.->|"资格与程序"| n_final
+    n_final -.->|"岗位发展"| n_flight_study
+    n_flight_study -.->|"岗位发展"| n_flying_duty
+    n_flying_duty -.->|"岗位发展"| n_growth
+    n_growth -.->|"符合条件发展"| n_target
+    n_cadet -.->|"资格与程序"| n_initial
+    n_flying_duty -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_high_school entry
+    class n_cadet entry
+    class n_initial milestone
+    class n_final milestone
+    class n_flight_study role
+    class n_flying_duty role
+    class n_growth role
+    class n_target target
