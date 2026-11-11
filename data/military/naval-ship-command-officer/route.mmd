@@ -1,0 +1,33 @@
+flowchart TB
+    %% 海军舰艇指挥军官 — 2026-11-11
+    n_school_entry["普通高中生报考军队院校"]
+    n_service_entry["符合条件的现役士兵考学"]
+    n_vetting["政治、身体与专业适配审查"]
+    n_academy["军队院校本科及军政素质培养"]
+    n_commission["符合条件的毕业及军官任职"]
+    n_junior["舰艇相关初级指挥与业务岗位"]
+    n_professional["舰艇指挥专业能力与组织管理积累"]
+    n_command["舰艇指挥或相关管理岗位选任"]
+    n_target["海军舰艇指挥军官职业方向"]
+    n_school_entry -.->|"资格或程序"| n_vetting
+    n_vetting -.->|"资格或程序"| n_academy
+    n_academy -.->|"资格或程序"| n_commission
+    n_commission -.->|"专业经历"| n_junior
+    n_junior -.->|"专业经历"| n_professional
+    n_professional -.->|"专业经历"| n_command
+    n_command -.->|"依法任职与发展"| n_target
+    n_service_entry -.->|"资格或程序"| n_vetting
+    n_professional -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_school_entry entry
+    class n_service_entry entry
+    class n_vetting milestone
+    class n_academy milestone
+    class n_commission milestone
+    class n_junior role
+    class n_professional role
+    class n_command role
+    class n_target target

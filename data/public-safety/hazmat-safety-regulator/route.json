@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0.0",
+  "id": "hazmat-safety-regulator",
+  "title": "危险化学品安全监管人员",
+  "subtitle": "2026年新危化安全法下的应急管理部门执法岗位与企业合规的界限",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆应急管理等负有危险化学品安全监督管理职责的政府机关；以2026年法为核心",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "《中华人民共和国危险化学品安全法》2025年12月27日通过并自2026年5月1日起施行，明确应急管理部门等按职责监管。危险化学品安全监管人员若承担行政监督检查，需要合法机关岗位、执法资格和至少两名执法人员现场检查并出示证件；注册安全工程师或企业EHS经理不是自动取得政府行政执法权的凭证。",
+  "target": "target",
+  "entry_points": [
+    "civil_exam",
+    "cadre_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil_exam",
+      "label": "应急管理系统公职职位招录",
+      "kind": "entry",
+      "description": "按照国家或地方公务员、行政执法职位公告，通过相应资格审查及录用程序进入政府应急管理岗位。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "cadre_transfer",
+      "label": "机关内符合条件的安全监管干部交流",
+      "kind": "entry",
+      "description": "已有合法行政机关身份者按照干部管理与职位要求交流至危化安全监管职责岗位。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "official",
+      "label": "取得政府岗位和相应执法资格",
+      "kind": "milestone",
+      "description": "核验机关法定职责、个人行政执法证和执法授权，不能仅凭企业安全证书入场执法。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "id": "law",
+      "label": "新危化安全法及风险分类理解",
+      "kind": "milestone",
+      "description": "掌握2026年新法关于生产、储存、经营、使用和运输等部门分工、许可与事故应急的法定框架。",
+      "source_ids": [
+        "hazmat_law",
+        "inspection_list"
+      ]
+    },
+    {
+      "id": "permit",
+      "label": "危险化学品许可与合规审查业务",
+      "kind": "role",
+      "description": "协助依法进行危险化学品安全生产许可、经营许可或建设项目安全条件审查等工作。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "id": "inspection",
+      "label": "两人执法及证件出示的监督检查",
+      "kind": "role",
+      "description": "依法在权限内进行监督检查，监督检查人员不得少于二人且应出示执法证件；坚持程序记录。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "id": "remediation",
+      "label": "违法风险处置及整改跟踪",
+      "kind": "role",
+      "description": "按法定程序发现问题、出具检查文书、推进安全隐患整改，涉及处罚须按权限及证据要求。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "id": "senior",
+      "label": "专项监管专业骨干或行政管理",
+      "kind": "role",
+      "description": "通过依法行政、风险监管和跨部门协调实践发展，科室领导任用与个人职级另行评估。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "危化品安全政府监管岗位",
+      "kind": "target",
+      "description": "在有法定职责的政府机关和有效执法资格下从事危化品监督管理，不与企业安全生产主体责任混淆。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil_exam",
+      "to": "official",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「应急管理系统公职职位招录」到「取得政府岗位和相应执法资格」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "official",
+      "to": "law",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「取得政府岗位和相应执法资格」到「新危化安全法及风险分类理解」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law",
+        "inspection_list"
+      ]
+    },
+    {
+      "from": "law",
+      "to": "permit",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「新危化安全法及风险分类理解」到「危险化学品许可与合规审查业务」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "permit",
+      "to": "inspection",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「危险化学品许可与合规审查业务」到「两人执法及证件出示的监督检查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "inspection",
+      "to": "remediation",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「两人执法及证件出示的监督检查」到「违法风险处置及整改跟踪」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "remediation",
+      "to": "senior",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「违法风险处置及整改跟踪」到「专项监管专业骨干或行政管理」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "senior",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「专项监管专业骨干或行政管理」到「危化品安全政府监管岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "cadre_transfer",
+      "to": "official",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「机关内符合条件的安全监管干部交流」到「取得政府岗位和相应执法资格」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "law",
+      "to": "inspection",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「新危化安全法及风险分类理解」到「两人执法及证件出示的监督检查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    },
+    {
+      "from": "remediation",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「违法风险处置及整改跟踪」到「危化品安全政府监管岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "hazmat_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "recruit",
+      "title": "政府应急管理机关录用路线",
+      "description": "经公务员或执法职位招录、执法资格核验后从事危化许可和监督检查，积累监管专业经验。",
+      "node_ids": [
+        "civil_exam",
+        "official",
+        "law",
+        "permit",
+        "inspection",
+        "remediation",
+        "senior",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "机关干部专项监管转任路线",
+      "description": "已有机关干部依岗位条件转入危化监管职责，依法取得执法资格后参与执法与风险整改。",
+      "node_ids": [
+        "cadre_transfer",
+        "official",
+        "law",
+        "inspection",
+        "remediation",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《危险化学品安全法》自2026年5月1日施行，第七条区分应急管理、公安、生态环境、交通运输等部门职责，第八条对执法检查人数和出示证件作出规定。",
+    "应急管理部2026年发布涉企行政检查清单，将新危化安全法和安全生产法并列作为危化生产经营监管依据。",
+    "政府行政执法岗位与企业注册安全工程师、危化企业专职安全生产管理人员制度不同。",
+    "企业安全责任和监管行政权限独立；不能通过培训证书从企业安全工程师直接取得国家行政检查权。"
+  ],
+  "caveats": [
+    "与2026年新法不符的旧法规条款和部门名称不能继续未经核实地作为现行适用依据。",
+    "对生产储存、运输、废弃处置等类别不同的监管事项，主管部门不尽相同，不能宣称应急部门独管所有危化业务。",
+    "岗位研究只讨论法定人员资格、文书及安全程序，不提供可被滥用的危险化学品制造、规避监管或仓储操作指令。"
+  ],
+  "sources": [
+    {
+      "id": "hazmat_law",
+      "title": "中华人民共和国危险化学品安全法（2025年通过，2026年实施）",
+      "publisher": "国家市场监督管理总局（转载全国人大法律）",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2026/art_4e160e51cc134696a183a5f531f097e5.html",
+      "published": "2025-12-27"
+    },
+    {
+      "id": "inspection_list",
+      "title": "应急管理部涉企行政检查信息清单（2026年）",
+      "publisher": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/fw/xzzfgs/202608/t20260810_680062.shtml",
+      "published": "2026-08-10"
+    },
+    {
+      "id": "civil_law",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}
