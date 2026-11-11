@@ -1,0 +1,33 @@
+flowchart TB
+    %% FPGA逻辑设计工程师 — 2026-11-11
+    n_electronic["数字电路与电子信息专业培养"]
+    n_embedded["嵌入式与软硬件协同实践"]
+    n_fundamentals["HDL与同步数字设计基础"]
+    n_rtl["RTL逻辑架构与编码"]
+    n_simulation["功能仿真和验证"]
+    n_timing["综合实现与时序收敛"]
+    n_board["板级调试与系统集成"]
+    n_module_lead["复杂模块及架构负责人方向"]
+    n_target["FPGA逻辑设计工程师岗位"]
+    n_electronic -.->|"资格与程序"| n_fundamentals
+    n_fundamentals -.->|"岗位发展"| n_rtl
+    n_rtl -.->|"岗位发展"| n_simulation
+    n_simulation -.->|"岗位发展"| n_timing
+    n_timing -.->|"岗位发展"| n_board
+    n_board -.->|"符合条件发展"| n_target
+    n_embedded -.->|"资格与程序"| n_fundamentals
+    n_simulation -.->|"岗位发展"| n_module_lead
+    n_module_lead -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_electronic entry
+    class n_embedded entry
+    class n_fundamentals milestone
+    class n_rtl role
+    class n_simulation role
+    class n_timing role
+    class n_board role
+    class n_module_lead role
+    class n_target target

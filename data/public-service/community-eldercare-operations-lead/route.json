@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "id": "community-eldercare-operations-lead",
+  "title": "社区养老服务运营主管",
+  "subtitle": "社区养老服务项目、服务质量管理与运营团队发展",
+  "category": "public-service",
+  "jurisdiction": "中国大陆·居家社区养老服务运营与相关机构；2026年养老服务师新职业资格另行区分",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "社区养老服务运营主管负责日常运营、服务人员安排、质量控制、社区资源协同及风险管理，是机构聘用或项目任命岗位。2026年设置的养老服务师属于水平评价类职业资格，不能推导为担任社区运营主管的统一法定前置资格。",
+  "target": "target",
+  "entry_points": [
+    "care",
+    "operations"
+  ],
+  "nodes": [
+    {
+      "id": "care",
+      "label": "养老照护与社区服务经历",
+      "kind": "entry",
+      "description": "通过养老护理、社区服务或老年社会工作积累实际照护与服务协调能力。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "id": "operations",
+      "label": "项目运营与医疗社工管理经历",
+      "kind": "entry",
+      "description": "从机构项目运营、质量管理或相关医养协作背景转岗进入社区养老运营管理。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "id": "safeguards",
+      "label": "老年服务需求评估与权益保护",
+      "kind": "milestone",
+      "description": "理解老年人能力与需求评估、隐私保护、服务风险及转介资源。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "id": "scheduling",
+      "label": "排班与日常服务运营",
+      "kind": "role",
+      "description": "安排人员、场地、服务时间和照护质量检查，持续保证服务安全与投诉处理。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "id": "coordination",
+      "label": "医养社资源与社区协作",
+      "kind": "role",
+      "description": "协调家庭、社区组织、医疗和照护资源，在各方授权范围内开展服务。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "服务质量、财务预算和风险管理",
+      "kind": "role",
+      "description": "维护服务台账、应急响应与合规记录，对投诉、不良事件和人员培训进行复盘。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "养老服务师水平评价资格（可选发展方向）",
+      "kind": "role",
+      "description": "符合规定者可按2026年养老服务师职业资格制度参加评价；此资格不等同于机构领导职位。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "id": "leader",
+      "label": "养老服务运营团队管理",
+      "kind": "role",
+      "description": "按运营机构授权承担项目绩效、服务质量与团队管理，职位不由职业资格自动任命。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "社区养老服务运营主管岗位",
+      "kind": "target",
+      "description": "经机构或项目聘任统筹居家社区养老服务运营，依法保护服务对象权益并完成质量管理职责。",
+      "source_ids": [
+        "care_rule"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "care",
+      "to": "safeguards",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「养老照护与社区服务经历」到「老年服务需求评估与权益保护」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "from": "safeguards",
+      "to": "scheduling",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「老年服务需求评估与权益保护」到「排班与日常服务运营」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "from": "scheduling",
+      "to": "quality",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「排班与日常服务运营」到「服务质量、财务预算和风险管理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "from": "quality",
+      "to": "leader",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「服务质量、财务预算和风险管理」到「养老服务运营团队管理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "leader",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「养老服务运营团队管理」到「社区养老服务运营主管岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "care_rule"
+      ]
+    },
+    {
+      "from": "operations",
+      "to": "safeguards",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「项目运营与医疗社工管理经历」到「老年服务需求评估与权益保护」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "from": "safeguards",
+      "to": "coordination",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「老年服务需求评估与权益保护」到「医养社资源与社区协作」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "from": "coordination",
+      "to": "qualification",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「医养社资源与社区协作」到「养老服务师水平评价资格（可选发展方向）」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "qual_2026"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "leader",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「养老服务师水平评价资格（可选发展方向）」到「养老服务运营团队管理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "care_path",
+      "title": "社区照护与服务管理路线",
+      "description": "从养老照护实践积累需求评估、排班服务和质量治理能力，再经机构聘任负责运营。",
+      "node_ids": [
+        "care",
+        "safeguards",
+        "scheduling",
+        "quality",
+        "leader",
+        "target"
+      ]
+    },
+    {
+      "id": "operations_path",
+      "title": "项目运营与专业评价并行路线",
+      "description": "已有项目运营经验者学习专业需求评估，必要时取得水平评价证书，但独立经过机构岗位选聘。",
+      "node_ids": [
+        "operations",
+        "safeguards",
+        "coordination",
+        "qualification",
+        "leader",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "民政部与人社部2026年印发《养老服务师职业资格制度暂行规定》，建立初级、中级、高级三个级别的水平评价职业资格，并非强制所有社区运营主管持证方可上岗。",
+    "民政部2026年11月发布会确认初中级统一考试制度推进实施，实际考试安排和报名门槛应以官方当期公告为准。",
+    "《养老机构管理办法》对依法属于养老机构的运营管理、服务保障、安全和监管作出规定；仅提供社区服务而不符合该机构定义者，不能机械套用全部条款。"
+  ],
+  "caveats": [
+    "养老服务师职业资格（2026新制度）、养老护理员职业技能等级和社区机构运营主管是三种不同维度。",
+    "并非所有社区养老站点都属于《养老机构管理办法》所称养老机构，必须以运营方式及登记属性确定适用规则。",
+    "不得通过社区老人个人健康信息进行不当分析或公开敏感服务记录。"
+  ],
+  "sources": [
+    {
+      "id": "qual_2026",
+      "title": "养老服务师职业资格制度暂行规定（民发〔2026〕25号）",
+      "publisher": "商务部法规库（转载民政部、人社部）",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=106190",
+      "published": "2026-06-04"
+    },
+    {
+      "id": "care_rule",
+      "title": "养老机构管理办法（民政部令第66号）",
+      "publisher": "陕西安康市汉滨区政府网站（转载）",
+      "url": "https://www.ahq.gov.cn/jczwgk/jczwgk_qbj/jczwgk_ylfw/jczwgk_ylfw_ssqk/202410/t20241031_2443177.html",
+      "published": "2020-09-01"
+    },
+    {
+      "id": "press_2026",
+      "title": "养老服务师职业资格制度建设新闻发布会",
+      "publisher": "民政部（官方发布会文字实录）",
+      "url": "https://www.mcagovcn.com/n152/n170/c4049/content.html",
+      "published": "2026-11-05"
+    }
+  ]
+}

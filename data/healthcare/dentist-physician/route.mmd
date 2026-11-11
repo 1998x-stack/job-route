@@ -1,0 +1,33 @@
+flowchart TB
+    %% 口腔执业医师 — 2026-11-11
+    n_degree["口腔医学专业学历路径"]
+    n_assistant["依法取得口腔执业助理医师资格"]
+    n_check["口腔类别医师报考资格审核"]
+    n_exam["医师资格考试"]
+    n_qual["取得口腔类别执业医师资格"]
+    n_register["依法进行医师执业注册"]
+    n_dentistry["口腔临床规范诊疗"]
+    n_specialty["口腔专科、教研与技术骨干方向"]
+    n_target["依法注册的口腔执业医师"]
+    n_degree -.->|"资格与程序"| n_check
+    n_check -.->|"资格与程序"| n_exam
+    n_exam -.->|"资格与程序"| n_qual
+    n_qual -.->|"资格与程序"| n_register
+    n_register -.->|"岗位发展"| n_dentistry
+    n_dentistry -.->|"岗位发展"| n_specialty
+    n_specialty -.->|"符合条件发展"| n_target
+    n_assistant -.->|"资格与程序"| n_check
+    n_dentistry -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_degree entry
+    class n_assistant entry
+    class n_check milestone
+    class n_exam milestone
+    class n_qual milestone
+    class n_register milestone
+    class n_dentistry role
+    class n_specialty role
+    class n_target target

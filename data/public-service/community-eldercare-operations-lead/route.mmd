@@ -1,0 +1,33 @@
+flowchart TB
+    %% 社区养老服务运营主管 — 2026-11-11
+    n_care["养老照护与社区服务经历"]
+    n_operations["项目运营与医疗社工管理经历"]
+    n_safeguards["老年服务需求评估与权益保护"]
+    n_scheduling["排班与日常服务运营"]
+    n_coordination["医养社资源与社区协作"]
+    n_quality["服务质量、财务预算和风险管理"]
+    n_qualification["养老服务师水平评价资格（可选发展方向）"]
+    n_leader["养老服务运营团队管理"]
+    n_target["社区养老服务运营主管岗位"]
+    n_care -.->|"资格与程序"| n_safeguards
+    n_safeguards -.->|"岗位发展"| n_scheduling
+    n_scheduling -.->|"岗位发展"| n_quality
+    n_quality -.->|"岗位发展"| n_leader
+    n_leader -.->|"符合条件发展"| n_target
+    n_operations -.->|"资格与程序"| n_safeguards
+    n_safeguards -.->|"岗位发展"| n_coordination
+    n_coordination -.->|"岗位发展"| n_qualification
+    n_qualification -.->|"岗位发展"| n_leader
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_care entry
+    class n_operations entry
+    class n_safeguards milestone
+    class n_scheduling role
+    class n_coordination role
+    class n_quality role
+    class n_qualification role
+    class n_leader role
+    class n_target target

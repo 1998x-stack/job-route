@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "id": "dentist-physician",
+  "title": "口腔执业医师",
+  "subtitle": "口腔医学教育、医师资格考试及执业注册与临床成长",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆·口腔类别医师资格和医疗机构诊疗；以2026考试政策为准",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "口腔执业医师属于法定医师执业类别，通常经符合报考条件的口腔医学教育和实践，通过相应资格考试并完成执业注册后依法开展口腔诊疗。资格证、执业证、医院岗位、专科职称是独立层次。",
+  "target": "target",
+  "entry_points": [
+    "degree",
+    "assistant"
+  ],
+  "nodes": [
+    {
+      "id": "degree",
+      "label": "口腔医学专业学历路径",
+      "kind": "entry",
+      "description": "完成符合法定报名资格的口腔医学教育与实践训练，是否符合报考条件由学制、学历和实际试用经历决定。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "assistant",
+      "label": "依法取得口腔执业助理医师资格",
+      "kind": "entry",
+      "description": "符合从执业助理医师晋级报名条件的人员，在满足实践年限和教育要求时可报考执业医师。",
+      "source_ids": [
+        "physician_law"
+      ]
+    },
+    {
+      "id": "check",
+      "label": "口腔类别医师报考资格审核",
+      "kind": "milestone",
+      "description": "核验学历专业、临床实践和考试报名条件，不能以口腔卫生技术岗位证明替代法定资格。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "exam",
+      "label": "医师资格考试",
+      "kind": "milestone",
+      "description": "按口腔类别进行实践技能及医学综合考试，考试形式和时间以国家当年公告为准。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "qual",
+      "label": "取得口腔类别执业医师资格",
+      "kind": "milestone",
+      "description": "考试合格依法取得执业医师资格，与取得医疗机构雇佣岗位不同。",
+      "source_ids": [
+        "physician_law"
+      ]
+    },
+    {
+      "id": "register",
+      "label": "依法进行医师执业注册",
+      "kind": "milestone",
+      "description": "按国家医师执业注册办法申请注册并取得执业证书；不能未注册开展医师执业。",
+      "source_ids": [
+        "registration"
+      ]
+    },
+    {
+      "id": "dentistry",
+      "label": "口腔临床规范诊疗",
+      "kind": "role",
+      "description": "在注册类别、范围和医疗机构资质许可范围内从事相应口腔诊疗，遵守医疗安全与感染防控要求。",
+      "source_ids": [
+        "registration"
+      ]
+    },
+    {
+      "id": "specialty",
+      "label": "口腔专科、教研与技术骨干方向",
+      "kind": "role",
+      "description": "通过继续教育、临床质量与专业研究发展能力，医院职称和科室领导岗位须独立评聘。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "依法注册的口腔执业医师",
+      "kind": "target",
+      "description": "满足口腔类别法定资格与注册条件，合法提供相应口腔医疗服务。",
+      "source_ids": [
+        "physician_law",
+        "registration"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "degree",
+      "to": "check",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「口腔医学专业学历路径」到「口腔类别医师报考资格审核」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "check",
+      "to": "exam",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「口腔类别医师报考资格审核」到「医师资格考试」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "exam",
+      "to": "qual",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「医师资格考试」到「取得口腔类别执业医师资格」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "physician_law"
+      ]
+    },
+    {
+      "from": "qual",
+      "to": "register",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「取得口腔类别执业医师资格」到「依法进行医师执业注册」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "registration"
+      ]
+    },
+    {
+      "from": "register",
+      "to": "dentistry",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「依法进行医师执业注册」到「口腔临床规范诊疗」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "registration"
+      ]
+    },
+    {
+      "from": "dentistry",
+      "to": "specialty",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「口腔临床规范诊疗」到「口腔专科、教研与技术骨干方向」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "specialty",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「口腔专科、教研与技术骨干方向」到「依法注册的口腔执业医师」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "physician_law",
+        "registration"
+      ]
+    },
+    {
+      "from": "assistant",
+      "to": "check",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「依法取得口腔执业助理医师资格」到「口腔类别医师报考资格审核」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "dentistry",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「口腔临床规范诊疗」到「依法注册的口腔执业医师」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "physician_law",
+        "registration"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "degree",
+      "title": "口腔医学教育与考试路线",
+      "description": "口腔医学学历和实践满足条件后参加医师资格考试，通过并注册后开展诊疗。",
+      "node_ids": [
+        "degree",
+        "check",
+        "exam",
+        "qual",
+        "register",
+        "dentistry",
+        "specialty",
+        "target"
+      ]
+    },
+    {
+      "id": "assistant_path",
+      "title": "符合条件的助理医师晋级路线",
+      "description": "持依法取得的口腔助理医师资格者，满足进一步报考条件后取得执业医师资格并注册。",
+      "node_ids": [
+        "assistant",
+        "check",
+        "exam",
+        "qual",
+        "register",
+        "dentistry",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年医师资格考试公告专设口腔类别，并要求网上报名、资格审核与实践技能、医学综合考核。",
+    "《中华人民共和国医师法》规定从事医师执业活动应依法取得资格并注册；口腔类别与临床、中医、公共卫生四个考试类别互不自动替代。",
+    "2026年修订《医师执业注册管理办法》明确未经注册取得执业证书不得开展医师执业活动。"
+  ],
+  "caveats": [
+    "口腔技师、牙科技工与口腔执业医师属于不同岗位和权限，不能将制作义齿或护理工作等同于独立诊疗资格。",
+    "口腔助理医师与执业医师资格不同，报名年限和学历条件必须按规定逐项审核。",
+    "医院的主治医师、副主任医师、科主任或院长等专业和管理岗位不因医师资格自动获得。"
+  ],
+  "sources": [
+    {
+      "id": "exam_2026",
+      "title": "国家卫生健康委员会2026年医师资格考试公告",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/yzygj/c100067/202601/134520df641b4e99b8f8db7c64abc7f3.shtml",
+      "published": "2026-01-26"
+    },
+    {
+      "id": "registration",
+      "title": "医师执业注册管理办法（2026修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202608/t20260819_538650.html",
+      "published": "2026-06-05"
+    },
+    {
+      "id": "physician_law",
+      "title": "中华人民共和国医师法",
+      "publisher": "北京市卫生健康委员会",
+      "url": "https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230407_2992842.html",
+      "published": "2021-08-20"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+flowchart TB
+    %% 学科竞赛指导教师 — 2026-11-11
+    n_teacher["正式学科教师任教岗位"]
+    n_subject_expert["学科科研与竞赛背景人才"]
+    n_eligibility["教师资格和岗位招聘核验"]
+    n_course["学科课程与竞赛辅导设计"]
+    n_compliance["获批赛事清单和教育合规审查"]
+    n_coach["学科竞赛指导实践"]
+    n_research["学科教研与教师协作"]
+    n_target["学校学科竞赛指导教师岗位"]
+    n_teacher -.->|"资格与程序"| n_eligibility
+    n_eligibility -.->|"岗位发展"| n_course
+    n_course -.->|"资格与程序"| n_compliance
+    n_compliance -.->|"岗位发展"| n_coach
+    n_coach -.->|"岗位发展"| n_research
+    n_research -.->|"符合条件发展"| n_target
+    n_subject_expert -.->|"资格与程序"| n_eligibility
+    n_coach -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_teacher entry
+    class n_subject_expert entry
+    class n_eligibility milestone
+    class n_course role
+    class n_compliance milestone
+    class n_coach role
+    class n_research role
+    class n_target target

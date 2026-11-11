@@ -1,0 +1,30 @@
+flowchart TB
+    %% 供应链规划经理 — 2026-11-11
+    n_supply["供应链运营与物流业务岗位"]
+    n_data["数据分析、工业工程或财务计划背景"]
+    n_demand["需求预测与预测误差分析"]
+    n_sop["产销协同与供需平衡"]
+    n_inventory["库存健康与供应链风险管理"]
+    n_planning["计划系统与主数据治理"]
+    n_management["规划团队与绩效协同"]
+    n_target["供应链规划经理岗位"]
+    n_supply -.->|"资格与程序"| n_demand
+    n_demand -.->|"岗位发展"| n_sop
+    n_sop -.->|"岗位发展"| n_inventory
+    n_inventory -.->|"岗位发展"| n_management
+    n_management -.->|"符合条件发展"| n_target
+    n_data -.->|"资格与程序"| n_demand
+    n_sop -.->|"岗位发展"| n_planning
+    n_planning -.->|"岗位发展"| n_management
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_supply entry
+    class n_data entry
+    class n_demand milestone
+    class n_sop role
+    class n_inventory role
+    class n_planning role
+    class n_management role
+    class n_target target
