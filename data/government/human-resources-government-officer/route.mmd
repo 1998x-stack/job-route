@@ -1,0 +1,30 @@
+flowchart TB
+    %% 人社部门公务员 — 2026-11-11
+    n_civil_exam["地方公务员考试录用"]
+    n_transfer["其他机关符合条件的公务员转任"]
+    n_onboard["人社行政业务与公务员身份核验"]
+    n_employment["就业促进与职业技能政策岗位"]
+    n_insurance["社会保险与劳动关系业务岗位"]
+    n_analysis["人社政策研究与治理实践"]
+    n_leadership["机关科室或综合管理岗位"]
+    n_target["人社部门正式公务员职业发展"]
+    n_civil_exam -.->|"资格与程序"| n_onboard
+    n_onboard -.->|"岗位发展"| n_employment
+    n_employment -.->|"岗位发展"| n_analysis
+    n_analysis -.->|"岗位发展"| n_leadership
+    n_leadership -.->|"符合条件发展"| n_target
+    n_transfer -.->|"资格与程序"| n_onboard
+    n_onboard -.->|"岗位发展"| n_insurance
+    n_insurance -.->|"岗位发展"| n_analysis
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil_exam entry
+    class n_transfer entry
+    class n_onboard milestone
+    class n_employment role
+    class n_insurance role
+    class n_analysis role
+    class n_leadership role
+    class n_target target

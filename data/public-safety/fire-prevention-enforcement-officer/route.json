@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "id": "fire-prevention-enforcement-officer",
+  "title": "消防监督执法人员",
+  "subtitle": "消防救援机构执法岗位、行政执法证件与规范监督检查",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆·消防救援机构实施消防监督检查的执法人员",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "消防监督检查的主体依法是消防救援机构，消防监督检查人员应在执法岗位工作并取得行政执法证件；政府专职消防员、消防技术服务企业和第三方评估机构不因服务合同取得法定监督执法权。",
+  "target": "target",
+  "entry_points": [
+    "cadre",
+    "public_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "cadre",
+      "label": "消防救援系统干部岗位",
+      "kind": "entry",
+      "description": "通过法定招聘、培养或管理任用渠道取得消防救援机构相关岗位身份，具体招录以正式公告核验。",
+      "source_ids": [
+        "fire_responsibility"
+      ]
+    },
+    {
+      "id": "public_transfer",
+      "label": "符合规定的行政执法岗位交流",
+      "kind": "entry",
+      "description": "已有机关或消防相关管理人员符合人员管理及岗位资格时，通过组织程序进入消防监督执法岗位。",
+      "source_ids": [
+        "fire_responsibility"
+      ]
+    },
+    {
+      "id": "institution",
+      "label": "消防救援机构岗位资格核验",
+      "kind": "milestone",
+      "description": "确认归属依法有权实施消防监督检查的机构，属于合法执法岗位而非外包第三方。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "id": "law_certificate",
+      "label": "取得行政执法证件",
+      "kind": "milestone",
+      "description": "国家消防救援局2025年通知明确检查人员必须取得行政执法证件且在消防执法岗位工作。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "id": "supervision",
+      "label": "依法开展消防监督检查",
+      "kind": "role",
+      "description": "按法律和权责清单对单位遵守消防法规的情况开展监督检查并出示证件。",
+      "source_ids": [
+        "fire_law",
+        "fire_check"
+      ]
+    },
+    {
+      "id": "rectification",
+      "label": "隐患整改和执法程序管理",
+      "kind": "role",
+      "description": "依法律职责形成检查记录、监督整改及行政执法程序并落实全过程记录等要求。",
+      "source_ids": [
+        "fire_responsibility"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "执法质量与专业能力发展",
+      "kind": "role",
+      "description": "在依法履职、执法审核与专业培训基础上增强工作能力，岗位领导任用不自动发生。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法消防监督执法岗位",
+      "kind": "target",
+      "description": "具备合法机构身份、行政执法证件及职责授权，依公开的权责清单开展消防监管执法。",
+      "source_ids": [
+        "fire_check"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "cadre",
+      "to": "institution",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「消防救援系统干部岗位」到「消防救援机构岗位资格核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "from": "institution",
+      "to": "law_certificate",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「消防救援机构岗位资格核验」到「取得行政执法证件」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "from": "law_certificate",
+      "to": "supervision",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「取得行政执法证件」到「依法开展消防监督检查」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_law",
+        "fire_check"
+      ]
+    },
+    {
+      "from": "supervision",
+      "to": "rectification",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「依法开展消防监督检查」到「隐患整改和执法程序管理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_responsibility"
+      ]
+    },
+    {
+      "from": "rectification",
+      "to": "quality",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「隐患整改和执法程序管理」到「执法质量与专业能力发展」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "quality",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「执法质量与专业能力发展」到「合法消防监督执法岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "from": "public_transfer",
+      "to": "institution",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「符合规定的行政执法岗位交流」到「消防救援机构岗位资格核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_check"
+      ]
+    },
+    {
+      "from": "rectification",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「隐患整改和执法程序管理」到「合法消防监督执法岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "fire_check"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "system",
+      "title": "消防系统干部成长方向",
+      "description": "经机构合法岗位安排与执法资格审查，再从监督检查和隐患整改工作积累专业经验。",
+      "node_ids": [
+        "cadre",
+        "institution",
+        "law_certificate",
+        "supervision",
+        "rectification",
+        "quality",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "合规行政执法人员交流方向",
+      "description": "符合干部交流与执法资格规定者通过组织程序取得执法岗位和执法证件，依法履职。",
+      "node_ids": [
+        "public_transfer",
+        "institution",
+        "law_certificate",
+        "supervision",
+        "rectification",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中华人民共和国消防法》第五十三条规定消防救援机构依法实施消防监督检查，检查人员应出示证件。",
+    "国家消防救援局2025年《关于严格规范消防监督检查的通知》明确消防救援机构是实施主体，检查人员必须取得行政执法证件并在消防执法岗位工作。",
+    "2025年《消防行政执法责任制规定》规范执法责任分工与过程管理，不能把技术检测外包公司当作法定执法主体。"
+  ],
+  "caveats": [
+    "政府专职消防员承担的救援或辅助岗位不当然具有监督检查行政执法权。",
+    "2025年消防监管制度有改革调整，实际机关和人员身份仍需按当地消防救援机构与执法证件有效性核实。",
+    "本研究仅公开执法制度和人才路径，不涉及检查战术、警力部署或内部敏感运行。"
+  ],
+  "sources": [
+    {
+      "id": "fire_check",
+      "title": "国家消防救援局关于严格规范消防监督检查的通知（2025）",
+      "publisher": "国家消防救援局",
+      "url": "https://www.119.gov.cn/zfxxgk/fdzdgknr/zcfg/2025/50085.shtml",
+      "published": "2025-06-09"
+    },
+    {
+      "id": "fire_law",
+      "title": "中华人民共和国消防法",
+      "publisher": "国家市场监督管理总局（转载法律）",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e9e34f0731c249a891ea9c925e17f237.html",
+      "published": "2021-04-29"
+    },
+    {
+      "id": "fire_responsibility",
+      "title": "消防行政执法责任制规定（2025）",
+      "publisher": "国家消防救援局",
+      "url": "https://www.119.gov.cn/site1/zfxxgk/fdzdgknr/zcfg/2025/47833.shtml",
+      "published": "2025-01-12"
+    }
+  ]
+}

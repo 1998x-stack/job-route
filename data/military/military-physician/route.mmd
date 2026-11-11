@@ -1,0 +1,30 @@
+flowchart TB
+    %% 军队医疗岗位军医 — 2026-11-11
+    n_medical_academy["军队院校医学培养"]
+    n_direct_officer["军队医院直接选拔招录军官"]
+    n_selection["医学与军队岗位资格审查"]
+    n_qualification["医师资格考试与取得资格"]
+    n_registration["按军地适用规则办理医师执业注册"]
+    n_clinical["军队医疗岗位临床服务"]
+    n_development["临床专科与科研教学发展"]
+    n_target["军队医疗岗位合法执业军医"]
+    n_medical_academy -.->|"资格与程序"| n_selection
+    n_selection -.->|"资格与程序"| n_qualification
+    n_qualification -.->|"资格与程序"| n_registration
+    n_registration -.->|"岗位发展"| n_clinical
+    n_clinical -.->|"岗位发展"| n_development
+    n_development -.->|"符合条件发展"| n_target
+    n_direct_officer -.->|"资格与程序"| n_selection
+    n_clinical -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_medical_academy entry
+    class n_direct_officer entry
+    class n_selection milestone
+    class n_qualification milestone
+    class n_registration milestone
+    class n_clinical role
+    class n_development role
+    class n_target target
