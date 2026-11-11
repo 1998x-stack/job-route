@@ -1,0 +1,30 @@
+flowchart TB
+    %% 残疾人就业辅导员 — 2026-11-11
+    n_social_work["社会工作、职业指导与社区服务经历"]
+    n_hr_ops["招聘、HR与企业雇主服务经历"]
+    n_rights["了解残疾人就业政策和合理便利"]
+    n_assess["职业能力与就业意愿评估"]
+    n_matching["就业岗位对接及雇主沟通"]
+    n_followup["就业适应跟进和服务评估"]
+    n_program["就业项目与服务团队发展"]
+    n_target["残疾人就业辅导员岗位"]
+    n_social_work -.->|"资格及程序"| n_rights
+    n_rights -.->|"岗位经验积累"| n_assess
+    n_assess -.->|"岗位经验积累"| n_matching
+    n_matching -.->|"岗位经验积累"| n_followup
+    n_followup -.->|"岗位经验积累"| n_program
+    n_program -.->|"合规岗位发展"| n_target
+    n_hr_ops -.->|"资格及程序"| n_rights
+    n_matching -.->|"岗位经验积累"| n_program
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_social_work entry
+    class n_hr_ops entry
+    class n_rights milestone
+    class n_assess role
+    class n_matching role
+    class n_followup role
+    class n_program role
+    class n_target target

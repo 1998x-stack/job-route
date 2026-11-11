@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cloud-platform-engineer",
+  "title": "云平台工程师",
+  "subtitle": "云计算工程技术、平台自动化、可靠性与云安全能力",
+  "category": "technology",
+  "jurisdiction": "中国大陆企业云平台工程岗位；参考人社部云计算工程技术人员职业技术标准",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "云平台工程师是企业云基础设施与平台软件研发运维岗位，和国家职业分类中的“云计算工程技术人员”有能力交集。职业技术标准规定初中高级能力评价方向，但不代表拥有某云厂商证书就能取得所有企业岗位或国家限制性执照。",
+  "target": "target",
+  "entry_points": [
+    "sysops",
+    "developer"
+  ],
+  "nodes": [
+    {
+      "id": "sysops",
+      "label": "Linux网络与系统运维",
+      "kind": "entry",
+      "description": "从服务器、网络、数据库、虚拟化与系统运维岗位积累可靠性和安全管理基础。",
+      "source_ids": [
+        "cloud_definition"
+      ]
+    },
+    {
+      "id": "developer",
+      "label": "后端软件及DevOps开发",
+      "kind": "entry",
+      "description": "从软件工程、持续集成与服务端开发转向基础设施自动化和云原生平台工作。",
+      "source_ids": [
+        "cloud_definition"
+      ]
+    },
+    {
+      "id": "foundation",
+      "label": "计算网络存储与云基础知识",
+      "kind": "milestone",
+      "description": "掌握虚拟化、云计算IaaS/PaaS、计算存储与基础网络，并建立可复现的环境部署能力。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "id": "automation",
+      "label": "基础设施即代码与部署自动化",
+      "kind": "role",
+      "description": "利用自动化脚本、版本控制及配置管理降低环境漂移，建立部署与回滚流程。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "id": "container",
+      "label": "容器编排与云原生服务平台",
+      "kind": "role",
+      "description": "设计容器平台部署、微服务网络、资源隔离和服务生命周期管理。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "id": "sre",
+      "label": "监控、可靠性与应急恢复",
+      "kind": "role",
+      "description": "建立服务可用性指标、日志追踪、容量规划和故障复盘，按操作权限处置生产故障。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "云安全与成本治理",
+      "kind": "role",
+      "description": "通过身份权限、密钥管理、审计日志及资源预算治理控制风险。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "id": "architecture",
+      "label": "高级平台及架构协同",
+      "kind": "role",
+      "description": "在企业岗位授权下设计多云或混合云架构、开发者平台与运维标准。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业云平台工程师岗位",
+      "kind": "target",
+      "description": "能够稳定建设、自动化运维和持续改进企业云平台，岗位和职级由雇主任命与实际能力决定。",
+      "source_ids": [
+        "cloud_definition"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "sysops",
+      "to": "foundation",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「Linux网络与系统运维」发展至「计算网络存储与云基础知识」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "foundation",
+      "to": "automation",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「计算网络存储与云基础知识」发展至「基础设施即代码与部署自动化」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "automation",
+      "to": "container",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「基础设施即代码与部署自动化」发展至「容器编排与云原生服务平台」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "container",
+      "to": "sre",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「容器编排与云原生服务平台」发展至「监控、可靠性与应急恢复」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "sre",
+      "to": "security",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「监控、可靠性与应急恢复」发展至「云安全与成本治理」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "security",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「云安全与成本治理」发展至「企业云平台工程师岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_definition"
+      ]
+    },
+    {
+      "from": "developer",
+      "to": "foundation",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「后端软件及DevOps开发」发展至「计算网络存储与云基础知识」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_standard"
+      ]
+    },
+    {
+      "from": "container",
+      "to": "architecture",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「容器编排与云原生服务平台」发展至「高级平台及架构协同」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": []
+    },
+    {
+      "from": "architecture",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「高级平台及架构协同」发展至「企业云平台工程师岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cloud_definition"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "ops",
+      "title": "系统运维向云平台工程转型",
+      "description": "从系统网络运维基础逐步学习自动化、容器编排、可靠性和云安全形成云平台能力。",
+      "node_ids": [
+        "sysops",
+        "foundation",
+        "automation",
+        "container",
+        "sre",
+        "security",
+        "target"
+      ]
+    },
+    {
+      "id": "dev",
+      "title": "软件工程转向云原生平台",
+      "description": "由软件工程和DevOps能力进入云计算基础设施开发与架构协同。",
+      "node_ids": [
+        "developer",
+        "foundation",
+        "automation",
+        "container",
+        "architecture",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "人社部2019年发布“云计算工程技术人员”职业编码2-02-10-12，描述云系统构建、部署、运维、云资源管理等职责。",
+    "2021年云计算工程技术人员国家职业技术技能标准设置初级、中级、高级能力评价，区分云计算运维与开发方向。",
+    "厂商云认证、职业技术评价和企业云平台工程师岗位三者不能互相替代。"
+  ],
+  "caveats": [
+    "技术标准中的培训建议与能力等级不是对所有企业设立的强制入职学历门槛或个人执业许可。",
+    "“云平台工程师”“SRE”“云安全工程师”和“DevOps工程师”在各企业职责范围有重叠但不相同。",
+    "生产系统操作必须基于正式授权，职业研究不描述越权访问或控制他人云资源的步骤。"
+  ],
+  "sources": [
+    {
+      "id": "cloud_definition",
+      "title": "人社部发布云计算工程技术人员等新职业信息",
+      "publisher": "中华人民共和国人力资源和社会保障部",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/202112/t20211227_431368.html",
+      "published": "2019-04-01"
+    },
+    {
+      "id": "cloud_standard",
+      "title": "云计算工程技术人员职业技术技能标准目录（2021年版）",
+      "publisher": "国家专业技术人才知识更新工程·人社部",
+      "url": "https://zsgx.mohrss.gov.cn/zsgx/htmlDocument/category12500/index.html",
+      "published": "2021-09-29"
+    }
+  ]
+}

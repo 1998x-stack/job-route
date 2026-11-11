@@ -1,0 +1,30 @@
+flowchart TB
+    %% 职业院校实训指导教师 — 2026-11-11
+    n_industry["行业技能与企业工程经历"]
+    n_teacher["职业学校教学与教育培养经历"]
+    n_teacher_cert["核验学校层次与教师资格"]
+    n_recruit["学校公开招聘与岗位聘任"]
+    n_training["实训课程与实践教学"]
+    n_industry_link["企业实践和产教融合"]
+    n_dual["双师型认定与专业教学骨干"]
+    n_target["职业院校实训指导教师岗位"]
+    n_industry -.->|"资格及程序"| n_teacher_cert
+    n_teacher_cert -.->|"资格及程序"| n_recruit
+    n_recruit -.->|"岗位经验积累"| n_training
+    n_training -.->|"岗位经验积累"| n_industry_link
+    n_industry_link -.->|"岗位经验积累"| n_dual
+    n_dual -.->|"合规岗位发展"| n_target
+    n_teacher -.->|"资格及程序"| n_teacher_cert
+    n_training -.->|"岗位经验积累"| n_dual
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_industry entry
+    class n_teacher entry
+    class n_teacher_cert milestone
+    class n_recruit milestone
+    class n_training role
+    class n_industry_link role
+    class n_dual role
+    class n_target target

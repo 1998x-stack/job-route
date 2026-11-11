@@ -1,0 +1,33 @@
+flowchart TB
+    %% 云平台工程师 — 2026-11-11
+    n_sysops["Linux网络与系统运维"]
+    n_developer["后端软件及DevOps开发"]
+    n_foundation["计算网络存储与云基础知识"]
+    n_automation["基础设施即代码与部署自动化"]
+    n_container["容器编排与云原生服务平台"]
+    n_sre["监控、可靠性与应急恢复"]
+    n_security["云安全与成本治理"]
+    n_architecture["高级平台及架构协同"]
+    n_target["企业云平台工程师岗位"]
+    n_sysops -.->|"资格及程序"| n_foundation
+    n_foundation -.->|"岗位经验积累"| n_automation
+    n_automation -.->|"岗位经验积累"| n_container
+    n_container -.->|"岗位经验积累"| n_sre
+    n_sre -.->|"岗位经验积累"| n_security
+    n_security -.->|"合规岗位发展"| n_target
+    n_developer -.->|"资格及程序"| n_foundation
+    n_container -.->|"岗位经验积累"| n_architecture
+    n_architecture -.->|"合规岗位发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_sysops entry
+    class n_developer entry
+    class n_foundation milestone
+    class n_automation role
+    class n_container role
+    class n_sre role
+    class n_security role
+    class n_architecture role
+    class n_target target
