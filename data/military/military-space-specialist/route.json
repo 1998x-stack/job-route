@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "id": "military-space-specialist",
+  "title": "军队航天专业技术人员",
+  "subtitle": "军事航天部队的技术人才：文职、现役军官与科研岗位的不同准入路线",
+  "category": "military",
+  "jurisdiction": "中国大陆；2027年度军事航天部队文职招考及一般军队军官培养制度",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "2024年4月19日军兵种结构调整后，军事航天部队列入公开的新型兵种布局。军队航天技术人才可以涉及现役军官与军队文职等不同人员制度。军队人才网2027年度公开招考已列军事航天部队为用人单位，但这是文职人员招考，不代表报考者自动取得军官军衔、涉密科研资格或特定航天项目岗位。",
+  "target": "target",
+  "entry_points": [
+    "civilian_applicant",
+    "military_student"
+  ],
+  "nodes": [
+    {
+      "id": "civilian_applicant",
+      "label": "2027军事航天部队文职岗位招考",
+      "kind": "entry",
+      "description": "普通高校毕业生或社会人才依军队人才网2027岗位计划，核对学历、专业及政治身体等资格并按公告报名。",
+      "source_ids": [
+        "recruit_2027",
+        "aerospace_unit"
+      ]
+    },
+    {
+      "id": "military_student",
+      "label": "符合条件的军队院校军官培养渠道",
+      "kind": "entry",
+      "description": "军队院校生长军官培养可作为现役军官职业入口，但是否分配军事航天专业岗位依军队实际培养和组织安排。",
+      "source_ids": [
+        "school_2026"
+      ]
+    },
+    {
+      "id": "screen",
+      "label": "对应入口资格和身份审核",
+      "kind": "milestone",
+      "description": "文职按2027公开招考程序审查，军官培养按军队院校与现役军官制度审查，不能混用考试及录用规定。",
+      "source_ids": [
+        "recruit_2027",
+        "school_2026",
+        "reform_2024"
+      ]
+    },
+    {
+      "id": "appointment",
+      "label": "取得合法军队人员岗位身份",
+      "kind": "milestone",
+      "description": "文职经过招考与聘用进入专业技术岗位；现役军官须经培养、毕业与组织任职，不由工程学位自动产生军衔。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "technical",
+      "label": "航天相关专业技术研究与支撑",
+      "kind": "role",
+      "description": "开展计算、工程验证、设备软件和科研支撑等授权任务；具体专业及涉密范围由单位岗位规定。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "assurance",
+      "label": "工程质量与信息安全管理",
+      "kind": "role",
+      "description": "从技术需求、保密规范、验证记录和项目协作提升交付可靠性，不披露作战细节或敏感部署。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "progression",
+      "label": "项目技术骨干及专业发展",
+      "kind": "role",
+      "description": "符合岗位条件时承担跨团队研发和专业技术指导，专业岗位等级、军官军衔与职务分别管理。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "军队航天领域专业技术岗位",
+      "kind": "target",
+      "description": "在依法取得军队相应身份和具体岗位任用的前提下开展航天技术研究支撑，不意味着属于同一军官晋升序列。",
+      "source_ids": [
+        "regulation",
+        "aerospace_unit"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civilian_applicant",
+      "to": "screen",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「2027军事航天部队文职岗位招考」至「对应入口资格和身份审核」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2027",
+        "school_2026"
+      ]
+    },
+    {
+      "from": "screen",
+      "to": "appointment",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「对应入口资格和身份审核」至「取得合法军队人员岗位身份」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "appointment",
+      "to": "technical",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「取得合法军队人员岗位身份」至「航天相关专业技术研究与支撑」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "technical",
+      "to": "assurance",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「航天相关专业技术研究与支撑」至「工程质量与信息安全管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "assurance",
+      "to": "progression",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「工程质量与信息安全管理」至「项目技术骨干及专业发展」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "progression",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「项目技术骨干及专业发展」至「军队航天领域专业技术岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation",
+        "aerospace_unit"
+      ]
+    },
+    {
+      "from": "military_student",
+      "to": "screen",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「符合条件的军队院校军官培养渠道」至「对应入口资格和身份审核」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2027",
+        "school_2026"
+      ]
+    },
+    {
+      "from": "assurance",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「工程质量与信息安全管理」至「军队航天领域专业技术岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "regulation",
+        "aerospace_unit"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "civilian",
+      "title": "军事航天部队文职技术路线",
+      "description": "通过2027年度文职岗位选报、资格审查及考核后，可能在专业技术岗位开展研发与质量管理。",
+      "node_ids": [
+        "civilian_applicant",
+        "screen",
+        "appointment",
+        "technical",
+        "assurance",
+        "progression",
+        "target"
+      ]
+    },
+    {
+      "id": "officer",
+      "title": "军队院校军官培养及岗位分配路线",
+      "description": "通过不同于文职招考的军官培养、组织任职，符合特定军队航天需求时可能承担相关技术任务。",
+      "node_ids": [
+        "military_student",
+        "screen",
+        "appointment",
+        "technical",
+        "assurance",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "军队人才网2027年公告列管理类和专业技术类文职人员公开招考，2026年11月5日8:00至10日18:00为该轮正常报名时间，现已结束。",
+    "2027年度军事航天部队用人单位在军队人才网的咨询单位清单中单列，不能因此宣称任何工程技术专业毕业生均可直入该部队。",
+    "《中国人民解放军文职人员条例》将文职列为非服兵役军队人员，建立与军官、公务员及事业单位不同的人员制度。",
+    "军校培养属于现役军官入口参考，与文职直接招考不能互相替代。",
+    "国防部2024年4月19日专题新闻发布会明确，在新型军兵种结构布局中列有军事航天部队，并调整相关兵种领导管理关系；不应继续沿用已撤销的战略支援部队番号。"
+  ],
+  "caveats": [
+    "2024年调整组建军事航天部队后，不能继续将原战略支援部队称为现行的统一招考用人单位。",
+    "不能由文职岗位等级推断军衔、现役身份或特定航天装备权限；所列军官方向仅是有条件的军队专业培养示意。",
+    "未公开的航天任务、基地位置、人员编制和系统技术参数不在公开研究范围内。"
+  ],
+  "sources": [
+    {
+      "id": "recruit_2027",
+      "title": "2027年军队文职人员公开招考公告",
+      "publisher": "军队人才网",
+      "url": "https://81rc.81.cn/sy/tzgg_210284/16498336.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "aerospace_unit",
+      "title": "2027年军队文职公开招考咨询单位（含军事航天部队）",
+      "publisher": "军队人才网",
+      "url": "https://81rc.81.cn/sy/gzdt_210283/16497846.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "regulation",
+      "title": "中国人民解放军文职人员条例（2022年第二次修订）",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/qwfb/16196990.html",
+      "published": "2022-12-10"
+    },
+    {
+      "id": "school_2026",
+      "title": "2026年军校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "published": "2026-06-23"
+    },
+    {
+      "id": "reform_2024",
+      "title": "国防部关于信息支援部队成立和新型军兵种结构布局的专题发布会",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/xwfyr/ztjzh/16302133.html",
+      "published": "2024-04-19"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+flowchart TB
+    %% 薪酬绩效经理 — 2026-11-11
+    n_hr_specialist["薪酬专员或HR运营背景"]
+    n_data_finance["财务分析、HRIS或绩效运营背景"]
+    n_fundamentals["劳动法规与薪酬绩效知识体系"]
+    n_payroll["薪酬、福利与人工成本预算管理"]
+    n_performance["目标管理与绩效指标体系设计"]
+    n_analytics["公平性分析与薪酬绩效数据治理"]
+    n_compliance["劳动关系与数据保护合规评审"]
+    n_management["薪酬绩效项目和团队管理"]
+    n_target["企业薪酬绩效经理岗位"]
+    n_hr_specialist -.->|"程序资格"| n_fundamentals
+    n_fundamentals -.->|"典型技能积累"| n_payroll
+    n_payroll -.->|"典型技能积累"| n_performance
+    n_performance -.->|"典型技能积累"| n_analytics
+    n_analytics -.->|"典型技能积累"| n_compliance
+    n_compliance -.->|"典型技能积累"| n_management
+    n_management -.->|"资格满足后任职"| n_target
+    n_data_finance -.->|"程序资格"| n_fundamentals
+    n_analytics -.->|"典型技能积累"| n_management
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_hr_specialist entry
+    class n_data_finance entry
+    class n_fundamentals milestone
+    class n_payroll role
+    class n_performance role
+    class n_analytics role
+    class n_compliance role
+    class n_management role
+    class n_target target

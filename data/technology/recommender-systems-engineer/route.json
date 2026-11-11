@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "id": "recommender-systems-engineer",
+  "title": "推荐算法工程师",
+  "subtitle": "召回、排序与在线评估的工程职业；算法推荐服务提供者合规边界",
+  "category": "technology",
+  "jurisdiction": "中国大陆互联网企业、电商及内容平台推荐算法技术岗位",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "推荐算法工程师是企业模型研发和线上推荐系统优化岗位，负责召回、排序、重排、用户理解和离线在线评测。2022年《互联网信息服务算法推荐管理规定》监管的是在中国境内使用推荐算法向用户提供互联网信息服务的服务提供者，并按特定条件实施备案要求；这不等于个人工程师必须取得全国统一算法执业许可证。",
+  "target": "target",
+  "entry_points": [
+    "ml",
+    "backend"
+  ],
+  "nodes": [
+    {
+      "id": "ml",
+      "label": "机器学习、统计与计算机教育背景",
+      "kind": "entry",
+      "description": "从计算机、统计、人工智能与数学学习进入推荐模型、数据结构、编程与概率建模工作。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "软件工程或数据平台工程转岗",
+      "kind": "entry",
+      "description": "具有后端服务、特征工程、日志数据管道及大规模分布式系统经验者可逐步转向推荐算法系统。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "foundation",
+      "label": "算法与工程实验基础",
+      "kind": "milestone",
+      "description": "掌握模型训练、数据分割、评测指标、统计显著性及在线服务的质量与安全约束。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "retrieval",
+      "label": "召回及用户画像特征工程",
+      "kind": "role",
+      "description": "从日志和内容数据构建合法的特征、向量索引和多路候选召回，控制隐私与数据偏差。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "ranking",
+      "label": "排序／重排与模型迭代",
+      "kind": "role",
+      "description": "参与CTR/CVR、粗精排、多目标排序、多样性及冷启动，设计对用户体验的可测评价。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "离线评测、A/B实验与可观测性",
+      "kind": "role",
+      "description": "将离线准确性和线上点击、留存等指标区分，监测实验效果、稳定性和负向外部性。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "id": "compliance",
+      "label": "算法推荐合规与用户控制权",
+      "kind": "role",
+      "description": "在平台法人主体合规框架下支持透明度、用户关闭个性化推荐及未成年人保护，备案责任不等于个人牌照。",
+      "source_ids": [
+        "algorithm_rule"
+      ]
+    },
+    {
+      "id": "principal",
+      "label": "复杂推荐系统架构或团队协作",
+      "kind": "role",
+      "description": "按公司实际招聘或晋任承担大规模服务架构与研发协作，企业岗位职级由组织确定。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "推荐算法工程师岗位",
+      "kind": "target",
+      "description": "能设计、评估并维护符合隐私和推荐法规要求的生产级推荐系统，在企业授权下开展技术工作。",
+      "source_ids": [
+        "algorithm_rule",
+        "baidu_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ml",
+      "to": "foundation",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「机器学习、统计与计算机教育背景」至「算法与工程实验基础」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "foundation",
+      "to": "retrieval",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「算法与工程实验基础」至「召回及用户画像特征工程」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "retrieval",
+      "to": "ranking",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「召回及用户画像特征工程」至「排序／重排与模型迭代」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "ranking",
+      "to": "testing",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「排序／重排与模型迭代」至「离线评测、A/B实验与可观测性」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "testing",
+      "to": "compliance",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「离线评测、A/B实验与可观测性」至「算法推荐合规与用户控制权」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "algorithm_rule"
+      ]
+    },
+    {
+      "from": "compliance",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「算法推荐合规与用户控制权」至「推荐算法工程师岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "algorithm_rule",
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "backend",
+      "to": "foundation",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「软件工程或数据平台工程转岗」至「算法与工程实验基础」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "baidu_2026"
+      ]
+    },
+    {
+      "from": "testing",
+      "to": "principal",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「离线评测、A/B实验与可观测性」至「复杂推荐系统架构或团队协作」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "principal",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「复杂推荐系统架构或团队协作」至「推荐算法工程师岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "algorithm_rule",
+        "baidu_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "ml_track",
+      "title": "机器学习研究与模型落地",
+      "description": "算法背景人员经召回排序训练和离线在线实验，积累符合用户权益要求的推荐系统经验。",
+      "node_ids": [
+        "ml",
+        "foundation",
+        "retrieval",
+        "ranking",
+        "testing",
+        "compliance",
+        "target"
+      ]
+    },
+    {
+      "id": "engineering_track",
+      "title": "后端数据系统向推荐转型",
+      "description": "软件与数据工程人员积累推荐特征和排序业务知识，推进模型服务与在线质量后承担研发工作。",
+      "node_ids": [
+        "backend",
+        "foundation",
+        "retrieval",
+        "ranking",
+        "testing",
+        "principal",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《互联网信息服务算法推荐管理规定》自2022年3月1日实施，适用于在境内应用算法推荐技术提供互联网信息服务者，不是所有离线科研项目或员工的个人职业许可证。",
+    "规定第十六至十七条要求算法推荐服务提供者告知服务及提供不针对个人特征或关闭算法推荐的选项；对具舆论属性或社会动员能力的特定提供者规定备案。",
+    "百度2026年搜广推算法校招职位强调召回、粗排、精排、用户建模、离线训练、在线推理和A/B实验，具体学历和技术栈只是该雇主样例。"
+  ],
+  "caveats": [
+    "算法备案制度的对象是符合法定条件的算法推荐服务提供者，不能写成工程师个人通过备案后方能就业。",
+    "模型效果优化不得代替隐私保护、用户选择权和未成年人网络保护义务；个人信息处理应在合法基础上开展。",
+    "企业内部“推荐算法工程师”“搜索广告算法工程师”“推荐平台架构师”职责交叉但不完全等同。"
+  ],
+  "sources": [
+    {
+      "id": "algorithm_rule",
+      "title": "互联网信息服务算法推荐管理规定（网信办等四部门令第9号）",
+      "publisher": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+      "published": "2022-01-04"
+    },
+    {
+      "id": "baidu_2026",
+      "title": "百度2026校园招聘：搜广推算法工程师",
+      "publisher": "百度人才招聘官网",
+      "url": "https://talent.baidu.com/jobs/detail/GRADUATE/1d6833eb-77b2-4e03-99d6-8a42d43dbae3",
+      "published": "2026-07-21"
+    }
+  ]
+}

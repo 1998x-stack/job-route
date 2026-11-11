@@ -1,0 +1,34 @@
+flowchart TB
+    %% 教育技术应用工程师 — 2026-11-11
+    n_software["软件开发与IT平台运维背景"]
+    n_pedagogy["教育技术、课程资源与教学支持背景"]
+    n_digital_basics["教学场景与教育信息系统理解"]
+    n_platform["教育平台部署及业务集成"]
+    n_training["教师和学生的技术培训支持"]
+    n_analytics["教学数据分析与隐私治理"]
+    n_delivery["教育技术项目实施与评价"]
+    n_lead["教育数字化项目负责人方向"]
+    n_target["教育技术应用工程师岗位"]
+    n_software -.->|"程序资格"| n_digital_basics
+    n_digital_basics -.->|"典型技能积累"| n_platform
+    n_platform -.->|"典型技能积累"| n_training
+    n_training -.->|"典型技能积累"| n_analytics
+    n_analytics -.->|"典型技能积累"| n_delivery
+    n_delivery -.->|"资格满足后任职"| n_target
+    n_pedagogy -.->|"程序资格"| n_digital_basics
+    n_training -.->|"典型技能积累"| n_delivery
+    n_delivery -.->|"典型技能积累"| n_lead
+    n_lead -.->|"资格满足后任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_software entry
+    class n_pedagogy entry
+    class n_digital_basics milestone
+    class n_platform role
+    class n_training role
+    class n_analytics role
+    class n_delivery role
+    class n_lead role
+    class n_target target

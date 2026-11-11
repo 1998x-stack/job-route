@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "id": "education-technology-specialist",
+  "title": "教育技术应用工程师",
+  "subtitle": "2025教育数字化政策、软件系统工程及教育科技岗位的专业能力路线",
+  "category": "education",
+  "jurisdiction": "中国大陆高等教育、基础教育信息化服务机构及教育科技企业；按雇主实际职位聘用",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "教育技术应用工程师属于教育平台建设、教学技术支持与教育数据应用的工程岗位，并非法定中小学教师资格、行政领导职务或全国统一许可的独立执业职业。教育部2025年九部门意见强调教育数字化、国家智慧教育平台和安全治理；2026高校教育大数据岗位招聘例子表明教育数字化科研项目也可采取合同或劳务派遣岗位身份。",
+  "target": "target",
+  "entry_points": [
+    "software",
+    "pedagogy"
+  ],
+  "nodes": [
+    {
+      "id": "software",
+      "label": "软件开发与IT平台运维背景",
+      "kind": "entry",
+      "description": "拥有后端工程、前端系统、系统运维或数据库基础者，按学校或教育企业岗位需求进入教育数字化支持。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "id": "pedagogy",
+      "label": "教育技术、课程资源与教学支持背景",
+      "kind": "entry",
+      "description": "已有教育技术、教学设计或培训服务经历者，可以补足软件工程及数据治理能力后参与平台项目。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "id": "digital_basics",
+      "label": "教学场景与教育信息系统理解",
+      "kind": "milestone",
+      "description": "理解课程资源、学习管理系统、学校网络、隐私保护和教育数据质量，不等同于取得教师任课资格。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "教育平台部署及业务集成",
+      "kind": "role",
+      "description": "参与学校教学系统、认证权限、资源平台、自动化运维与接口对接，维护稳定性和无障碍可用性。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "教师和学生的技术培训支持",
+      "kind": "role",
+      "description": "提供教学平台使用说明、故障响应和学习资源制作技术协作；正式课堂教学资格另行考核。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "教学数据分析与隐私治理",
+      "kind": "role",
+      "description": "在合规授权下开展学习服务数据分析、产品评测、数据生命周期管理及应用质量反馈。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "教育技术项目实施与评价",
+      "kind": "role",
+      "description": "与教研团队开展需求调研、可用性测试、上线回归及安全评审，记录技术与学习效果边界。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "教育数字化项目负责人方向",
+      "kind": "role",
+      "description": "在雇主实际岗位任命条件下可能组织跨部门项目，事业编制、劳务派遣和合同聘用身份不得混同。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "教育技术应用工程师岗位",
+      "kind": "target",
+      "description": "具备教育场景系统交付、应用支持、合规数据处理和技术培训能力，依聘用关系履行工程岗位职责。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "software",
+      "to": "digital_basics",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「软件开发与IT平台运维背景」至「教学场景与教育信息系统理解」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "digital_basics",
+      "to": "platform",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教学场景与教育信息系统理解」至「教育平台部署及业务集成」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "platform",
+      "to": "training",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教育平台部署及业务集成」至「教师和学生的技术培训支持」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "analytics",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教师和学生的技术培训支持」至「教学数据分析与隐私治理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "analytics",
+      "to": "delivery",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教学数据分析与隐私治理」至「教育技术项目实施与评价」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「教育技术项目实施与评价」至「教育技术应用工程师岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "pedagogy",
+      "to": "digital_basics",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「教育技术、课程资源与教学支持背景」至「教学场景与教育信息系统理解」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "delivery",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教师和学生的技术培训支持」至「教育技术项目实施与评价」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "lead",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「教育技术项目实施与评价」至「教育数字化项目负责人方向」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "campus_job"
+      ]
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「教育数字化项目负责人方向」至「教育技术应用工程师岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "digital_policy"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "engineering",
+      "title": "软件工程向教育平台工程转型",
+      "description": "从软件系统运维与教育场景理解开始，通过平台集成、教学支持和交付形成教育技术工程能力。",
+      "node_ids": [
+        "software",
+        "digital_basics",
+        "platform",
+        "training",
+        "analytics",
+        "delivery",
+        "target"
+      ]
+    },
+    {
+      "id": "instructional",
+      "title": "教育技术或教学支持转技术应用",
+      "description": "已有教育服务背景人员补齐系统与数据能力，通过教学平台支持和项目组织进入技术岗位。",
+      "node_ids": [
+        "pedagogy",
+        "digital_basics",
+        "platform",
+        "training",
+        "delivery",
+        "lead",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2025年教育部等九部门《关于加快推进教育数字化的意见》明确国家智慧教育公共服务平台、人工智能教育应用、资源共享和安全治理等政策方向，未创设“教育技术应用工程师”独立执业许可证。",
+    "2026年华中师范大学教育大数据应用技术国家工程研究中心公开招聘教育数字化相关助理研究员，明确其为劳务派遣合同制B类岗位，仅证明部分教育科技职位的实际招聘与用工身份。",
+    "教育信息化技术岗位不等同于依法专门从事学校课堂教学岗位；任课教师资格及高校职称评聘是独立体系。"
+  ],
+  "caveats": [
+    "“教育技术应用工程师”“教育技术学教师”“教师发展中心人员”“教育信息化项目经理”可能名称相近但责任与用工制度不同。",
+    "校内信息中心的事业岗位与学校科研项目的劳务派遣合同不能直接互换，职位公告才是人员身份依据。",
+    "学校对未成年人个人信息和教学数据的使用需依法授权并遵守适用隐私安全规则。"
+  ],
+  "sources": [
+    {
+      "id": "digital_policy",
+      "title": "教育部等九部门关于加快推进教育数字化的意见",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://hudong.moe.gov.cn/srcsite/A01/s7048/202504/t20250416_1187476.html",
+      "published": "2025-04-15"
+    },
+    {
+      "id": "higher_education_plan",
+      "title": "教育强国建设规划纲要（2024—2035年）",
+      "publisher": "中华人民共和国教育部（转载中共中央、国务院文件）",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202501/t20250119_1176193.html",
+      "published": "2025-01-19"
+    },
+    {
+      "id": "campus_job",
+      "title": "华中师范大学教育大数据应用技术国家工程研究中心合同聘用招聘公告",
+      "publisher": "华中师范大学人工智能教育学部",
+      "url": "https://foaie.ccnu.edu.cn/info/1066/14943.htm",
+      "published": "2026-09-20"
+    }
+  ]
+}

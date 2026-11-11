@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cross-border-lawyer",
+  "title": "涉外法律服务律师",
+  "subtitle": "2026年律师法新条款、内地律师执业许可与跨境法律服务专业化",
+  "category": "judicial",
+  "jurisdiction": "中国大陆执业律师涉外法律事务；海外法域执业许可独立核验",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "涉外法律服务律师首先须依法取得内地律师执业资格及执业证，再依事务所与客户项目积累跨境交易、国际争端、外商投资等能力。2026年修正《律师法》新增第七条明确发展涉外法律服务、加强涉外律师人才培养，但并未创设一个替代律师执业证的统一“涉外律师许可证”。",
+  "target": "target",
+  "entry_points": [
+    "new_lawyer",
+    "licensed_lawyer"
+  ],
+  "nodes": [
+    {
+      "id": "new_lawyer",
+      "label": "法律职业资格、律所实习与律师许可",
+      "kind": "entry",
+      "description": "依法满足法律职业资格考试条件，通过考试、完成律所实习并申请司法行政机关执业许可。",
+      "source_ids": [
+        "law_2026",
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "licensed_lawyer",
+      "label": "已有执业证的国内业务律师转型",
+      "kind": "entry",
+      "description": "合法执业律师可补充涉外法律训练、交易语言和冲突法知识，根据事务所岗位与客户需求参与涉外项目。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "id": "law_license",
+      "label": "取得有效中国内地律师执业证",
+      "kind": "milestone",
+      "description": "经司法行政许可在律师事务所执业，法律职业资格证书不等于律师执业证书。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "id": "foundation",
+      "label": "外语、比较法和国际交易规则",
+      "kind": "milestone",
+      "description": "熟悉合同语言、冲突法、争议解决、跨境数据及境外法规检索；语言证书本身不是独立执业许可。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "跨境合同与项目法律服务",
+      "kind": "role",
+      "description": "在依法允许的业务范围内参与国际贸易、投资并购、仲裁协助或外资企业法务项目。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "id": "compliance",
+      "label": "项目尽调、争议与冲突检查",
+      "kind": "role",
+      "description": "对管辖法律、客户身份、利益冲突、合规尽调和委托合同进行核验，必要时与境外执业律师协作。",
+      "source_ids": []
+    },
+    {
+      "id": "training",
+      "label": "涉外业务专项培训与专业化",
+      "kind": "role",
+      "description": "参加律所、律师协会或司法行政部门的涉外法律服务能力培养，不将培训证书宣传为额外法定职业资格。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "跨境业务团队与项目管理",
+      "kind": "role",
+      "description": "符合事务所组织聘任和专业能力要求时可能负责跨境案件或交易团队；合伙人身份另行审核。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法执业的涉外法律服务律师",
+      "kind": "target",
+      "description": "持有效内地律师执业证，在权限内提供跨境法律服务并遵守目标法域的境外职业规则。",
+      "source_ids": [
+        "law_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "new_lawyer",
+      "to": "law_license",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「法律职业资格、律所实习与律师许可」至「取得有效中国内地律师执业证」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "law_license",
+      "to": "foundation",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「取得有效中国内地律师执业证」至「外语、比较法和国际交易规则」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "foundation",
+      "to": "practice",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「外语、比较法和国际交易规则」至「跨境合同与项目法律服务」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "practice",
+      "to": "compliance",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「跨境合同与项目法律服务」至「项目尽调、争议与冲突检查」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "compliance",
+      "to": "training",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「项目尽调、争议与冲突检查」至「涉外业务专项培训与专业化」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「涉外业务专项培训与专业化」至「合法执业的涉外法律服务律师」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "licensed_lawyer",
+      "to": "law_license",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「已有执业证的国内业务律师转型」至「取得有效中国内地律师执业证」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    },
+    {
+      "from": "compliance",
+      "to": "leadership",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「项目尽调、争议与冲突检查」至「跨境业务团队与项目管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "leadership",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「跨境业务团队与项目管理」至「合法执业的涉外法律服务律师」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "law_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "direct",
+      "title": "法考—执业律师—涉外业务路线",
+      "description": "经法律资格、律师许可、涉外业务学习和事务所实际委托，从基础项目发展到专业领域。",
+      "node_ids": [
+        "new_lawyer",
+        "law_license",
+        "foundation",
+        "practice",
+        "compliance",
+        "training",
+        "target"
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "国内执业律师专业转型路线",
+      "description": "已取得律师许可的人员增进涉外法律知识，参与跨境客户项目并可能承担团队协调。",
+      "node_ids": [
+        "licensed_lawyer",
+        "law_license",
+        "foundation",
+        "practice",
+        "compliance",
+        "leadership",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年8月28日修正《律师法》的决定自2026年9月1日起施行，新增第七条：国家积极发展涉外法律服务业并加强涉外律师人才培养。",
+    "修正后《律师法》第八条规定律师执业条件包括国家统一法律职业资格和律师事务所实习满一年，须再按规定申请执业许可。",
+    "司法部2026年法考公告对报名学历、职业经历等有不同适用条件，不能把个别高校学历直接等同于律师执业资格。",
+    "内地律师执业资格并不当然允许在外国法域以当地律师身份出庭或提供受限制的当地法律意见。"
+  ],
+  "caveats": [
+    "国家政策支持涉外律师培养不等于给所有涉外项目工作者发放额外国家统一职业资格证。",
+    "广东粤港澳大湾区港澳律师执业试点属于单独制度，不能被当作普通内地律师境外执业的通用许可。",
+    "国际交易涉及外汇、制裁、竞争、数据跨境等多法域问题时，应识别执业边界并与合格当地法律服务者协作。"
+  ],
+  "sources": [
+    {
+      "id": "law_2026",
+      "title": "全国人大常委会关于修改《中华人民共和国律师法》的决定",
+      "publisher": "中华人民共和国司法部智慧普法平台",
+      "url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260829_539051.html",
+      "published": "2026-08-28"
+    },
+    {
+      "id": "exam_2026",
+      "title": "2026年国家统一法律职业资格考试公告",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrtzwj/202606/t20260605_536058.html",
+      "published": "2026-06-05"
+    },
+    {
+      "id": "law_explain",
+      "title": "新修改的律师法解读：推进律师行业健康有序发展",
+      "publisher": "中华人民共和国司法部（转载法治日报）",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwgkztzl/xxxcgcxjpfzsx/fzsxpljj/202608/t20260831_539087.html",
+      "published": "2026-08-31"
+    }
+  ]
+}

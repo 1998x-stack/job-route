@@ -1,0 +1,33 @@
+flowchart TB
+    %% 国家统计系统公务员 — 2026-11-11
+    n_central_exam["中央机关统计管理职位招考"]
+    n_survey_exam["国家统计局调查队系统考录"]
+    n_eligibility["资格初审、笔面试、体检与考察"]
+    n_status["依法明确录用单位与人员身份"]
+    n_stat_law["统计法、调查制度与数据质量培训"]
+    n_survey["统计调查组织与数据分析"]
+    n_publications["统计报告、质量控制及公共沟通"]
+    n_lead["统计业务骨干与机关管理方向"]
+    n_target["国家统计系统合法任职岗位"]
+    n_central_exam -.->|"程序资格"| n_eligibility
+    n_eligibility -.->|"程序资格"| n_status
+    n_status -.->|"典型技能积累"| n_stat_law
+    n_stat_law -.->|"典型技能积累"| n_survey
+    n_survey -.->|"典型技能积累"| n_publications
+    n_publications -.->|"典型技能积累"| n_lead
+    n_lead -.->|"资格满足后任职"| n_target
+    n_survey_exam -.->|"程序资格"| n_eligibility
+    n_publications -.->|"资格满足后任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_central_exam entry
+    class n_survey_exam entry
+    class n_eligibility milestone
+    class n_status milestone
+    class n_stat_law role
+    class n_survey role
+    class n_publications role
+    class n_lead role
+    class n_target target
