@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vocational-practice-instructor",
+  "title": "职业院校实训指导教师",
+  "subtitle": "中职实习指导教师资格、行业实践与双师型专业发展",
+  "category": "education",
+  "jurisdiction": "中国大陆职业院校；区分中职实习指导教师与高职高校教师岗位",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "职业学校实训指导教师需按学校层次满足相应教师资格、技术技能与招聘要求。中等职业学校实习指导教师资格是《教师资格条例》明确的独立资格类别；教育部“双师型”教师认定属于职业教育专业能力评价，不能替代法定教师资格。",
+  "target": "target",
+  "entry_points": [
+    "industry",
+    "teacher"
+  ],
+  "nodes": [
+    {
+      "id": "industry",
+      "label": "行业技能与企业工程经历",
+      "kind": "entry",
+      "description": "具备制造、信息、财经等专业实践能力的企业人才可在满足招聘和教师资格要求时进入职业教育教学岗位。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "id": "teacher",
+      "label": "职业学校教学与教育培养经历",
+      "kind": "entry",
+      "description": "从职业教育专业学习、职业院校相近教学岗位或其他已有教师资格背景申请实训教学职位。",
+      "source_ids": [
+        "qualification"
+      ]
+    },
+    {
+      "id": "teacher_cert",
+      "label": "核验学校层次与教师资格",
+      "kind": "milestone",
+      "description": "中职实习指导教师资格需按规定具备相应学历、助理工程师及以上职务或中级及以上工人技术等级等条件；高职另按高校教师资格。",
+      "source_ids": [
+        "qualification",
+        "nanjing"
+      ]
+    },
+    {
+      "id": "recruit",
+      "label": "学校公开招聘与岗位聘任",
+      "kind": "milestone",
+      "description": "按实际学校事业单位或依法设立机构招聘程序完成资格审查、试讲、实践技能考核和聘任。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "实训课程与实践教学",
+      "kind": "role",
+      "description": "开展实验实训、技能教学、现场安全管理、工学结合项目设计及学习评价。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "id": "industry_link",
+      "label": "企业实践和产教融合",
+      "kind": "role",
+      "description": "与企业共同开发实践项目、校企协作及技能标准，保持专业技能与行业经验更新。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "id": "dual",
+      "label": "双师型认定与专业教学骨干",
+      "kind": "role",
+      "description": "符合教育部及地方2022年双师型教师标准时自愿申请认定；学校职称职务另依独立评审。",
+      "source_ids": [
+        "dual_standard"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "职业院校实训指导教师岗位",
+      "kind": "target",
+      "description": "具备所在职业学校层次的适当教师资格、实践教学能力和学校合法聘用关系，开展实训指导工作。",
+      "source_ids": [
+        "qualification",
+        "voc_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "industry",
+      "to": "teacher_cert",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「行业技能与企业工程经历」发展至「核验学校层次与教师资格」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "qualification",
+        "nanjing"
+      ]
+    },
+    {
+      "from": "teacher_cert",
+      "to": "recruit",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「核验学校层次与教师资格」发展至「学校公开招聘与岗位聘任」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "from": "recruit",
+      "to": "training",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「学校公开招聘与岗位聘任」发展至「实训课程与实践教学」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "industry_link",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「实训课程与实践教学」发展至「企业实践和产教融合」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "voc_law"
+      ]
+    },
+    {
+      "from": "industry_link",
+      "to": "dual",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「企业实践和产教融合」发展至「双师型认定与专业教学骨干」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "dual_standard"
+      ]
+    },
+    {
+      "from": "dual",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「双师型认定与专业教学骨干」发展至「职业院校实训指导教师岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "qualification",
+        "voc_law"
+      ]
+    },
+    {
+      "from": "teacher",
+      "to": "teacher_cert",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「职业学校教学与教育培养经历」发展至「核验学校层次与教师资格」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "qualification",
+        "nanjing"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "dual",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「实训课程与实践教学」发展至「双师型认定与专业教学骨干」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "dual_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "industry_path",
+      "title": "行业技能人才入职教学",
+      "description": "企业岗位实践者取得适用教师资格，经学校招聘进入实训教学，再发展双师型教学能力。",
+      "node_ids": [
+        "industry",
+        "teacher_cert",
+        "recruit",
+        "training",
+        "industry_link",
+        "dual",
+        "target"
+      ]
+    },
+    {
+      "id": "teaching_path",
+      "title": "职业学校教师实训方向",
+      "description": "具有职业教育背景的教育人员按学校层级核对资格后进入实训岗位并发展教研能力。",
+      "node_ids": [
+        "teacher",
+        "teacher_cert",
+        "recruit",
+        "training",
+        "dual",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《教师资格条例》第四条区分中等职业学校实习指导教师资格，第七条规定申请者应满足相应学历与助理工程师以上专业技术职务或中级以上工人技术等级。",
+    "《职业教育法》2022年修订版第四十六条要求职业学校专业课教师（含实习指导教师）具有适当工作经历或实践经验和技术技能水平。",
+    "教育部2022年双师型教师认定主要适用于职业学校专业课教师（含实习指导教师），国家基础标准仍须结合地方实施办法。"
+  ],
+  "caveats": [
+    "中职教师资格和高校教师资格不同；高职实训教师不自动适用中职实习指导教师资格证。",
+    "双师型教师认定不等于获得教师资格、专业技术职务或事业编制。",
+    "2026南京市教师资格认定条件仅适用于其辖区与该批次，其他地区按本地公告核查。"
+  ],
+  "sources": [
+    {
+      "id": "qualification",
+      "title": "教师资格条例",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyxzfg/202204/t20220422_620496.html",
+      "published": "1995-12-12"
+    },
+    {
+      "id": "voc_law",
+      "title": "中华人民共和国职业教育法（2022年修订）",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202204/t20220421_620064.html",
+      "published": "2022-04-20"
+    },
+    {
+      "id": "dual_standard",
+      "title": "教育部办公厅关于做好职业教育双师型教师认定工作的通知",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/srcsite/A10/s7034/202210/t20221027_672715.html",
+      "published": "2022-10-25"
+    },
+    {
+      "id": "nanjing",
+      "title": "南京市2026年下半年教师资格认定公告",
+      "publisher": "南京市教育局",
+      "url": "https://edu.nanjing.gov.cn/gg/202610/t20261014_6018493.html",
+      "published": "2026-10-14"
+    }
+  ]
+}

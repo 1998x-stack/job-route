@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0.0",
+  "id": "specialist-nurse",
+  "title": "专科护士",
+  "subtitle": "护士执业资格、临床专科经历及专科护士培训岗位",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆医疗机构；四川及内蒙古2026专科护士培训为地方实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "专科护士首先是依法注册的护士，再按医疗机构或护理学会培训计划发展某一专科临床技能。护士执业注册是法定准入，专科护士培训合格证明通常并非全国单一新增的护士执业许可证，职位安排与高级职称另经聘任评审。",
+  "target": "target",
+  "entry_points": [
+    "nursing_program",
+    "registered"
+  ],
+  "nodes": [
+    {
+      "id": "nursing_program",
+      "label": "护理学教育与护士执业资格路径",
+      "kind": "entry",
+      "description": "完成符合国家规定的护理教育并满足护士执业资格条件的申请人，依法参加资格考核和注册。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    },
+    {
+      "id": "registered",
+      "label": "已注册护士的专科转岗申请",
+      "kind": "entry",
+      "description": "在临床岗位依法执业的注册护士，经专科经验和机构培训选拔，可以申请专科护士培养项目。",
+      "source_ids": [
+        "nurse_rule",
+        "regional"
+      ]
+    },
+    {
+      "id": "license",
+      "label": "依法取得护士执业注册",
+      "kind": "milestone",
+      "description": "注册并领取护士执业证后方可开展依法规定的护理活动；注册地点和有效状态需要核验。",
+      "source_ids": [
+        "nurse_rule",
+        "register_rule"
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "专科相关临床护理经验",
+      "kind": "role",
+      "description": "根据目标专科积累围术期、重症、老年、康复等实际临床护理与患者安全能力。",
+      "source_ids": [
+        "nhc_2026"
+      ]
+    },
+    {
+      "id": "program",
+      "label": "专科护士项目申请和资格审核",
+      "kind": "milestone",
+      "description": "例如内蒙古2026培训要求已具护士执业资质、护师资格、相关工作经验等；不是全国统一年限。",
+      "source_ids": [
+        "regional"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "专科理论及临床实践培训",
+      "kind": "role",
+      "description": "根据目标护理专业接受理论学习、实践训练、技能评估与考核，培训时长按基地安排。",
+      "source_ids": [
+        "regional"
+      ]
+    },
+    {
+      "id": "specialty",
+      "label": "承担专科护理职责",
+      "kind": "role",
+      "description": "在所在医疗机构授权和能力范围开展专科护理，依法遵守医疗质量及感染防控。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    },
+    {
+      "id": "mentoring",
+      "label": "专科带教与护理质量改进",
+      "kind": "role",
+      "description": "通过病例管理、质量项目和带教发展专业能力，医院岗位聘任与护理职称另审。",
+      "source_ids": [
+        "nhc_2026"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "合法执业专科护士岗位",
+      "kind": "target",
+      "description": "依法注册护士，在对应临床专科完成适用培训并依据医院岗位安排承担专科护理职责。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "nursing_program",
+      "to": "license",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「护理学教育与护士执业资格路径」发展至「依法取得护士执业注册」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nurse_rule",
+        "register_rule"
+      ]
+    },
+    {
+      "from": "license",
+      "to": "clinical",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「依法取得护士执业注册」发展至「专科相关临床护理经验」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nhc_2026"
+      ]
+    },
+    {
+      "from": "clinical",
+      "to": "program",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「专科相关临床护理经验」发展至「专科护士项目申请和资格审核」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regional"
+      ]
+    },
+    {
+      "from": "program",
+      "to": "training",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「专科护士项目申请和资格审核」发展至「专科理论及临床实践培训」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regional"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "specialty",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「专科理论及临床实践培训」发展至「承担专科护理职责」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    },
+    {
+      "from": "specialty",
+      "to": "mentoring",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「承担专科护理职责」发展至「专科带教与护理质量改进」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nhc_2026"
+      ]
+    },
+    {
+      "from": "mentoring",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「专科带教与护理质量改进」发展至「合法执业专科护士岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    },
+    {
+      "from": "registered",
+      "to": "license",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「已注册护士的专科转岗申请」发展至「依法取得护士执业注册」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nurse_rule",
+        "register_rule"
+      ]
+    },
+    {
+      "from": "specialty",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「承担专科护理职责」发展至「合法执业专科护士岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nurse_rule"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "graduate_to_specialty",
+      "title": "护理教育到专科训练",
+      "description": "从护理教育及注册取得合法护理身份，积累临床专科实践后接受专科培训和岗位安排。",
+      "node_ids": [
+        "nursing_program",
+        "license",
+        "clinical",
+        "program",
+        "training",
+        "specialty",
+        "mentoring",
+        "target"
+      ]
+    },
+    {
+      "id": "lateral_specialty",
+      "title": "在职注册护士转向专科护理",
+      "description": "已有护士执业资格者经专科经验和培训选拔，进一步发展专科护理能力。",
+      "node_ids": [
+        "registered",
+        "license",
+        "clinical",
+        "program",
+        "training",
+        "specialty",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《护士条例》规定护士是经执业注册取得护士执业证书而依法从事护理活动的卫生技术人员。",
+    "《护士执业注册管理办法》2021年修订版规定未经注册不得从事诊疗技术规范规定的护理活动。",
+    "内蒙古2026年专科培训招生对个别项目要求已有护士执业资质、专科以上学历、护师及以上专业技术资格和至少3年相关专科工作经历；这仅为地方培训项目条件。"
+  ],
+  "caveats": [
+    "国家并未因某护理培训班而统一增加一张名为“专科护士执业证”的法定医护准入许可证。",
+    "医疗护理员属于辅助照护岗位，不是护士，不能把医疗护理员培训替代护士执业注册。",
+    "专科培训证书、医院专科护士岗位及副主任护师职称由不同程序决定。"
+  ],
+  "sources": [
+    {
+      "id": "nurse_rule",
+      "title": "护士条例（国务院令第517号，含2020年修正）",
+      "publisher": "国家行政法规库",
+      "url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1054",
+      "published": "2008-01-31"
+    },
+    {
+      "id": "register_rule",
+      "title": "护士执业注册管理办法（2021年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202104/t20210416_356323.html",
+      "published": "2021-01-08"
+    },
+    {
+      "id": "nhc_2026",
+      "title": "全国护理工作发展情况",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/yzygj/c100067/202605/8aafad1f58fa4f3f8be13ac94be061fa.shtml",
+      "published": "2026-05-11"
+    },
+    {
+      "id": "regional",
+      "title": "内蒙古自治区护理学会2026年度第二期专科护士培训班招生简章",
+      "publisher": "内蒙古自治区人民医院",
+      "url": "https://www.nmgyy.cn/info/5552.html",
+      "published": "2026-08-11"
+    }
+  ]
+}

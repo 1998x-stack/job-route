@@ -1,0 +1,33 @@
+flowchart TB
+    %% 商业数据分析师 — 2026-11-11
+    n_statistics["统计、数学与信息管理培养"]
+    n_operations["业务运营与财务分析实践"]
+    n_quality["指标体系、数据清洗与质量管理"]
+    n_sql["数据查询与统计分析"]
+    n_dashboard["BI报表与可视化交付"]
+    n_experiments["商业问题诊断与效果评估"]
+    n_decision["决策沟通与数据隐私合规"]
+    n_lead["高级BI分析及团队协调"]
+    n_target["企业商业数据分析师岗位"]
+    n_statistics -.->|"资格及程序"| n_quality
+    n_quality -.->|"岗位经验积累"| n_sql
+    n_sql -.->|"岗位经验积累"| n_dashboard
+    n_dashboard -.->|"岗位经验积累"| n_experiments
+    n_experiments -.->|"岗位经验积累"| n_decision
+    n_decision -.->|"合规岗位发展"| n_target
+    n_operations -.->|"资格及程序"| n_quality
+    n_dashboard -.->|"岗位经验积累"| n_lead
+    n_lead -.->|"合规岗位发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_statistics entry
+    class n_operations entry
+    class n_quality milestone
+    class n_sql role
+    class n_dashboard role
+    class n_experiments role
+    class n_decision role
+    class n_lead role
+    class n_target target

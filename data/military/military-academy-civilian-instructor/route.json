@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "id": "military-academy-civilian-instructor",
+  "title": "军队院校文职教员",
+  "subtitle": "军队院校专业技术文职招录、教学科研岗位与专业技术等级",
+  "category": "military",
+  "jurisdiction": "中国大陆军队院校；2027年度军队文职公开招考为年度实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "军队院校文职教员属于军队文职人员专业技术岗位，人员身份、教学科研职责、专业技术岗位等级和教学职称需区分；2027年招考已有正式公告，是否采用统考、免笔试直接面试或专业面试以岗位计划为准。",
+  "target": "target",
+  "entry_points": [
+    "graduate",
+    "talent"
+  ],
+  "nodes": [
+    {
+      "id": "graduate",
+      "label": "高校毕业生公开招考",
+      "kind": "entry",
+      "description": "符合军队人才网2027年度教员专业技术岗位专业、学历、资格条件的高校毕业生按规定申请。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "id": "talent",
+      "label": "专业人才直接引进或特定招聘",
+      "kind": "entry",
+      "description": "具有符合单位所需教学科研能力的专业人才，可按文职条例规定的适用引进渠道参与选拔。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "screen",
+      "label": "岗位资格和政治身体条件审核",
+      "kind": "milestone",
+      "description": "依据具体岗位计划核验专业学位、学历、资格及政治身体条件，不能由军队院校名称倒推统一门槛。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "公开招考与专业教学考核",
+      "kind": "milestone",
+      "description": "按照适用岗位参加笔试面试、免笔试直接面试或其他依法公布的选择程序。",
+      "source_ids": [
+        "recruit",
+        "guide"
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "取得专业技术类军队文职身份",
+      "kind": "milestone",
+      "description": "经录用聘任成为非服现役文职人员；不得与现役军官、普通高校事业编或聘用制兼职教师混同。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "teach",
+      "label": "课程教学与学生培养",
+      "kind": "role",
+      "description": "按院校教学安排完成授课、教学设计、实验实训或基础课程指导，遵守教育教学和保密规范。",
+      "source_ids": [
+        "academy"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "科研与教学质量建设",
+      "kind": "role",
+      "description": "参加课题、教研、课程评价与成果建设；学术岗位名称并不预设军衔。",
+      "source_ids": [
+        "academy"
+      ]
+    },
+    {
+      "id": "grade",
+      "label": "专业技术岗位等级及教研骨干",
+      "kind": "role",
+      "description": "依据专业技术岗位等级和任职条件发展，文职岗位等级与高校职称聘任需要分别核实。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "军队院校文职教员岗位",
+      "kind": "target",
+      "description": "在合法文职聘任和专业岗位要求下承担军队院校教学科研职责，后续评价和岗位调整依单位规定。",
+      "source_ids": [
+        "regulation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "graduate",
+      "to": "screen",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「高校毕业生公开招考」发展至「岗位资格和政治身体条件审核」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "from": "screen",
+      "to": "selection",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「岗位资格和政治身体条件审核」发展至「公开招考与专业教学考核」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "recruit",
+        "guide"
+      ]
+    },
+    {
+      "from": "selection",
+      "to": "identity",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「公开招考与专业教学考核」发展至「取得专业技术类军队文职身份」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "identity",
+      "to": "teach",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「取得专业技术类军队文职身份」发展至「课程教学与学生培养」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "academy"
+      ]
+    },
+    {
+      "from": "teach",
+      "to": "research",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「课程教学与学生培养」发展至「科研与教学质量建设」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "academy"
+      ]
+    },
+    {
+      "from": "research",
+      "to": "grade",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「科研与教学质量建设」发展至「专业技术岗位等级及教研骨干」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "grade",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「专业技术岗位等级及教研骨干」发展至「军队院校文职教员岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "talent",
+      "to": "screen",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「专业人才直接引进或特定招聘」发展至「岗位资格和政治身体条件审核」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "from": "research",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「科研与教学质量建设」发展至「军队院校文职教员岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "regulation"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "public",
+      "title": "高校毕业公开招考路线",
+      "description": "从具备专业条件的高校毕业生报名，经资格和考核录用后开展教研并参与岗位等级评价。",
+      "node_ids": [
+        "graduate",
+        "screen",
+        "selection",
+        "identity",
+        "teach",
+        "research",
+        "grade",
+        "target"
+      ]
+    },
+    {
+      "id": "introduction",
+      "title": "专业人才引进及教研路线",
+      "description": "符合特定人才引进条件者按组织程序获得专业技术文职岗位后从事教学与研究。",
+      "node_ids": [
+        "talent",
+        "screen",
+        "selection",
+        "identity",
+        "teach",
+        "research",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中国人民解放军文职人员条例》区分管理类、专业技术类和专业技能类，专业技术文职岗位实行专业技术岗位等级制度。",
+    "军队人才网2027年度公开招考公告发布于2026年11月4日，社会公开招考专业技术类等岗位，资格和选拔方式以具体岗位计划为准。",
+    "军队院校文职教员并非现役军官，岗位等级不等于军衔或普通高校事业单位行政级别。"
+  ],
+  "caveats": [
+    "2027年公开招考的普通报名期2026年11月5日至10日已经结束，调整报名或另批次招聘应单独查官方最新公告。",
+    "教学类不同岗位涉及马克思主义理论、外语、理工、体育等学科，专业限制及教员岗位等级不可一概而论。",
+    "具体军校教育科研任免与涉密专业信息不属于公开职业指南范围。"
+  ],
+  "sources": [
+    {
+      "id": "regulation",
+      "title": "中国人民解放军文职人员条例",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/qwfb/16196990.html",
+      "published": "2022-12-10"
+    },
+    {
+      "id": "recruit",
+      "title": "2027年军队文职人员公开招考公告",
+      "publisher": "中国人民解放军专业技术人才网·军队人才网",
+      "url": "https://81rc.81.cn/sy/gzsd/16497837.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "guide",
+      "title": "2027年军队文职人员公开招考报考指南",
+      "publisher": "中国人民解放军专业技术人才网",
+      "url": "https://81rc.81.cn/sy/gzsd/16497834_2.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "academy",
+      "title": "国防科技大学军政基础教育学院2027年军队文职人员公开招考",
+      "publisher": "南开大学就业服务中心（转载）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/120485.html",
+      "published": "2026-11-05"
+    }
+  ]
+}

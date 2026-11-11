@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "id": "corporate-legal-manager",
+  "title": "企业法务经理",
+  "subtitle": "企业法律事务、合同诉讼、投资与跨境合规管理",
+  "category": "judicial",
+  "jurisdiction": "中国大陆各类企业；以海尔2026年11月公开招聘为岗位样例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "企业法务经理是企业设立的内部法务职位，并非政府统一发证的执业资格；企业法律顾问准入类职业资格已于2014年取消。法学教育、合同法务经验或律师执业经历有助于招聘，但法考证书是否被要求须以具体岗位为准。",
+  "target": "target",
+  "entry_points": [
+    "legal_education",
+    "lawyer_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "legal_education",
+      "label": "法学教育与企业法务初岗",
+      "kind": "entry",
+      "description": "通过法学教育进入企业法务助理、合同审核、法律事务等初级岗位，积累企业经营法律基础。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "lawyer_transfer",
+      "label": "律师或审计风控等相关经历转岗",
+      "kind": "entry",
+      "description": "具备执业律师或内控风险相关工作背景者，可依据具体企业招聘要求转向企业内部法务。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "legal_basis",
+      "label": "合同与企业法律制度能力",
+      "kind": "milestone",
+      "description": "掌握民商事交易、合同审核与公司治理基本知识，并持续核对当前监管要求。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "contract",
+      "label": "合同起草、谈判与风控",
+      "kind": "role",
+      "description": "参与销售采购、投资和技术合同审查及合同模板管理，形成风险提示和业务解决方案。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "dispute",
+      "label": "争议处理及外部律师协作",
+      "kind": "role",
+      "description": "协调诉讼仲裁、法律顾问资源和证据管理；企业雇员不因此自动具有独立律师执业身份。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "cross_border",
+      "label": "投融资、知识产权与跨境合规",
+      "kind": "role",
+      "description": "根据业务范围参与涉外投融资、知识产权、数据合规和境外法律风险控制。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "manager",
+      "label": "法务制度建设与团队协同",
+      "kind": "role",
+      "description": "负责合同与争议流程、外部律师预算及法务团队协作，经理职位由企业依法聘任。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "企业法务经理岗位",
+      "kind": "target",
+      "description": "统筹企业合同、争议与治理相关法律风险并管理跨职能法务服务，按企业任职制度履职。",
+      "source_ids": [
+        "job"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "legal_education",
+      "to": "legal_basis",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「法学教育与企业法务初岗」发展至「合同与企业法律制度能力」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "legal_basis",
+      "to": "contract",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「合同与企业法律制度能力」发展至「合同起草、谈判与风控」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "contract",
+      "to": "dispute",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「合同起草、谈判与风控」发展至「争议处理及外部律师协作」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "dispute",
+      "to": "manager",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「争议处理及外部律师协作」发展至「法务制度建设与团队协同」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "manager",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「法务制度建设与团队协同」发展至「企业法务经理岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "lawyer_transfer",
+      "to": "legal_basis",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「律师或审计风控等相关经历转岗」发展至「合同与企业法律制度能力」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "contract",
+      "to": "cross_border",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「合同起草、谈判与风控」发展至「投融资、知识产权与跨境合规」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    },
+    {
+      "from": "cross_border",
+      "to": "manager",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「投融资、知识产权与跨境合规」发展至「法务制度建设与团队协同」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "job"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "legal_path",
+      "title": "法学毕业与企业法务成长",
+      "description": "从企业法务助理起，通过合同审核、争议管理与组织能力成长应聘法务经理。",
+      "node_ids": [
+        "legal_education",
+        "legal_basis",
+        "contract",
+        "dispute",
+        "manager",
+        "target"
+      ]
+    },
+    {
+      "id": "lawyer_path",
+      "title": "律师或风险岗位转任",
+      "description": "具有相关律师及风险管理背景的人士，经雇主招聘开展交易、争议与跨境法律事务再任经理。",
+      "node_ids": [
+        "lawyer_transfer",
+        "legal_basis",
+        "contract",
+        "cross_border",
+        "manager",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "人社部、国资委和司法部2014年通知确认国务院已取消企业法律顾问准入类职业资格，旧证书不再实行注册管理。",
+    "海尔2026年11月法务经理公开职位要求法律专业、相关工作经历，司法考试通过者列为优先项，而非岗位绝对法定资格。",
+    "内部法务岗位、律师执业资格、法律职业资格及公司高管职位四者各自独立。"
+  ],
+  "caveats": [
+    "不能将2014年已取消的企业法律顾问准入类职业资格仍描述为2026年统一必考证书。",
+    "若具体工作涉及依法由执业律师办理的业务，企业法务需要与律师及合规主体分别履行职责。",
+    "国有企业总法律顾问制度属于特定企业治理安排，不推断所有企业法务经理必然成为总法律顾问。"
+  ],
+  "sources": [
+    {
+      "id": "abolish",
+      "title": "关于做好取消企业法律顾问职业资格后续工作的通知",
+      "publisher": "北京市人力资源和社会保障局（转载人社部等三部门通知）",
+      "url": "https://rsj.beijing.gov.cn/xxgk/2024zcwj/202406/t20240617_3716922.html",
+      "published": "2014-10-24"
+    },
+    {
+      "id": "job",
+      "title": "海尔新能源平台法务经理招聘",
+      "publisher": "海尔集团招聘官方网站",
+      "url": "https://maker.haier.net/client/job/detail/id/10232713",
+      "published": "2026-11-03"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "id": "business-intelligence-analyst",
+  "title": "商业数据分析师",
+  "subtitle": "商务数据分析师国家职业标准、BI业务分析与经营数据决策",
+  "category": "business",
+  "jurisdiction": "中国大陆企业商业分析及BI岗位；参照2024年《商务数据分析师国家职业标准》",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "商业数据分析师（BI Analyst）是企业用工岗位，主要涉及数据指标、可视化、商业问题诊断和实验评估；国家《商务数据分析师职业标准（2024）》提供相关技能等级评价基础，但与雇主自主设置的BI分析师或BI经理职位不是自动对应关系。",
+  "target": "target",
+  "entry_points": [
+    "statistics",
+    "operations"
+  ],
+  "nodes": [
+    {
+      "id": "statistics",
+      "label": "统计、数学与信息管理培养",
+      "kind": "entry",
+      "description": "从统计、计算机、经济和信息管理等学科积累数据处理、概率、分析和编程基础。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "operations",
+      "label": "业务运营与财务分析实践",
+      "kind": "entry",
+      "description": "从市场、销售、运营或财务工作理解业务口径，学习SQL、可视化与实验设计等数据技能。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "指标体系、数据清洗与质量管理",
+      "kind": "milestone",
+      "description": "定义业务指标、核验数据来源与口径，处理缺失异常和时效问题。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "sql",
+      "label": "数据查询与统计分析",
+      "kind": "role",
+      "description": "应用SQL、电子表格或脚本完成数据抽取、转换、描述性统计和分组分析。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "label": "BI报表与可视化交付",
+      "kind": "role",
+      "description": "设计面向决策者的仪表盘、指标归因及有用的可视化报告。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "experiments",
+      "label": "商业问题诊断与效果评估",
+      "kind": "role",
+      "description": "开展指标拆解、用户行为分析和A/B实验方法评估，说明选择偏差及不确定性。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "决策沟通与数据隐私合规",
+      "kind": "role",
+      "description": "与业务部门合作解释结果，保护商业机密和客户个人信息，避免指标误导。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "高级BI分析及团队协调",
+      "kind": "role",
+      "description": "在雇主组织岗位允许时牵头业务分析框架和跨部门分析项目，经理职位由雇主选任。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业商业数据分析师岗位",
+      "kind": "target",
+      "description": "通过真实业务数据、可核验指标和分析报告支持业务决策，按企业职务与合规要求任职。",
+      "source_ids": [
+        "data_standard"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "statistics",
+      "to": "quality",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「统计、数学与信息管理培养」发展至「指标体系、数据清洗与质量管理」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "quality",
+      "to": "sql",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「指标体系、数据清洗与质量管理」发展至「数据查询与统计分析」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "sql",
+      "to": "dashboard",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「数据查询与统计分析」发展至「BI报表与可视化交付」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "dashboard",
+      "to": "experiments",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「BI报表与可视化交付」发展至「商业问题诊断与效果评估」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "experiments",
+      "to": "decision",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「商业问题诊断与效果评估」发展至「决策沟通与数据隐私合规」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "decision",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「决策沟通与数据隐私合规」发展至「企业商业数据分析师岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "operations",
+      "to": "quality",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「业务运营与财务分析实践」发展至「指标体系、数据清洗与质量管理」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    },
+    {
+      "from": "dashboard",
+      "to": "lead",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「BI报表与可视化交付」发展至「高级BI分析及团队协调」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「高级BI分析及团队协调」发展至「企业商业数据分析师岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "data_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "quant",
+      "title": "统计与数据科学背景",
+      "description": "通过分析技能、报表设计与商业问题评估形成业务分析能力，按岗位考核应聘BI职位。",
+      "node_ids": [
+        "statistics",
+        "quality",
+        "sql",
+        "dashboard",
+        "experiments",
+        "decision",
+        "target"
+      ]
+    },
+    {
+      "id": "ops",
+      "title": "业务运营转型BI方向",
+      "description": "从业务熟悉度出发学习指标治理、SQL与可视化，以决策沟通和项目管理形成BI经验。",
+      "node_ids": [
+        "operations",
+        "quality",
+        "sql",
+        "dashboard",
+        "lead",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "商务数据分析师国家职业标准（2024年版）由人社部与商务部制定，职业编码4-07-02-05，技能评价等级为四级中级工至一级高级技师。",
+    "国家商务数据分析师职业技能等级属于专业技能评价体系，并不要求所有企业BI分析师或数据分析经理必须持该证书。",
+    "企业商业智能分析师、数据工程师和机器学习工程师分别偏向业务指标分析、数据基础设施与模型开发，不能混成同一岗位标准。"
+  ],
+  "caveats": [
+    "具有商务数据分析师技能证书不等于自动成为BI Manager或数据科学家。",
+    "2024版国家职业技能标准规范的是相关职业活动和技能评价，不是统一限制性职业执照。",
+    "涉及客户及员工个人信息需依法合规使用，分析结果需注明数据质量和因果识别限制。"
+  ],
+  "sources": [
+    {
+      "id": "data_standard",
+      "title": "商务数据分析师国家职业标准（2024年版）",
+      "publisher": "中华人民共和国人力资源和社会保障部与商务部",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/202402/W020240227591373272377.pdf",
+      "published": "2024-02-06"
+    },
+    {
+      "id": "classification",
+      "title": "中华人民共和国职业分类大典（2022年版）政策介绍",
+      "publisher": "中国就业网（人社部）",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-08/361551.shtml",
+      "published": "2022-10-08"
+    }
+  ]
+}

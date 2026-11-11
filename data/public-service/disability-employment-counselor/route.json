@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "id": "disability-employment-counselor",
+  "title": "残疾人就业辅导员",
+  "subtitle": "残疾人职业指导、支持性就业和服务质量职业发展",
+  "category": "public-service",
+  "jurisdiction": "中国大陆残疾人就业服务机构、残联支持项目与助残社会组织；依2025—2027行动方案",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "残疾人就业辅导员是为残疾人提供求职、就业适应、职业能力评估及雇主协调的服务人员，不是国家统一心理咨询执照或行政公务员身份。国务院2025—2027年行动方案明确支持各地利用社会力量普遍建立残疾人就业辅导员队伍。",
+  "target": "target",
+  "entry_points": [
+    "social_work",
+    "hr_ops"
+  ],
+  "nodes": [
+    {
+      "id": "social_work",
+      "label": "社会工作、职业指导与社区服务经历",
+      "kind": "entry",
+      "description": "从社会工作、公共就业服务或残疾人事务实践积累权益保护、沟通和就业服务能力。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "id": "hr_ops",
+      "label": "招聘、HR与企业雇主服务经历",
+      "kind": "entry",
+      "description": "从企业招聘、劳动力市场服务、员工支持或无障碍服务经验转入就业辅导项目。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "id": "rights",
+      "label": "了解残疾人就业政策和合理便利",
+      "kind": "milestone",
+      "description": "掌握就业平等、合理便利、残疾类别差异及求职者知情选择，避免医疗化或歧视性筛选。",
+      "source_ids": [
+        "plan",
+        "ndrc"
+      ]
+    },
+    {
+      "id": "assess",
+      "label": "职业能力与就业意愿评估",
+      "kind": "role",
+      "description": "在授权范围协助建立技能、兴趣、岗位限制和职业发展目标档案，保护个人信息。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "id": "matching",
+      "label": "就业岗位对接及雇主沟通",
+      "kind": "role",
+      "description": "协助职业咨询、雇主岗位适配、辅助性就业及合理便利安排，促进双向选择。",
+      "source_ids": [
+        "plan",
+        "competition"
+      ]
+    },
+    {
+      "id": "followup",
+      "label": "就业适应跟进和服务评估",
+      "kind": "role",
+      "description": "对入职适应、岗位培训和就业稳定性提供持续支持，并在必要时联系专业社会服务。",
+      "source_ids": [
+        "ndrc"
+      ]
+    },
+    {
+      "id": "program",
+      "label": "就业项目与服务团队发展",
+      "kind": "role",
+      "description": "通过案例督导、项目评估和多机构协同积累管理能力；是否任项目骨干依组织安排。",
+      "source_ids": [
+        "competition"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "残疾人就业辅导员岗位",
+      "kind": "target",
+      "description": "在就业服务机构或助残项目合法开展职业指导与就业支持工作，尊重当事人意愿与权益。",
+      "source_ids": [
+        "plan"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_work",
+      "to": "rights",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「社会工作、职业指导与社区服务经历」发展至「了解残疾人就业政策和合理便利」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "plan",
+        "ndrc"
+      ]
+    },
+    {
+      "from": "rights",
+      "to": "assess",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「了解残疾人就业政策和合理便利」发展至「职业能力与就业意愿评估」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "from": "assess",
+      "to": "matching",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「职业能力与就业意愿评估」发展至「就业岗位对接及雇主沟通」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "plan",
+        "competition"
+      ]
+    },
+    {
+      "from": "matching",
+      "to": "followup",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「就业岗位对接及雇主沟通」发展至「就业适应跟进和服务评估」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "ndrc"
+      ]
+    },
+    {
+      "from": "followup",
+      "to": "program",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「就业适应跟进和服务评估」发展至「就业项目与服务团队发展」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "competition"
+      ]
+    },
+    {
+      "from": "program",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「就业项目与服务团队发展」发展至「残疾人就业辅导员岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "from": "hr_ops",
+      "to": "rights",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「招聘、HR与企业雇主服务经历」发展至「了解残疾人就业政策和合理便利」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "plan",
+        "ndrc"
+      ]
+    },
+    {
+      "from": "matching",
+      "to": "program",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「就业岗位对接及雇主沟通」发展至「就业项目与服务团队发展」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "competition"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "social",
+      "title": "社会工作与职业指导路线",
+      "description": "从社会服务学习平等就业政策、职业能力评估和岗位匹配，逐步提供就业支持服务。",
+      "node_ids": [
+        "social_work",
+        "rights",
+        "assess",
+        "matching",
+        "followup",
+        "program",
+        "target"
+      ]
+    },
+    {
+      "id": "hr",
+      "title": "企业招聘与雇主服务路线",
+      "description": "从人力资源招聘转向无障碍招聘、就业岗位匹配和入职适应支持，参与服务项目管理。",
+      "node_ids": [
+        "hr_ops",
+        "rights",
+        "assess",
+        "matching",
+        "program",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "国务院办公厅《促进残疾人就业三年行动方案（2025—2027年）》要求支持地方利用社会力量建立残疾人就业辅导员队伍。",
+    "国家发改委2026年残疾人事业发展规划强调加强就业辅导人员队伍、合理便利、职业能力评估及雇主支持服务。",
+    "2026年全国残疾人就业服务机构职业指导竞赛面向各类就业服务机构、社会机构与服务骨干，不构成全国统一的辅导员执业许可。"
+  ],
+  "caveats": [
+    "残疾人就业辅导员不等同于持有国家统一心理咨询执业许可的临床心理治疗师，也不因工作在残联服务机构自动取得公务员身份。",
+    "支持性就业与雇主岗位安排需尊重本人意愿和个人信息保护，不能推断所有残疾人存在同一种就业能力。",
+    "各地政府购买服务、残联机构招聘和公益组织岗位存在不同学历、培训及经验要求，须按实际招标与招聘核查。"
+  ],
+  "sources": [
+    {
+      "id": "plan",
+      "title": "国务院办公厅促进残疾人就业三年行动方案（2025—2027年）",
+      "publisher": "生态环境部政府网站（转载中国政府网）",
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202507/t20250702_1122560.shtml",
+      "published": "2025-06-25"
+    },
+    {
+      "id": "ndrc",
+      "title": "残疾人保障和发展十五五规划（2026年）",
+      "publisher": "国家发展和改革委员会",
+      "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/202609/t20260928_1407872.html",
+      "published": "2026-09-28"
+    },
+    {
+      "id": "competition",
+      "title": "2026年全国残疾人就业服务机构职业指导竞赛通知",
+      "publisher": "中国残疾人联合会",
+      "url": "https://www.cdpf.org.cn/xwzx/dfdt1/a82e72ba5ac44354b356a2412370bcbe.htm",
+      "published": "2026-10-15"
+    }
+  ]
+}

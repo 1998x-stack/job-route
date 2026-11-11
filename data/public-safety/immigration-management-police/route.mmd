@@ -1,0 +1,30 @@
+flowchart TB
+    %% 公安出入境管理民警 — 2026-11-11
+    n_public_exam["地方公安机关人民警察职位招录"]
+    n_transfer["已任公安民警按程序交流转岗"]
+    n_admission["警察公务员录用或岗位资格核验"]
+    n_identity["正式地方公安人民警察身份"]
+    n_law["出境入境管理法与证件业务培训"]
+    n_frontdesk["出入境证件及外国人事务执法服务"]
+    n_management["服务管理与专业警务发展"]
+    n_target["公安出入境管理民警岗位"]
+    n_public_exam -.->|"资格及程序"| n_admission
+    n_admission -.->|"资格及程序"| n_identity
+    n_identity -.->|"岗位经验积累"| n_law
+    n_law -.->|"岗位经验积累"| n_frontdesk
+    n_frontdesk -.->|"岗位经验积累"| n_management
+    n_management -.->|"合规岗位发展"| n_target
+    n_transfer -.->|"资格及程序"| n_admission
+    n_frontdesk -.->|"合规岗位发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_public_exam entry
+    class n_transfer entry
+    class n_admission milestone
+    class n_identity milestone
+    class n_law role
+    class n_frontdesk role
+    class n_management role
+    class n_target target
