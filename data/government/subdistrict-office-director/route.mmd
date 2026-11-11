@@ -1,0 +1,27 @@
+flowchart TB
+    %% 街道办事处主任 — 2026-11-11
+    n_civil_exam["地方公务员录用"]
+    n_cadre_transfer["符合条件的机关干部交流"]
+    n_grassroots["基层机关履职"]
+    n_section_role["街道业务及管理岗位"]
+    n_deputy["街道领导班子相关岗位"]
+    n_nomination["领导干部选拔任用程序"]
+    n_target["街道办事处主任"]
+    n_civil_exam -.->|"资格与手续"| n_grassroots
+    n_grassroots -.->|"岗位履历"| n_section_role
+    n_section_role -.->|"岗位履历"| n_deputy
+    n_deputy -.->|"资格与手续"| n_nomination
+    n_nomination -.->|"符合条件后发展"| n_target
+    n_cadre_transfer -.->|"资格与手续"| n_grassroots
+    n_section_role -.->|"资格与手续"| n_nomination
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil_exam entry
+    class n_cadre_transfer entry
+    class n_grassroots milestone
+    class n_section_role role
+    class n_deputy role
+    class n_nomination milestone
+    class n_target target

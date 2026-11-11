@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0.0",
+  "id": "hr-business-partner",
+  "title": "人力资源业务伙伴（HRBP）",
+  "subtitle": "人力资源专业实践、业务组织诊断与资深HRBP岗位",
+  "category": "business",
+  "jurisdiction": "中国大陆·企业招聘与人力资源管理岗位（非统一法定执业身份）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "HRBP是企业面向业务团队的人力资源伙伴岗位，通常要求招聘、绩效、组织发展与员工关系的组合能力。企业人力资源管理师职业标准可作知识背景，不构成HRBP必须取得统一执业证书的法规。",
+  "target": "target",
+  "entry_points": [
+    "hr_generalist",
+    "business_ops"
+  ],
+  "nodes": [
+    {
+      "id": "hr_generalist",
+      "label": "人力资源职能岗位入职",
+      "kind": "entry",
+      "description": "通过企业人事专员、招聘与员工关系等岗位积累合法招聘及劳动关系基础。",
+      "source_ids": [
+        "standard"
+      ]
+    },
+    {
+      "id": "business_ops",
+      "label": "业务运营岗位转入HR",
+      "kind": "entry",
+      "description": "具有业务管理经验者可根据企业岗位招聘或内部转岗规则进入业务人力资源合作工作。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "id": "fundamentals",
+      "label": "人力资源管理基础",
+      "kind": "milestone",
+      "description": "熟悉招聘配置、培训发展、绩效薪酬、劳动关系与人力资源数据工作。",
+      "source_ids": [
+        "standard"
+      ]
+    },
+    {
+      "id": "partner",
+      "label": "业务团队协作实践",
+      "kind": "role",
+      "description": "参与组织诊断、人才盘点、需求规划与管理者沟通，逐步从流程执行向业务支持发展。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "id": "insight",
+      "label": "组织效能与数据分析",
+      "kind": "role",
+      "description": "运用人员流动、招聘漏斗、组织结构等数据支持业务决策，依法处理员工信息。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "id": "sr",
+      "label": "资深业务伙伴／区域HRBP",
+      "kind": "role",
+      "description": "根据企业实际任职要求，可能管理更复杂的业务模块或区域，不是国家统一职级。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业HRBP岗位",
+      "kind": "target",
+      "description": "独立对接业务部门，统筹人才策略、组织能力和员工关系相关的人力资源解决方案。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "hr_generalist",
+      "to": "fundamentals",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「人力资源职能岗位入职」转向「人力资源管理基础」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "standard"
+      ]
+    },
+    {
+      "from": "fundamentals",
+      "to": "partner",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「人力资源管理基础」转向「业务团队协作实践」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "from": "partner",
+      "to": "insight",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「业务团队协作实践」转向「组织效能与数据分析」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "from": "insight",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「组织效能与数据分析」转向「企业HRBP岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    },
+    {
+      "from": "business_ops",
+      "to": "fundamentals",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「业务运营岗位转入HR」转向「人力资源管理基础」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "standard"
+      ]
+    },
+    {
+      "from": "partner",
+      "to": "sr",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「业务团队协作实践」转向「资深业务伙伴／区域HRBP」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "sr",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「资深业务伙伴／区域HRBP」转向「企业HRBP岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "hrbp_job"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "hr_specialist",
+      "title": "传统HR专业能力成长",
+      "description": "从人力资源职能实践和业务团队协作积累专业能力，逐步进入HRBP岗位。",
+      "node_ids": [
+        "hr_generalist",
+        "fundamentals",
+        "partner",
+        "insight",
+        "target"
+      ]
+    },
+    {
+      "id": "business_transfer",
+      "title": "业务经验向HRBP转型",
+      "description": "具有业务部门经验者经企业培训或相关岗位招聘后理解HR专业体系并承担伙伴职责。",
+      "node_ids": [
+        "business_ops",
+        "fundamentals",
+        "partner",
+        "sr",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "企业人力资源管理师是国家职业分类体系内的技能评价相关职业，而HRBP是企业自行设置的岗位名称，两者不能直接划等号。",
+    "企业HRBP招聘示例通常涉及组织诊断、人才盘点、招聘、绩效、员工关系与人力资源数据；专业、学历和年限须以各单位岗位公告为准。",
+    "持有职业技能等级证书不能替代雇主岗位选聘，也不自动取得“资深HRBP”“HR经理”等职务。"
+  ],
+  "caveats": [
+    "HRBP不是国家公务员人社部门的管理职务，也不是必须经过统一执业许可的独立受限制职业。",
+    "不同企业三支柱组织模式、岗位责任与职位名称不同；不要将招聘个案年龄或学历变成普遍规则。",
+    "本图谱仅讨论依法合规的HR和业务管理能力，不涉及操纵招聘或歧视性筛选。"
+  ],
+  "sources": [
+    {
+      "id": "standard",
+      "title": "人社部颁布企业人力资源管理师等国家职业标准的通知",
+      "publisher": "人力资源社会保障部",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/202510/t20251016_560431.html",
+      "published": "2025-08-27"
+    },
+    {
+      "id": "occupation",
+      "title": "职业分类大典2022年版公开介绍",
+      "publisher": "中国就业网（人力资源社会保障部）",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-08/361551.shtml",
+      "published": "2022-10-08"
+    },
+    {
+      "id": "hrbp_job",
+      "title": "大唐集团数字科技有限公司HRBP岗位招聘示例",
+      "publisher": "高校人才网（转载雇主招聘）",
+      "url": "https://www.gaoxiaojob.com/job/detail/2356775.html",
+      "published": "2026-10-12"
+    }
+  ]
+}

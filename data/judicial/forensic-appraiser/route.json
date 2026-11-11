@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0.0",
+  "id": "forensic-appraiser",
+  "title": "司法鉴定人",
+  "subtitle": "专业资格、机构申请、行政登记与依法执业",
+  "category": "judicial",
+  "jurisdiction": "中国大陆·司法行政机关登记管理的司法鉴定业务",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "司法鉴定人必须符合与所申报鉴定类别相关的专业条件，经拟执业机构申请并由省级司法行政机关审核登记，领取司法鉴定人执业证后方能依法执业。",
+  "target": "target",
+  "entry_points": [
+    "academic",
+    "senior_title"
+  ],
+  "nodes": [
+    {
+      "id": "academic",
+      "label": "相关专业学历与从业实践",
+      "kind": "entry",
+      "description": "相关专业学历并结合符合规定的工作经历或行业执业资格，按申请鉴定类别核对条件。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "senior_title",
+      "label": "相关专业高级职称或行业资格",
+      "kind": "entry",
+      "description": "具有相关高级专业技术职称等法定条件的申请人，仍需满足其他行业与登记条件。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "experience",
+      "label": "专业经验与能力积累",
+      "kind": "milestone",
+      "description": "应符合申报鉴定类别的工作年限、专门技术能力与执业机构等条件。",
+      "source_ids": [
+        "regulation",
+        "interpretation"
+      ]
+    },
+    {
+      "id": "institution",
+      "label": "确定拟执业司法鉴定机构",
+      "kind": "milestone",
+      "description": "申请须由拟执业机构提交材料，机构应已获得或正在申请相应司法鉴定许可证。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "registration",
+      "label": "省级司法行政审核登记",
+      "kind": "milestone",
+      "description": "省级司法行政机关对执业能力和材料依法审核，符合条件决定准予登记。",
+      "source_ids": [
+        "regulation",
+        "interpretation"
+      ]
+    },
+    {
+      "id": "certificate",
+      "label": "取得司法鉴定人执业证",
+      "kind": "milestone",
+      "description": "依法取得执业证方可在登记执业类别和执业机构范围内执业。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "独立承担鉴定工作",
+      "kind": "role",
+      "description": "在机构指派下依法出具专业鉴定意见并遵守保密、回避、出庭作证等义务。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "依法执业的司法鉴定人",
+      "kind": "target",
+      "description": "取得登记执业资格并依登记范围开展鉴定活动，持续接受质量监督和继续教育。",
+      "source_ids": [
+        "regulation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "academic",
+      "to": "experience",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「相关专业学历与从业实践」转向「专业经验与能力积累」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation",
+        "interpretation"
+      ]
+    },
+    {
+      "from": "experience",
+      "to": "institution",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「专业经验与能力积累」转向「确定拟执业司法鉴定机构」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "institution",
+      "to": "registration",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「确定拟执业司法鉴定机构」转向「省级司法行政审核登记」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation",
+        "interpretation"
+      ]
+    },
+    {
+      "from": "registration",
+      "to": "certificate",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「省级司法行政审核登记」转向「取得司法鉴定人执业证」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "certificate",
+      "to": "practice",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「取得司法鉴定人执业证」转向「独立承担鉴定工作」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "practice",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「独立承担鉴定工作」转向「依法执业的司法鉴定人」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation"
+      ]
+    },
+    {
+      "from": "senior_title",
+      "to": "experience",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「相关专业高级职称或行业资格」转向「专业经验与能力积累」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "regulation",
+        "interpretation"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "experience_path",
+      "title": "相关专业经验进入路线",
+      "description": "根据学历或相关执业资格与工作经历，满足登记条件，再由拟执业机构申请审核登记。",
+      "node_ids": [
+        "academic",
+        "experience",
+        "institution",
+        "registration",
+        "certificate",
+        "practice",
+        "target"
+      ]
+    },
+    {
+      "id": "senior_path",
+      "title": "高级职称专业人才路线",
+      "description": "相关高级专业技术人员仍需满足执业机构和登记条件，没有免除审批的快速入职通道。",
+      "node_ids": [
+        "senior_title",
+        "experience",
+        "institution",
+        "registration",
+        "certificate",
+        "practice",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "司法部令第96号《司法鉴定人登记管理办法》第12条对相关高级职称、相关行业资格或本科与工作经历作出分类要求；经验型和技能型鉴定还另有条件。",
+    "拟执业机构应已取得或正在申请司法鉴定许可证；必须经省级司法行政机关登记并取得《司法鉴定人执业证》。",
+    "2020年司法部对第15条解释要求实质核实申请人的执业能力，可组织专家评审和考核。"
+  ],
+  "caveats": [
+    "司法鉴定业务有登记管理范围与类别限制；持医学执业资格、刑事技术警察身份或实验室岗位本身都不自动赋予司法鉴定执业资格。",
+    "规章于2005年公布，2020年已有解释，后续需要继续核对具体省份的申报指南、业务分类和制度有效性。",
+    "出具鉴定意见需依法独立、客观，并执行保密、回避和机构执业要求。"
+  ],
+  "sources": [
+    {
+      "id": "regulation",
+      "title": "司法鉴定人登记管理办法（司法部令第96号）",
+      "publisher": "辽宁省司法厅（转载司法部规章）",
+      "url": "https://sft.ln.gov.cn/sft/ywgz/ggflfw/2025021215543550573/index.shtml",
+      "published": "2005-09-30"
+    },
+    {
+      "id": "interpretation",
+      "title": "司法部关于司法鉴定人登记审核有关问题的解释",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrtzwj/202103/t20210316_207938.html",
+      "published": "2020-06-05"
+    },
+    {
+      "id": "service",
+      "title": "司法鉴定政务服务办事指南",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/zwfw/zwfwbszn/bsznsfjd/",
+      "published": "2021-12-28"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "id": "child-welfare-supervisor",
+  "title": "儿童福利机构督导员",
+  "subtitle": "儿童社会工作实践、督导资格与福利机构服务质量",
+  "category": "public-service",
+  "jurisdiction": "中国大陆·民政部门主管的儿童福利机构社会工作督导",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "儿童福利机构的社会工作督导侧重儿童保护、个案评估、跨专业服务协同和社工专业支持；民政行业推荐性标准对督导者提出多条资格要求，不能误认为国家统一“督导员执业证”许可。",
+  "target": "target",
+  "entry_points": [
+    "social_degree",
+    "social_credential"
+  ],
+  "nodes": [
+    {
+      "id": "social_degree",
+      "label": "社会工作专业学历与实务",
+      "kind": "entry",
+      "description": "通过社会工作相关专业教育，并按机构标准积累儿童社会工作实践。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "id": "social_credential",
+      "label": "社会工作师职业资格与实践",
+      "kind": "entry",
+      "description": "依法取得社会工作者职业资格并积累儿童社会工作经历，按标准核对督导资格。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "id": "frontline",
+      "label": "儿童福利机构社会工作实践",
+      "kind": "milestone",
+      "description": "从儿童需求评估、家庭支持、个案管理、服务衔接等专业事务中积累儿童服务经验。",
+      "source_ids": [
+        "welfare_standard",
+        "welfare_rule"
+      ]
+    },
+    {
+      "id": "supervision_ready",
+      "label": "满足社会工作督导适用资格",
+      "kind": "milestone",
+      "description": "对照MZ/T 167—2021第9.2.2条的学历、职业资格与服务年限等多种要求，逐项审核。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "id": "agency",
+      "label": "机构岗位或项目选聘",
+      "kind": "milestone",
+      "description": "通过机构任职或依法采购服务项目的人员资格审查；项目条件可能比行业标准更具体。",
+      "source_ids": [
+        "welfare_rule",
+        "local_project"
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "儿童个案与团队专业督导",
+      "kind": "role",
+      "description": "开展社工实务指导、个案咨询、团队支持、服务质量评估和保密合规管理。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "id": "operations",
+      "label": "机构服务质量与项目管理",
+      "kind": "role",
+      "description": "可能承担专业服务质量控制、项目协调与继续教育组织，是否任管理负责人另由机构决定。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "儿童福利机构社会工作督导岗位",
+      "kind": "target",
+      "description": "在专业条件和机构聘任安排满足时担任儿童社会工作专业督导，依规提供服务并接受质量监督。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_degree",
+      "to": "frontline",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「社会工作专业学历与实务」转向「儿童福利机构社会工作实践」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard",
+        "welfare_rule"
+      ]
+    },
+    {
+      "from": "frontline",
+      "to": "supervision_ready",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「儿童福利机构社会工作实践」转向「满足社会工作督导适用资格」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "from": "supervision_ready",
+      "to": "agency",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「满足社会工作督导适用资格」转向「机构岗位或项目选聘」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_rule",
+        "local_project"
+      ]
+    },
+    {
+      "from": "agency",
+      "to": "practice",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「机构岗位或项目选聘」转向「儿童个案与团队专业督导」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "from": "practice",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「儿童个案与团队专业督导」转向「儿童福利机构社会工作督导岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    },
+    {
+      "from": "social_credential",
+      "to": "frontline",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「社会工作师职业资格与实践」转向「儿童福利机构社会工作实践」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard",
+        "welfare_rule"
+      ]
+    },
+    {
+      "from": "agency",
+      "to": "operations",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「机构岗位或项目选聘」转向「机构服务质量与项目管理」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "operations",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「机构服务质量与项目管理」转向「儿童福利机构社会工作督导岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "welfare_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "degree",
+      "title": "专业学历与儿童服务经历",
+      "description": "社会工作学历及实际儿童服务经验构成可能的资格组合，经机构选聘进入专业督导岗位。",
+      "node_ids": [
+        "social_degree",
+        "frontline",
+        "supervision_ready",
+        "agency",
+        "practice",
+        "target"
+      ]
+    },
+    {
+      "id": "credential",
+      "title": "社会工作师与儿童服务经历",
+      "description": "持职业资格并累计相应儿童服务工作经验，在满足项目或机构具体要求后承担督导。",
+      "node_ids": [
+        "social_credential",
+        "frontline",
+        "supervision_ready",
+        "agency",
+        "operations",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "MZ/T 167—2021《儿童福利机构社会工作服务规范》第9.2.2条列出社会工作专业本科且儿童社工3年、硕士且2年、社会工作师且5年、高级社会工作师且1年等若干资格替代条件。",
+    "该MZ/T标准为推荐性行业标准，具体岗位招聘和项目采购可能另有更严格的经验或证书要求，不能当作全国统一的许可制度。",
+    "2026年修订《儿童福利机构管理办法》强调机构人员配备、专业资格和儿童保护、招聘背景审查等职责。",
+    "北京市丰台区2026年儿童福利社工服务项目设置了督导须有社会工作师等资格、服务经验及项目经验的示例性条件。"
+  ],
+  "caveats": [
+    "儿童福利机构专业社工督导不等于机构负责人行政职务，也不等于社会工作者证书持有人自动成为督导。",
+    "社会工作督导岗位没有据此可推导的全国统一公务员级别或必然晋升年限。",
+    "从业须保护儿童隐私与权益，遵守2026年儿童福利管理规定，不公开个案身份信息。"
+  ],
+  "sources": [
+    {
+      "id": "welfare_standard",
+      "title": "儿童福利机构社会工作服务规范（MZ/T 167—2021）",
+      "publisher": "甘肃省民政厅（民政部行业标准全文）",
+      "url": "https://mzt.gansu.gov.cn/mzt/c107770/202107/1652042/files/69982582683349b1bfd124ea87280267.pdf",
+      "published": "2021-03-11"
+    },
+    {
+      "id": "standard_registry",
+      "title": "全国标准信息公共服务平台MZ/T 167—2021标准信息",
+      "publisher": "国家市场监督管理总局",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=BEA9D53656E9370FE05397BE0A0A92B1",
+      "published": "2021-03-11"
+    },
+    {
+      "id": "welfare_rule",
+      "title": "儿童福利机构管理办法（2026年修订）",
+      "publisher": "商务部法规库（转载民政部规章）",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=105048",
+      "published": "2026-01-26"
+    },
+    {
+      "id": "local_project",
+      "title": "丰台区2026年儿童福利院专业社工服务项目比选公告",
+      "publisher": "北京市丰台区人民政府",
+      "url": "https://www.bjft.gov.cn/xxfb/zfgg/202601/t20260105_200861.shtml",
+      "published": "2026-01-05"
+    }
+  ]
+}

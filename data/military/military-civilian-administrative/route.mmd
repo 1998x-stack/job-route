@@ -1,0 +1,30 @@
+flowchart TB
+    %% 军队管理类文职人员 — 2026-11-11
+    n_public_exam["管理类文职公开招考"]
+    n_direct_talent["高层次人才直接引进"]
+    n_selection["资格审查及招录程序"]
+    n_onboard["取得管理类文职人员身份"]
+    n_business["行政事务与综合管理履职"]
+    n_grade["文员等级发展"]
+    n_leader["管理类文职领导岗位"]
+    n_target["管理类文职职业发展"]
+    n_public_exam -.->|"资格与手续"| n_selection
+    n_selection -.->|"资格与手续"| n_onboard
+    n_onboard -.->|"岗位履历"| n_business
+    n_business -.->|"岗位履历"| n_grade
+    n_grade -.->|"符合条件后发展"| n_target
+    n_direct_talent -.->|"资格与手续"| n_selection
+    n_onboard -.->|"岗位履历"| n_leader
+    n_leader -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_public_exam entry
+    class n_direct_talent entry
+    class n_selection milestone
+    class n_onboard milestone
+    class n_business role
+    class n_grade role
+    class n_leader role
+    class n_target target

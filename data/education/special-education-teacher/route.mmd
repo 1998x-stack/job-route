@@ -1,0 +1,27 @@
+flowchart TB
+    %% 特殊教育学校教师 — 2026-11-11
+    n_teacher_training["师范／相关专业培养"]
+    n_existing_teacher["已有教师资格与教学经历"]
+    n_certificate["取得适用学段教师资格"]
+    n_selection["公开招聘与准入查询"]
+    n_classroom["特殊教育教学与支持"]
+    n_development["教学研究与业务骨干发展"]
+    n_target["特殊教育学校正式教师岗位"]
+    n_teacher_training -.->|"资格与手续"| n_certificate
+    n_certificate -.->|"资格与手续"| n_selection
+    n_selection -.->|"岗位履历"| n_classroom
+    n_classroom -.->|"岗位履历"| n_development
+    n_development -.->|"符合条件后发展"| n_target
+    n_existing_teacher -.->|"资格与手续"| n_certificate
+    n_classroom -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_teacher_training entry
+    class n_existing_teacher entry
+    class n_certificate milestone
+    class n_selection milestone
+    class n_classroom role
+    class n_development role
+    class n_target target

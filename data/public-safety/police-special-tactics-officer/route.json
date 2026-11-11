@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "id": "police-special-tactics-officer",
+  "title": "公安特警",
+  "subtitle": "公安人民警察招录、专项选拔与专业警务岗位",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆·公安机关（北京2027年度招录为地方示例）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "公安特警是公安机关人民警察体系中的专业警务岗位，常见入口是符合专项职位条件的公开招录，也可能经公安民警内部岗位选配，招考方式与体能标准必须看当年当地公告。",
+  "target": "target",
+  "entry_points": [
+    "special_exam",
+    "internal_select"
+  ],
+  "nodes": [
+    {
+      "id": "special_exam",
+      "label": "公安特警专项职位招录",
+      "kind": "entry",
+      "description": "报考当地当年度公安机关特警等具体职位，满足专业、体能、身体及资格要求。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "internal_select",
+      "label": "已有民警内部岗位选配",
+      "kind": "entry",
+      "description": "正式在职人民警察在符合条件时参加警务岗位选配，不能视为社会普通公开录用。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "police_identity",
+      "label": "依法录用的人民警察身份",
+      "kind": "milestone",
+      "description": "参加公务员考试与专业科目、面试、心理测评、体检与考察等环节，依法取得正式警察身份。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "special_assessment",
+      "label": "专项岗位资格与能力评估",
+      "kind": "milestone",
+      "description": "通过公安机关特警岗位的专项体能与身体素质标准等资格审查；具体项目随地区和年度变化。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "专业警务训练",
+      "kind": "role",
+      "description": "依合法岗位管理开展与执法勤务相关的专业训练，持续遵守执法规范和安全纪律。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "frontline",
+      "label": "公安特警执法勤务岗位",
+      "kind": "role",
+      "description": "在具体岗位职责与公安机关管理制度范围内执行警务工作，不以内部战术或敏感编制为研究对象。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "公安特警岗位任职",
+      "kind": "target",
+      "description": "依法取得公安特警岗位身份并持续履行专业执法勤务，后续骨干和管理任用依机关制度进行。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "special_exam",
+      "to": "police_identity",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「公安特警专项职位招录」转向「依法录用的人民警察身份」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "police_identity",
+      "to": "special_assessment",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「依法录用的人民警察身份」转向「专项岗位资格与能力评估」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "special_assessment",
+      "to": "training",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「专项岗位资格与能力评估」转向「专业警务训练」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "frontline",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「专业警务训练」转向「公安特警执法勤务岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "frontline",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「公安特警执法勤务岗位」转向「公安特警岗位任职」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "internal_select",
+      "to": "special_assessment",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「已有民警内部岗位选配」转向「专项岗位资格与能力评估」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "direct_recruit",
+      "title": "专项岗位公开招录",
+      "description": "面向符合条件的报考者，通过录用、专项体能资格与警务训练进入特警岗位。",
+      "node_ids": [
+        "special_exam",
+        "police_identity",
+        "special_assessment",
+        "training",
+        "frontline",
+        "target"
+      ]
+    },
+    {
+      "id": "internal_police",
+      "title": "已有公安民警岗位选配",
+      "description": "现役（在职）正式公安民警经岗位选配与专项训练，可能进入特警职责岗位。",
+      "node_ids": [
+        "internal_select",
+        "special_assessment",
+        "training",
+        "frontline",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "北京市公安局2027年度公告公布特警队员体能及身体素质标准附件，考录环节包括笔试、面试、心理测试、体能测评、体检与考察，岗位细节以附件职位表为准。",
+    "公安特警属于人民警察执法岗位，不能把辅警、安保人员等同于正式公安民警。",
+    "2027年度北京公安招考报名2026年11月12—18日，属于地区年度实例，不构成全国统一报名期限。"
+  ],
+  "caveats": [
+    "各省市的特警专项测试项目、身高体能和专业特长条件可能不同，必须使用当年职位附件，不得套用通用标准。",
+    "不提供警务战术、部署、装备配置或敏感内部组织运行资料。",
+    "警衔晋升和特警岗位安排是不同的管理维度。"
+  ],
+  "sources": [
+    {
+      "id": "recruit_2027",
+      "title": "北京市公安局2027年度面向社会招录人民警察公告",
+      "publisher": "北京市公安局",
+      "url": "https://gaj.beijing.gov.cn/zhuanti/zlxx/tzgg/202611/t20261109_4938297.html",
+      "published": "2026-11-09"
+    },
+    {
+      "id": "recruit_2026",
+      "title": "北京市公安机关2026年考试录用人民警察公告",
+      "publisher": "北京市公安局",
+      "url": "https://gaj.beijing.gov.cn/zhuanti/zlxx/tzgg/202609/t20260916_4866082.html",
+      "published": "2026-09-16"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法",
+      "publisher": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "1995-02-28"
+    }
+  ]
+}
