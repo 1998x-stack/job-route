@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.0.0",
+  "id": "energy-storage-systems-engineer",
+  "title": "储能系统集成工程师",
+  "subtitle": "电力电子、电池管理与储能系统集成、并网验证及标准版本管理",
+  "category": "technology",
+  "jurisdiction": "中国大陆储能系统设备制造与新能源项目集成工程企业；适用电化学储能国家标准",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "储能系统集成工程师是工程企业按照产品需求设置的系统设计与集成岗位，负责储能电池、电力变换系统PCS、能量管理EMS、保护控制等模块集成验证。GB/T 36558-2023《电力系统电化学储能系统通用技术条件》已于2024年7月实施；2026年发布的若干DL/T标准须区分“已发布”与2026年12月26日“尚未施行”，不能提前写成2026年11月的强制执行依据。",
+  "target": "target",
+  "entry_points": [
+    "power",
+    "battery"
+  ],
+  "nodes": [
+    {
+      "id": "power",
+      "label": "电气与电力电子专业背景",
+      "kind": "entry",
+      "description": "从电气工程、控制工程、电力电子和储能相关教育进入，掌握电气安全和电力系统原理。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "电池BMS或工控集成工程经历",
+      "kind": "entry",
+      "description": "有电池管理、嵌入式工控、功率变换器、测试验证及系统交付经验者可按雇主需求转向储能系统集成。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "basics",
+      "label": "储能系统架构与标准评估",
+      "kind": "milestone",
+      "description": "理解BMS、PCS、EMS、热管理、保护及系统调度关系，核实标准适用范围与当时生效时间。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "系统方案和接口安全设计",
+      "kind": "role",
+      "description": "根据项目功率容量、安全要求、设备接口与运行环境形成设计文档及技术规格。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "verification",
+      "label": "集成测试与系统可靠性验证",
+      "kind": "role",
+      "description": "进行硬软件接口检查、环境测试、保护功能联动和测试记录，按安全制度控制调试风险。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "standards",
+      "label": "并网及电站设计标准协调",
+      "kind": "role",
+      "description": "核对接网、运行安全、站用电和监控等适用技术标准，与电网单位和监管要求协调。",
+      "source_ids": [
+        "upcoming_standard"
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "跨供应商项目交付和质量闭环",
+      "kind": "role",
+      "description": "统筹系统BOM、可测试性、现场验收资料和故障改进，具体电力安装或操作活动需具备相应授权。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "id": "leader",
+      "label": "系统架构负责人或技术经理方向",
+      "kind": "role",
+      "description": "按项目经验与企业聘用承担集成方案和团队技术协调，工程师称谓不等于行政许可或电站操作资格。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "储能系统集成工程师岗位",
+      "kind": "target",
+      "description": "在合法项目和单位安全体系中承担储能架构设计、设备接口集成、验证及交付相关工程职责。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "power",
+      "to": "basics",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「电气与电力电子专业背景」到「储能系统架构与标准评估」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "basics",
+      "to": "design",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「储能系统架构与标准评估」到「系统方案和接口安全设计」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "design",
+      "to": "verification",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「系统方案和接口安全设计」到「集成测试与系统可靠性验证」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "verification",
+      "to": "standards",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「集成测试与系统可靠性验证」到「并网及电站设计标准协调」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "upcoming_standard"
+      ]
+    },
+    {
+      "from": "standards",
+      "to": "delivery",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「并网及电站设计标准协调」到「跨供应商项目交付和质量闭环」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「跨供应商项目交付和质量闭环」到「储能系统集成工程师岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "battery",
+      "to": "basics",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「电池BMS或工控集成工程经历」到「储能系统架构与标准评估」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "verification",
+      "to": "delivery",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「集成测试与系统可靠性验证」到「跨供应商项目交付和质量闭环」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "leader",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「跨供应商项目交付和质量闭环」到「系统架构负责人或技术经理方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "leader",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「系统架构负责人或技术经理方向」到「储能系统集成工程师岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "gb_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "power_track",
+      "title": "电气与电力系统方案路线",
+      "description": "从电气工程基础切入，形成系统架构、集成测试和交付能力后独立承担储能集成工程岗位。",
+      "node_ids": [
+        "power",
+        "basics",
+        "design",
+        "verification",
+        "standards",
+        "delivery",
+        "target"
+      ]
+    },
+    {
+      "id": "battery_track",
+      "title": "电池控制与系统集成路线",
+      "description": "已有BMS/嵌入式经验者补全电力系统标准、系统验证和跨供应商协调，向集成工程方向发展。",
+      "node_ids": [
+        "battery",
+        "basics",
+        "design",
+        "verification",
+        "delivery",
+        "leader",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "GB/T 36558-2023为现行推荐性国家标准，2023年12月28日发布、2024年7月1日实施，不等于个人职业执业许可证。",
+    "DL/T 5913-2026与DL/T 5912-2026于2026年6月26日发布，但均从2026年12月26日实施；截至本研究日仍属于即将实施标准。",
+    "2024年国家正式公布的“储能电站运维管理员”为另一职业，与企业内储能系统集成工程师岗位不同。",
+    "企业岗位职责与工程项目电气安装、持证操作及施工许可等法定活动应分别识别。"
+  ],
+  "caveats": [
+    "不得用尚未实施的2026年12月储能行业标准声称现已强制适用于所有系统；并须按储能技术路线和项目规模核查条款适用性。",
+    "储能系统集成工程师、储能电站运维管理员和电气工程师职业资格体系不完全对应。",
+    "涉及高压电力、储能电池与消防风险的调试操作必须由具备资质的专业人员依法进行，不提供危险测试或绕开保护装置的操作指令。"
+  ],
+  "sources": [
+    {
+      "id": "gb_standard",
+      "title": "GB/T 36558-2023 电力系统电化学储能系统通用技术条件",
+      "publisher": "国家市场监督管理总局国家标准全文公开系统",
+      "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=CFC9F95B159C4ADA8945379C00D042A6",
+      "published": "2023-12-28"
+    },
+    {
+      "id": "upcoming_standard",
+      "title": "DL/T 5913—2026 电化学储能电站站用电设计规范（2026-12-26实施）",
+      "publisher": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=5B957AE5C6DB432CE06397BE0A0A659F",
+      "published": "2026-06-26"
+    },
+    {
+      "id": "monitor_standard",
+      "title": "DL/T 5912—2026 电化学储能电站监控系统设计规范（2026-12-26实施）",
+      "publisher": "全国标准信息公共服务平台",
+      "url": "https://hbba.sacinfo.org.cn/stdDetail/bc4128c7dea53ff07ae9df0d75dc3a67e3e398552a9baeeae7302529003b90a2",
+      "published": "2026-06-26"
+    },
+    {
+      "id": "new_jobs_2024",
+      "title": "2024年正式公布的19个新职业信息",
+      "publisher": "中国就业网（人社部）",
+      "url": "https://chinajob.mohrss.gov.cn/c/2024-08-01/413001.shtml",
+      "published": "2024-08-01"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "id": "protected-area-ranger",
+  "title": "自然保护地生态巡护员",
+  "subtitle": "2026国家公园法与新自然保护区条例下的巡护、监测和社区岗位",
+  "category": "public-service",
+  "jurisdiction": "中国大陆国家公园、自然保护区及地方林草管护项目；依据具体管理机构和劳务合同",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "自然保护地生态巡护员是国家公园、自然保护区或林草管护项目中的巡护与生态监测服务岗位，不自动具有行政执法公务员身份。《国家公园法》2026年1月1日施行、《自然保护区条例》2026年3月15日施行修订版；乡村护林员和生态护林员还可能依地方公开选聘、劳务合同与年度考核管理。",
+  "target": "target",
+  "entry_points": [
+    "park_apply",
+    "community_apply"
+  ],
+  "nodes": [
+    {
+      "id": "park_apply",
+      "label": "自然保护地管理机构巡护岗位申请",
+      "kind": "entry",
+      "description": "按国家公园或自然保护区的合法用工公告报名，核对保护地具体区域、人员身份、户外能力和岗位职责。",
+      "source_ids": [
+        "park_law",
+        "reserve_law"
+      ]
+    },
+    {
+      "id": "community_apply",
+      "label": "乡村和地方生态护林员公开选聘",
+      "kind": "entry",
+      "description": "依据地方林草部门公告从社区居民或相关专业人员中公开自愿选聘并签订管护劳务协议。",
+      "source_ids": [
+        "ranger_rules",
+        "liaoning_2026"
+      ]
+    },
+    {
+      "id": "onboard",
+      "label": "巡护岗位招聘与合法合同",
+      "kind": "milestone",
+      "description": "区分行政编、事业单位、劳务聘用、政府购买服务及志愿者身份，按约定确认巡护范围和安全保障。",
+      "source_ids": [
+        "ranger_rules",
+        "reserve_law"
+      ]
+    },
+    {
+      "id": "training",
+      "label": "保护区法规与野外安全培训",
+      "kind": "milestone",
+      "description": "了解自然保护区2026年新管理条例、国家公园法和野外巡护信息安全、生态伦理。",
+      "source_ids": [
+        "reserve_law",
+        "park_law"
+      ]
+    },
+    {
+      "id": "patrol",
+      "label": "巡护与生态资源保护",
+      "kind": "role",
+      "description": "依职责开展自然资源巡查、防火宣传、非法破坏线索报告和公共安全提示，不越权开展行政处罚。",
+      "source_ids": [
+        "ranger_rules",
+        "reserve_law"
+      ]
+    },
+    {
+      "id": "monitor",
+      "label": "监测记录与数据质量管理",
+      "kind": "role",
+      "description": "记录野生动植物观察、栖息地变化、巡护里程和风险异常，依法保护敏感生境信息。",
+      "source_ids": [
+        "park_law"
+      ]
+    },
+    {
+      "id": "community",
+      "label": "社区协同和保护宣传教育",
+      "kind": "role",
+      "description": "参与科普、社区沟通及生态保护宣传，保护社区居民权益和环境敏感地点。",
+      "source_ids": [
+        "park_law",
+        "reserve_law"
+      ]
+    },
+    {
+      "id": "coordinator",
+      "label": "巡护项目骨干或团队协调",
+      "kind": "role",
+      "description": "根据岗位培训、项目经验、考核与组织需要可能承担巡护培训及队伍协调工作。",
+      "source_ids": [
+        "liaoning_2026"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "自然保护地生态巡护岗位",
+      "kind": "target",
+      "description": "按合法招聘或劳务合同开展巡护、监测与保护教育；是否具备行政执法权另依法律机关授权及人员资格认定。",
+      "source_ids": [
+        "reserve_law",
+        "park_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "park_apply",
+      "to": "onboard",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「自然保护地管理机构巡护岗位申请」到「巡护岗位招聘与合法合同」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "ranger_rules",
+        "reserve_law"
+      ]
+    },
+    {
+      "from": "onboard",
+      "to": "training",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「巡护岗位招聘与合法合同」到「保护区法规与野外安全培训」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "reserve_law",
+        "park_law"
+      ]
+    },
+    {
+      "from": "training",
+      "to": "patrol",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「保护区法规与野外安全培训」到「巡护与生态资源保护」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "ranger_rules",
+        "reserve_law"
+      ]
+    },
+    {
+      "from": "patrol",
+      "to": "monitor",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「巡护与生态资源保护」到「监测记录与数据质量管理」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "park_law"
+      ]
+    },
+    {
+      "from": "monitor",
+      "to": "community",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「监测记录与数据质量管理」到「社区协同和保护宣传教育」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "park_law",
+        "reserve_law"
+      ]
+    },
+    {
+      "from": "community",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「社区协同和保护宣传教育」到「自然保护地生态巡护岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "reserve_law",
+        "park_law"
+      ]
+    },
+    {
+      "from": "community_apply",
+      "to": "onboard",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「乡村和地方生态护林员公开选聘」到「巡护岗位招聘与合法合同」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "ranger_rules",
+        "reserve_law"
+      ]
+    },
+    {
+      "from": "patrol",
+      "to": "coordinator",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「巡护与生态资源保护」到「巡护项目骨干或团队协调」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "liaoning_2026"
+      ]
+    },
+    {
+      "from": "coordinator",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「巡护项目骨干或团队协调」到「自然保护地生态巡护岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "reserve_law",
+        "park_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "park_track",
+      "title": "自然保护地岗位招聘路线",
+      "description": "通过保护地管理机构或服务机构的公开招聘进入岗位，完成保护法规与安全培训后从事巡护及监测工作。",
+      "node_ids": [
+        "park_apply",
+        "onboard",
+        "training",
+        "patrol",
+        "monitor",
+        "community",
+        "target"
+      ]
+    },
+    {
+      "id": "community_track",
+      "title": "社区生态护林员选聘路线",
+      "description": "从村镇公开选聘进入管护劳务岗位，依法按合同巡护并接受考核，符合条件时参与团队协调。",
+      "node_ids": [
+        "community_apply",
+        "onboard",
+        "training",
+        "patrol",
+        "coordinator",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中华人民共和国国家公园法》2025年9月12日通过、2026年1月1日施行，确立国家公园保护体系和社区参与原则。",
+    "国务院2026年第830号令第三次修订《自然保护区条例》，自2026年3月15日起施行，规定管理机构职责与保护分区。",
+    "国家林草局2021年《乡村护林（草）员管理办法》规定公开、自愿、公正选聘及一年一聘等管理事项；不同类别项目适用独立地方制度。",
+    "辽宁省2026年生态护林员管理办法明确部分生态护林员通过与国有单位或乡镇等签订森林资源管护劳务合同履职，不能自动视作公务员。"
+  ],
+  "caveats": [
+    "自然保护区与国家公园依法属于不同类别，相关法律实施时间不同；不能照搬1994年旧条例作为2026现行规则。",
+    "受聘巡护员、社会志愿者、事业单位专业技术人员和国家林草行政执法公务员身份不同。",
+    "对重点保护物种活动点位、珍稀栖息地和巡护安全部署等非公开敏感地点不提供具体信息。"
+  ],
+  "sources": [
+    {
+      "id": "park_law",
+      "title": "中华人民共和国国家公园法",
+      "publisher": "国家林业和草原局（转载全国人大法律）",
+      "url": "https://www.forestry.gov.cn/c/www/lcdt/642163.jhtml",
+      "published": "2025-09-12"
+    },
+    {
+      "id": "reserve_law",
+      "title": "中华人民共和国自然保护区条例（2026年修订）",
+      "publisher": "北京市人民政府（转载国务院令第830号）",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202605/t20260527_4668825.html",
+      "published": "2026-02-03"
+    },
+    {
+      "id": "ranger_rules",
+      "title": "乡村护林（草）员管理办法",
+      "publisher": "国家林业和草原局",
+      "url": "https://www.forestry.gov.cn/lyj/1/gkzfwj/20210820/272569.html",
+      "published": "2021-08-20"
+    },
+    {
+      "id": "liaoning_2026",
+      "title": "辽宁省生态护林员管理办法（2026）",
+      "publisher": "辽宁省林业和草原局",
+      "url": "https://lyt.ln.gov.cn/lyt/zfxxgk/zc/xzgfxwj/2026080315564090843/index.shtml",
+      "published": "2026-07-02"
+    }
+  ]
+}

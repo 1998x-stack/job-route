@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-dean",
+  "title": "高校学院院长",
+  "subtitle": "2026高校领导人员管理修订与院系内设机构负责人的组织选任",
+  "category": "education",
+  "jurisdiction": "中国大陆普通高等学校二级学院院长；区分国家举办高校和民办高校章程",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "高校二级学院院长是学校内设教学科研单位行政负责人，不是因教授职称自动获得的岗位。2026年修订《高等学校领导人员管理办法》明确国家举办高校的内设机构负责人选拔任用按干部管理权限参照相关条款执行；具体任命、聘任、民主推荐与院系党政分工还须遵循各校章程和组织规定。",
+  "target": "target",
+  "entry_points": [
+    "academic",
+    "management"
+  ],
+  "nodes": [
+    {
+      "id": "academic",
+      "label": "高校教师或学术科研骨干经历",
+      "kind": "entry",
+      "description": "通过高校合法聘用积累教学科研、学科建设和人才培养能力；教授职称不当然具有院长行政资格。",
+      "source_ids": [
+        "uni_titles"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "高校院系教学与行政管理经历",
+      "kind": "entry",
+      "description": "从专业负责人、系主任、副院长或跨校符合条件的教育管理岗位进入院系负责人选任视野。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "管理岗位资格、回避与岗位适配审查",
+      "kind": "milestone",
+      "description": "国家举办高校内设机构负责人需按2026年修订办法第二条参照选拔任用条款并依干部管理权限考察。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "id": "track",
+      "label": "学院学科建设和教学治理能力",
+      "kind": "role",
+      "description": "具备专业人才引进、人才培养、课程、科研平台及预算合规能力；不将学术成果数量当作唯一选拔规则。",
+      "source_ids": [
+        "charter"
+      ]
+    },
+    {
+      "id": "nomination",
+      "label": "学校推荐、考察及集体决策",
+      "kind": "milestone",
+      "description": "根据高校性质和学校章程履行公开选拔、组织考察和集体决定等程序。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    },
+    {
+      "id": "appointment",
+      "label": "由学校按章程正式聘任或任命",
+      "kind": "milestone",
+      "description": "学校依据内部管理权限完成院长任职，民办高校可能由校务会和董事会等章程程序决定。",
+      "source_ids": [
+        "charter",
+        "private_charter"
+      ]
+    },
+    {
+      "id": "responsibility",
+      "label": "院系教育科研及行政工作组织",
+      "kind": "role",
+      "description": "领导院系教学、科研、学科、人才队伍等日常事务，并依法依章程与院系党组织分工协作。",
+      "source_ids": [
+        "charter"
+      ]
+    },
+    {
+      "id": "development",
+      "label": "学院治理与学校战略协同",
+      "kind": "role",
+      "description": "参与学科评价、经费与招生治理，履行利益冲突回避和学术伦理等约束，后续校级职务另经选任。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "高校二级学院院长岗位",
+      "kind": "target",
+      "description": "经过适用学校的组织选拔、集体决策与正式任用程序担任院系行政负责人，不因此成为校级领导或取得新职称。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "academic",
+      "to": "qualification",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「高校教师或学术科研骨干经历」到「管理岗位资格、回避与岗位适配审查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "track",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「管理岗位资格、回避与岗位适配审查」到「学院学科建设和教学治理能力」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "charter"
+      ]
+    },
+    {
+      "from": "track",
+      "to": "nomination",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「学院学科建设和教学治理能力」到「学校推荐、考察及集体决策」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    },
+    {
+      "from": "nomination",
+      "to": "appointment",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「学校推荐、考察及集体决策」到「由学校按章程正式聘任或任命」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "charter",
+        "private_charter"
+      ]
+    },
+    {
+      "from": "appointment",
+      "to": "responsibility",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「由学校按章程正式聘任或任命」到「院系教育科研及行政工作组织」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "charter"
+      ]
+    },
+    {
+      "from": "responsibility",
+      "to": "development",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「院系教育科研及行政工作组织」到「学院治理与学校战略协同」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "from": "development",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「学院治理与学校战略协同」到「高校二级学院院长岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    },
+    {
+      "from": "management",
+      "to": "qualification",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「高校院系教学与行政管理经历」到「管理岗位资格、回避与岗位适配审查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "nomination",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「管理岗位资格、回避与岗位适配审查」到「学校推荐、考察及集体决策」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    },
+    {
+      "from": "responsibility",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「院系教育科研及行政工作组织」到「高校二级学院院长岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "management_2026",
+        "charter"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "academic_track",
+      "title": "学术骨干—学院院长路线",
+      "description": "从学术教学骨干积累院系治理能力，经资格核验、组织考察、学校任用后担任二级学院院长。",
+      "node_ids": [
+        "academic",
+        "qualification",
+        "track",
+        "nomination",
+        "appointment",
+        "responsibility",
+        "development",
+        "target"
+      ]
+    },
+    {
+      "id": "manager_track",
+      "title": "院系管理—学院院长路线",
+      "description": "已有院系管理或教育行政经历者，经适岗审查、校内外选任及正式任用承担院长职责。",
+      "node_ids": [
+        "management",
+        "qualification",
+        "nomination",
+        "appointment",
+        "responsibility",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年修订《高等学校领导人员管理办法》第二条明确国家举办高校领导班子及内设机构负责人的选任适用规则边界；并非所有条款直接作为内设院长的统一聘用资历。",
+    "教育部核准的北航大学章程规定院长人选由民主推荐或公开选拔、学校组织部门考察和党委常委会讨论决定，属该校具体章程实例。",
+    "民办高校如长沙科技学院院长可能由校务会、董事会等程序决定，不能用一所公立学校的程序推断所有学校。",
+    "教授、正高级职称、硕导博导资格与高校二级学院院长是不同职业身份。"
+  ],
+  "caveats": [
+    "《高等学校领导人员管理办法》第二条对国家举办高校及内设机构负责人的适用并不意味着把校级领导任期、任职年限全部机械套用二级学院院长。",
+    "不同高校的二级学院院长可采用选任、委任或聘任程序，具体以学校组织制度和已核准章程为准。",
+    "院长与学院党委书记各有分工；院系重大事项通常经党政联席会议等制度安排审议，不能混为一人单独决定。"
+  ],
+  "sources": [
+    {
+      "id": "management_2026",
+      "title": "高等学校领导人员管理办法（2026年修订）",
+      "publisher": "中共中央组织部、教育部／教育部官网",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202609/t20260916_1451003.html",
+      "published": "2026-08-12"
+    },
+    {
+      "id": "charter",
+      "title": "北京航空航天大学章程（院长选任和党政联席会议）",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/srcsite/A02/zfs_gdxxzc/201410/t20141020_182090.html",
+      "published": "2014-10-20"
+    },
+    {
+      "id": "private_charter",
+      "title": "长沙科技学院章程（民办学院院长程序）",
+      "publisher": "湖南省教育厅",
+      "url": "https://jyt.hunan.gov.cn/jyt/sjyt/xxgk/qzqd1/xzzq/xzxk/202504/t20250414_1159415.html",
+      "published": "2025-04-14"
+    },
+    {
+      "id": "uni_titles",
+      "title": "深化高等学校教师职称制度改革的指导意见",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202101/t20210126_511116.html",
+      "published": "2020-12-31"
+    }
+  ]
+}

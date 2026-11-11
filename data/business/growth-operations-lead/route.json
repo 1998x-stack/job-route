@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "id": "growth-operations-lead",
+  "title": "用户增长运营负责人",
+  "subtitle": "2024新职业与2026国家职业标准、企业增长团队负责人岗位的分界",
+  "category": "business",
+  "jurisdiction": "中国大陆企业增长运营岗位；参考2024职业公告及2026年版用户增长运营师职业标准",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "用户增长运营负责人是企业内部组织管理职位，与人社部门正式发布的“用户增长运营师”国家职业并非一一对应。2024年用户增长运营师获列为19项新职业之一，2026年4月又发布了相关国家职业标准；职业技能等级和企业“增长负责人”岗位任命属于不同制度。增长运营还须遵守隐私保护、营销真实性与公平交易规则。",
+  "target": "target",
+  "entry_points": [
+    "marketing",
+    "analytics"
+  ],
+  "nodes": [
+    {
+      "id": "marketing",
+      "label": "市场与内容运营业务经验",
+      "kind": "entry",
+      "description": "从合法市场推广、用户社群、产品运营或营销活动积累客户需求分析和运营服务能力。",
+      "source_ids": [
+        "occupation_2024"
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "产品分析与实验实践背景",
+      "kind": "entry",
+      "description": "从数据分析、产品增长实验或客户成功岗位进入，掌握指标口径与可复现实验方法。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "id": "metric",
+      "label": "用户增长指标与合规分析基础",
+      "kind": "milestone",
+      "description": "清楚定义获客、激活、留存、转化和生命周期价值指标，并合法处理用户数据。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "id": "experiment",
+      "label": "增长实验和渠道运营",
+      "kind": "role",
+      "description": "按业务目标设计可检验增长方案，运用内容、私域社群和数字化工具而非不当诱导用户。",
+      "source_ids": [
+        "occupation_2024"
+      ]
+    },
+    {
+      "id": "retention",
+      "label": "留存运营与用户服务设计",
+      "kind": "role",
+      "description": "通过用户反馈、服务质量改善与产品协作提升长期关系，记录实验结果和运营风险。",
+      "source_ids": [
+        "occupation_2024"
+      ]
+    },
+    {
+      "id": "skill",
+      "label": "职业标准技能评价方向",
+      "kind": "milestone",
+      "description": "学习2026年用户增长运营师国家职业标准并可按适用渠道参与技能等级评价，等级证明不等于经理职位。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "id": "stakeholder",
+      "label": "跨部门预算与产品增长协调",
+      "kind": "role",
+      "description": "结合产品、数据、销售和客服团队制定增长计划，报告收益、合规性和成本。",
+      "source_ids": []
+    },
+    {
+      "id": "manager",
+      "label": "企业增长运营团队负责人职责",
+      "kind": "role",
+      "description": "根据公司组织岗位及绩效考核经正式聘用承担团队管理、目标协调和预算责任。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业用户增长运营负责人岗位",
+      "kind": "target",
+      "description": "在企业授权下负责增长策略、用户生命周期、实验管理与团队协作，职业标准等级与雇主任职独立。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "marketing",
+      "to": "metric",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「市场与内容运营业务经验」到「用户增长指标与合规分析基础」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "from": "metric",
+      "to": "experiment",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「用户增长指标与合规分析基础」到「增长实验和渠道运营」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "occupation_2024"
+      ]
+    },
+    {
+      "from": "experiment",
+      "to": "retention",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「增长实验和渠道运营」到「留存运营与用户服务设计」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "occupation_2024"
+      ]
+    },
+    {
+      "from": "retention",
+      "to": "stakeholder",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「留存运营与用户服务设计」到「跨部门预算与产品增长协调」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "stakeholder",
+      "to": "manager",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「跨部门预算与产品增长协调」到「企业增长运营团队负责人职责」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "manager",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「企业增长运营团队负责人职责」到「企业用户增长运营负责人岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "from": "analytics",
+      "to": "metric",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「产品分析与实验实践背景」到「用户增长指标与合规分析基础」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "from": "experiment",
+      "to": "skill",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「增长实验和渠道运营」到「职业标准技能评价方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "standard_2026"
+      ]
+    },
+    {
+      "from": "skill",
+      "to": "stakeholder",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「职业标准技能评价方向」到「跨部门预算与产品增长协调」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "ops_track",
+      "title": "市场运营成长为增长负责人",
+      "description": "从运营获客与用户服务实践形成指标、实验和跨部门管理能力，经企业招聘或晋任承担团队责任。",
+      "node_ids": [
+        "marketing",
+        "metric",
+        "experiment",
+        "retention",
+        "stakeholder",
+        "manager",
+        "target"
+      ]
+    },
+    {
+      "id": "data_track",
+      "title": "数据实验方向进入增长管理",
+      "description": "从产品数据与实验分析实践形成经营增长能力，可参考国家职业标准再进入跨部门管理岗位。",
+      "node_ids": [
+        "analytics",
+        "metric",
+        "experiment",
+        "skill",
+        "stakeholder",
+        "manager",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2024年8月人社部会同国家统计局等正式发布用户增长运营师新职业，职业编码4-07-02-06，核心活动为数字化用户增长、管理与运营。",
+    "人社部办公厅、工信部办公厅于2026年4月联合颁布《用户增长运营师S（2026年版）》国家职业标准，明确培训和技能评价框架。",
+    "用户增长运营师职业技能等级与企业“用户增长运营负责人”内部管理职位不构成法定自动对应。"
+  ],
+  "caveats": [
+    "不能把用户增长运营师职业技能评价证书包装成全国企业增长负责人强制执业许可证。",
+    "用户增长率、转化率和业务增长预算属于商业绩效指标，不能忽视客户隐私、知情同意与合规营销。",
+    "雇主内部增长负责人可以存在增长产品、市场增长、社群运营等不同组织架构，不能将某家企业要求作为全国统一门槛。"
+  ],
+  "sources": [
+    {
+      "id": "occupation_2024",
+      "title": "人社部联合发布生物工程技术人员等19个新职业（含用户增长运营师）",
+      "publisher": "中国就业网（人社部）",
+      "url": "https://chinajob.mohrss.gov.cn/c/2024-08-01/413001.shtml",
+      "published": "2024-08-01"
+    },
+    {
+      "id": "standard_2026",
+      "title": "用户增长运营师S国家职业标准（2026年版）正式颁布",
+      "publisher": "中国电子商会（标准起草单位）",
+      "url": "https://www.cecc.org.cn/train-notice-detail/id/22017.html",
+      "published": "2026-04-29"
+    },
+    {
+      "id": "standard_notice",
+      "title": "人社部办公厅和工信部办公厅2026年职业标准发布资讯",
+      "publisher": "人力资源和社会保障部职业能力建设信息",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/",
+      "published": "2026-04-17"
+    }
+  ]
+}

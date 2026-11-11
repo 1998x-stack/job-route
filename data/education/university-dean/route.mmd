@@ -1,0 +1,34 @@
+flowchart TB
+    %% 高校学院院长 — 2026-11-11
+    n_academic["高校教师或学术科研骨干经历"]
+    n_management["高校院系教学与行政管理经历"]
+    n_qualification["管理岗位资格、回避与岗位适配审查"]
+    n_track["学院学科建设和教学治理能力"]
+    n_nomination["学校推荐、考察及集体决策"]
+    n_appointment["由学校按章程正式聘任或任命"]
+    n_responsibility["院系教育科研及行政工作组织"]
+    n_development["学院治理与学校战略协同"]
+    n_target["高校二级学院院长岗位"]
+    n_academic -.->|"资格或程序"| n_qualification
+    n_qualification -.->|"专业经历"| n_track
+    n_track -.->|"资格或程序"| n_nomination
+    n_nomination -.->|"资格或程序"| n_appointment
+    n_appointment -.->|"专业经历"| n_responsibility
+    n_responsibility -.->|"专业经历"| n_development
+    n_development -.->|"依法任职与发展"| n_target
+    n_management -.->|"资格或程序"| n_qualification
+    n_qualification -.->|"资格或程序"| n_nomination
+    n_responsibility -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_academic entry
+    class n_management entry
+    class n_qualification milestone
+    class n_track role
+    class n_nomination milestone
+    class n_appointment milestone
+    class n_responsibility role
+    class n_development role
+    class n_target target
