@@ -1,0 +1,27 @@
+flowchart TB
+    %% 成为法院司法警察领导干部 — 2026-11-11
+    n_exam["公务员职位招录"]
+    n_police["正式司法警察"]
+    n_veteran["基层警务骨干"]
+    n_battalion["法警大队领导"]
+    n_staff["警务管理机关岗位"]
+    n_detachment["法警支队领导"]
+    n_corps["法警总队领导"]
+    n_exam -.->|"考试录用"| n_police
+    n_police -.->|"经验积累"| n_veteran
+    n_veteran -.->|"领导选拔"| n_battalion
+    n_battalion -.->|"跨级交流"| n_detachment
+    n_detachment -.->|"跨级任用"| n_corps
+    n_police -.->|"岗位交流"| n_staff
+    n_staff -.->|"任职选拔"| n_detachment
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_exam entry
+    class n_police milestone
+    class n_veteran role
+    class n_battalion role
+    class n_staff role
+    class n_detachment target
+    class n_corps role

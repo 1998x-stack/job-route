@@ -1,0 +1,30 @@
+flowchart TB
+    %% 从公务员走向县长 — 2026-11-11
+    n_exam["公务员考试录用"]
+    n_selection["选调生招录"]
+    n_civil_worker["基层公务员"]
+    n_town_deputy["乡科级副职"]
+    n_town_leader["乡科级正职"]
+    n_city_staff["市直机关任职"]
+    n_county_deputy["县处级副职"]
+    n_county_head["县人民政府县长"]
+    n_exam -.->|"考试录用"| n_civil_worker
+    n_selection -.->|"按选调政策录用"| n_civil_worker
+    n_civil_worker -.->|"干部选拔"| n_town_deputy
+    n_town_deputy -.->|"提任"| n_town_leader
+    n_town_leader -.->|"提任"| n_county_deputy
+    n_county_deputy -.->|"提名与选举"| n_county_head
+    n_civil_worker -.->|"跨部门交流"| n_city_staff
+    n_city_staff -.->|"跨级交流"| n_county_deputy
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_exam entry
+    class n_selection entry
+    class n_civil_worker milestone
+    class n_town_deputy role
+    class n_town_leader role
+    class n_city_staff role
+    class n_county_deputy role
+    class n_county_head target
