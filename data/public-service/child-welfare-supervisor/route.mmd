@@ -1,0 +1,30 @@
+flowchart TB
+    %% 儿童福利机构督导员 — 2026-11-11
+    n_social_degree["社会工作专业学历与实务"]
+    n_social_credential["社会工作师职业资格与实践"]
+    n_frontline["儿童福利机构社会工作实践"]
+    n_supervision_ready["满足社会工作督导适用资格"]
+    n_agency["机构岗位或项目选聘"]
+    n_practice["儿童个案与团队专业督导"]
+    n_operations["机构服务质量与项目管理"]
+    n_target["儿童福利机构社会工作督导岗位"]
+    n_social_degree -.->|"资格与手续"| n_frontline
+    n_frontline -.->|"资格与手续"| n_supervision_ready
+    n_supervision_ready -.->|"资格与手续"| n_agency
+    n_agency -.->|"岗位履历"| n_practice
+    n_practice -.->|"符合条件后发展"| n_target
+    n_social_credential -.->|"资格与手续"| n_frontline
+    n_agency -.->|"岗位履历"| n_operations
+    n_operations -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_social_degree entry
+    class n_social_credential entry
+    class n_frontline milestone
+    class n_supervision_ready milestone
+    class n_agency milestone
+    class n_practice role
+    class n_operations role
+    class n_target target

@@ -1,0 +1,27 @@
+flowchart TB
+    %% 人力资源业务伙伴（HRBP） — 2026-11-11
+    n_hr_generalist["人力资源职能岗位入职"]
+    n_business_ops["业务运营岗位转入HR"]
+    n_fundamentals["人力资源管理基础"]
+    n_partner["业务团队协作实践"]
+    n_insight["组织效能与数据分析"]
+    n_sr["资深业务伙伴／区域HRBP"]
+    n_target["企业HRBP岗位"]
+    n_hr_generalist -.->|"资格与手续"| n_fundamentals
+    n_fundamentals -.->|"岗位履历"| n_partner
+    n_partner -.->|"岗位履历"| n_insight
+    n_insight -.->|"符合条件后发展"| n_target
+    n_business_ops -.->|"资格与手续"| n_fundamentals
+    n_partner -.->|"岗位履历"| n_sr
+    n_sr -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_hr_generalist entry
+    class n_business_ops entry
+    class n_fundamentals milestone
+    class n_partner role
+    class n_insight role
+    class n_sr role
+    class n_target target

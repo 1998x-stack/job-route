@@ -1,0 +1,29 @@
+flowchart TB
+    %% 中医执业医师 — 2026-11-11
+    n_medical_school["符合条件的中医学专业培养"]
+    n_traditional_training["符合法定条件的师承／确有专长"]
+    n_eligibility["确定适用报考或考核资格"]
+    n_exam["中医类别资格考试／考核"]
+    n_qualified["依法取得医师资格"]
+    n_registration["执业地点与类别注册"]
+    n_clinical["中医临床规范执业"]
+    n_target["合法注册的中医执业医师"]
+    n_medical_school -.->|"资格与手续"| n_eligibility
+    n_eligibility -.->|"资格与手续"| n_exam
+    n_exam -.->|"资格与手续"| n_qualified
+    n_qualified -.->|"资格与手续"| n_registration
+    n_registration -.->|"岗位履历"| n_clinical
+    n_clinical -.->|"符合条件后发展"| n_target
+    n_traditional_training -.->|"资格与手续"| n_eligibility
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_medical_school entry
+    class n_traditional_training entry
+    class n_eligibility milestone
+    class n_exam milestone
+    class n_qualified milestone
+    class n_registration milestone
+    class n_clinical role
+    class n_target target

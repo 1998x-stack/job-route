@@ -1,0 +1,30 @@
+flowchart TB
+    %% AI智能体应用开发工程师 — 2026-11-11
+    n_software["软件开发与工程项目积累"]
+    n_ai_application["AI应用原型与数据实践"]
+    n_foundation["编程与系统工程基础"]
+    n_agent_build["智能体工作流与工具接入"]
+    n_quality["安全评测和可靠性工程"]
+    n_production["生产级智能体应用交付"]
+    n_platform["平台与技术负责人方向"]
+    n_target["AI智能体应用开发工程师岗位"]
+    n_software -.->|"资格与手续"| n_foundation
+    n_foundation -.->|"岗位履历"| n_agent_build
+    n_agent_build -.->|"岗位履历"| n_quality
+    n_quality -.->|"岗位履历"| n_production
+    n_production -.->|"符合条件后发展"| n_target
+    n_ai_application -.->|"资格与手续"| n_foundation
+    n_agent_build -.->|"岗位履历"| n_platform
+    n_platform -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_software entry
+    class n_ai_application entry
+    class n_foundation milestone
+    class n_agent_build role
+    class n_quality role
+    class n_production role
+    class n_platform role
+    class n_target target

@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0.0",
+  "id": "special-education-teacher",
+  "title": "特殊教育学校教师",
+  "subtitle": "教师资格、特殊教育能力与公办学校招聘任职",
+  "category": "education",
+  "jurisdiction": "中国大陆·公办特殊教育学校（以2026年全国教师招聘政策为基线）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "特殊教育学校教师依法需要适用学段的教师资格，并按公开招聘或符合规定的岗位聘任程序任职；专业发展不等同于教师职称自动晋升。",
+  "target": "target",
+  "entry_points": [
+    "teacher_training",
+    "existing_teacher"
+  ],
+  "nodes": [
+    {
+      "id": "teacher_training",
+      "label": "师范／相关专业培养",
+      "kind": "entry",
+      "description": "通过教师教育、特殊教育及相关专业学习积累教育教学和融合教育基础，具体专业是否符合岗位以招聘公告为准。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    },
+    {
+      "id": "existing_teacher",
+      "label": "已有教师资格与教学经历",
+      "kind": "entry",
+      "description": "持符合拟任学段的教师资格并具有相应教育教学经历者，可在满足招聘或交流条件时申请特殊教育岗位。",
+      "source_ids": [
+        "teacher_reg"
+      ]
+    },
+    {
+      "id": "certificate",
+      "label": "取得适用学段教师资格",
+      "kind": "milestone",
+      "description": "依法取得与拟任教学岗位适用的教师资格；特殊教育岗位的专业要求由当地和学校招聘条件明确。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "公开招聘与准入查询",
+      "kind": "milestone",
+      "description": "公办学校岗位按公开招聘程序考核，并依法落实入职前违法犯罪记录查询及师德审核。",
+      "source_ids": [
+        "recruit_2026",
+        "public_recruitment"
+      ]
+    },
+    {
+      "id": "classroom",
+      "label": "特殊教育教学与支持",
+      "kind": "role",
+      "description": "依据学生个体教育需要开展教学、康复配合、沟通和家校协作，具体职责依学校岗位。",
+      "source_ids": [
+        "recruit_2026"
+      ]
+    },
+    {
+      "id": "development",
+      "label": "教学研究与业务骨干发展",
+      "kind": "role",
+      "description": "通过教学实践、继续教育和教育研究积累能力，职称、荣誉及骨干任用分别评审。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "特殊教育学校正式教师岗位",
+      "kind": "target",
+      "description": "在符合教师资格和聘用程序基础上承担特殊教育教学任务，并依法参与岗位聘任与继续教育。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "teacher_training",
+      "to": "certificate",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「师范／相关专业培养」转向「取得适用学段教师资格」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "certificate",
+      "to": "selection",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「取得适用学段教师资格」转向「公开招聘与准入查询」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2026",
+        "public_recruitment"
+      ]
+    },
+    {
+      "from": "selection",
+      "to": "classroom",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「公开招聘与准入查询」转向「特殊教育教学与支持」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "classroom",
+      "to": "development",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「特殊教育教学与支持」转向「教学研究与业务骨干发展」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "development",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「教学研究与业务骨干发展」转向「特殊教育学校正式教师岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "existing_teacher",
+      "to": "certificate",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「已有教师资格与教学经历」转向「取得适用学段教师资格」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "classroom",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「特殊教育教学与支持」转向「特殊教育学校正式教师岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "teacher_reg",
+        "recruit_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "graduate_entry",
+      "title": "师范培养与公开招聘",
+      "description": "通过教师教育和教师资格取得准入资格，再经学校岗位招聘进入教学岗位。",
+      "node_ids": [
+        "teacher_training",
+        "certificate",
+        "selection",
+        "classroom",
+        "development",
+        "target"
+      ]
+    },
+    {
+      "id": "inservice_transfer",
+      "title": "在职教师转向特殊教育",
+      "description": "已有适用教师资格者经过岗位条件审核、业务适应或交流录聘后进入特殊教育教学工作。",
+      "node_ids": [
+        "existing_teacher",
+        "certificate",
+        "selection",
+        "classroom",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《教师资格条例》规定从事教育教学工作应当依法取得教师资格，资格类别主要按学段和学校类型划分，不存在全国统一额外名为“特教教师资格”的法定类别。",
+    "教育部与人社部2026年教师招聘通知强调特殊教育师资补充，并要求在办理聘用手续前取得教师资格证。",
+    "公办学校聘用与教师职称、岗位等级及教学骨干称号不是同一制度。"
+  ],
+  "caveats": [
+    "任教具体学段、课程与学生障碍支持领域的专业条件须查学校岗位公告。",
+    "教师资格证书不等于通过事业单位公开招聘；校内交流不等于自动变更岗位。",
+    "临床康复治疗师、心理咨询专业人员与特殊教育学校教师资格不能相互替代。"
+  ],
+  "sources": [
+    {
+      "id": "teacher_reg",
+      "title": "教师资格条例",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyxzfg/202204/t20220422_620496.html",
+      "published": "1995-12-12"
+    },
+    {
+      "id": "recruit_2026",
+      "title": "关于做好2026年中小学幼儿园教师公开招聘工作的通知",
+      "publisher": "教育部·人力资源社会保障部",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202604/t20260422_1434512.html",
+      "published": "2026-04-22"
+    },
+    {
+      "id": "public_recruitment",
+      "title": "进一步做好事业单位公开招聘工作的通知",
+      "publisher": "人力资源和社会保障部",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202409/t20240905_525231.html",
+      "published": "2024-09-05"
+    }
+  ]
+}

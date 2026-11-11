@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ai-agent-application-engineer",
+  "title": "AI智能体应用开发工程师",
+  "subtitle": "软件能力、模型工具链、评测与智能体应用交付",
+  "category": "technology",
+  "jurisdiction": "中国大陆·企业AI应用开发岗位（对照2026年正式公布“智能体开发员”新工种）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "AI智能体应用开发工程师是企业使用的技术岗位名称；2026年9月正式发布的“智能体开发员”属于新工种而非独立的新职业资格许可。职业发展侧重软件工程、模型调用、工具集成与可靠性评测。",
+  "target": "target",
+  "entry_points": [
+    "software",
+    "ai_application"
+  ],
+  "nodes": [
+    {
+      "id": "software",
+      "label": "软件开发与工程项目积累",
+      "kind": "entry",
+      "description": "从软件开发、API、数据库与测试工程等领域切入，积累可部署应用和工程基础。",
+      "source_ids": [
+        "employment"
+      ]
+    },
+    {
+      "id": "ai_application",
+      "label": "AI应用原型与数据实践",
+      "kind": "entry",
+      "description": "从模型应用、知识检索或数据工程实践切入，逐渐具备智能体应用交付基础。",
+      "source_ids": [
+        "employment"
+      ]
+    },
+    {
+      "id": "foundation",
+      "label": "编程与系统工程基础",
+      "kind": "milestone",
+      "description": "理解服务端接口、身份鉴权、数据治理、日志监控和基础软件质量流程。",
+      "source_ids": []
+    },
+    {
+      "id": "agent_build",
+      "label": "智能体工作流与工具接入",
+      "kind": "role",
+      "description": "实现模型调用、检索、工具操作、多步任务编排和异常回退；不应依赖无法验证的演示效果。",
+      "source_ids": [
+        "new_trade"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "安全评测和可靠性工程",
+      "kind": "role",
+      "description": "实施权限约束、测试集、运行追踪、人工确认、隐私保护和性能成本治理。",
+      "source_ids": []
+    },
+    {
+      "id": "production",
+      "label": "生产级智能体应用交付",
+      "kind": "role",
+      "description": "将智能体集成到真实业务流程，记录质量指标、故障应对及运维边界。",
+      "source_ids": []
+    },
+    {
+      "id": "platform",
+      "label": "平台与技术负责人方向",
+      "kind": "role",
+      "description": "可能承担工程架构与团队协作职责，须基于企业真实岗位和项目成果选拔。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "AI智能体应用开发工程师岗位",
+      "kind": "target",
+      "description": "能够交付、评测和维护可落地的智能体应用，属于企业技术用工岗位，不是政府单独颁发的执业许可。",
+      "source_ids": [
+        "new_trade"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "software",
+      "to": "foundation",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「软件开发与工程项目积累」转向「编程与系统工程基础」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "foundation",
+      "to": "agent_build",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「编程与系统工程基础」转向「智能体工作流与工具接入」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "new_trade"
+      ]
+    },
+    {
+      "from": "agent_build",
+      "to": "quality",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「智能体工作流与工具接入」转向「安全评测和可靠性工程」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "quality",
+      "to": "production",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「安全评测和可靠性工程」转向「生产级智能体应用交付」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "production",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「生产级智能体应用交付」转向「AI智能体应用开发工程师岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "new_trade"
+      ]
+    },
+    {
+      "from": "ai_application",
+      "to": "foundation",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「AI应用原型与数据实践」转向「编程与系统工程基础」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "agent_build",
+      "to": "platform",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「智能体工作流与工具接入」转向「平台与技术负责人方向」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "platform",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「平台与技术负责人方向」转向「AI智能体应用开发工程师岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "new_trade"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "software_route",
+      "title": "软件工程转向智能体",
+      "description": "已有软件工程基础，通过工具工作流、质量评测和生产实践形成应用开发能力。",
+      "node_ids": [
+        "software",
+        "foundation",
+        "agent_build",
+        "quality",
+        "production",
+        "target"
+      ]
+    },
+    {
+      "id": "ai_route",
+      "title": "AI应用与平台工程方向",
+      "description": "AI应用背景人员积累软件基础和可靠性工程，再从项目能力走向应用开发岗位。",
+      "node_ids": [
+        "ai_application",
+        "foundation",
+        "agent_build",
+        "platform",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "人力资源社会保障部门于2026年9月正式发布“智能体开发员”等新工种；“AI智能体应用开发工程师”作为企业岗位称谓并不等于新设的法定准入职业。",
+    "新工种的正式发布并不意味着任何个人已经取得相应职业技能等级证书，具体职业标准、培训与评价须依后续制度。",
+    "工程能力需通过可运行的项目、测试结果、工具权限设计、数据安全与系统可维护性评估。"
+  ],
+  "caveats": [
+    "不能把2026年7月的“拟新增工种公示”当作最新状态：2026年9月9日已正式发布相关新工种。",
+    "不可宣传统一国家“AI智能体工程师执业资格”或固定年限晋升路线。",
+    "不同公司会分别使用Agent Engineer、AI应用工程师、平台工程师等岗位名称，职责边界由招聘要求决定。"
+  ],
+  "sources": [
+    {
+      "id": "new_trade",
+      "title": "11个新职业、23个新工种正式发布",
+      "publisher": "上海市人民政府·上海发布",
+      "url": "https://www.shanghai.gov.cn/nw17239/20260910/bef53eee2f334c9293315a5536047385.html",
+      "published": "2026-09-09"
+    },
+    {
+      "id": "hr_announcement",
+      "title": "数字引领绿色赋能服务升级：新职业助力高质量发展",
+      "publisher": "中国人力资源市场网（人社部）",
+      "url": "https://chrm.mohrss.gov.cn/%E6%95%B0%E5%AD%97%E5%BC%95%E9%A2%86-%E7%BB%BF%E8%89%B2%E8%B5%8B%E8%83%BD-%E6%9C%8D%E5%8A%A1%E5%8D%87%E7%BA%A7%EF%BC%9A%E6%96%B0%E8%81%8C%E4%B8%9A%E5%8A%A9%E5%8A%9B%E9%AB%98%E8%B4%A8%E9%87%8F%E5%8F%91/",
+      "published": "2026-09-11"
+    },
+    {
+      "id": "employment",
+      "title": "聚焦重点群体稳就业——AI与Agent岗位招聘趋势",
+      "publisher": "中国就业网（人社部）",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2026-09-08/601403.shtml",
+      "published": "2026-09-08"
+    }
+  ]
+}
