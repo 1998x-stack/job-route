@@ -56,6 +56,6 @@
 
 1. [江苏省2027年度司法行政系统公务员（人民警察）简章](https://jshrss.jiangsu.gov.cn/art/2026/10/30/art_93733_11852171.html)，江苏省人力资源和社会保障厅，2026-10-30。
 2. [中华人民共和国人民警察法](https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html)，北京市公安局公安交通管理局，1995-02-28。
-3. [戒毒条例（2018年修订）](https://www.gov.cn/zhengce/content/2018-09/20/content_5324047.htm)，中国政府网，2018-09-18。
+3. [戒毒条例（2018年修订）](https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrlzyj/lzyjsfxzxgflfg/202101/t20210119_205852.html)，中国政府网，2018-09-18。
 
 > **复核提醒**：跨地区、跨机构或新招录年度，必须重新核查原始政策、职位计划及生效状态。此报告不推测晋升概率和个人任职结果。

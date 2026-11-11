@@ -5,6 +5,7 @@
 <text x="32" y="46" font-size="25" font-weight="800" fill="#11283f" font-family="Noto Sans SC,Arial,sans-serif">医疗器械注册事务专员</text>
 <text x="32" y="77" font-size="14" fill="#587083" font-family="Noto Sans SC,Arial,sans-serif">CAREER PATH MAP   ·   2026-11-11   ·   条件性路径，不保证晋升</text>
 <rect x="28" y="104" width="358" height="709" rx="17" fill="#ffffff" stroke="#dce5eb"/>
+<text x="46" y="136" font-size="18" font-weight="700" fill="#19364b" font-family="Noto Sans SC,Arial,sans-serif">研发／工程进入注册法规</text>
 <rect x="45" y="167" width="324" height="64" rx="11" fill="#eaf3ff" stroke="#3478d5" stroke-width="1"/>
 <rect x="57" y="184" width="7" height="30" rx="3.5" fill="#3478d5"/>
 <text x="77" y="195" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">医学工程与产品研发背景</text>
@@ -35,11 +36,12 @@
 <text x="77" y="623" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
 <path d="M 207 639 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
 <path d="M 202 665 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="45" y="677" width="324" height="64" rx="11" fill="#ddf6e5" stroke="#138463" stroke-width="2"/>
+<rect x="45" y="677" width="324" height="64" rx="11" fill="#ddf6e9" stroke="#138463" stroke-width="2"/>
 <rect x="57" y="694" width="7" height="30" rx="3.5" fill="#138463"/>
 <text x="77" y="705" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">医疗器械注册事务专员岗位</text>
 <text x="77" y="725" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">目标职务 · 依法选拔</text>
 <rect x="418" y="104" width="358" height="709" rx="17" fill="#ffffff" stroke="#dce5eb"/>
+<text x="436" y="136" font-size="18" font-weight="700" fill="#19364b" font-family="Noto Sans SC,Arial,sans-serif">质量体系到法规事务</text>
 <rect x="435" y="167" width="324" height="64" rx="11" fill="#eaf3ff" stroke="#3478d5" stroke-width="1"/>
 <rect x="447" y="184" width="7" height="30" rx="3.5" fill="#3478d5"/>
 <text x="467" y="195" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">质量管理或法规质量岗位转型</text>
@@ -70,7 +72,7 @@
 <text x="467" y="623" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
 <path d="M 597 639 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
 <path d="M 592 665 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="435" y="677" width="324" height="64" rx="11" fill="#ddf6e5" stroke="#138463" stroke-width="2"/>
+<rect x="435" y="677" width="324" height="64" rx="11" fill="#ddf6e9" stroke="#138463" stroke-width="2"/>
 <rect x="447" y="694" width="7" height="30" rx="3.5" fill="#138463"/>
 <text x="467" y="705" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">医疗器械注册事务专员岗位</text>
 <text x="467" y="725" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">目标职务 · 依法选拔</text>

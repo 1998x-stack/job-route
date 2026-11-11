@@ -1,0 +1,110 @@
+{
+  "batch": "B12",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "research_status": "published",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "skill": "skills/job-route/SKILL.md",
+  "roles": [
+    {
+      "id": "JR-101",
+      "category": "military",
+      "slug": "military-pilot",
+      "title": "军队飞行员",
+      "route_file": "data/military/military-pilot/route.json",
+      "report_file": "data/military/military-pilot/report.md",
+      "mermaid_file": "data/military/military-pilot/route.mmd",
+      "svg_file": "data/military/military-pilot/route.svg"
+    },
+    {
+      "id": "JR-116",
+      "category": "judicial",
+      "slug": "grassroots-legal-service-worker",
+      "title": "基层法律服务工作者",
+      "route_file": "data/judicial/grassroots-legal-service-worker/route.json",
+      "report_file": "data/judicial/grassroots-legal-service-worker/report.md",
+      "mermaid_file": "data/judicial/grassroots-legal-service-worker/route.mmd",
+      "svg_file": "data/judicial/grassroots-legal-service-worker/route.svg"
+    },
+    {
+      "id": "JR-117",
+      "category": "judicial",
+      "slug": "administrative-review-officer",
+      "title": "行政复议办案人员",
+      "route_file": "data/judicial/administrative-review-officer/route.json",
+      "report_file": "data/judicial/administrative-review-officer/report.md",
+      "mermaid_file": "data/judicial/administrative-review-officer/route.mmd",
+      "svg_file": "data/judicial/administrative-review-officer/route.svg"
+    },
+    {
+      "id": "JR-123",
+      "category": "government",
+      "slug": "township-organization-committee-member",
+      "title": "乡镇党委组织委员",
+      "route_file": "data/government/township-organization-committee-member/route.json",
+      "report_file": "data/government/township-organization-committee-member/report.md",
+      "mermaid_file": "data/government/township-organization-committee-member/route.mmd",
+      "svg_file": "data/government/township-organization-committee-member/route.svg"
+    },
+    {
+      "id": "JR-142",
+      "category": "public-safety",
+      "slug": "judicial-detox-police",
+      "title": "司法行政强制隔离戒毒警察",
+      "route_file": "data/public-safety/judicial-detox-police/route.json",
+      "report_file": "data/public-safety/judicial-detox-police/report.md",
+      "mermaid_file": "data/public-safety/judicial-detox-police/route.mmd",
+      "svg_file": "data/public-safety/judicial-detox-police/route.svg"
+    },
+    {
+      "id": "JR-145",
+      "category": "education",
+      "slug": "international-chinese-teacher",
+      "title": "国际中文教育教师",
+      "route_file": "data/education/international-chinese-teacher/route.json",
+      "report_file": "data/education/international-chinese-teacher/report.md",
+      "mermaid_file": "data/education/international-chinese-teacher/route.mmd",
+      "svg_file": "data/education/international-chinese-teacher/route.svg"
+    },
+    {
+      "id": "JR-166",
+      "category": "healthcare",
+      "slug": "medical-device-regulatory-affairs",
+      "title": "医疗器械注册事务专员",
+      "route_file": "data/healthcare/medical-device-regulatory-affairs/route.json",
+      "report_file": "data/healthcare/medical-device-regulatory-affairs/report.md",
+      "mermaid_file": "data/healthcare/medical-device-regulatory-affairs/route.mmd",
+      "svg_file": "data/healthcare/medical-device-regulatory-affairs/route.svg"
+    },
+    {
+      "id": "JR-168",
+      "category": "technology",
+      "slug": "llm-application-engineer",
+      "title": "大模型应用工程师",
+      "route_file": "data/technology/llm-application-engineer/route.json",
+      "report_file": "data/technology/llm-application-engineer/report.md",
+      "mermaid_file": "data/technology/llm-application-engineer/route.mmd",
+      "svg_file": "data/technology/llm-application-engineer/route.svg"
+    },
+    {
+      "id": "JR-192",
+      "category": "business",
+      "slug": "corporate-sustainability-manager",
+      "title": "企业可持续发展经理",
+      "route_file": "data/business/corporate-sustainability-manager/route.json",
+      "report_file": "data/business/corporate-sustainability-manager/report.md",
+      "mermaid_file": "data/business/corporate-sustainability-manager/route.mmd",
+      "svg_file": "data/business/corporate-sustainability-manager/route.svg"
+    },
+    {
+      "id": "JR-198",
+      "category": "public-service",
+      "slug": "nonprofit-foundation-program-officer",
+      "title": "公益基金会项目官员",
+      "route_file": "data/public-service/nonprofit-foundation-program-officer/route.json",
+      "report_file": "data/public-service/nonprofit-foundation-program-officer/report.md",
+      "mermaid_file": "data/public-service/nonprofit-foundation-program-officer/route.mmd",
+      "svg_file": "data/public-service/nonprofit-foundation-program-officer/route.svg"
+    }
+  ]
+}
