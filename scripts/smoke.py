@@ -37,7 +37,7 @@ def check():
         svg=(folder/"route.svg").read_text(encoding="utf-8")
         assert svg.startswith("<svg") and "<title" in svg and "<desc" in svg, f"invalid vector in {r['id']}"
         for s in r["sources"]:
-            assert s["url"] in detail, f"unlinked source {s['id']} in {r['id']}"
+            assert s["url"] in parser.hrefs, f"unlinked source {s['id']} in {r['id']}"
     manifest=json.loads((OUT/"catalog.json").read_text(encoding="utf-8"))
     assert len(manifest)==len(routes)
     print(f"PASS: {len(routes)} route pages, navigational cards, accessible SVGs, Mermaid files and source hyperlinks")

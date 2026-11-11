@@ -8,8 +8,14 @@ import unittest
 
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"scripts"))
 from validate import ROOT, load_routes, validate_all, validate_route
+from smoke import LinkParser
 
 class TestRoutes(unittest.TestCase):
+    def test_html_entity_encoded_source_link(self):
+        parser = LinkParser()
+        parser.feed('<a href="https://example.com/jobs?a=1&amp;b=2">Source</a>')
+        self.assertIn("https://example.com/jobs?a=1&b=2", parser.hrefs)
+
     def test_live_examples(self):
         self.assertEqual(validate_all(),[])
         self.assertGreaterEqual(len(load_routes()),3)
