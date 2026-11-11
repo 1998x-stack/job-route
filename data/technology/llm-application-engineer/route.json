@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "id": "llm-application-engineer",
+  "title": "大模型应用工程师",
+  "subtitle": "软件工程、大模型应用集成与RAG可靠性交付",
+  "category": "technology",
+  "jurisdiction": "中国大陆；企业大模型应用研发和部署岗位（区分面向公众提供生成式AI服务）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "大模型应用工程师属于企业研发和软件应用开发岗位，常见入口为软件开发、数据工程或AI项目实践。系统集成、检索增强生成和可信评测是能力方向；《生成式人工智能服务管理暂行办法》对面向境内公众提供相关服务的主体有特定监管范围，并非人人需申请个人工程师许可证。",
+  "target": "target",
+  "entry_points": [
+    "software",
+    "data_ai"
+  ],
+  "nodes": [
+    {
+      "id": "software",
+      "label": "软件工程或后端开发背景",
+      "kind": "entry",
+      "description": "积累Python或相关编程、API服务、数据存储、测试部署及工程协作基础。",
+      "source_ids": []
+    },
+    {
+      "id": "data_ai",
+      "label": "数据工程与机器学习实践背景",
+      "kind": "entry",
+      "description": "从数据清洗、向量检索、机器学习实践和模型接口使用进入应用工程。",
+      "source_ids": []
+    },
+    {
+      "id": "llm_basics",
+      "label": "模型调用与应用架构基础",
+      "kind": "milestone",
+      "description": "了解token、上下文管理、提示词工程、模型接口、模型输出结构化与服务化部署。",
+      "source_ids": []
+    },
+    {
+      "id": "rag",
+      "label": "检索增强与工具集成",
+      "kind": "role",
+      "description": "建立检索索引、数据更新、权限隔离及引用校验机制，连接模型与企业知识系统。",
+      "source_ids": []
+    },
+    {
+      "id": "evaluation",
+      "label": "质量评测与安全合规",
+      "kind": "role",
+      "description": "构建离线测试集、幻觉率评估、敏感数据保护、越权调用检查与人机协作审批。",
+      "source_ids": [
+        "ai_reg"
+      ]
+    },
+    {
+      "id": "deployment",
+      "label": "生产系统与可观测性",
+      "kind": "role",
+      "description": "管理服务延迟、成本、监控告警、模型版本、失败降级和数据更新，持续改进业务质量。",
+      "source_ids": []
+    },
+    {
+      "id": "architect",
+      "label": "大模型应用架构及技术负责人方向",
+      "kind": "role",
+      "description": "根据企业岗位条件推进跨项目架构与团队协作，不等于国家统一工程职称等级。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "大模型应用工程师岗位",
+      "kind": "target",
+      "description": "具备可运行模型应用的架构设计、实现、评测和运维能力，依企业招聘及合规要求从业。",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "software",
+      "to": "llm_basics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「软件工程或后端开发背景」转向「模型调用与应用架构基础」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "llm_basics",
+      "to": "rag",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「模型调用与应用架构基础」转向「检索增强与工具集成」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "rag",
+      "to": "evaluation",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「检索增强与工具集成」转向「质量评测与安全合规」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "ai_reg"
+      ]
+    },
+    {
+      "from": "evaluation",
+      "to": "deployment",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「质量评测与安全合规」转向「生产系统与可观测性」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "deployment",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「生产系统与可观测性」转向「大模型应用工程师岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "data_ai",
+      "to": "llm_basics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「数据工程与机器学习实践背景」转向「模型调用与应用架构基础」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "rag",
+      "to": "deployment",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「检索增强与工具集成」转向「生产系统与可观测性」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "deployment",
+      "to": "architect",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「生产系统与可观测性」转向「大模型应用架构及技术负责人方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "architect",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「大模型应用架构及技术负责人方向」转向「大模型应用工程师岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "software_path",
+      "title": "从软件工程切入",
+      "description": "通过软件后端和模型调用能力进入RAG与应用质量工作，形成生产交付能力。",
+      "node_ids": [
+        "software",
+        "llm_basics",
+        "rag",
+        "evaluation",
+        "deployment",
+        "target"
+      ]
+    },
+    {
+      "id": "data_path",
+      "title": "从数据／AI应用切入",
+      "description": "结合数据模型基础学习应用架构、检索和系统部署，向平台应用工程发展。",
+      "node_ids": [
+        "data_ai",
+        "llm_basics",
+        "rag",
+        "deployment",
+        "architect",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《生成式人工智能服务管理暂行办法》第二条规定：向境内公众提供生成式AI服务适用，企业内部研发应用而不向公众提供服务并非一律适用该办法。",
+    "第七条要求相关服务提供者依法管理训练数据来源、知识产权、个人信息与数据质量；具体工程工作应在企业主体合规要求下开展。",
+    "企业岗位名称“大模型应用工程师”不等于全国统一限制性职业资格，亦不等于独立从事基础模型训练研究。"
+  ],
+  "caveats": [
+    "RAG、提示词、微调与智能体编排是工程方法，不是现行法律规定每个雇员必须取得的单一准入证书。",
+    "模型提供者、面向公众服务者及内部使用方具有不同监管责任，具体业务需结合法规适用条件界定。",
+    "生产落地需要数据安全、用户授权与可复现实验评测，不应以仅能展示的Demo代替真实工程能力。"
+  ],
+  "sources": [
+    {
+      "id": "ai_reg",
+      "title": "生成式人工智能服务管理暂行办法",
+      "publisher": "中央网信办等七部门",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "published": "2023-07-10"
+    },
+    {
+      "id": "occupation",
+      "title": "职业分类大典（2022年版）官方解读",
+      "publisher": "人力资源和社会保障部中国就业网",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-08/361551.shtml",
+      "published": "2022-10-08"
+    }
+  ]
+}

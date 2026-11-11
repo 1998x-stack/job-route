@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "id": "corporate-sustainability-manager",
+  "title": "企业可持续发展经理",
+  "subtitle": "ESG战略、环境社会指标与合规披露工作",
+  "category": "business",
+  "jurisdiction": "中国大陆；以上交所2026年上市公司可持续发展报告编制指南为规则实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "企业可持续发展经理是企业内部ESG战略和环境社会治理协调岗位，不是持统一证书才能上任的法定职务。证券交易所可持续发展披露规则的义务主体是适用范围内的上市公司，不能将信息披露义务直接认定为经理个人的执业许可。",
+  "target": "target",
+  "entry_points": [
+    "environment",
+    "finance_governance"
+  ],
+  "nodes": [
+    {
+      "id": "environment",
+      "label": "环境与EHS管理背景",
+      "kind": "entry",
+      "description": "从环境保护、能源管理、职业健康安全或企业运营治理实践进入可持续发展领域。",
+      "source_ids": []
+    },
+    {
+      "id": "finance_governance",
+      "label": "财务审计与公司治理背景",
+      "kind": "entry",
+      "description": "从内部审计、风险合规、公司治理或资本市场信息披露进入ESG管理。",
+      "source_ids": []
+    },
+    {
+      "id": "esg_literacy",
+      "label": "了解ESG与可持续报告框架",
+      "kind": "milestone",
+      "description": "理解适用行业的治理、气候、能源、水资源、供应链和员工权益重大性议题。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "可持续发展数据与内控流程",
+      "kind": "role",
+      "description": "协调企业部门采集排放、能源、员工与治理等指标并建立内部证据与审核程序。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "id": "disclosure",
+      "label": "可持续发展披露编制与核验",
+      "kind": "role",
+      "description": "按适用交易所或监管要求组织报告编制、重大性评估及披露质量管理。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "可持续发展计划与治理协作",
+      "kind": "role",
+      "description": "支持企业环境社会风险识别、经营策略协同及管理层决策。",
+      "source_ids": []
+    },
+    {
+      "id": "lead",
+      "label": "跨部门ESG项目负责人方向",
+      "kind": "role",
+      "description": "经企业内部授权或招聘担任项目或团队负责人，不能直接推算为法定披露责任个人。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业可持续发展经理岗位",
+      "kind": "target",
+      "description": "在企业内部统筹ESG信息、合规披露、重大性议题与可持续经营项目，依企业职位与相关法规承担职责。",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "environment",
+      "to": "esg_literacy",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「环境与EHS管理背景」转向「了解ESG与可持续报告框架」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "from": "esg_literacy",
+      "to": "data",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「了解ESG与可持续报告框架」转向「可持续发展数据与内控流程」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "from": "data",
+      "to": "disclosure",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「可持续发展数据与内控流程」转向「可持续发展披露编制与核验」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "from": "disclosure",
+      "to": "strategy",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「可持续发展披露编制与核验」转向「可持续发展计划与治理协作」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "strategy",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「可持续发展计划与治理协作」转向「企业可持续发展经理岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "finance_governance",
+      "to": "esg_literacy",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「财务审计与公司治理背景」转向「了解ESG与可持续报告框架」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "sse_2026"
+      ]
+    },
+    {
+      "from": "data",
+      "to": "lead",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「可持续发展数据与内控流程」转向「跨部门ESG项目负责人方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「跨部门ESG项目负责人方向」转向「企业可持续发展经理岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "environment_path",
+      "title": "环境管理向ESG经理发展",
+      "description": "从EHS与环境工作积累数据能力，参与披露与项目治理，逐步承担跨部门职责。",
+      "node_ids": [
+        "environment",
+        "esg_literacy",
+        "data",
+        "disclosure",
+        "strategy",
+        "target"
+      ]
+    },
+    {
+      "id": "governance_path",
+      "title": "治理审计向可持续发展发展",
+      "description": "在审计风险与披露背景基础上掌握ESG框架、数据内控与战略项目，匹配企业岗位。",
+      "node_ids": [
+        "finance_governance",
+        "esg_literacy",
+        "data",
+        "lead",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "上海证券交易所2026年1月修订指南新增污染物排放、能源利用和水资源利用等应用指南，覆盖适用上市公司可持续发展报告编制。",
+    "适用的信息披露义务由相关上市公司和信息披露义务人履行，不是“ESG经理个人考试发证”制度。",
+    "私营、未上市和不同交易所的披露义务范围有区别；应核对具体公司是否适用强制性报告要求。"
+  ],
+  "caveats": [
+    "ESG经理是企业内设职位，岗位名称、汇报关系与专业要求因企业而异。",
+    "2026上交所指南是上市公司报告编制指导，不可直接解释为所有中国企业必须发布同一标准的年度报告。",
+    "应避免以不经核验的宣传或绿色漂洗替代基于可验证数据的披露。"
+  ],
+  "sources": [
+    {
+      "id": "sse_2026",
+      "title": "上交所上市公司自律监管指南第4号——可持续发展报告编制（2026年1月修订）",
+      "publisher": "上海证券交易所",
+      "url": "https://www.sse.com.cn/lawandrules/guide2025/stock/zbxxpljg/ssgszljg/c/c_20260202_10807819.shtml",
+      "published": "2026-01-30"
+    },
+    {
+      "id": "public_law",
+      "title": "中华人民共和国公司法（2023修订）",
+      "publisher": "全国人大常委会／中国政府网",
+      "url": "https://www.gov.cn/zhengce/202312/content_6923386.htm",
+      "published": "2023-12-29"
+    }
+  ]
+}

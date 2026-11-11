@@ -1,0 +1,31 @@
+flowchart TB
+    %% 大模型应用工程师 — 2026-11-11
+    n_software["软件工程或后端开发背景"]
+    n_data_ai["数据工程与机器学习实践背景"]
+    n_llm_basics["模型调用与应用架构基础"]
+    n_rag["检索增强与工具集成"]
+    n_evaluation["质量评测与安全合规"]
+    n_deployment["生产系统与可观测性"]
+    n_architect["大模型应用架构及技术负责人方向"]
+    n_target["大模型应用工程师岗位"]
+    n_software -.->|"资格与程序"| n_llm_basics
+    n_llm_basics -.->|"岗位发展"| n_rag
+    n_rag -.->|"岗位发展"| n_evaluation
+    n_evaluation -.->|"岗位发展"| n_deployment
+    n_deployment -.->|"符合条件发展"| n_target
+    n_data_ai -.->|"资格与程序"| n_llm_basics
+    n_rag -.->|"岗位发展"| n_deployment
+    n_deployment -.->|"岗位发展"| n_architect
+    n_architect -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_software entry
+    class n_data_ai entry
+    class n_llm_basics milestone
+    class n_rag role
+    class n_evaluation role
+    class n_deployment role
+    class n_architect role
+    class n_target target

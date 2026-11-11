@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nonprofit-foundation-program-officer",
+  "title": "公益基金会项目官员",
+  "subtitle": "公益项目研究、资金合规使用与项目评价",
+  "category": "public-service",
+  "jurisdiction": "中国大陆；依法登记的公益基金会及慈善组织（不同主体适用规则须分别核对）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "基金会项目官员是公益机构的项目策划、执行、评估及资助人沟通岗位；基金会法人治理和慈善财产使用受到法律法规约束，但项目官员本身不是国家统一发证的限制性执业资格。",
+  "target": "target",
+  "entry_points": [
+    "social_project",
+    "program_ops"
+  ],
+  "nodes": [
+    {
+      "id": "social_project",
+      "label": "社会工作与公益项目背景",
+      "kind": "entry",
+      "description": "从社会服务、项目评估、公益传播或社工实践积累项目执行与利益相关方沟通能力。",
+      "source_ids": []
+    },
+    {
+      "id": "program_ops",
+      "label": "机构运营与项目管理背景",
+      "kind": "entry",
+      "description": "从预算、财务协调、采购、合规或企业社会责任相关项目转入公益项目运营。",
+      "source_ids": []
+    },
+    {
+      "id": "foundation_law",
+      "label": "理解基金会章程与慈善法规",
+      "kind": "milestone",
+      "description": "掌握基金会登记、章程、慈善募捐、专项资金使用和信息公开边界。",
+      "source_ids": [
+        "charity_2023",
+        "foundation_rule"
+      ]
+    },
+    {
+      "id": "project_design",
+      "label": "公益需求评估与项目设计",
+      "kind": "role",
+      "description": "围绕受助群体和实际问题开展需求评估、项目逻辑模型和实施预算设计。",
+      "source_ids": []
+    },
+    {
+      "id": "implementation",
+      "label": "项目执行与资金使用记录",
+      "kind": "role",
+      "description": "按照项目协议、捐赠约定和机构管理流程推进执行并保存证据和财务资料。",
+      "source_ids": [
+        "foundation_rule",
+        "charity_2023"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "label": "影响评估、审计与信息公开协作",
+      "kind": "role",
+      "description": "参与成果评估、项目透明度披露和合规审计，并保护受益人个人信息。",
+      "source_ids": [
+        "charity_2023"
+      ]
+    },
+    {
+      "id": "program_manager",
+      "label": "项目官员与项目组合管理方向",
+      "kind": "role",
+      "description": "依机构职位和业绩可能协调多个项目或项目团队，董事、理事和法定代表人身份另有制度。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "公益基金会项目官员岗位",
+      "kind": "target",
+      "description": "通过机构招聘或岗位任用，合法开展公益项目策划、执行、评估及合规管理。",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "social_project",
+      "to": "foundation_law",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「社会工作与公益项目背景」转向「理解基金会章程与慈善法规」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "charity_2023",
+        "foundation_rule"
+      ]
+    },
+    {
+      "from": "foundation_law",
+      "to": "project_design",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「理解基金会章程与慈善法规」转向「公益需求评估与项目设计」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "project_design",
+      "to": "implementation",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「公益需求评估与项目设计」转向「项目执行与资金使用记录」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "foundation_rule",
+        "charity_2023"
+      ]
+    },
+    {
+      "from": "implementation",
+      "to": "evaluation",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「项目执行与资金使用记录」转向「影响评估、审计与信息公开协作」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "charity_2023"
+      ]
+    },
+    {
+      "from": "evaluation",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「影响评估、审计与信息公开协作」转向「公益基金会项目官员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "program_ops",
+      "to": "foundation_law",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「机构运营与项目管理背景」转向「理解基金会章程与慈善法规」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "charity_2023",
+        "foundation_rule"
+      ]
+    },
+    {
+      "from": "implementation",
+      "to": "program_manager",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「项目执行与资金使用记录」转向「项目官员与项目组合管理方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "program_manager",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「项目官员与项目组合管理方向」转向「公益基金会项目官员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "social_services",
+      "title": "社会服务到公益项目路线",
+      "description": "已有服务经验者熟悉基金会和慈善制度后，参与公益项目设计、执行和评估并进入项目官员岗位。",
+      "node_ids": [
+        "social_project",
+        "foundation_law",
+        "project_design",
+        "implementation",
+        "evaluation",
+        "target"
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "企业项目管理向基金会转型",
+      "description": "从运营、财务及管理背景进入公益机构，补足慈善法规和项目执行知识后发展为项目官员。",
+      "node_ids": [
+        "program_ops",
+        "foundation_law",
+        "project_design",
+        "implementation",
+        "program_manager",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《基金会管理条例》规定基金会是依法登记的非营利性法人，财产应按照章程宗旨及捐赠协议用途使用。",
+    "《中华人民共和国慈善法》（2023年修正，2024年9月5日起施行）规定慈善组织相关活动、慈善财产和信息公开等规则。",
+    "法规义务针对基金会及慈善组织相应主体，不能推定普通员工自动具有理事、负责人或法定代表人身份。"
+  ],
+  "caveats": [
+    "有些慈善组织并非法定基金会，登记类型与募捐资格可能不同；岗位涉及的机构范围须核对。",
+    "项目官员的学历、项目经验与薪资由具体组织招聘及治理规则决定，不存在全国统一的项目官员执业考试。",
+    "捐款用途变更、信息公开、受益人隐私与公益资金使用必须遵守机构章程及现行法。"
+  ],
+  "sources": [
+    {
+      "id": "foundation_rule",
+      "title": "基金会管理条例（国务院令第400号）",
+      "publisher": "中华人民共和国教育部（转载国务院法规）",
+      "url": "https://www.moe.gov.cn/s78/A01/zclm/moe_968/moe_1040/tnull_10694.html",
+      "published": "2004-03-08"
+    },
+    {
+      "id": "charity_2023",
+      "title": "中华人民共和国慈善法（2023年修正）",
+      "publisher": "商务部法规库（转载全国人大法律）",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=99528",
+      "published": "2023-12-29"
+    }
+  ]
+}

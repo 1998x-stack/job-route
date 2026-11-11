@@ -1,0 +1,31 @@
+flowchart TB
+    %% 国际中文教育教师 — 2026-11-11
+    n_education_degree["中文／教育相关专业训练"]
+    n_experienced_teacher["已有语言教学或跨文化经历"]
+    n_teaching_skill["第二语言教学法与跨文化能力"]
+    n_certificate["可选的国际中文教师能力认定"]
+    n_employer["雇主招聘与所在地资格审核"]
+    n_classroom["国际中文课程与课堂教学"]
+    n_curriculum["课程研发与教研合作"]
+    n_target["国际中文教育教师岗位"]
+    n_education_degree -.->|"资格与程序"| n_teaching_skill
+    n_teaching_skill -.->|"资格与程序"| n_employer
+    n_employer -.->|"岗位发展"| n_classroom
+    n_classroom -.->|"岗位发展"| n_curriculum
+    n_curriculum -.->|"符合条件发展"| n_target
+    n_experienced_teacher -.->|"资格与程序"| n_teaching_skill
+    n_teaching_skill -.->|"资格与程序"| n_certificate
+    n_certificate -.->|"资格与程序"| n_employer
+    n_classroom -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_education_degree entry
+    class n_experienced_teacher entry
+    class n_teaching_skill milestone
+    class n_certificate milestone
+    class n_employer milestone
+    class n_classroom role
+    class n_curriculum role
+    class n_target target
