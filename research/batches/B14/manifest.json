@@ -1,0 +1,112 @@
+{
+  "batch": "B14",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "research_status": "published",
+  "method": "deep-source-research-v1",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "skill": "skills/job-route/SKILL.md",
+  "items": 10,
+  "roles": [
+    {
+      "id": "JR-107",
+      "category": "military",
+      "slug": "military-academy-civilian-instructor",
+      "title": "军队院校文职教员",
+      "route_file": "data/military/military-academy-civilian-instructor/route.json",
+      "report_file": "data/military/military-academy-civilian-instructor/report.md",
+      "mermaid_file": "data/military/military-academy-civilian-instructor/route.mmd",
+      "svg_file": "data/military/military-academy-civilian-instructor/route.svg"
+    },
+    {
+      "id": "JR-110",
+      "category": "judicial",
+      "slug": "corporate-legal-manager",
+      "title": "企业法务经理",
+      "route_file": "data/judicial/corporate-legal-manager/route.json",
+      "report_file": "data/judicial/corporate-legal-manager/report.md",
+      "mermaid_file": "data/judicial/corporate-legal-manager/route.mmd",
+      "svg_file": "data/judicial/corporate-legal-manager/route.svg"
+    },
+    {
+      "id": "JR-125",
+      "category": "government",
+      "slug": "county-education-director",
+      "title": "县教育局局长",
+      "route_file": "data/government/county-education-director/route.json",
+      "report_file": "data/government/county-education-director/report.md",
+      "mermaid_file": "data/government/county-education-director/route.mmd",
+      "svg_file": "data/government/county-education-director/route.svg"
+    },
+    {
+      "id": "JR-134",
+      "category": "public-safety",
+      "slug": "cybercrime-enforcement-police",
+      "title": "公安网络安全执法民警",
+      "route_file": "data/public-safety/cybercrime-enforcement-police/route.json",
+      "report_file": "data/public-safety/cybercrime-enforcement-police/report.md",
+      "mermaid_file": "data/public-safety/cybercrime-enforcement-police/route.mmd",
+      "svg_file": "data/public-safety/cybercrime-enforcement-police/route.svg"
+    },
+    {
+      "id": "JR-135",
+      "category": "public-safety",
+      "slug": "immigration-management-police",
+      "title": "公安出入境管理民警",
+      "route_file": "data/public-safety/immigration-management-police/route.json",
+      "report_file": "data/public-safety/immigration-management-police/report.md",
+      "mermaid_file": "data/public-safety/immigration-management-police/route.mmd",
+      "svg_file": "data/public-safety/immigration-management-police/route.svg"
+    },
+    {
+      "id": "JR-144",
+      "category": "education",
+      "slug": "vocational-practice-instructor",
+      "title": "职业院校实训指导教师",
+      "route_file": "data/education/vocational-practice-instructor/route.json",
+      "report_file": "data/education/vocational-practice-instructor/report.md",
+      "mermaid_file": "data/education/vocational-practice-instructor/route.mmd",
+      "svg_file": "data/education/vocational-practice-instructor/route.svg"
+    },
+    {
+      "id": "JR-160",
+      "category": "healthcare",
+      "slug": "specialist-nurse",
+      "title": "专科护士",
+      "route_file": "data/healthcare/specialist-nurse/route.json",
+      "report_file": "data/healthcare/specialist-nurse/report.md",
+      "mermaid_file": "data/healthcare/specialist-nurse/route.mmd",
+      "svg_file": "data/healthcare/specialist-nurse/route.svg"
+    },
+    {
+      "id": "JR-167",
+      "category": "technology",
+      "slug": "cloud-platform-engineer",
+      "title": "云平台工程师",
+      "route_file": "data/technology/cloud-platform-engineer/route.json",
+      "report_file": "data/technology/cloud-platform-engineer/report.md",
+      "mermaid_file": "data/technology/cloud-platform-engineer/route.mmd",
+      "svg_file": "data/technology/cloud-platform-engineer/route.svg"
+    },
+    {
+      "id": "JR-184",
+      "category": "business",
+      "slug": "business-intelligence-analyst",
+      "title": "商业数据分析师",
+      "route_file": "data/business/business-intelligence-analyst/route.json",
+      "report_file": "data/business/business-intelligence-analyst/report.md",
+      "mermaid_file": "data/business/business-intelligence-analyst/route.mmd",
+      "svg_file": "data/business/business-intelligence-analyst/route.svg"
+    },
+    {
+      "id": "JR-196",
+      "category": "public-service",
+      "slug": "disability-employment-counselor",
+      "title": "残疾人就业辅导员",
+      "route_file": "data/public-service/disability-employment-counselor/route.json",
+      "report_file": "data/public-service/disability-employment-counselor/report.md",
+      "mermaid_file": "data/public-service/disability-employment-counselor/route.mmd",
+      "svg_file": "data/public-service/disability-employment-counselor/route.svg"
+    }
+  ]
+}
