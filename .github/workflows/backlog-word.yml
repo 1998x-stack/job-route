@@ -1,0 +1,65 @@
+name: Build Career Backlog Word Documents
+on:
+  pull_request:
+    paths:
+      - 'research/backlogs/2026/**'
+      - 'scripts/build_backlog_docx.py'
+      - '.github/workflows/backlog-word.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'research/backlogs/2026/*.json'
+      - 'research/backlogs/2026/*.md'
+      - 'scripts/build_backlog_docx.py'
+      - '.github/workflows/backlog-word.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: job-route-backlog-docx-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    name: Validate catalogs and generate two Word documents
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document generator
+        run: python -m pip install 'python-docx>=1.1,<2'
+      - name: Validate 200 unique roles and Markdown drift
+        run: python scripts/build_backlog_docx.py --check-markdown --output-root research/backlogs/2026
+      - name: Generate Word files
+        run: python scripts/build_backlog_docx.py --all --output-root research/backlogs/2026
+      - name: Verify Word packages and their job inventory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from docx import Document
+          import json
+          d=Path('research/backlogs/2026')
+          for n in (1,2):
+              p=d/f'Job_Route_Careers_Volume_0{n}_2026.docx'
+              assert p.exists() and p.stat().st_size>20000,p
+              doc=Document(p)
+              ids={r['id'] for r in json.loads((d/f'volume-0{n}.json').read_text())['roles']}
+              text='\n'.join(c.text for t in doc.tables for row in t.rows for c in row.cells)
+              assert len(ids)==100 and all(x in text for x in ids),('missing id',n)
+              print(p,p.stat().st_size,len(ids),'IDs checked')
+          PY
+      - name: Commit Word binaries to main
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/backlogs/2026/*.docx
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs(backlogs): publish two generated Word volumes [skip ci]'
+            git push origin HEAD:main
+          else
+            echo 'Word documents already match tracked versions.'
+          fi
