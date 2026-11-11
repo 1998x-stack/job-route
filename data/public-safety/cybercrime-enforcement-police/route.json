@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cybercrime-enforcement-police",
+  "title": "公安网络安全执法民警",
+  "subtitle": "公安网络安全执法职位、人民警察招录与合法技术履职",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆公安机关网络安全管理与执法岗位；2027山东与北京岗位为地方实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "公安网安执法岗位在正式人民警察制度内运行，既要求警察公务员准入，也强调网络安全技术能力。2027山东和北京分别公布了网络安全与执法或网络技术相关职位，但专业、年龄和考核项目不能相互套用。",
+  "target": "target",
+  "entry_points": [
+    "police_exam",
+    "police_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "police_exam",
+      "label": "公安网安技术执法职位公开招考",
+      "kind": "entry",
+      "description": "按照省市2027年公务员录用公告选择网络安全管理与执法或网络技术岗位，查看职位表与专项要求。",
+      "source_ids": [
+        "shandong",
+        "beijing"
+      ]
+    },
+    {
+      "id": "police_transfer",
+      "label": "已录用公安民警依法岗位交流",
+      "kind": "entry",
+      "description": "已有正式人民警察身份者可在符合岗位技术资格及单位安排时申请内部岗位选配。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "recruit_process",
+      "label": "人民警察考试、体测与政考",
+      "kind": "milestone",
+      "description": "适用公务员录用及人民警察专项条件，不可仅凭信息安全证书取得警察身份。",
+      "source_ids": [
+        "shandong",
+        "beijing"
+      ]
+    },
+    {
+      "id": "police_identity",
+      "label": "取得正式公安人民警察身份",
+      "kind": "milestone",
+      "description": "依法录用或转任，属于公安机关警察身份而非企业安全工程师或警务辅助人员。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "legal_skill",
+      "label": "网络法治及电子数据规范培训",
+      "kind": "role",
+      "description": "学习依法取证、个人信息保护、网络安全行政管理与程序规范，服从法定执法权限。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "cyber_work",
+      "label": "网络安全管理与执法业务",
+      "kind": "role",
+      "description": "在合法执法授权下参与网络安全检查、网络违法犯罪线索处理和电子数据检验辅助等工作。",
+      "source_ids": [
+        "shandong"
+      ]
+    },
+    {
+      "id": "review",
+      "label": "业务复盘与技术能力发展",
+      "kind": "role",
+      "description": "积累可审计的执法文书、网络技术能力和合法数据处理经验，领导任用独立考核。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "公安网络安全执法民警岗位",
+      "kind": "target",
+      "description": "具有正式人民警察身份和相应网安岗位资格，依法从事公安网络安全管理与执法。",
+      "source_ids": [
+        "police_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "police_exam",
+      "to": "recruit_process",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「公安网安技术执法职位公开招考」发展至「人民警察考试、体测与政考」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "shandong",
+        "beijing"
+      ]
+    },
+    {
+      "from": "recruit_process",
+      "to": "police_identity",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「人民警察考试、体测与政考」发展至「取得正式公安人民警察身份」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "police_identity",
+      "to": "legal_skill",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「取得正式公安人民警察身份」发展至「网络法治及电子数据规范培训」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "legal_skill",
+      "to": "cyber_work",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「网络法治及电子数据规范培训」发展至「网络安全管理与执法业务」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "shandong"
+      ]
+    },
+    {
+      "from": "cyber_work",
+      "to": "review",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「网络安全管理与执法业务」发展至「业务复盘与技术能力发展」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": []
+    },
+    {
+      "from": "review",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「业务复盘与技术能力发展」发展至「公安网络安全执法民警岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "police_transfer",
+      "to": "recruit_process",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「已录用公安民警依法岗位交流」发展至「人民警察考试、体测与政考」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "shandong",
+        "beijing"
+      ]
+    },
+    {
+      "from": "cyber_work",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「网络安全管理与执法业务」发展至「公安网络安全执法民警岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "direct",
+      "title": "网安专业公务员招录路线",
+      "description": "以2027年省市招聘公告中的网络安全职位为入口，依法通过人民警察录用流程并开展网安执法。",
+      "node_ids": [
+        "police_exam",
+        "recruit_process",
+        "police_identity",
+        "legal_skill",
+        "cyber_work",
+        "review",
+        "target"
+      ]
+    },
+    {
+      "id": "internal",
+      "title": "已有公安民警业务转岗路线",
+      "description": "满足岗位资格的正式警察经组织安排进入网安岗位，依法完成相关培训再执法。",
+      "node_ids": [
+        "police_transfer",
+        "recruit_process",
+        "police_identity",
+        "legal_skill",
+        "cyber_work",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2027年度山东省公安机关录用简章有网络安全管理、网络安全与执法等警务技术职位的专项身体条件要求。",
+    "2027年北京市公安局公告含网络技术职位附件，并要求公安专业科目考试及后续体测、心理测试等。",
+    "信息安全岗位技能或厂商认证不能代替正式人民警察身份、依法执法资格与录用考核程序。"
+  ],
+  "caveats": [
+    "网络安全工程师、企业红队测试员及公安网安执法民警是不同身份；技术能力不自动授予公安行政执法权。",
+    "2027北京与山东招录的体测、年龄、学历等因单位和职位不同而有差异，必须查当年原职位表。",
+    "不提供敏感执法战术、内部侦查系统或越权电子数据获取操作细节。"
+  ],
+  "sources": [
+    {
+      "id": "shandong",
+      "title": "2027年度山东省公安机关考试录用公务员（人民警察）简章",
+      "publisher": "烟台市人民政府（转载省级公告）",
+      "url": "https://www.yantai.gov.cn/col/col51398/art/2026/art_392b24699429449b94f68a8391911b4d.html",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "beijing",
+      "title": "北京市公安局2027年度面向社会招录人民警察公告",
+      "publisher": "北京市公安局",
+      "url": "https://gaj.beijing.gov.cn/zhuanti/zlxx/tzgg/202611/t20261109_4938297.html",
+      "published": "2026-11-09"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法",
+      "publisher": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "1995-02-28"
+    }
+  ]
+}

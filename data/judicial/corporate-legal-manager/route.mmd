@@ -1,0 +1,30 @@
+flowchart TB
+    %% 企业法务经理 — 2026-11-11
+    n_legal_education["法学教育与企业法务初岗"]
+    n_lawyer_transfer["律师或审计风控等相关经历转岗"]
+    n_legal_basis["合同与企业法律制度能力"]
+    n_contract["合同起草、谈判与风控"]
+    n_dispute["争议处理及外部律师协作"]
+    n_cross_border["投融资、知识产权与跨境合规"]
+    n_manager["法务制度建设与团队协同"]
+    n_target["企业法务经理岗位"]
+    n_legal_education -.->|"资格及程序"| n_legal_basis
+    n_legal_basis -.->|"岗位经验积累"| n_contract
+    n_contract -.->|"岗位经验积累"| n_dispute
+    n_dispute -.->|"岗位经验积累"| n_manager
+    n_manager -.->|"合规岗位发展"| n_target
+    n_lawyer_transfer -.->|"资格及程序"| n_legal_basis
+    n_contract -.->|"岗位经验积累"| n_cross_border
+    n_cross_border -.->|"岗位经验积累"| n_manager
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_legal_education entry
+    class n_lawyer_transfer entry
+    class n_legal_basis milestone
+    class n_contract role
+    class n_dispute role
+    class n_cross_border role
+    class n_manager role
+    class n_target target

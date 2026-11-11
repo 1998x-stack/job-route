@@ -1,0 +1,30 @@
+flowchart TB
+    %% 县教育局局长 — 2026-11-11
+    n_civil_exam["教育行政机关公务员录用"]
+    n_cadre_transfer["符合条件的干部交流或调任"]
+    n_governance["教育公共治理与政策实践"]
+    n_unit_role["教育行政科室或部门领导经历"]
+    n_recommend["干部考察、讨论决定和提名"]
+    n_npc_appoint["县人大常委会依法决定任命"]
+    n_admin["全县教育行政监督与公共服务"]
+    n_target["县教育局局长"]
+    n_civil_exam -.->|"资格及程序"| n_governance
+    n_governance -.->|"岗位经验积累"| n_unit_role
+    n_unit_role -.->|"资格及程序"| n_recommend
+    n_recommend -.->|"资格及程序"| n_npc_appoint
+    n_npc_appoint -.->|"岗位经验积累"| n_admin
+    n_admin -.->|"合规岗位发展"| n_target
+    n_cadre_transfer -.->|"资格及程序"| n_governance
+    n_governance -.->|"资格及程序"| n_recommend
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil_exam entry
+    class n_cadre_transfer entry
+    class n_governance milestone
+    class n_unit_role role
+    class n_recommend milestone
+    class n_npc_appoint milestone
+    class n_admin role
+    class n_target target

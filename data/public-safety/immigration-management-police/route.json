@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "id": "immigration-management-police",
+  "title": "公安出入境管理民警",
+  "subtitle": "地方公安机关出入境管理民警与国家移民管理系统的制度区分",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆地方公安机关出入境管理部门；区别于国家移民管理局垂直管理的口岸边检总站",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "地方公安出入境管理民警依法办理出入境证件与外国人停留居留管理等工作，属于地方公安机关人民警察岗位。国家移民管理局指导地方公安出入境业务，但其垂直管理的出入境边防检查总站属于另一组织系统。",
+  "target": "target",
+  "entry_points": [
+    "public_exam",
+    "transfer"
+  ],
+  "nodes": [
+    {
+      "id": "public_exam",
+      "label": "地方公安机关人民警察职位招录",
+      "kind": "entry",
+      "description": "从各省市公安机关公务员职位表中核查出入境管理或相关综合警务职位并参加相应招考。",
+      "source_ids": [
+        "police_exam"
+      ]
+    },
+    {
+      "id": "transfer",
+      "label": "已任公安民警按程序交流转岗",
+      "kind": "entry",
+      "description": "正式公安民警可在资格、警力岗位和组织安排允许时交流至地方出入境管理业务岗位。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "admission",
+      "label": "警察公务员录用或岗位资格核验",
+      "kind": "milestone",
+      "description": "参加适用的公务员录用、体检体测及考察等法定程序，岗位交流亦须符合岗位要求。",
+      "source_ids": [
+        "police_exam"
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "正式地方公安人民警察身份",
+      "kind": "milestone",
+      "description": "取得公安机关民警身份，与边检总站系统岗位、行政服务外包人员不同。",
+      "source_ids": [
+        "police_law",
+        "nia"
+      ]
+    },
+    {
+      "id": "law",
+      "label": "出境入境管理法与证件业务培训",
+      "kind": "role",
+      "description": "学习护照、签证、居留、外国人管理等法定程序和行政服务规范。",
+      "source_ids": [
+        "exit_law"
+      ]
+    },
+    {
+      "id": "frontdesk",
+      "label": "出入境证件及外国人事务执法服务",
+      "kind": "role",
+      "description": "依法从事公民证件、外国人停留居留和相关公安管理服务，实际权限依机构分工。",
+      "source_ids": [
+        "exit_law"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "服务管理与专业警务发展",
+      "kind": "role",
+      "description": "按依法行政、便民服务与业务质量评价成长；领导岗位由组织选拔。",
+      "source_ids": [
+        "nia"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "公安出入境管理民警岗位",
+      "kind": "target",
+      "description": "在地方公安出入境管理机构依法履行出入境行政管理、服务与执法职责。",
+      "source_ids": [
+        "exit_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "public_exam",
+      "to": "admission",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「地方公安机关人民警察职位招录」发展至「警察公务员录用或岗位资格核验」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_exam"
+      ]
+    },
+    {
+      "from": "admission",
+      "to": "identity",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「警察公务员录用或岗位资格核验」发展至「正式地方公安人民警察身份」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_law",
+        "nia"
+      ]
+    },
+    {
+      "from": "identity",
+      "to": "law",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「正式地方公安人民警察身份」发展至「出境入境管理法与证件业务培训」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "exit_law"
+      ]
+    },
+    {
+      "from": "law",
+      "to": "frontdesk",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「出境入境管理法与证件业务培训」发展至「出入境证件及外国人事务执法服务」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "exit_law"
+      ]
+    },
+    {
+      "from": "frontdesk",
+      "to": "management",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「出入境证件及外国人事务执法服务」发展至「服务管理与专业警务发展」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "nia"
+      ]
+    },
+    {
+      "from": "management",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「服务管理与专业警务发展」发展至「公安出入境管理民警岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "exit_law"
+      ]
+    },
+    {
+      "from": "transfer",
+      "to": "admission",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「已任公安民警按程序交流转岗」发展至「警察公务员录用或岗位资格核验」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "police_exam"
+      ]
+    },
+    {
+      "from": "frontdesk",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「出入境证件及外国人事务执法服务」发展至「公安出入境管理民警岗位」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "exit_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "recruit",
+      "title": "地方公安警察考试与业务任职",
+      "description": "参加地方公安警察岗位招录、完成人民警察程序，随后通过业务培训从事出入境管理。",
+      "node_ids": [
+        "public_exam",
+        "admission",
+        "identity",
+        "law",
+        "frontdesk",
+        "management",
+        "target"
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "在职公安民警转岗",
+      "description": "已有人民警察身份经组织交流与业务学习进入地方公安出入境岗位。",
+      "node_ids": [
+        "transfer",
+        "admission",
+        "identity",
+        "law",
+        "frontdesk",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中华人民共和国出境入境管理法》第四条明确县级以上地方公安机关及其出入境管理机构负责外国人停留居留管理；口岸出入境边防检查是另一机构职责。",
+    "国家移民管理局官网说明：其指导各省自治区直辖市公安出入境管理机构业务工作，垂直管理边检总站等机构。",
+    "地方公安出入境人民警察职位应按所属省市的公务员及人民警察招录规则录用，国家移民管理机构2027年中央机关招录公告并非所有地方公安出入境职位表。"
+  ],
+  "caveats": [
+    "不能把公安出入境支队自动视作国家移民管理局垂直管理的出入境边检总站。",
+    "出入境部门非警务辅助人员、窗口外包服务人员与正式警察身份差异明显。",
+    "不公开非公开办证审查规则、警务内部系统和敏感执法信息。"
+  ],
+  "sources": [
+    {
+      "id": "exit_law",
+      "title": "中华人民共和国出境入境管理法",
+      "publisher": "中国驻瑞士大使馆（转载现行法律）",
+      "url": "https://ch.china-embassy.gov.cn/ls_fw_s/flfgmqxy/202608/t20260821_12008304.htm",
+      "published": "2012-06-30"
+    },
+    {
+      "id": "nia",
+      "title": "国家移民管理局机构概况",
+      "publisher": "国家移民管理局",
+      "url": "https://www.nia.gov.cn/",
+      "published": "2018-04-02"
+    },
+    {
+      "id": "police_exam",
+      "title": "江苏省2027年度考试录用公安机关公务员（人民警察）简章",
+      "publisher": "江苏省人力资源和社会保障厅",
+      "url": "https://jshrss.jiangsu.gov.cn/art/2026/10/30/art_93733_11852175.html",
+      "published": "2026-10-30"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法",
+      "publisher": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "1995-02-28"
+    }
+  ]
+}

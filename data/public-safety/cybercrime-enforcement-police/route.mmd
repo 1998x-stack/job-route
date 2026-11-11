@@ -1,0 +1,30 @@
+flowchart TB
+    %% 公安网络安全执法民警 — 2026-11-11
+    n_police_exam["公安网安技术执法职位公开招考"]
+    n_police_transfer["已录用公安民警依法岗位交流"]
+    n_recruit_process["人民警察考试、体测与政考"]
+    n_police_identity["取得正式公安人民警察身份"]
+    n_legal_skill["网络法治及电子数据规范培训"]
+    n_cyber_work["网络安全管理与执法业务"]
+    n_review["业务复盘与技术能力发展"]
+    n_target["公安网络安全执法民警岗位"]
+    n_police_exam -.->|"资格及程序"| n_recruit_process
+    n_recruit_process -.->|"资格及程序"| n_police_identity
+    n_police_identity -.->|"岗位经验积累"| n_legal_skill
+    n_legal_skill -.->|"岗位经验积累"| n_cyber_work
+    n_cyber_work -.->|"岗位经验积累"| n_review
+    n_review -.->|"合规岗位发展"| n_target
+    n_police_transfer -.->|"资格及程序"| n_recruit_process
+    n_cyber_work -.->|"合规岗位发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_police_exam entry
+    class n_police_transfer entry
+    class n_recruit_process milestone
+    class n_police_identity milestone
+    class n_legal_skill role
+    class n_cyber_work role
+    class n_review role
+    class n_target target

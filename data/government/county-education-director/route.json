@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0.0",
+  "id": "county-education-director",
+  "title": "县教育局局长",
+  "subtitle": "教育行政干部履历、党政干部选任和县人大常委会任命",
+  "category": "government",
+  "jurisdiction": "中国大陆普通县的县政府教育行政主管部门；地方机构规格可能不同",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "县教育局局长是县政府教育行政部门领导职务，通常经干部管理权限下的组织考察、提名与县人大常委会法定任命产生；不等于普通教师、学校校长通过职称评聘即可自动转任。",
+  "target": "target",
+  "entry_points": [
+    "civil_exam",
+    "cadre_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil_exam",
+      "label": "教育行政机关公务员录用",
+      "kind": "entry",
+      "description": "根据年度公务员招录职位表进入县级教育行政或相关党政机关，积累公共教育管理经历。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "cadre_transfer",
+      "label": "符合条件的干部交流或调任",
+      "kind": "entry",
+      "description": "依法在干部管理权限、任职资格和编制范围内从相关党政或事业单位管理岗位交流调任。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "教育公共治理与政策实践",
+      "kind": "milestone",
+      "description": "参与学校管理政策、师资配置、义务教育、公办学校监管及教育公平等行政事务。",
+      "source_ids": [
+        "education_law"
+      ]
+    },
+    {
+      "id": "unit_role",
+      "label": "教育行政科室或部门领导经历",
+      "kind": "role",
+      "description": "承担科室管理、县直部门副职或相关领导职责，具体职数及职务层级需查当地机构规格。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "id": "recommend",
+      "label": "干部考察、讨论决定和提名",
+      "kind": "milestone",
+      "description": "依党政领导干部选拔条例履行适岗考察、组织决定与相关提名程序。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "id": "npc_appoint",
+      "label": "县人大常委会依法决定任命",
+      "kind": "milestone",
+      "description": "县长依法提请本级人大常委会决定任命政府工作部门局长，与县长由县人大选举不同。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "id": "admin",
+      "label": "全县教育行政监督与公共服务",
+      "kind": "role",
+      "description": "在教育局权限范围内组织教育规划、学校治理与教师队伍公共管理。",
+      "source_ids": [
+        "education_law"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "县教育局局长",
+      "kind": "target",
+      "description": "经干部选拔和人大常委会任命依法履行县级教育行政部门负责人职责。",
+      "source_ids": [
+        "local_org"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil_exam",
+      "to": "governance",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「教育行政机关公务员录用」发展至「教育公共治理与政策实践」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "education_law"
+      ]
+    },
+    {
+      "from": "governance",
+      "to": "unit_role",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「教育公共治理与政策实践」发展至「教育行政科室或部门领导经历」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "from": "unit_role",
+      "to": "recommend",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「教育行政科室或部门领导经历」发展至「干部考察、讨论决定和提名」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "from": "recommend",
+      "to": "npc_appoint",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「干部考察、讨论决定和提名」发展至「县人大常委会依法决定任命」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "from": "npc_appoint",
+      "to": "admin",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "从「县人大常委会依法决定任命」发展至「全县教育行政监督与公共服务」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "education_law"
+      ]
+    },
+    {
+      "from": "admin",
+      "to": "target",
+      "label": "合规岗位发展",
+      "evidence": "conditional",
+      "note": "从「全县教育行政监督与公共服务」发展至「县教育局局长」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "from": "cadre_transfer",
+      "to": "governance",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「符合条件的干部交流或调任」发展至「教育公共治理与政策实践」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "education_law"
+      ]
+    },
+    {
+      "from": "governance",
+      "to": "recommend",
+      "label": "资格及程序",
+      "evidence": "conditional",
+      "note": "从「教育公共治理与政策实践」发展至「干部考察、讨论决定和提名」须独立满足职位、资格、考核及组织聘任要求，不能视为自动升级。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "civil_path",
+      "title": "教育行政机关业务成长",
+      "description": "公务员积累教育治理和部门管理经验，符合任用资格且经组织提名、县人大常委会任命。",
+      "node_ids": [
+        "civil_exam",
+        "governance",
+        "unit_role",
+        "recommend",
+        "npc_appoint",
+        "admin",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer_path",
+      "title": "跨单位干部交流任职",
+      "description": "符合条件的其他党政或管理岗位干部通过交流与组织考察进入教育行政领导职务。",
+      "node_ids": [
+        "cadre_transfer",
+        "governance",
+        "recommend",
+        "npc_appoint",
+        "admin",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2022年修正《地方组织法》规定县长提名本级人民政府局长任免，由本级人大常委会依法决定。",
+    "2019年《党政领导干部选拔任用工作条例》对领导干部选任规定任职资格、考察及集体讨论决定程序。",
+    "局长不是教师专业技术职称或学校校长行政职务的自动晋升下一站；教育治理能力与干部任用资格需要分别评估。"
+  ],
+  "caveats": [
+    "不把所有县教育局局长视为固定统一行政级别，特殊行政区划和机构规格需核查。",
+    "教育局负责人不以教师资格证为唯一法定入口，若从事业单位转任则需符合额外调任与交流规定。",
+    "县教育局局长由人大常委会决定任命，不是由县人大直接选举产生。"
+  ],
+  "sources": [
+    {
+      "id": "local_org",
+      "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）",
+      "publisher": "山东省高级人民法院（转载法律）",
+      "url": "https://www.sdcourt.gov.cn/jningweisfy/385991/385992/8661225/index.html",
+      "published": "2022-03-11"
+    },
+    {
+      "id": "cadre_rule",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "人力资源社会保障部（转载中央文件）",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/dflz/lzgd/201903/t20190321_312665.html",
+      "published": "2019-03-03"
+    },
+    {
+      "id": "education_law",
+      "title": "中华人民共和国教育法",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202105/t20210510_530531.html",
+      "published": "2021-04-29"
+    },
+    {
+      "id": "civil_law",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局法规资料",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}
