@@ -47,4 +47,4 @@
 
 ## 官方资料
 
-1. [人民法院司法警察暂行条例](https://www.court.gov.cn/jianshe/xiangqing/147.html) — 最高人民法院（1997-05-04）
+1. [人民法院司法警察暂行条例](https://www.court.gov.cn/jianshe/xiangqing/147.html) — 最高人民法院（2010-02-21）
