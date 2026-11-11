@@ -72,7 +72,7 @@
 
 ## 七、官方和公开参考资料
 
-1. [国家消防救援局关于严格规范消防监督检查的通知（2025）](https://www.119.gov.cn/zfxxgk/fdzdgknr/zcfg/2025/50085.shtml) — 国家消防救援局（发布日期 2025-06-09）
+1. [国家消防救援局关于严格规范消防监督检查的通知（2025）](https://www.119.gov.cn/zfxxgk/fdzdgknr/zcfg/2025/50085.shtml) — 国家消防救援局（发布日期 2025-06-13）
 2. [中华人民共和国消防法](https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e9e34f0731c249a891ea9c925e17f237.html) — 国家市场监督管理总局（转载法律）（发布日期 2021-04-29）
 3. [消防行政执法责任制规定（2025）](https://www.119.gov.cn/site1/zfxxgk/fdzdgknr/zcfg/2025/47833.shtml) — 国家消防救援局（发布日期 2025-01-12）
 

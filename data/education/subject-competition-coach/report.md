@@ -75,6 +75,6 @@
 1. [教师资格条例（国务院令第188号）](https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyxzfg/202204/t20220422_620496.html) — 中华人民共和国教育部（发布日期 1995-12-12）
 2. [2025—2028学年面向中小学生的全国性竞赛活动名单通知](https://www.moe.gov.cn/srcsite/A29/202510/t20251029_1418393.html) — 中华人民共和国教育部（发布日期 2025-10-22）
 3. [面向中小学生的全国性竞赛活动管理办法](https://www.moe.gov.cn/srcsite/A29/202203/t20220314_607247.html) — 中华人民共和国教育部（发布日期 2022-03-03）
-4. [学科竞赛教练员校招岗位示例](https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eN-Kuba2yGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv) — 四川大学就业指导中心（发布日期 2026-10-01）
+4. [学科竞赛教练员校招岗位示例](https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eN-Kuba2yGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv) — 四川大学就业指导中心（发布日期 2026-09-23）
 
 > 资料只反映所列地域、法规和核验日期的公开信息。报名、岗位计划或法规发生变化时，必须重新核对原文，不能沿用过时条件。

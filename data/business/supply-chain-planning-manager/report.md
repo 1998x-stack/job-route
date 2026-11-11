@@ -72,7 +72,7 @@
 
 ## 七、官方和公开参考资料
 
-1. [供应链管理岗应届岗位职责](https://zhaopin.meituan.com/web/position/detail?highlightType=campus&jobUnionId=4694853346) — 美团招聘官网（发布日期 2026-11-11）
-2. [需求计划与S&OP岗位招聘职责](https://rokid.zhiye.com/jobs?LocId=%5B%7B%22id%22%3A%223301%22%2C%22label%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%22%7D%5D) — Rokid企业招聘平台（发布日期 2026-11-11）
+1. [供应链管理岗应届岗位职责](https://zhaopin.meituan.com/web/position/detail?highlightType=campus&jobUnionId=4694853346) — 美团招聘官网（发布日期 2026-08-17）
+2. [供应链计划管理部总监岗位招聘——需求、产销协同与库存管理](https://www.chinascom.com/pagezhuanzai?article_id=2846) — 中国供应链管理专业招聘信息平台SCOM（发布日期 2026-09-17）
 
 > 资料只反映所列地域、法规和核验日期的公开信息。报名、岗位计划或法规发生变化时，必须重新核对原文，不能沿用过时条件。
