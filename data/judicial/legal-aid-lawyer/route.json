@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0.0",
+  "id": "legal-aid-lawyer",
+  "title": "法律援助律师",
+  "subtitle": "律师执业许可、2026年律师法修正与2023年法律援助案件指派机制",
+  "category": "judicial",
+  "jurisdiction": "中国大陆·依法取得律师执业证的法律援助承办律师（区别于法援机构其他法律援助人员）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "法律援助律师是依法取得律师执业证并办理法律援助事项的执业律师，不存在一张可替代律师执业证的统一“法律援助律师许可证”。《律师法》2026年8月再次修正，律师执业应满足法律职业资格、实习和司法行政许可；案件由法援机构依法指派、律师事务所安排，值班律师法律帮助又有其独立规则。",
+  "target": "target",
+  "entry_points": [
+    "law_education",
+    "practicing"
+  ],
+  "nodes": [
+    {
+      "id": "law_education",
+      "label": "取得法律职业资格与律所实习",
+      "kind": "entry",
+      "description": "按适用法考政策取得法律职业资格，并在律师事务所实习符合规定期限、考核合格。",
+      "source_ids": [
+        "lawyer_law",
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "practicing",
+      "label": "已持有效执业证的执业律师",
+      "kind": "entry",
+      "description": "已有律师执业证的律师，可通过所在律师事务所接受法律援助机构指派或者参加规范的值班律师服务。",
+      "source_ids": [
+        "lawyer_law",
+        "aid_procedure"
+      ]
+    },
+    {
+      "id": "license",
+      "label": "律师执业证书与执业机构",
+      "kind": "milestone",
+      "description": "依2026年修正《律师法》申请执业许可，取得有效执业证并在合法执业机构开展业务。",
+      "source_ids": [
+        "lawyer_law"
+      ]
+    },
+    {
+      "id": "aid_training",
+      "label": "法律援助范围与质量管理培训",
+      "kind": "role",
+      "description": "理解经济困难或其他法定受援条件、代理辩护规范与回避、保密、质量评价要求。",
+      "source_ids": [
+        "aid_law",
+        "aid_procedure"
+      ]
+    },
+    {
+      "id": "assignment",
+      "label": "接受法援机构指派及律所安排",
+      "kind": "milestone",
+      "description": "法律援助机构决定提供援助后指派律师事务所，律所及时安排本所律师承办。",
+      "source_ids": [
+        "aid_procedure"
+      ]
+    },
+    {
+      "id": "casework",
+      "label": "依法办理法律援助案件",
+      "kind": "role",
+      "description": "提供刑事辩护、民事行政代理及其他法定法律服务，依据证据和当事人权益履职。",
+      "source_ids": [
+        "aid_law",
+        "aid_procedure"
+      ]
+    },
+    {
+      "id": "duty",
+      "label": "值班律师法律帮助方向",
+      "kind": "role",
+      "description": "依法律援助机构安排开展程序选择建议、法律咨询等值班法律帮助；不能将值班律师帮助等同全部刑辩代理。",
+      "source_ids": [
+        "duty_rules"
+      ]
+    },
+    {
+      "id": "senior",
+      "label": "未成年人等重点领域专业骨干",
+      "kind": "role",
+      "description": "通过专业培训和复杂案件经验发展，特定重罪及未成年人案件的指派存在法定专业经验要求。",
+      "source_ids": [
+        "aid_procedure"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "规范执业的法律援助律师",
+      "kind": "target",
+      "description": "拥有有效律师执业证，并在法律援助法及相关程序规定下依法办理指派案件或值班律师服务。",
+      "source_ids": [
+        "lawyer_law",
+        "aid_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "law_education",
+      "to": "license",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「取得法律职业资格与律所实习」到「律师执业证书与执业机构」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "lawyer_law"
+      ]
+    },
+    {
+      "from": "license",
+      "to": "aid_training",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「律师执业证书与执业机构」到「法律援助范围与质量管理培训」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "aid_law",
+        "aid_procedure"
+      ]
+    },
+    {
+      "from": "aid_training",
+      "to": "assignment",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「法律援助范围与质量管理培训」到「接受法援机构指派及律所安排」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "aid_procedure"
+      ]
+    },
+    {
+      "from": "assignment",
+      "to": "casework",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「接受法援机构指派及律所安排」到「依法办理法律援助案件」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "aid_law",
+        "aid_procedure"
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "senior",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「依法办理法律援助案件」到「未成年人等重点领域专业骨干」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "aid_procedure"
+      ]
+    },
+    {
+      "from": "senior",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「未成年人等重点领域专业骨干」到「规范执业的法律援助律师」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "lawyer_law",
+        "aid_law"
+      ]
+    },
+    {
+      "from": "practicing",
+      "to": "license",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「已持有效执业证的执业律师」到「律师执业证书与执业机构」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "lawyer_law"
+      ]
+    },
+    {
+      "from": "aid_training",
+      "to": "duty",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「法律援助范围与质量管理培训」到「值班律师法律帮助方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "duty_rules"
+      ]
+    },
+    {
+      "from": "duty",
+      "to": "assignment",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「值班律师法律帮助方向」到「接受法援机构指派及律所安排」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "aid_procedure"
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「依法办理法律援助案件」到「规范执业的法律援助律师」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "lawyer_law",
+        "aid_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "qualify",
+      "title": "法考—律师执业—法律援助办案",
+      "description": "从取得法律职业资格和律所实习开始，获得律师许可后接受法律援助机构合法指派承办案件。",
+      "node_ids": [
+        "law_education",
+        "license",
+        "aid_training",
+        "assignment",
+        "casework",
+        "senior",
+        "target"
+      ]
+    },
+    {
+      "id": "practicing_track",
+      "title": "现有律师参与值班律师和法援服务",
+      "description": "已有执业证律师通过法援培训与机构安排参与值班服务，再依法承办指派的援助案件。",
+      "node_ids": [
+        "practicing",
+        "license",
+        "aid_training",
+        "duty",
+        "assignment",
+        "casework",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中华人民共和国律师法》于2026年8月28日第四次修正；第八、九条规定法律职业资格、律所实习一年和司法行政许可等律师执业条件。",
+    "《中华人民共和国法律援助法》规定法律援助机构负责组织实施法律援助，人员包含律师、基层法律服务工作者及其他合法人员。",
+    "司法部2023年修订《办理法律援助案件程序规定》第24—26条对指派及重大刑事案件律师资历作出规定。",
+    "值班律师提供的法律帮助与接受指派担任辩护律师存在程序和法律服务范围差异。"
+  ],
+  "caveats": [
+    "法律职业资格证书与律师执业证书不是同一证书；法律援助志愿者、法援机构公务员与律所律师也非同一身份。",
+    "不能将值班律师帮助表述为已自动接受刑事辩护委托；值班律师另有名册、指派与工作安排。",
+    "2026年律师法修订应作为现行版本，不应继续以2017年修正文本列举全部执业法律条款而不注明版本。"
+  ],
+  "sources": [
+    {
+      "id": "lawyer_law",
+      "title": "中华人民共和国律师法（2026年第四次修正）",
+      "publisher": "北京市司法局（转载全国人大常委会修正文本）",
+      "url": "https://sfj.beijing.gov.cn/sfj/zwgk/2024zcwj/744120751/fl91/744123073/",
+      "published": "2026-08-28"
+    },
+    {
+      "id": "aid_law",
+      "title": "中华人民共和国法律援助法",
+      "publisher": "上海市人民政府（转载全国人大法律）",
+      "url": "https://www.shanghai.gov.cn/zjfcgj/20250919/55e60eb8ae9a44e9b8ed7d9f71392ce5.html",
+      "published": "2021-08-20"
+    },
+    {
+      "id": "aid_procedure",
+      "title": "办理法律援助案件程序规定（2023年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/jgsz/jgszjgtj/ggflfwglj/ggflfwgljtjxw/202307/t20230721_483090.html",
+      "published": "2023-07-11"
+    },
+    {
+      "id": "duty_rules",
+      "title": "司法部法律援助案件及值班律师规定说明",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/jgsz/jgszzsdw/zsdwflyzzx/flyzzxzcxx/zcxxzcfg/zcfgdfxfggf/202301/t20230104_470206.html",
+      "published": "2023-01-04"
+    },
+    {
+      "id": "exam_2026",
+      "title": "2026年国家统一法律职业资格考试公告",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrtzwj/202606/t20260605_536058.html",
+      "published": "2026-06-05"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+flowchart TB
+    %% 高校实验技术人员 — 2026-11-11
+    n_science["理工医相关学历和实验技术岗位应聘"]
+    n_industry["科研设备或技术平台从业者转岗"]
+    n_apply["高校招聘、考核与正式聘任"]
+    n_lab["实验教学、仪器与安全服务"]
+    n_research["大型仪器平台与技术研发"]
+    n_grade["实验技术职称评价与专业技术岗位"]
+    n_platform["教学科研平台骨干与技术带教"]
+    n_manager["实验室平台组织管理方向"]
+    n_target["高校实验技术专业岗位发展"]
+    n_science -.->|"资格或程序"| n_apply
+    n_apply -.->|"专业经历"| n_lab
+    n_lab -.->|"专业经历"| n_research
+    n_research -.->|"资格或程序"| n_grade
+    n_grade -.->|"专业经历"| n_platform
+    n_platform -.->|"依法任职与发展"| n_target
+    n_industry -.->|"资格或程序"| n_apply
+    n_lab -.->|"资格或程序"| n_grade
+    n_grade -.->|"专业经历"| n_manager
+    n_manager -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_science entry
+    class n_industry entry
+    class n_apply milestone
+    class n_lab role
+    class n_research role
+    class n_grade milestone
+    class n_platform role
+    class n_manager role
+    class n_target target

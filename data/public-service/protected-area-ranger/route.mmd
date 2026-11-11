@@ -1,0 +1,33 @@
+flowchart TB
+    %% 自然保护地生态巡护员 — 2026-11-11
+    n_park_apply["自然保护地管理机构巡护岗位申请"]
+    n_community_apply["乡村和地方生态护林员公开选聘"]
+    n_onboard["巡护岗位招聘与合法合同"]
+    n_training["保护区法规与野外安全培训"]
+    n_patrol["巡护与生态资源保护"]
+    n_monitor["监测记录与数据质量管理"]
+    n_community["社区协同和保护宣传教育"]
+    n_coordinator["巡护项目骨干或团队协调"]
+    n_target["自然保护地生态巡护岗位"]
+    n_park_apply -.->|"资格或程序"| n_onboard
+    n_onboard -.->|"资格或程序"| n_training
+    n_training -.->|"专业经历"| n_patrol
+    n_patrol -.->|"专业经历"| n_monitor
+    n_monitor -.->|"专业经历"| n_community
+    n_community -.->|"依法任职与发展"| n_target
+    n_community_apply -.->|"资格或程序"| n_onboard
+    n_patrol -.->|"专业经历"| n_coordinator
+    n_coordinator -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_park_apply entry
+    class n_community_apply entry
+    class n_onboard milestone
+    class n_training milestone
+    class n_patrol role
+    class n_monitor role
+    class n_community role
+    class n_coordinator role
+    class n_target target

@@ -1,0 +1,34 @@
+flowchart TB
+    %% 储能系统集成工程师 — 2026-11-11
+    n_power["电气与电力电子专业背景"]
+    n_battery["电池BMS或工控集成工程经历"]
+    n_basics["储能系统架构与标准评估"]
+    n_design["系统方案和接口安全设计"]
+    n_verification["集成测试与系统可靠性验证"]
+    n_standards["并网及电站设计标准协调"]
+    n_delivery["跨供应商项目交付和质量闭环"]
+    n_leader["系统架构负责人或技术经理方向"]
+    n_target["储能系统集成工程师岗位"]
+    n_power -.->|"资格或程序"| n_basics
+    n_basics -.->|"专业经历"| n_design
+    n_design -.->|"专业经历"| n_verification
+    n_verification -.->|"专业经历"| n_standards
+    n_standards -.->|"专业经历"| n_delivery
+    n_delivery -.->|"依法任职与发展"| n_target
+    n_battery -.->|"资格或程序"| n_basics
+    n_verification -.->|"专业经历"| n_delivery
+    n_delivery -.->|"专业经历"| n_leader
+    n_leader -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_power entry
+    class n_battery entry
+    class n_basics milestone
+    class n_design role
+    class n_verification role
+    class n_standards role
+    class n_delivery role
+    class n_leader role
+    class n_target target

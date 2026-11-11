@@ -1,0 +1,34 @@
+flowchart TB
+    %% 法律援助律师 — 2026-11-11
+    n_law_education["取得法律职业资格与律所实习"]
+    n_practicing["已持有效执业证的执业律师"]
+    n_license["律师执业证书与执业机构"]
+    n_aid_training["法律援助范围与质量管理培训"]
+    n_assignment["接受法援机构指派及律所安排"]
+    n_casework["依法办理法律援助案件"]
+    n_duty["值班律师法律帮助方向"]
+    n_senior["未成年人等重点领域专业骨干"]
+    n_target["规范执业的法律援助律师"]
+    n_law_education -.->|"资格或程序"| n_license
+    n_license -.->|"专业经历"| n_aid_training
+    n_aid_training -.->|"资格或程序"| n_assignment
+    n_assignment -.->|"专业经历"| n_casework
+    n_casework -.->|"专业经历"| n_senior
+    n_senior -.->|"依法任职与发展"| n_target
+    n_practicing -.->|"资格或程序"| n_license
+    n_aid_training -.->|"专业经历"| n_duty
+    n_duty -.->|"资格或程序"| n_assignment
+    n_casework -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_law_education entry
+    class n_practicing entry
+    class n_license milestone
+    class n_aid_training role
+    class n_assignment milestone
+    class n_casework role
+    class n_duty role
+    class n_senior role
+    class n_target target

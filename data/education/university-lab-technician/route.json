@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-lab-technician",
+  "title": "高校实验技术人员",
+  "subtitle": "高校实验技术岗位公开招聘、专业技术职称五级体系与平台建设",
+  "category": "education",
+  "jurisdiction": "中国大陆高校实验技术专业岗位；2021年国家职称指导意见与北京2022年地方实施办法",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "高校实验技术人员承担实验室教学科研支撑、仪器设备管理与实验安全专业任务，职业职称序列独立于高校教师系列。2021年人社部和教育部职称改革将实验技术人员设为实验员、助理实验师、实验师、高级实验师、正高级实验师；岗位聘任与职称评审又是不同环节。",
+  "target": "target",
+  "entry_points": [
+    "science",
+    "industry"
+  ],
+  "nodes": [
+    {
+      "id": "science",
+      "label": "理工医相关学历和实验技术岗位应聘",
+      "kind": "entry",
+      "description": "从物理、化学、生物、工程等专业经高校实验技术岗位招聘进入，实际专业条件以学校职位公告为准。",
+      "source_ids": [
+        "recruit_rules"
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "科研设备或技术平台从业者转岗",
+      "kind": "entry",
+      "description": "有仪器应用、实验系统或科研辅助工作背景者，可按高校招聘及岗位资格申请实验技术岗。",
+      "source_ids": [
+        "recruit_rules"
+      ]
+    },
+    {
+      "id": "apply",
+      "label": "高校招聘、考核与正式聘任",
+      "kind": "milestone",
+      "description": "经学校适用的事业单位或劳动用工招聘程序进入，聘任方式与编制身份应查具体岗位。",
+      "source_ids": [
+        "recruit_rules"
+      ]
+    },
+    {
+      "id": "lab",
+      "label": "实验教学、仪器与安全服务",
+      "kind": "role",
+      "description": "开展实验准备、仪器维护、技术实验与实验安全培训，形成可追溯的质量和设备管理记录。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "大型仪器平台与技术研发",
+      "kind": "role",
+      "description": "负责大型精密仪器技术方案、实验创新及平台效率提升，积累专业技术成果。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "id": "grade",
+      "label": "实验技术职称评价与专业技术岗位",
+      "kind": "milestone",
+      "description": "实验员、助理实验师、实验师、高级实验师、正高级实验师属于职称层级，与具体岗位聘任并行。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "教学科研平台骨干与技术带教",
+      "kind": "role",
+      "description": "通过科研支撑、平台建设、培训和安全治理承担高级实验技术责任，负责人岗位需另行选拔。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "id": "manager",
+      "label": "实验室平台组织管理方向",
+      "kind": "role",
+      "description": "满足学校管理岗位资格时可能承担实验中心协调职责，实验技术职称本身不会自动授予行政领导。",
+      "source_ids": [
+        "beijing_titles"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "高校实验技术专业岗位发展",
+      "kind": "target",
+      "description": "在合法高校聘任与专业技术评价体系内持续承担实验教学科研支撑、设备与安全管理职责。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "science",
+      "to": "apply",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「理工医相关学历和实验技术岗位应聘」到「高校招聘、考核与正式聘任」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "recruit_rules"
+      ]
+    },
+    {
+      "from": "apply",
+      "to": "lab",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「高校招聘、考核与正式聘任」到「实验教学、仪器与安全服务」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "lab",
+      "to": "research",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「实验教学、仪器与安全服务」到「大型仪器平台与技术研发」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "research",
+      "to": "grade",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「大型仪器平台与技术研发」到「实验技术职称评价与专业技术岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "grade",
+      "to": "platform",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「实验技术职称评价与专业技术岗位」到「教学科研平台骨干与技术带教」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "platform",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「教学科研平台骨干与技术带教」到「高校实验技术专业岗位发展」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "industry",
+      "to": "apply",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「科研设备或技术平台从业者转岗」到「高校招聘、考核与正式聘任」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "recruit_rules"
+      ]
+    },
+    {
+      "from": "lab",
+      "to": "grade",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「实验教学、仪器与安全服务」到「实验技术职称评价与专业技术岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    },
+    {
+      "from": "grade",
+      "to": "manager",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「实验技术职称评价与专业技术岗位」到「实验室平台组织管理方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "beijing_titles"
+      ]
+    },
+    {
+      "from": "manager",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「实验室平台组织管理方向」到「高校实验技术专业岗位发展」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "technical_titles"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "graduate",
+      "title": "学历背景进入实验技术岗位",
+      "description": "从相关专业应聘和实验工作切入，经技术研发及职称评审逐步承担大型仪器和教学科研平台骨干工作。",
+      "node_ids": [
+        "science",
+        "apply",
+        "lab",
+        "research",
+        "grade",
+        "platform",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "行业技术专家转任高校岗位",
+      "description": "已有仪器研发或工程实践能力者，按招聘程序进入高校，结合实验安全与平台管理履职并可参与技术评价。",
+      "node_ids": [
+        "industry",
+        "apply",
+        "lab",
+        "grade",
+        "manager",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "人社部、教育部2021年《关于深化实验技术人才职称制度改革的指导意见》明确五级职称名称，并对应事业单位专业技术岗位等级。",
+    "北京市2022年实施办法对高校和科研机构实验技术人员适用范围与评审条件作出本地规定；不是全国统一要求。",
+    "高校实验技术系列与教授、副教授的高校教师系列不同；获得高级实验师职称也不保证担任实验室主任。"
+  ],
+  "caveats": [
+    "不同高校实验技术岗位可能是事业编制、合同聘任或其他人员身份，招聘公告才能最终确认。",
+    "正高级实验师与正高级职称的评审可存在成果、技能、破格等多种路径，不应画成固定年限必经流程。",
+    "实验室危险源管理须遵守单位安全规范，此职业图谱不提供高危实验的操作方法。"
+  ],
+  "sources": [
+    {
+      "id": "technical_titles",
+      "title": "人社部、教育部关于深化实验技术人才职称制度改革的指导意见",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202109/t20210907_560035.html",
+      "published": "2021-08-23"
+    },
+    {
+      "id": "beijing_titles",
+      "title": "北京市深化实验技术人才职称制度改革实施办法",
+      "publisher": "北京市人民政府",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202301/t20230111_2896322.html",
+      "published": "2022-12-26"
+    },
+    {
+      "id": "recruit_rules",
+      "title": "进一步做好事业单位公开招聘工作的通知",
+      "publisher": "人力资源和社会保障部",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202409/t20240905_525231.html",
+      "published": "2024-08-28"
+    }
+  ]
+}

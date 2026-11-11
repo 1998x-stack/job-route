@@ -1,0 +1,112 @@
+{
+  "batch": "B15",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "research_status": "published",
+  "method": "deep-source-research-v2",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "skill": "skills/job-route/SKILL.md",
+  "items": 10,
+  "roles": [
+    {
+      "id": "JR-102",
+      "category": "military",
+      "slug": "naval-ship-command-officer",
+      "title": "海军舰艇指挥军官",
+      "route_file": "data/military/naval-ship-command-officer/route.json",
+      "report_file": "data/military/naval-ship-command-officer/report.md",
+      "mermaid_file": "data/military/naval-ship-command-officer/route.mmd",
+      "svg_file": "data/military/naval-ship-command-officer/route.svg"
+    },
+    {
+      "id": "JR-109",
+      "category": "judicial",
+      "slug": "legal-aid-lawyer",
+      "title": "法律援助律师",
+      "route_file": "data/judicial/legal-aid-lawyer/route.json",
+      "report_file": "data/judicial/legal-aid-lawyer/report.md",
+      "mermaid_file": "data/judicial/legal-aid-lawyer/route.mmd",
+      "svg_file": "data/judicial/legal-aid-lawyer/route.svg"
+    },
+    {
+      "id": "JR-124",
+      "category": "government",
+      "slug": "county-natural-resources-director",
+      "title": "县自然资源局局长",
+      "route_file": "data/government/county-natural-resources-director/route.json",
+      "report_file": "data/government/county-natural-resources-director/report.md",
+      "mermaid_file": "data/government/county-natural-resources-director/route.mmd",
+      "svg_file": "data/government/county-natural-resources-director/route.svg"
+    },
+    {
+      "id": "JR-140",
+      "category": "public-safety",
+      "slug": "hazmat-safety-regulator",
+      "title": "危险化学品安全监管人员",
+      "route_file": "data/public-safety/hazmat-safety-regulator/route.json",
+      "report_file": "data/public-safety/hazmat-safety-regulator/report.md",
+      "mermaid_file": "data/public-safety/hazmat-safety-regulator/route.mmd",
+      "svg_file": "data/public-safety/hazmat-safety-regulator/route.svg"
+    },
+    {
+      "id": "JR-146",
+      "category": "education",
+      "slug": "university-lab-technician",
+      "title": "高校实验技术人员",
+      "route_file": "data/education/university-lab-technician/route.json",
+      "report_file": "data/education/university-lab-technician/report.md",
+      "mermaid_file": "data/education/university-lab-technician/route.mmd",
+      "svg_file": "data/education/university-lab-technician/route.svg"
+    },
+    {
+      "id": "JR-148",
+      "category": "education",
+      "slug": "university-dean",
+      "title": "高校学院院长",
+      "route_file": "data/education/university-dean/route.json",
+      "report_file": "data/education/university-dean/report.md",
+      "mermaid_file": "data/education/university-dean/route.mmd",
+      "svg_file": "data/education/university-dean/route.svg"
+    },
+    {
+      "id": "JR-162",
+      "category": "healthcare",
+      "slug": "public-nutritionist",
+      "title": "公共营养师",
+      "route_file": "data/healthcare/public-nutritionist/route.json",
+      "report_file": "data/healthcare/public-nutritionist/report.md",
+      "mermaid_file": "data/healthcare/public-nutritionist/route.mmd",
+      "svg_file": "data/healthcare/public-nutritionist/route.svg"
+    },
+    {
+      "id": "JR-180",
+      "category": "technology",
+      "slug": "energy-storage-systems-engineer",
+      "title": "储能系统集成工程师",
+      "route_file": "data/technology/energy-storage-systems-engineer/route.json",
+      "report_file": "data/technology/energy-storage-systems-engineer/report.md",
+      "mermaid_file": "data/technology/energy-storage-systems-engineer/route.mmd",
+      "svg_file": "data/technology/energy-storage-systems-engineer/route.svg"
+    },
+    {
+      "id": "JR-189",
+      "category": "business",
+      "slug": "growth-operations-lead",
+      "title": "用户增长运营负责人",
+      "route_file": "data/business/growth-operations-lead/route.json",
+      "report_file": "data/business/growth-operations-lead/report.md",
+      "mermaid_file": "data/business/growth-operations-lead/route.mmd",
+      "svg_file": "data/business/growth-operations-lead/route.svg"
+    },
+    {
+      "id": "JR-199",
+      "category": "public-service",
+      "slug": "protected-area-ranger",
+      "title": "自然保护地生态巡护员",
+      "route_file": "data/public-service/protected-area-ranger/route.json",
+      "report_file": "data/public-service/protected-area-ranger/report.md",
+      "mermaid_file": "data/public-service/protected-area-ranger/route.mmd",
+      "svg_file": "data/public-service/protected-area-ranger/route.svg"
+    }
+  ]
+}

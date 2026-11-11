@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0.0",
+  "id": "naval-ship-command-officer",
+  "title": "海军舰艇指挥军官",
+  "subtitle": "从生长军官培养到舰艇指挥专业任职：院校招收与部队岗位分配的制度边界",
+  "category": "military",
+  "jurisdiction": "中国大陆·海军舰艇指挥相关军官职业方向；2026年军校招生政策为实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "海军舰艇指挥军官属于现役军官指挥岗位，不是民用船长或海事部门船员资格。2025年起军校招生计划不再简单按“指挥/非指挥”两类划分，而强调专业培养目标；2026年军队院校面向普通高中毕业生及符合条件的士兵学员开展不同的生长军官培养渠道。录取院校、专业培养、首次任职和后续指挥岗位并非自动连续晋升。",
+  "target": "target",
+  "entry_points": [
+    "school_entry",
+    "service_entry"
+  ],
+  "nodes": [
+    {
+      "id": "school_entry",
+      "label": "普通高中生报考军队院校",
+      "kind": "entry",
+      "description": "依据当年省份招录计划报考含海军舰艇相关培养目标的军事院校，按高考、政治考核、面试与体检要求择优录取。",
+      "source_ids": [
+        "military_2026",
+        "dalian_2026"
+      ]
+    },
+    {
+      "id": "service_entry",
+      "label": "符合条件的现役士兵考学",
+      "kind": "entry",
+      "description": "按《军队院校招收士兵学员工作办法》与当年度部队招生指标参加生长军官学员选拔；并非所有士兵及岗位均开放舰艇指挥方向。",
+      "source_ids": [
+        "soldier_rules",
+        "military_2026"
+      ]
+    },
+    {
+      "id": "vetting",
+      "label": "政治、身体与专业适配审查",
+      "kind": "milestone",
+      "description": "接受不同入口的体格、政治和专业适配考核，满足院校培养目标，并按招生计划录取。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "id": "academy",
+      "label": "军队院校本科及军政素质培养",
+      "kind": "milestone",
+      "description": "按专业与培养目标接受通识教育、基础指挥素质与专业学习，具体训练安排服从公开培养计划和军事教育制度。",
+      "source_ids": [
+        "military_2026",
+        "dalian_2026"
+      ]
+    },
+    {
+      "id": "commission",
+      "label": "符合条件的毕业及军官任职",
+      "kind": "milestone",
+      "description": "完成毕业考核后，军官身份、岗位授予和部队分配须依军队任用安排；不因院校录取即保证特定舰艇岗位。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "id": "junior",
+      "label": "舰艇相关初级指挥与业务岗位",
+      "kind": "role",
+      "description": "根据岗位分配与专业资格开展舰艇业务管理、官兵组织和依法规定的军事工作，本报告不涉及战术与装备部署。",
+      "source_ids": [
+        "dalian_2026"
+      ]
+    },
+    {
+      "id": "professional",
+      "label": "舰艇指挥专业能力与组织管理积累",
+      "kind": "role",
+      "description": "从航海、舰艇业务与官兵管理方向积累适岗能力，岗位职务、军衔、院校学位分别评价。",
+      "source_ids": []
+    },
+    {
+      "id": "command",
+      "label": "舰艇指挥或相关管理岗位选任",
+      "kind": "role",
+      "description": "在岗位空缺、选拔考核和组织任职条件满足时，可能承担相应舰艇管理或指挥责任。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "海军舰艇指挥军官职业方向",
+      "kind": "target",
+      "description": "依法具有相应军官身份并在舰艇指挥相关岗位履职；实际任职级别、舰艇类别、军衔不由公开招生专业直接决定。",
+      "source_ids": [
+        "military_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "school_entry",
+      "to": "vetting",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「普通高中生报考军队院校」到「政治、身体与专业适配审查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "from": "vetting",
+      "to": "academy",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「政治、身体与专业适配审查」到「军队院校本科及军政素质培养」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026",
+        "dalian_2026"
+      ]
+    },
+    {
+      "from": "academy",
+      "to": "commission",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「军队院校本科及军政素质培养」到「符合条件的毕业及军官任职」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "from": "commission",
+      "to": "junior",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「符合条件的毕业及军官任职」到「舰艇相关初级指挥与业务岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "dalian_2026"
+      ]
+    },
+    {
+      "from": "junior",
+      "to": "professional",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「舰艇相关初级指挥与业务岗位」到「舰艇指挥专业能力与组织管理积累」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "professional",
+      "to": "command",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「舰艇指挥专业能力与组织管理积累」到「舰艇指挥或相关管理岗位选任」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "command",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「舰艇指挥或相关管理岗位选任」到「海军舰艇指挥军官职业方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "from": "service_entry",
+      "to": "vetting",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「符合条件的现役士兵考学」到「政治、身体与专业适配审查」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026"
+      ]
+    },
+    {
+      "from": "professional",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「舰艇指挥专业能力与组织管理积累」到「海军舰艇指挥军官职业方向」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "military_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "highschool",
+      "title": "高中毕业生军校培养路线",
+      "description": "面向招生省份的高中生，经军校招录与贯通培养进入部队，再根据实际任职岗位发展舰艇指挥能力。",
+      "node_ids": [
+        "school_entry",
+        "vetting",
+        "academy",
+        "commission",
+        "junior",
+        "professional",
+        "command",
+        "target"
+      ]
+    },
+    {
+      "id": "serving",
+      "title": "士兵考学转生长军官路线",
+      "description": "现役士兵经符合法规的军校招考成为军官学员，完成毕业任用后可根据专业匹配进入舰艇相关岗位。",
+      "node_ids": [
+        "service_entry",
+        "vetting",
+        "academy",
+        "commission",
+        "junior",
+        "professional",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年国防部军校招生政策说明，报考普通高中生军校需满足学籍、高考成绩、政治考核、体检及年龄等当年条件；仅作为2026年度实例。",
+    "2024年生效的《军队院校招收士兵学员工作办法》建立士兵报考生长军官教育等渠道；士兵招生计划与高中生计划不同。",
+    "2025年军校招生不再区分“指挥/非指挥”类别，专业名称与首次任职培养目标对接，不能从旧的指挥类标签推断岗位。",
+    "海军大连舰艇学院2026年本科招生专业包含舰艇类培养目标，具体省份、性别、名额与专业均需核对当年计划。"
+  ],
+  "caveats": [
+    "民用船员海船船长适任证书并不自动赋予军队军官身份，军队舰艇指挥岗位也不等于获得民用船长资质。",
+    "军队院校录取、军官任用、舰艇业务资格、指挥岗位、军衔属于不同节点；不能推断固定年龄或逐级升迁概率。",
+    "不提供现役舰艇编制、战术作战、军队部署或非公开考核标准。"
+  ],
+  "sources": [
+    {
+      "id": "military_2026",
+      "title": "2026年军校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "published": "2026-06-23"
+    },
+    {
+      "id": "dalian_2026",
+      "title": "海军大连舰艇学院2026年招收普通高中毕业生计划",
+      "publisher": "海军大连舰艇学院（澎湃政务转载）",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33372533",
+      "published": "2026-06-13"
+    },
+    {
+      "id": "soldier_rules",
+      "title": "中央军委办公厅印发《军队院校招收士兵学员工作办法》",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/qwfb/16280923.html",
+      "published": "2024-01-17"
+    },
+    {
+      "id": "reform_2025",
+      "title": "2025年军队院校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gfjy_index/jsyxgfs/16391936.html",
+      "published": "2025-06-17"
+    }
+  ]
+}

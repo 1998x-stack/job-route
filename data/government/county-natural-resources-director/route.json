@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "id": "county-natural-resources-director",
+  "title": "县自然资源局局长",
+  "subtitle": "国土空间与资源监管专业履历、干部选任和人大常委会任命",
+  "category": "government",
+  "jurisdiction": "中国大陆普通县政府自然资源主管部门；以2026年涟水县职责与迭部县任命为案例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "县自然资源局局长是县政府工作部门领导职务，不等于土地资源技术资格或事业单位岗位。常见相关经历包括国土空间规划、资源确权、土地矿产管理和行政业务；由干部管理机关履行选任与提名，县人大常委会依法决定任命。县局领导职务与自然资源领域行政执法证件属于不同制度。",
+  "target": "target",
+  "entry_points": [
+    "civil_exam",
+    "cadre_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil_exam",
+      "label": "县级行政机关公务员入口",
+      "kind": "entry",
+      "description": "经公务员录用进入自然资源或规划等县级行政机关工作，实际职位资格以年度职位表为准。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "cadre_transfer",
+      "label": "符合资格的干部依法交流调任",
+      "kind": "entry",
+      "description": "已有党政机关干部依法通过干部交流进入自然资源部门领导岗位，调任和聘用仍有独立程序。",
+      "source_ids": [
+        "cadre_rules"
+      ]
+    },
+    {
+      "id": "subject",
+      "label": "自然资源与国土空间管理业务",
+      "kind": "milestone",
+      "description": "学习自然资源调查、国土空间用途管制、确权登记、土地矿产与生态修复法定职能。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "id": "section",
+      "label": "科室或其他相关管理岗位",
+      "kind": "role",
+      "description": "从政策执行、规划审批、资源监管或综合管理岗位积累行政能力，具体领导职数和职级依当地机构规格。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "id": "nomination",
+      "label": "干部考察、选任和政府提名",
+      "kind": "milestone",
+      "description": "按干部管理权限进行资格审查、考察、讨论决定并由县政府履行法定提名程序。",
+      "source_ids": [
+        "cadre_rules",
+        "local_org"
+      ]
+    },
+    {
+      "id": "npc",
+      "label": "县人大常委会决定任命",
+      "kind": "milestone",
+      "description": "县政府工作部门局长由县长依法提请本级人大常委会决定任命，不能当作县人大代表大会直接选举局长。",
+      "source_ids": [
+        "local_org",
+        "appointment_2026"
+      ]
+    },
+    {
+      "id": "govern",
+      "label": "履行自然资源行政管理职责",
+      "kind": "role",
+      "description": "按当地机构职能组织规划实施、土地及不动产登记协调、矿产资源与生态修复管理。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "依法行政与专业治理提升",
+      "kind": "role",
+      "description": "推动数据合规、生态修复项目和行政决策透明，行政执法活动须符合法定职权与人员资格。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "县自然资源局局长",
+      "kind": "target",
+      "description": "在干部选任及人大常委会任命程序完成后担任县级自然资源行政主管部门负责人。",
+      "source_ids": [
+        "local_org",
+        "appointment_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil_exam",
+      "to": "subject",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「县级行政机关公务员入口」到「自然资源与国土空间管理业务」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "from": "subject",
+      "to": "section",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「自然资源与国土空间管理业务」到「科室或其他相关管理岗位」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "from": "section",
+      "to": "nomination",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「科室或其他相关管理岗位」到「干部考察、选任和政府提名」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "cadre_rules",
+        "local_org"
+      ]
+    },
+    {
+      "from": "nomination",
+      "to": "npc",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「干部考察、选任和政府提名」到「县人大常委会决定任命」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "local_org",
+        "appointment_2026"
+      ]
+    },
+    {
+      "from": "npc",
+      "to": "govern",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「县人大常委会决定任命」到「履行自然资源行政管理职责」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "from": "govern",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「履行自然资源行政管理职责」到「县自然资源局局长」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "local_org",
+        "appointment_2026"
+      ]
+    },
+    {
+      "from": "cadre_transfer",
+      "to": "subject",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「符合资格的干部依法交流调任」到「自然资源与国土空间管理业务」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "county_duties"
+      ]
+    },
+    {
+      "from": "subject",
+      "to": "nomination",
+      "label": "资格或程序",
+      "evidence": "conditional",
+      "note": "从「自然资源与国土空间管理业务」到「干部考察、选任和政府提名」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "cadre_rules",
+        "local_org"
+      ]
+    },
+    {
+      "from": "govern",
+      "to": "governance",
+      "label": "专业经历",
+      "evidence": "conditional",
+      "note": "从「履行自然资源行政管理职责」到「依法行政与专业治理提升」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": []
+    },
+    {
+      "from": "governance",
+      "to": "target",
+      "label": "依法任职与发展",
+      "evidence": "conditional",
+      "note": "从「依法行政与专业治理提升」到「县自然资源局局长」须独立满足资格、岗位要求及考试或组织安排；示意路线不构成保证晋任。",
+      "source_ids": [
+        "local_org",
+        "appointment_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "civil_route",
+      "title": "公务员业务成长与任命路线",
+      "description": "从县级公务员自然资源业务工作到领导岗位，依法经组织提名及人大常委会决定任命。",
+      "node_ids": [
+        "civil_exam",
+        "subject",
+        "section",
+        "nomination",
+        "npc",
+        "govern",
+        "target"
+      ]
+    },
+    {
+      "id": "cadre_route",
+      "title": "符合资格的干部交流路线",
+      "description": "机关干部按干部任用权限经交流、考察及人大常委会任命转入县自然资源局负责岗位。",
+      "node_ids": [
+        "cadre_transfer",
+        "subject",
+        "nomination",
+        "npc",
+        "govern",
+        "governance",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《地方组织法》（2022年修正）明确县政府工作部门局长由县长依法提请本级人大常委会决定任命。",
+    "2026年迭部县人大常委会公开决定任免名单包含县自然资源局局长，展示法定任命程序的实际运作。",
+    "2026年涟水县自然资源和规划局机构简介包括自然资源权属、调查评价、国土空间用途管制、生态修复等职责，仅作为地方机构职能示例。",
+    "领导干部任用资格和行政执法证件分开，不把某一种注册规划师、测绘师资格当作局长唯一法定入职凭证。"
+  ],
+  "caveats": [
+    "县级自然资源局与自然资源部门下属测绘院、土地整理中心和不动产登记中心等事业单位不是统一的公务员身份。",
+    "县直机构规格、领导职数以及自然资源与规划的职能组合因地区和机构改革不同。",
+    "行政许可、处罚和监管执法按权限运行，局长行政负责人身份不等于一线执法人员可绕过执法资格或行政程序。"
+  ],
+  "sources": [
+    {
+      "id": "local_org",
+      "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）",
+      "publisher": "山东省高级人民法院（转载全国人大法律）",
+      "url": "https://www.sdcourt.gov.cn/jningweisfy/385991/385992/8661225/index.html",
+      "published": "2022-03-11"
+    },
+    {
+      "id": "cadre_rules",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "中华人民共和国人力资源社会保障部（转载）",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/dflz/lzgd/201903/t20190321_312665.html",
+      "published": "2019-03-03"
+    },
+    {
+      "id": "civil_law",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    },
+    {
+      "id": "county_duties",
+      "title": "涟水县自然资源和规划局机关简介",
+      "publisher": "涟水县人民政府",
+      "url": "https://www.lianshui.gov.cn/col/17515_688223/art/16172064/1787732294923e3A4hJaZ.html",
+      "published": "2026-08-26"
+    },
+    {
+      "id": "appointment_2026",
+      "title": "迭部县人大常委会任免名单（自然资源局局长）",
+      "publisher": "迭部县人民政府",
+      "url": "https://www.tewo.gov.cn/info/1069/62568.htm",
+      "published": "2026-08-26"
+    }
+  ]
+}

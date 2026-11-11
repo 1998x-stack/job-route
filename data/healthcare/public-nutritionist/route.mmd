@@ -1,0 +1,34 @@
+flowchart TB
+    %% 公共营养师 — 2026-11-11
+    n_nutrition_degree["食品营养、健康与相关专业培养"]
+    n_health_work["健康服务或餐饮配餐实务转入"]
+    n_foundation["营养、食品安全与服务伦理基础"]
+    n_assessment["膳食调查与营养情况分析"]
+    n_plan["公共人群膳食指导与健康教育"]
+    n_skill["按职业技能标准参与等级评价"]
+    n_practice["社区学校及企业营养服务"]
+    n_lead["项目培训与营养教育骨干"]
+    n_target["公共营养师服务岗位"]
+    n_nutrition_degree -.->|"资格或程序"| n_foundation
+    n_foundation -.->|"专业经历"| n_assessment
+    n_assessment -.->|"专业经历"| n_plan
+    n_plan -.->|"资格或程序"| n_skill
+    n_skill -.->|"专业经历"| n_practice
+    n_practice -.->|"依法任职与发展"| n_target
+    n_health_work -.->|"资格或程序"| n_foundation
+    n_plan -.->|"专业经历"| n_practice
+    n_practice -.->|"专业经历"| n_lead
+    n_lead -.->|"依法任职与发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_nutrition_degree entry
+    class n_health_work entry
+    class n_foundation milestone
+    class n_assessment role
+    class n_plan role
+    class n_skill milestone
+    class n_practice role
+    class n_lead role
+    class n_target target

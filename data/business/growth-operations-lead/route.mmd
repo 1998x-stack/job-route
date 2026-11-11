@@ -1,0 +1,33 @@
+flowchart TB
+    %% 用户增长运营负责人 — 2026-11-11
+    n_marketing["市场与内容运营业务经验"]
+    n_analytics["产品分析与实验实践背景"]
+    n_metric["用户增长指标与合规分析基础"]
+    n_experiment["增长实验和渠道运营"]
+    n_retention["留存运营与用户服务设计"]
+    n_skill["职业标准技能评价方向"]
+    n_stakeholder["跨部门预算与产品增长协调"]
+    n_manager["企业增长运营团队负责人职责"]
+    n_target["企业用户增长运营负责人岗位"]
+    n_marketing -.->|"资格或程序"| n_metric
+    n_metric -.->|"专业经历"| n_experiment
+    n_experiment -.->|"专业经历"| n_retention
+    n_retention -.->|"专业经历"| n_stakeholder
+    n_stakeholder -.->|"专业经历"| n_manager
+    n_manager -.->|"依法任职与发展"| n_target
+    n_analytics -.->|"资格或程序"| n_metric
+    n_experiment -.->|"资格或程序"| n_skill
+    n_skill -.->|"专业经历"| n_stakeholder
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_marketing entry
+    class n_analytics entry
+    class n_metric milestone
+    class n_experiment role
+    class n_retention role
+    class n_skill milestone
+    class n_stakeholder role
+    class n_manager role
+    class n_target target
