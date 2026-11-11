@@ -121,3 +121,13 @@ For system design, evidence rules, reviewer checklist and Pages setup, see [AGEN
 ---
 
 <sub>Job Route Atlas is an open, versioned, educational research project. Government and military career paths are described neutrally; official sources prevail over the illustrations in this repository.</sub>
+
+## 📚 Research backlog — 200 careers
+
+Two editable Word reports and their synchronized Markdown/JSON catalogs, across 9 categories and 20 research batches:
+
+- [Volume 01 / JR-001–JR-100](research/backlogs/2026/Job_Route_Careers_Volume_01_2026.md)
+- [Volume 02 / JR-101–JR-200](research/backlogs/2026/Job_Route_Careers_Volume_02_2026.md)
+- [Word + data download index](research/backlogs/2026/README.md)
+
+These are research candidates. Only sourced, schema-validated individual career routes are published to GitHub Pages.

@@ -1,0 +1,1951 @@
+{
+  "research_scope": "中国大陆为主；每条职业需后续明确机构、地区和适用年份",
+  "research_status": "candidate_backlog_not_published",
+  "source_semantics": "Sources are domain-level research starting points only; NOT individually verified transition evidence.",
+  "updated": "2026-11-11",
+  "project": "1998x-stack/job-route",
+  "volume": 1,
+  "label": "第一批职业路线研究目录",
+  "range": "JR-001–JR-100",
+  "categories": [
+    {
+      "id": "military",
+      "name": "军队与国防",
+      "count": 8
+    },
+    {
+      "id": "judicial",
+      "name": "司法与法治",
+      "count": 12
+    },
+    {
+      "id": "government",
+      "name": "党政与公共管理",
+      "count": 15
+    },
+    {
+      "id": "public-safety",
+      "name": "公共安全",
+      "count": 10
+    },
+    {
+      "id": "education",
+      "name": "教育与学术",
+      "count": 11
+    },
+    {
+      "id": "healthcare",
+      "name": "医疗与卫生",
+      "count": 13
+    },
+    {
+      "id": "technology",
+      "name": "科技与工程",
+      "count": 14
+    },
+    {
+      "id": "business",
+      "name": "商业与金融",
+      "count": 11
+    },
+    {
+      "id": "public-service",
+      "name": "社会事业",
+      "count": 6
+    }
+  ],
+  "roles": [
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "旅（团）政治委员",
+      "slug": "pla-political-commissar",
+      "entry": "军校、优秀士兵或高校毕业生招录军官",
+      "route": "军官→基层政治工作→政治指导员／教导员→政委候选岗位",
+      "gate": "区分军衔、政治主官职务和编制任用",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P0",
+      "id": "JR-001",
+      "status": "仓库已发布（复核）",
+      "batch": 1
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "连政治指导员",
+      "slug": "company-political-instructor",
+      "entry": "军队院校培养或军官招录",
+      "route": "现役军官→基层任职→连政治指导员",
+      "gate": "政治工作岗位资格和任命程序",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P0",
+      "id": "JR-002",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "营政治教导员",
+      "slug": "battalion-political-instructor",
+      "entry": "现役军官队伍",
+      "route": "基层政治主官／机关履历→营政治教导员",
+      "gate": "跨岗位与上级任职没有固定年限链",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P1",
+      "id": "JR-003",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "连长（基层指挥军官）",
+      "slug": "company-commander",
+      "entry": "军队院校培养、军官招录",
+      "route": "现役军官→基层军事管理→连长任职",
+      "gate": "军事主官与军衔、军事人才类别区分",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P1",
+      "id": "JR-004",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "营长（基层指挥干部）",
+      "slug": "battalion-commander",
+      "entry": "现役指挥军官",
+      "route": "基层军事岗位→营级指挥岗位选任",
+      "gate": "编制与训练履历要求须核验",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P1",
+      "id": "JR-005",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队参谋军官",
+      "slug": "military-staff-officer",
+      "entry": "军校／专业军官招录",
+      "route": "军官身份→部队或机关参谋岗位→更高层级机关业务",
+      "gate": "机关岗位序列与指挥岗位交流规则",
+      "refs": [
+        "R04",
+        "R05"
+      ],
+      "priority": "P2",
+      "id": "JR-006",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队专业技术军官",
+      "slug": "military-technical-officer",
+      "entry": "军校、专业技术人才选拔招收",
+      "route": "军官身份→专业技术岗位→相应专业职务",
+      "gate": "专业技术职务与军衔、军士区分",
+      "refs": [
+        "R04",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-007",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军士（基层技术骨干）",
+      "slug": "military-nco",
+      "entry": "入伍或按规定招收军士",
+      "route": "士兵→军士选改→分级任职／专业骨干",
+      "gate": "不是军官，级别及选改按当年规定",
+      "refs": [
+        "R04"
+      ],
+      "priority": "P0",
+      "id": "JR-008",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法院司法警察领导干部",
+      "slug": "court-judicial-police",
+      "entry": "法院正式法警公务员招录",
+      "route": "法警→基层警务／警务管理→大队、支队领导岗位",
+      "gate": "2012年后适用的法警规定，警衔≠领导职务",
+      "refs": [
+        "R07",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-009",
+      "status": "仓库已发布（复核）",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "检察院司法警察",
+      "slug": "procuratorate-judicial-police",
+      "entry": "检察机关符合条件的警务岗位招录",
+      "route": "正式检察法警→执勤执法→警务骨干／管理岗位",
+      "gate": "与法院法警制度、职责必须分开",
+      "refs": [
+        "R08",
+        "R09"
+      ],
+      "priority": "P0",
+      "id": "JR-010",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法官",
+      "slug": "judge",
+      "entry": "法律专业培养、法考与法官选任",
+      "route": "法官助理等岗位→按条件遴选为法官→法官等级发展",
+      "gate": "法考资格、员额遴选、法官等级分离",
+      "refs": [
+        "R06",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-011",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "检察官",
+      "slug": "prosecutor",
+      "entry": "法律专业培养、法考与检察官遴选",
+      "route": "检察官助理等岗位→检察官遴选→等级与业务任职",
+      "gate": "司法责任制及检察官员额资格",
+      "refs": [
+        "R06",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-012",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "执业律师",
+      "slug": "licensed-lawyer",
+      "entry": "法考及律师执业申请",
+      "route": "法律职业资格→律师实习／考核→执业律师→资深专业律师",
+      "gate": "资格证不自动等于律师执业证",
+      "refs": [
+        "R06",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-013",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "公证员",
+      "slug": "notary",
+      "entry": "法考与公证机构相关选任",
+      "route": "法律职业资格及实践→符合条件任公证员→业务管理",
+      "gate": "公证员任命与律师执业不可混同",
+      "refs": [
+        "R06",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-014",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "商事仲裁员",
+      "slug": "commercial-arbitrator",
+      "entry": "法律、经贸或其他行业专业经历",
+      "route": "具备专业资历→进入仲裁机构仲裁员名册→办案",
+      "gate": "仲裁机构聘任不等于公务员任命",
+      "refs": [
+        "R03",
+        "R01"
+      ],
+      "priority": "P2",
+      "id": "JR-015",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法院书记员",
+      "slug": "court-clerk",
+      "entry": "法院公开招录或聘任岗位",
+      "route": "法院书记员→审判辅助专业经验→按制度发展",
+      "gate": "编制书记员与聘用制书记员分开",
+      "refs": [
+        "R09",
+        "R07"
+      ],
+      "priority": "P1",
+      "id": "JR-016",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法官助理",
+      "slug": "judge-assistant",
+      "entry": "法院公务员／辅助岗位招录",
+      "route": "法官助理→审判辅助历练→依法参与法官遴选",
+      "gate": "不能承诺助理自动转员额法官",
+      "refs": [
+        "R06",
+        "R09"
+      ],
+      "priority": "P0",
+      "id": "JR-017",
+      "status": "待逐岗深研",
+      "batch": 1
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "检察官助理",
+      "slug": "prosecutor-assistant",
+      "entry": "检察院公开招录相关职位",
+      "route": "检察官助理→检察辅助历练→检察官遴选",
+      "gate": "检察官助理与检察官法律身份区分",
+      "refs": [
+        "R06",
+        "R09"
+      ],
+      "priority": "P1",
+      "id": "JR-018",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "人民调解员",
+      "slug": "people-mediator",
+      "entry": "基层人民调解组织选任等",
+      "route": "参与社区调解→专业培训→骨干调解员",
+      "gate": "人民调解员并非当然国家公职",
+      "refs": [
+        "R01",
+        "R03"
+      ],
+      "priority": "P2",
+      "id": "JR-019",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "专利代理师",
+      "slug": "patent-agent",
+      "entry": "理工科背景与专利代理师资格考试",
+      "route": "符合报考条件→资格考试→实习与执业管理→专业代理",
+      "gate": "资格考试与执业机构登记要求分开",
+      "refs": [
+        "R22",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-020",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县人民政府县长",
+      "slug": "county-magistrate",
+      "entry": "公务员、选调生等入职",
+      "route": "公务员→乡科级岗位／机关交流→县处级副职→县长选举",
+      "gate": "职级≠领导职务；县长由本级人大选举",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-021",
+      "status": "仓库已发布（复核）",
+      "batch": 1
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县委书记",
+      "slug": "county-party-secretary",
+      "entry": "党政机关领导干部选拔",
+      "route": "基层或市直干部→县处级领导经历→县委书记",
+      "gate": "党委主要领导任免与县长人大选举不同",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-022",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "副县长",
+      "slug": "deputy-county-head",
+      "entry": "乡镇、县直或市直干部交流",
+      "route": "科级领导及综合管理经历→副县长任职",
+      "gate": "县处级副职职数与组织提任资格",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-023",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "乡镇人民政府乡长／镇长",
+      "slug": "township-chief",
+      "entry": "乡镇公务员录用及干部选拔",
+      "route": "普通干部→乡科级副职→乡镇政府主要负责人",
+      "gate": "乡镇政府主要负责人依法选举",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-024",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "乡镇党委书记",
+      "slug": "township-party-secretary",
+      "entry": "党政机关干部任职",
+      "route": "乡镇／县直任职→乡科级正职→党委书记",
+      "gate": "党组织职务与政府行政职务分开",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-025",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "选调生（公务员培养路径）",
+      "slug": "selected-graduate",
+      "entry": "符合地方年度选调公告",
+      "route": "高校毕业生→基层锻炼→公务员岗位与交流任职",
+      "gate": "选调属于录用培养渠道，不是领导职务",
+      "refs": [
+        "R10",
+        "R09"
+      ],
+      "priority": "P0",
+      "id": "JR-026",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "市直机关科长",
+      "slug": "municipal-section-chief",
+      "entry": "市直机关公务员考录",
+      "route": "科员职级／业务骨干→科级领导岗位",
+      "gate": "一级主任科员职级不等于科长职务",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-027",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "税务系统公务员",
+      "slug": "tax-civil-servant",
+      "entry": "税务系统国家公务员考试",
+      "route": "税务机关业务岗位→业务骨干／管理岗位",
+      "gate": "税收征管、稽查与行政执法职位类别",
+      "refs": [
+        "R10",
+        "R09"
+      ],
+      "priority": "P1",
+      "id": "JR-028",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "海关公务员",
+      "slug": "customs-officer",
+      "entry": "海关系统国家公务员考试",
+      "route": "海关基层岗位→监管／查验／稽查业务→管理岗",
+      "gate": "执法资格、体检与具体专业条件",
+      "refs": [
+        "R10",
+        "R09"
+      ],
+      "priority": "P1",
+      "id": "JR-029",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "市场监督管理执法人员",
+      "slug": "market-regulation-officer",
+      "entry": "地方市场监管公务员职位",
+      "route": "市场监管执法→案件办理→行政执法骨干／管理",
+      "gate": "行政执法类职级与领导职务分离",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P2",
+      "id": "JR-030",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "财政部门公务员",
+      "slug": "finance-bureau-officer",
+      "entry": "财政机关公务员考录",
+      "route": "财政预算／绩效等岗位→业务负责人→管理岗位",
+      "gate": "财政业务岗位不同于注册会计师执业资格",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-031",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "发展改革部门公务员",
+      "slug": "development-reform-officer",
+      "entry": "发改部门公务员考录",
+      "route": "宏观政策／投资项目岗→业务骨干→部门管理",
+      "gate": "地方／国家发改职责与岗位范围",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P2",
+      "id": "JR-032",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "组织部门公务员",
+      "slug": "organization-department-officer",
+      "entry": "党委机关相关公务员职位",
+      "route": "组织人事业务岗→科级管理→岗位交流",
+      "gate": "干部管理职务与行政职级不同",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P2",
+      "id": "JR-033",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县政府办公室主任",
+      "slug": "county-government-office-director",
+      "entry": "县级机关公务员及选拔",
+      "route": "政府办业务经历→办公室负责人→跨部门交流",
+      "gate": "办公室主任机构规格与干部任免",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-034",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "审计机关公务员",
+      "slug": "government-auditor",
+      "entry": "审计系统公务员考录",
+      "route": "政府审计业务岗→审计项目骨干→管理岗位",
+      "gate": "国家审计公务员与社会审计机构不同",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P2",
+      "id": "JR-035",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "公安派出所民警",
+      "slug": "police-station-officer",
+      "entry": "人民警察公务员招录／公安院校招录",
+      "route": "正式公安民警→社区／治安警务→专业骨干",
+      "gate": "行政警衔、执法资格与岗位任用区分",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-036",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "刑事侦查民警",
+      "slug": "criminal-investigator",
+      "entry": "公安机关正式招录或岗位交流",
+      "route": "公安民警→刑侦业务岗位→刑侦骨干",
+      "gate": "公开职业发展，不涉及侦查战术和内部细节",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-037",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "刑事技术警察",
+      "slug": "forensic-police",
+      "entry": "公安机关相关专业职位招录",
+      "route": "技术警员→现场／实验室技术岗位→技术骨干",
+      "gate": "专业技术岗位与警衔分别管理",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-038",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "交通警察",
+      "slug": "traffic-police",
+      "entry": "公安机关交通管理职位招录",
+      "route": "交警岗位→事故处理／秩序管理→业务领导",
+      "gate": "体能体检和警察职位特殊要求",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-039",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "公安派出所所长",
+      "slug": "police-station-chief",
+      "entry": "公安民警及干部任用",
+      "route": "公安业务岗位→基层警务领导→派出所所长",
+      "gate": "公安基层领导职务非警衔自然晋级",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P1",
+      "id": "JR-040",
+      "status": "待逐岗深研",
+      "batch": 5
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "国家综合性消防救援队伍消防员",
+      "slug": "national-firefighter",
+      "entry": "消防员公开招录",
+      "route": "招录→入职训练→消防救援岗位→职级发展",
+      "gate": "2026消防员招录为专门体系，非公安警察",
+      "refs": [
+        "R11",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-041",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "森林消防员",
+      "slug": "forest-firefighter",
+      "entry": "国家综合性消防救援队伍相关招录",
+      "route": "报名／培训→森林消防岗位→专业骨干",
+      "gate": "区分森林消防与一般地方专职队伍",
+      "refs": [
+        "R11",
+        "R02"
+      ],
+      "priority": "P1",
+      "id": "JR-042",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "应急救援员",
+      "slug": "emergency-rescuer",
+      "entry": "应急救援技能培训及机构招聘",
+      "route": "入门训练→救援岗位→专业救援骨干",
+      "gate": "技能评价与单位录用不是一回事",
+      "refs": [
+        "R02",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-043",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "民航航空安全员",
+      "slug": "aviation-security-officer",
+      "entry": "航司航空安全员招聘及法定资质",
+      "route": "招聘选拔→岗前训练与合格→安全保卫岗位",
+      "gate": "与机场安检员和公安民警不同",
+      "refs": [
+        "R03",
+        "R01"
+      ],
+      "priority": "P2",
+      "id": "JR-044",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "监狱人民警察",
+      "slug": "prison-police",
+      "entry": "司法行政系统监狱警察招录",
+      "route": "正式监狱警察→基层监管岗位→管理领导",
+      "gate": "与法院、检察院法警不属于同一序列",
+      "refs": [
+        "R09",
+        "R10"
+      ],
+      "priority": "P0",
+      "id": "JR-045",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "幼儿园教师",
+      "slug": "kindergarten-teacher",
+      "entry": "学前教育及幼师资格要求",
+      "route": "教师资格／招聘→幼教岗位→骨干教师",
+      "gate": "教师资格与公办幼儿园编制录用分离",
+      "refs": [
+        "R12",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-046",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "小学教师",
+      "slug": "primary-school-teacher",
+      "entry": "教师资格考试、地方教师招聘",
+      "route": "取得相应教师资格→任教→骨干／教研岗位",
+      "gate": "资格取得不直接等于公办学校录用",
+      "refs": [
+        "R12",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-047",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "初中教师",
+      "slug": "middle-school-teacher",
+      "entry": "教师资格及学校招聘",
+      "route": "取得相应教师资格→任教→学科骨干／教研",
+      "gate": "任教学科与资格学段匹配",
+      "refs": [
+        "R12",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-048",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "普通高中教师",
+      "slug": "high-school-teacher",
+      "entry": "相应教师资格与教师招聘",
+      "route": "任课教师→教研组／学科带头人→管理岗",
+      "gate": "教研岗位与学校行政职务不等价",
+      "refs": [
+        "R12",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-049",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "中职专业课教师",
+      "slug": "vocational-school-teacher",
+      "entry": "中职教师资格及院校招聘",
+      "route": "专业学习／实践→中职教师→教学骨干",
+      "gate": "部分专业课教师有实践经历要求需核实",
+      "refs": [
+        "R12",
+        "R03"
+      ],
+      "priority": "P2",
+      "id": "JR-050",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校辅导员",
+      "slug": "university-counselor",
+      "entry": "高校辅导员岗位招聘",
+      "route": "辅导员→学生事务骨干→学生工作管理岗",
+      "gate": "辅导员职务、专业职称与行政岗分离",
+      "refs": [
+        "R14",
+        "R13"
+      ],
+      "priority": "P1",
+      "id": "JR-051",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校讲师",
+      "slug": "university-lecturer",
+      "entry": "高校人才招聘及教学科研岗位",
+      "route": "助教／博士等入口→讲师评聘→副教授研究方向",
+      "gate": "职称评审与岗位聘任不是自动进阶",
+      "refs": [
+        "R13",
+        "R14"
+      ],
+      "priority": "P0",
+      "id": "JR-052",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校教授",
+      "slug": "university-professor",
+      "entry": "高校教研职业生涯",
+      "route": "助教／讲师→副教授→教授评聘",
+      "gate": "高校自主分类评价，不能套固定论文数量",
+      "refs": [
+        "R13",
+        "R14"
+      ],
+      "priority": "P0",
+      "id": "JR-053",
+      "status": "待逐岗深研",
+      "batch": 2
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "博士后研究人员",
+      "slug": "postdoctoral-researcher",
+      "entry": "博士毕业后申请博士后岗位",
+      "route": "博士学位→博士后研究→研究类／企业研发岗位",
+      "gate": "博士后是研究经历不等于教职职称",
+      "refs": [
+        "R13",
+        "R14"
+      ],
+      "priority": "P1",
+      "id": "JR-054",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "科研院所研究员",
+      "slug": "research-institute-professor",
+      "entry": "科研单位公开招聘／科研岗位",
+      "route": "助理研究岗位→副高级研究岗位→研究员",
+      "gate": "研究系列职称与高校教授系列不同",
+      "refs": [
+        "R14",
+        "R13"
+      ],
+      "priority": "P1",
+      "id": "JR-055",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "基础教育教研员",
+      "slug": "education-research-advisor",
+      "entry": "教研机构招聘或教师交流",
+      "route": "教学经历→学科教研岗位→教研骨干",
+      "gate": "教研员编制、职称与学校领导职务分离",
+      "refs": [        "R12",
+        "R14"
+      ],
+      "priority": "P2",
+      "id": "JR-056",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "临床执业医师／住院医师",
+      "slug": "clinical-resident-doctor",
+      "entry": "医学专业学习、医师资格考试与注册",
+      "route": "毕业／培养→医师资格与执业注册→住院医师岗位",
+      "gate": "医师资格、执业注册、规培及岗位是不同环节",
+      "refs": [
+        "R15",
+        "R16"
+      ],
+      "priority": "P0",
+      "id": "JR-057",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "主治医师",
+      "slug": "attending-physician",
+      "entry": "执业医师的临床岗位与职称发展",
+      "route": "执业医师→临床工作及相关培养→主治医师资格／聘任",
+      "gate": "专业资格考试与医院聘任相区分",
+      "refs": [
+        "R15",
+        "R16"
+      ],
+      "priority": "P1",
+      "id": "JR-058",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "主任医师",
+      "slug": "chief-physician",
+      "entry": "临床医师副高级岗位等",
+      "route": "医师执业／副高级任职→正高级评聘",
+      "gate": "职称评审不是固定年限自动发生",
+      "refs": [
+        "R15",
+        "R16"
+      ],
+      "priority": "P1",
+      "id": "JR-059",
+      "status": "待逐岗深研",
+      "batch": 6
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "全科医生",
+      "slug": "general-practitioner",
+      "entry": "临床或相关医学教育与培训",
+      "route": "医学教育→医师执业→全科培训／相应注册→全科岗位",
+      "gate": "全科资格及基层医疗机构要求",
+      "refs": [
+        "R15",
+        "R16"
+      ],
+      "priority": "P0",
+      "id": "JR-060",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "护士",
+      "slug": "registered-nurse",
+      "entry": "护理专业教育与护士执业资格",
+      "route": "护理教育→护士资格考试→注册→临床护理",
+      "gate": "护士资格和执业注册分离",
+      "refs": [
+        "R03",
+        "R16"
+      ],
+      "priority": "P0",
+      "id": "JR-061",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "护士长",
+      "slug": "head-nurse",
+      "entry": "护理执业与临床管理经验",
+      "route": "注册护士→护理骨干→护士长管理选任",
+      "gate": "护理职称与护士长职位不是同一维度",
+      "refs": [
+        "R03",
+        "R16"
+      ],
+      "priority": "P1",
+      "id": "JR-062",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "医院临床药师",
+      "slug": "clinical-pharmacist",
+      "entry": "药学教育与医院药学岗位",
+      "route": "药师专业岗位→临床药学培训→临床药师职责",
+      "gate": "医院临床药师与零售执业药师不同",
+      "refs": [
+        "R16",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-063",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "执业药师（零售药学）",
+      "slug": "licensed-pharmacist",
+      "entry": "药学背景与执业药师资格考试",
+      "route": "相关专业实践→执业药师资格→注册／药学服务",
+      "gate": "执业药师资格与医院卫生职称两轨不同",
+      "refs": [
+        "R03",
+        "R16"
+      ],
+      "priority": "P1",
+      "id": "JR-064",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "医学检验技师",
+      "slug": "medical-laboratory-technologist",
+      "entry": "医学检验技术教育与招聘",
+      "route": "检验技术岗位→初／中级卫生专业技术资格→骨干",
+      "gate": "临床检验医师与检验技师须区分",
+      "refs": [
+        "R16",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-065",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "医学影像技师",
+      "slug": "medical-imaging-technologist",
+      "entry": "医学影像技术专业及机构招聘",
+      "route": "放射医学技术岗位→卫生专业技术资格→技术骨干",
+      "gate": "放射技师不等于医学影像诊断医师",
+      "refs": [
+        "R16",
+        "R15"
+      ],
+      "priority": "P1",
+      "id": "JR-066",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "康复治疗师",
+      "slug": "rehabilitation-therapist",
+      "entry": "康复治疗相关专业教育与招聘",
+      "route": "康复治疗技术岗位→卫生技术资格→康复专业骨干",
+      "gate": "康复治疗人员不得与医师执业范围混同",
+      "refs": [
+        "R16",
+        "R15"
+      ],
+      "priority": "P1",
+      "id": "JR-067",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "公共卫生医师",
+      "slug": "public-health-physician",
+      "entry": "预防医学背景与医师资格",
+      "route": "公共卫生专业培养→医师资格与注册→公共卫生机构岗位",
+      "gate": "疾控事业编招录与医师资格两套流程",
+      "refs": [
+        "R15",
+        "R14"
+      ],
+      "priority": "P1",
+      "id": "JR-068",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "公立医院院长",
+      "slug": "public-hospital-president",
+      "entry": "医院管理与干部任用机制",
+      "route": "临床／管理岗位经历→医院领导岗位选任",
+      "gate": "院长不是医师正高职称自然晋升",
+      "refs": [
+        "R14",
+        "R15"
+      ],
+      "priority": "P2",
+      "id": "JR-069",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "后端软件工程师",
+      "slug": "backend-engineer",
+      "entry": "计算机等专业或技能作品入职",
+      "route": "初级开发→独立服务开发→高级工程师／技术负责人",
+      "gate": "企业职级非国家准入资格",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P0",
+      "id": "JR-070",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "前端工程师",
+      "slug": "frontend-engineer",
+      "entry": "相关专业或项目作品入职",
+      "route": "前端开发→复杂应用→资深工程师／前端负责人",
+      "gate": "技术栈与岗位能力依用人单位需求",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P1",
+      "id": "JR-071",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "移动应用工程师",
+      "slug": "mobile-app-engineer",
+      "entry": "软件开发技能与项目作品",
+      "route": "移动端开发→架构模块负责→高级移动工程师",
+      "gate": "iOS／Android技术路线分化",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P2",
+      "id": "JR-072",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "人工智能算法工程师",
+      "slug": "ai-algorithm-engineer",
+      "entry": "数学／计算机相关教育与项目成果",
+      "route": "算法研发→模型训练评估→资深算法专家",
+      "gate": "学历、研究成果、部署能力由岗位决定",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P0",
+      "id": "JR-073",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "数据科学家",
+      "slug": "data-scientist",
+      "entry": "统计、计算机或业务分析背景",
+      "route": "数据分析→建模与实验设计→资深数据科学家",
+      "gate": "数据科学岗位与数据工程岗位区分",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P0",
+      "id": "JR-074",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "数据工程师",
+      "slug": "data-engineer",
+      "entry": "数据库／软件工程技能入职",
+      "route": "数据管道开发→数仓平台→数据架构师",
+      "gate": "数据治理与工程能力而非证书强制准入",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P1",
+      "id": "JR-075",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "机器学习平台工程师",
+      "slug": "ml-platform-engineer",
+      "entry": "软件平台与机器学习工程能力",
+      "route": "平台开发→训练推理平台→ML平台负责人",
+      "gate": "模型研发与平台工程职责不同",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P1",
+      "id": "JR-076",
+      "status": "待逐岗深研",
+      "batch": 7
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "网络安全工程师",
+      "slug": "cybersecurity-engineer",
+      "entry": "计算机安全背景／企业招聘",
+      "route": "安全运营→安全开发／攻防合规→安全架构专家",
+      "gate": "法定持证岗位与一般企业岗位分别核查",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P1",
+      "id": "JR-077",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "SRE／站点可靠性工程师",
+      "slug": "site-reliability-engineer",
+      "entry": "软件运维／平台工程技能招聘",
+      "route": "运维自动化→可靠性工程→SRE负责人",
+      "gate": "SRE不是统一法定职称",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P0",
+      "id": "JR-078",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "DevOps工程师",
+      "slug": "devops-engineer",
+      "entry": "持续集成／交付技术入职",
+      "route": "构建发布工程→平台工具链→工程效率负责人",
+      "gate": "与SRE虽有交叉但研究目标不同",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P2",
+      "id": "JR-079",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "嵌入式软件工程师",
+      "slug": "embedded-software-engineer",
+      "entry": "电子／计算机工程教育",
+      "route": "固件研发→嵌入式系统设计→资深工程师",
+      "gate": "硬件接口与软件架构共同要求",
+      "refs": [
+        "R01",
+        "R20"
+      ],
+      "priority": "P1",
+      "id": "JR-080",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "集成电路设计工程师",
+      "slug": "ic-design-engineer",
+      "entry": "微电子／电子工程教育",
+      "route": "RTL／模拟电路设计→模块主设→芯片研发负责人",
+      "gate": "IC前端与后端设计路线需要拆分",
+      "refs": [
+        "R01",
+        "R02"
+      ],
+      "priority": "P1",
+      "id": "JR-081",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "工业机器人系统工程师",
+      "slug": "industrial-robotics-engineer",
+      "entry": "自动化／机械与控制背景",
+      "route": "机器人调试→系统集成→高级系统工程师",
+      "gate": "技能等级和企业岗位职级区分",
+      "refs": [
+        "R01",
+        "R02"
+      ],
+      "priority": "P1",
+      "id": "JR-082",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "软件技术架构师",
+      "slug": "software-architect",
+      "entry": "软件工程项目与系统设计经历",
+      "route": "高级工程师→系统／平台架构→首席技术架构师",
+      "gate": "软考系统架构资格不是企业任命保证",
+      "refs": [
+        "R20",
+        "R01"
+      ],
+      "priority": "P1",
+      "id": "JR-083",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "注册会计师（执业方向）",
+      "slug": "certified-public-accountant",
+      "entry": "CPA考试和审计机构工作",
+      "route": "专业阶段／综合阶段→会计师事务所执业→审计负责人",
+      "gate": "考试通过与注册执业经历分开",
+      "refs": [
+        "R17",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-084",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "审计经理（会计师事务所）",
+      "slug": "audit-manager",
+      "entry": "审计与财务专业背景",
+      "route": "审计助理→高级审计→审计经理／合伙人候选",
+      "gate": "执业签字资格与内部管理职级不同",
+      "refs": [
+        "R17",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-085",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "税务师",
+      "slug": "tax-adviser",
+      "entry": "税务／财会教育及税务师考试",
+      "route": "税务相关工作→税务师资格→咨询／合规服务",
+      "gate": "税务师考试资格与执业签约事项核查",
+      "refs": [
+        "R03",
+        "R17"
+      ],
+      "priority": "P1",
+      "id": "JR-086",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "企业财务总监（CFO）",
+      "slug": "chief-financial-officer",
+      "entry": "会计、财务及企业管理经验",
+      "route": "财务分析／会计→财务经理→财务总监",
+      "gate": "企业管理职务不是法定职业资格等级",
+      "refs": [
+        "R17",
+        "R01"
+      ],
+      "priority": "P1",
+      "id": "JR-087",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "银行客户经理",
+      "slug": "bank-account-manager",
+      "entry": "银行公开招聘与业务培训",
+      "route": "银行客户服务→客户经理→团队／支行管理",
+      "gate": "银行监管岗位要求依具体业务与机构",
+      "refs": [
+        "R01",
+        "R03"
+      ],
+      "priority": "P2",
+      "id": "JR-088",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "银行信贷风控经理",
+      "slug": "credit-risk-manager",
+      "entry": "金融／统计及银行岗位招聘",
+      "route": "风险分析→授信风控→风险团队经理",
+      "gate": "信贷审批权限不等于个人证书级别",
+      "refs": [
+        "R01",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-089",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "证券投资顾问",
+      "slug": "investment-adviser",
+      "entry": "证券机构招聘与从业登记",
+      "route": "证券业务从业→投资顾问业务资格／登记→高级顾问",
+      "gate": "监管登记规则≠普通岗位名称",
+      "refs": [
+        "R19",
+        "R03"
+      ],
+      "priority": "P1",
+      "id": "JR-090",
+      "status": "待逐岗深研",
+      "batch": 8
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "公募基金经理",
+      "slug": "mutual-fund-manager",
+      "entry": "投资研究与基金机构选任",
+      "route": "研究员→投资助理→满足条件后任基金经理",
+      "gate": "基金从业考试不等于担任基金经理",
+      "refs": [
+        "R18",
+        "R19"
+      ],
+      "priority": "P0",
+      "id": "JR-091",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "保险精算师",
+      "slug": "actuary",
+      "entry": "数学／统计与精算职业考试路径",
+      "route": "精算分析→资格考试与实践→高级精算岗位",
+      "gate": "精算资格体系、行业机构规则须核验",
+      "refs": [
+        "R03",
+        "R01"
+      ],
+      "priority": "P1",
+      "id": "JR-092",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "跨境电商运营管理师",
+      "slug": "cross-border-ecommerce-manager",
+      "entry": "电商／外贸运营能力入职",
+      "route": "跨境运营专员→项目负责人→运营管理",
+      "gate": "2025年发布新职业，具体标准逐岗复核",
+      "refs": [
+        "R02",
+        "R01"
+      ],
+      "priority": "P1",
+      "id": "JR-093",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "互联网产品经理",
+      "slug": "internet-product-manager",
+      "entry": "市场／技术／设计相关岗位招聘",
+      "route": "产品专员→产品经理→高级产品／产品负责人",
+      "gate": "企业业务职级与国家职业认证不混同",
+      "refs": [
+        "R01",
+        "R02"
+      ],
+      "priority": "P0",
+      "id": "JR-094",
+      "status": "待逐岗深研",
+      "batch": 3
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "社会工作者",
+      "slug": "social-worker",
+      "entry": "社工项目招聘／社会工作者职业考试",
+      "route": "初级服务岗位→助理社工师→社会工作师／专业督导",
+      "gate": "资格等级与社区岗位录用分开",
+      "refs": [
+        "R21",
+        "R03"
+      ],
+      "priority": "P0",
+      "id": "JR-095",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "养老服务师",
+      "slug": "eldercare-service-specialist",
+      "entry": "养老服务行业招聘和培训",
+      "route": "养老照护／项目服务→养老服务师相关专业岗位",
+      "gate": "2025新增职业，国家标准发展需跟进",
+      "refs": [
+        "R02",
+        "R23"
+      ],
+      "priority": "P0",
+      "id": "JR-096",
+      "status": "待逐岗深研",
+      "batch": 4
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "社区工作者",
+      "slug": "community-worker",
+      "entry": "地方社区工作者招聘",
+      "route": "社区工作人员→网格／社区项目骨干→社区管理",
+      "gate": "社区工作者不必然具有公务员身份",
+      "refs": [
+        "R21",
+        "R14"
+      ],
+      "priority": "P1",
+      "id": "JR-097",
+      "status": "待逐岗深研",
+      "batch": 9
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "博物馆策展人",
+      "slug": "museum-curator",
+      "entry": "博物馆文化遗产相关专业与招聘",
+      "route": "文博研究／项目策划→策展项目负责人",
+      "gate": "岗位头衔与博物馆研究馆员职称不同",
+      "refs": [
+        "R14",
+        "R01"
+      ],
+      "priority": "P2",
+      "id": "JR-098",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "图书馆馆员",
+      "slug": "librarian",
+      "entry": "图书信息专业培养及机构招聘",
+      "route": "图书馆业务岗→馆员职称→高级职称／馆藏管理",
+      "gate": "图书馆专业技术职称与馆长行政岗不同",
+      "refs": [
+        "R14",
+        "R01"
+      ],
+      "priority": "P2",
+      "id": "JR-099",
+      "status": "待逐岗深研",
+      "batch": 10
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "农村集体经济经理人",
+      "slug": "rural-collective-economy-manager",
+      "entry": "农村集体经济组织业务岗位",
+      "route": "农村财务／经营管理→项目经营负责人",
+      "gate": "2025新职业，组织任免与资格标准待核验",
+      "refs": [
+        "R02",
+        "R23"
+      ],
+      "priority": "P1",
+      "id": "JR-100",
+      "status": "待逐岗深研",
+      "batch": 9
+    }
+  ],
+  "sources": [
+    {
+      "id": "R01",
+      "title": "《中华人民共和国职业分类大典（2022年版）》及发布说明",
+      "publisher": "人力资源社会保障部/中国就业网",
+      "published": "2022-09",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-08/361551.shtml",
+      "scope": "宏观职业分类；2022版1639职业，非本项目九类标签"
+    },
+    {
+      "id": "R02",
+      "title": "17个新职业、42个新工种正式发布",
+      "publisher": "新华社／新华网",
+      "published": "2025-07-22",
+      "url": "https://www.xinhuanet.com/government/20250723/0bf151a9e714432eacde6d1a50d0f43e/c.html",
+      "scope": "2025新职业名称和新工种背景，未等同于准入资格"
+    },
+    {
+      "id": "R03",
+      "title": "《国家职业资格目录（2021年版）》公布",
+      "publisher": "人力资源社会保障部／中国就业网",
+      "published": "2021-12",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2021-12-03/333839.shtml",
+      "scope": "准入与水平评价分类的制度基线；生产时核验更新"
+    },
+    {
+      "id": "R04",
+      "title": "《中华人民共和国兵役法》第三十三条等",
+      "publisher": "退役军人事务部",
+      "published": "2021-08",
+      "url": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/fgzc/202112/t20211224_54634.html",
+      "scope": "军官、士兵和军校学员来源与军士制度"
+    },
+    {
+      "id": "R05",
+      "title": "《中国人民解放军内务条令》",
+      "publisher": "国防部",
+      "published": "2025-02",
+      "url": "https://www.mod.gov.cn/gfbw/qwfb/16371391.html",
+      "scope": "军事政治主官职责的官方制度基线"
+    },
+    {
+      "id": "R06",
+      "title": "2026年国家统一法律职业资格考试公告",
+      "publisher": "司法部",
+      "published": "2026-06",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrtzwj/202606/t20260605_536058.html",
+      "scope": "法律职业资格考试报考的当年规则"
+    },
+    {
+      "id": "R07",
+      "title": "《人民法院司法警察条例》施行和废止旧规公告",
+      "publisher": "最高人民法院",
+      "published": "2012-11",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/4687.html",
+      "scope": "2012年12月施行；1997年《暂行条例》已废止"
+    },
+    {
+      "id": "R08",
+      "title": "《人民检察院司法警察条例》",
+      "publisher": "最高人民检察院",
+      "published": "2013-05",
+      "url": "https://www.spp.gov.cn/spp/nbgz/201802/t20180201_363788.shtml",
+      "scope": "检察院法警与法院法警不同体系"
+    },
+    {
+      "id": "R09",
+      "title": "《中华人民共和国公务员法》",
+      "publisher": "国家统计局",
+      "published": "2018修订",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "scope": "领导职务层次、职级并行和职位设置"
+    },
+    {
+      "id": "R10",
+      "title": "中央机关及其直属机构2026年度考试录用公务员公告",
+      "publisher": "国家公务员局／全国大学生就业平台转载",
+      "published": "2025-10",
+      "url": "https://nclg.ncss.cn/ncss/jydt/yw/202510/20251014/2293438096.html",
+      "scope": "公务员招录流程和职位条件的年度实例"
+    },
+    {
+      "id": "R11",
+      "title": "国家综合性消防救援队伍2026年度消防员招录",
+      "publisher": "应急管理部",
+      "published": "2026-06",
+      "url": "https://www.mem.gov.cn/xw/yjglbgzdt/202606/t20260611_607367.shtml",
+      "scope": "消防员招录的特殊身份、渠道和年度要求"
+    },
+    {
+      "id": "R12",
+      "title": "2026年下半年中小学教师资格考试面试报名通知",
+      "publisher": "教育部教育考试院",
+      "published": "2026-10",
+      "url": "https://www.neea.edu.cn/html1/report/2610/14-1.htm",
+      "scope": "教师资格考试是入口资格环节，并非学校任职"
+    },
+    {
+      "id": "R13",
+      "title": "深化高等学校教师职称制度改革的指导意见",
+      "publisher": "人社部、教育部",
+      "published": "2020-12",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202101/t20210126_511116.html",
+      "scope": "高校助教、讲师、副教授、教授评聘的分类评价"
+    },
+    {
+      "id": "R14",
+      "title": "进一步做好事业单位公开招聘工作的通知",
+      "publisher": "人社部、中组部",
+      "published": "2024-08",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202409/t20240905_525231.html",
+      "scope": "事业单位公开招聘与自主招聘的框架"
+    },
+    {
+      "id": "R15",
+      "title": "《中华人民共和国医师法》",
+      "publisher": "全国人大常委会／商务部法规库",
+      "published": "2021-08",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=90461",
+      "scope": "医师资格、执业注册和医师执业规则"
+    },
+    {
+      "id": "R16",
+      "title": "2026年度卫生专业技术资格考试通知",
+      "publisher": "国家卫生健康委人才交流服务中心",
+      "published": "2025-11",
+      "url": "https://www.21wecan.com/wsrcw/c100193/202511/1002724.shtml",
+      "scope": "卫生专业技术资格类别与考试专业目录"
+    },
+    {
+      "id": "R17",
+      "title": "2026年注册会计师全国统一考试报名简章",
+      "publisher": "中国注册会计师协会",
+      "published": "2026-03",
+      "url": "https://www.cicpa.org.cn/xxfb/tzgg/202603/t20260311_65852.html",
+      "scope": "CPA考试与注册执业区别"
+    },
+    {
+      "id": "R18",
+      "title": "2026年11月基金从业资格考试公告",
+      "publisher": "中国证券投资基金业协会",
+      "published": "2026-11",
+      "url": "https://www.amac.org.cn/fwdt/wyb/rygl/cyks/cykstz/202611/t20261103_28194.html",
+      "scope": "基金从业考试不等于基金经理任职"
+    },
+    {
+      "id": "R19",
+      "title": "证券公司从业人员管理规则介绍",
+      "publisher": "中国证券业协会",
+      "published": "网站公开资料",
+      "url": "https://www.sac.net.cn/xxgk/xhxx/gzdt/202512/t20251231_71417.html",
+      "scope": "业务登记与水平测试、资管职务的区分"
+    },
+    {
+      "id": "R20",
+      "title": "2026年度计算机技术与软件资格考试指引",
+      "publisher": "深圳市考试院",
+      "published": "2026-03",
+      "url": "https://hrss.sz.gov.cn/szksy/zwgk/bmxx/content/post_12693795.html",
+      "scope": "软考是水平／资格考试，不是所有企业技术岗法定准入"
+    },
+    {
+      "id": "R21",
+      "title": "2026年度社会工作者职业资格考试通知",
+      "publisher": "湖北省人事考试网",
+      "published": "2026-02",
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026shgzzzyzg/202602/t20260227_5881150.shtml",
+      "scope": "助理／中级／高级社工资格与考试条件"
+    },
+    {
+      "id": "R22",
+      "title": "2026年度专利代理师资格考试公告",
+      "publisher": "国家知识产权局",
+      "published": "2026-04",
+      "url": "https://www.cnipa.gov.cn/art/2026/4/1/art_74_205588.html",
+      "scope": "理工科报名资格与专利代理师考试"
+    },
+    {
+      "id": "R23",
+      "title": "新职业：养老服务师、农村集体经济经理人等",
+      "publisher": "全国大学生就业平台转载央视新闻",
+      "published": "2025-07",
+      "url": "https://job.ncss.cn/ncss/jydt/jy/202507/20250722/2293394498.html",
+      "scope": "2025新职业存在性，职业标准及执业细节待核验"
+    },
+    {
+      "id": "R24",
+      "title": "《中华人民共和国宪法》第一百零一条",
+      "publisher": "中国外交部",
+      "published": "2018修正",
+      "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt/qtzt/twwt/stflgf/202206/t20220606_10698959.html",
+      "scope": "县长由本级人民代表大会选举；不等于考试任命"
+    }
+  ]
+}

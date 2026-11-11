@@ -1,0 +1,1908 @@
+{
+  "research_scope": "中国大陆为主；每条职业需后续明确机构、地区和适用年份",
+  "research_status": "candidate_backlog_not_published",
+  "source_semantics": "Sources are domain-level research starting points only; NOT individually verified transition evidence.",
+  "updated": "2026-11-11",
+  "project": "1998x-stack/job-route",
+  "volume": 2,
+  "label": "第二批新增职业路线研究目录",
+  "range": "JR-101–JR-200",
+  "categories": [
+    {
+      "id": "military",
+      "name": "军队与国防",
+      "count": 7
+    },
+    {
+      "id": "judicial",
+      "name": "司法与法治",
+      "count": 11
+    },
+    {
+      "id": "government",
+      "name": "党政与公共管理",
+      "count": 14
+    },
+    {
+      "id": "public-safety",
+      "name": "公共安全",
+      "count": 10
+    },
+    {
+      "id": "education",
+      "name": "教育与学术",
+      "count": 11
+    },
+    {
+      "id": "healthcare",
+      "name": "医疗与卫生",
+      "count": 13
+    },
+    {
+      "id": "technology",
+      "name": "科技与工程",
+      "count": 16
+    },
+    {
+      "id": "business",
+      "name": "商业与金融",
+      "count": 12
+    },
+    {
+      "id": "public-service",
+      "name": "社会事业",
+      "count": 6
+    }
+  ],
+  "roles": [
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队飞行员",
+      "slug": "military-pilot",
+      "entry": "符合条件的飞行学员招收与培养",
+      "route": "飞行人才选拔→飞行训练→部队飞行岗位→任务与任职发展",
+      "gate": "招飞对象、体检和军官任职与民航飞行员不同",
+      "refs": [
+        "S24",
+        "S23"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-101",
+      "batch": 12
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "海军舰艇指挥军官",
+      "slug": "naval-ship-command-officer",
+      "entry": "军队院校舰艇指挥方向培养",
+      "route": "学员培养→现役军官→舰艇基层指挥岗位→舰艇管理任职",
+      "gate": "舰艇类别、任职级别与军衔不同",
+      "refs": [
+        "S23"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-102",
+      "batch": 15
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队航天专业技术人员",
+      "slug": "military-space-specialist",
+      "entry": "军校专业培养或符合条件的技术人才招收",
+      "route": "军官／文职身份→航天科研技术岗位→项目骨干",
+      "gate": "区分军官、文职和专业技术等级",
+      "refs": [
+        "S23"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-103",
+      "batch": 16
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队医疗岗位军医",
+      "slug": "military-physician",
+      "entry": "医学培养及军队相关岗位选拔",
+      "route": "医学培养→符合身份与执业资格→军队医疗岗位",
+      "gate": "军官身份、医师资格与执业注册并行",
+      "refs": [
+        "S23",
+        "S09"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-104",
+      "batch": 13
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队管理类文职人员",
+      "slug": "military-civilian-administrative",
+      "entry": "军队文职管理岗公开招考",
+      "route": "管理类文职录用→岗位履职→符合条件的级别／岗位发展",
+      "gate": "军队文职不是现役军官；按2027公告核验",
+      "refs": [
+        "S06"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-105",
+      "batch": 11
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队专业技术类文职人员",
+      "slug": "military-civilian-technical",
+      "entry": "军队文职专业技术岗公开招考",
+      "route": "专业技术类文职录用→科研／教学／医疗岗位→专业等级发展",
+      "gate": "岗位计划限制与军官专业技术职位不同",
+      "refs": [
+        "S06"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-106",
+      "batch": 11
+    },
+    {
+      "cat": "military",
+      "cat_name": "军队与国防",
+      "title": "军队院校文职教员",
+      "slug": "military-academy-civilian-instructor",
+      "entry": "军队院校教员相关文职岗位招考",
+      "route": "相关专业毕业→文职教员岗位→教学科研骨干",
+      "gate": "教学岗位专业要求、职称与文职等级分离",
+      "refs": [
+        "S06",
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-107",
+      "batch": 14
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "涉外法律服务律师",
+      "slug": "cross-border-lawyer",
+      "entry": "法律职业资格及依法申请律师执业",
+      "route": "律师执业→涉外事务服务→跨境项目／团队负责人",
+      "gate": "外语能力和行业服务不等于额外法定律师资格",
+      "refs": [
+        "S05",
+        "S18"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-108",
+      "batch": 16
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法律援助律师",
+      "slug": "legal-aid-lawyer",
+      "entry": "取得律师执业身份并参与法律援助服务",
+      "route": "执业律师→法律援助案件承办→专业服务骨干",
+      "gate": "承办方式、服务主体及值班律师规则需核验",
+      "refs": [
+        "S27",
+        "S18"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-109",
+      "batch": 15
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "企业法务经理",
+      "slug": "corporate-legal-manager",
+      "entry": "法学背景与企业岗位招聘",
+      "route": "法务专员→合同诉讼与风险管理→法务经理",
+      "gate": "法律职业资格是否为岗位要求取决于企业",
+      "refs": [
+        "S05"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-110",
+      "batch": 14
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "企业合规经理",
+      "slug": "corporate-compliance-manager",
+      "entry": "法务／审计／风控业务能力招聘",
+      "route": "合规专员→合规体系建设→合规经理",
+      "gate": "合规岗位一般非统一法定行政职务",
+      "refs": [
+        "S05",
+        "S10"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-111",
+      "batch": 13
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "司法鉴定人",
+      "slug": "forensic-appraiser",
+      "entry": "符合司法鉴定执业登记的专业条件",
+      "route": "相关专业实践→申请执业登记→司法鉴定人→专业负责人",
+      "gate": "司法鉴定与刑事技术警察、医师身份不同",
+      "refs": [
+        "S25"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-112",
+      "batch": 11
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "法院执行辅助人员",
+      "slug": "court-enforcement-assistant",
+      "entry": "法院执行辅助岗位招录或聘用",
+      "route": "执行辅助岗位→执行事务积累→单位内岗位发展",
+      "gate": "聘用身份不同于员额法官和司法警察",
+      "refs": [
+        "S18"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-113",
+      "batch": 18
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "商标代理专业人员",
+      "slug": "trademark-agent-specialist",
+      "entry": "知识产权服务机构招聘与专业训练",
+      "route": "商标申请服务→异议与复审项目→业务负责人",
+      "gate": "商标代理从业与专利代理师资格不同",
+      "refs": [
+        "S05"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-114",
+      "batch": 17
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "破产管理人项目负责人",
+      "slug": "insolvency-administrator-project-lead",
+      "entry": "律师、会计师等机构执业及相关经验",
+      "route": "法律／会计项目工作→破产案件管理团队→项目负责人",
+      "gate": "指定管理人主体与个人雇员岗位不同",
+      "refs": [
+        "S05",
+        "S18"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-115",
+      "batch": 17
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "基层法律服务工作者",
+      "slug": "grassroots-legal-service-worker",
+      "entry": "依法取得基层法律服务工作者执业条件",
+      "route": "符合资格与核准执业→基层法律服务→专业骨干",
+      "gate": "与律师执业许可和法律援助律师身份不同",
+      "refs": [
+        "S26"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-116",
+      "batch": 12
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "行政复议办案人员",
+      "slug": "administrative-review-officer",
+      "entry": "行政机关相关职位录用或选任",
+      "route": "行政机关工作人员→行政复议办案→专业复议岗位",
+      "gate": "地方复议员制度和法律职业资格要求需按机关地区核验",
+      "refs": [
+        "S08"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-117",
+      "batch": 12
+    },
+    {
+      "cat": "judicial",
+      "cat_name": "司法与法治",
+      "title": "知识产权管理专员",
+      "slug": "ip-portfolio-specialist",
+      "entry": "企业或科研机构招聘",
+      "route": "知识产权专员→专利商标组合管理→知识产权负责人",
+      "gate": "知识产权项目管理并非统一的专利代理执业",
+      "refs": [
+        "S05"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-118",
+      "batch": 19
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "省政府办公厅综合文秘干部",
+      "slug": "provincial-general-office-secretary",
+      "entry": "省级机关公务员相应职位招录",
+      "route": "机关综合文稿岗位→业务骨干→科处级管理岗位",
+      "gate": "行政职级和领导职务不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-119",
+      "batch": 18
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "市委政策研究室干部",
+      "slug": "municipal-policy-researcher",
+      "entry": "市级党委机关公务员录用",
+      "route": "调研分析→政策研究项目→科级业务／领导岗位",
+      "gate": "研究部门岗位设置和单位规格因地而异",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-120",
+      "batch": 19
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "街道办事处主任",
+      "slug": "subdistrict-office-director",
+      "entry": "街道、区县机关公务员及组织选任",
+      "route": "基层机关岗位→街道领导班子→办事处主任",
+      "gate": "街道行政机构层级和干部任用由当地规定",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-121",
+      "batch": 11
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "街道党工委书记",
+      "slug": "subdistrict-party-secretary",
+      "entry": "相关机关工作及组织选任",
+      "route": "基层领导岗位→街道党工委主要负责人",
+      "gate": "党组织职务与办事处行政主任分开",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-122",
+      "batch": 18
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "乡镇党委组织委员",
+      "slug": "township-organization-committee-member",
+      "entry": "乡镇机关干部并经党内组织程序任职",
+      "route": "基层党建工作→乡镇党委委员职务",
+      "gate": "党委委员不是公务员职级自然晋升",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-123",
+      "batch": 12
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县自然资源局局长",
+      "slug": "county-natural-resources-director",
+      "entry": "县级部门相关公务员或干部交流",
+      "route": "自然资源管理→部门副职／综合管理→局长",
+      "gate": "行政执法权限和领导任用程序不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-124",
+      "batch": 15
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县教育局局长",
+      "slug": "county-education-director",
+      "entry": "县级机关领导干部选任",
+      "route": "教育行政／综合管理经历→部门领导→县教育局局长",
+      "gate": "校长与教育局长不是统一职称通道",
+      "refs": [
+        "S17",
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-125",
+      "batch": 14
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "县卫生健康局局长",
+      "slug": "county-health-commission-director",
+      "entry": "党政机关干部交流与任用",
+      "route": "卫生行政／综合管理→部门领导→县卫健局负责人",
+      "gate": "医生职业资格和行政领导任用不同",
+      "refs": [
+        "S17",
+        "S09"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-126",
+      "batch": 13
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "国家统计系统公务员",
+      "slug": "national-statistics-officer",
+      "entry": "国家公务员考试统计系统职位",
+      "route": "统计调查／数据分析→业务骨干→机关管理",
+      "gate": "统计专业人员和行政管理职级不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-127",
+      "batch": 16
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "人社部门公务员",
+      "slug": "human-resources-government-officer",
+      "entry": "地方人社机关公务员职位",
+      "route": "就业／社保／人才服务→政策业务岗位→管理",
+      "gate": "业务资格与公务员录用条件不互换",
+      "refs": [
+        "S17",
+        "S05"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-128",
+      "batch": 13
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "生态环境行政执法人员",
+      "slug": "environmental-enforcement-officer",
+      "entry": "生态环境机关或综合执法职位录用",
+      "route": "行政执法资格→生态环境监管→执法业务骨干",
+      "gate": "行政执法类职级、执法证与领导职务不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-129",
+      "batch": 17
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "城市管理行政执法人员",
+      "slug": "urban-management-enforcement-officer",
+      "entry": "城管综合执法岗位公开招录",
+      "route": "依法录用→城管执法岗位→管理职位",
+      "gate": "不同地区综合执法权与编制类型差异大",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-130",
+      "batch": 19
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "招商引资项目专员",
+      "slug": "investment-promotion-specialist",
+      "entry": "机关、事业单位或市场化岗位招聘",
+      "route": "项目服务→产业招商项目→招商项目负责人",
+      "gate": "公务员、事业编和国企员工必须分别标注",
+      "refs": [
+        "S12",
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-131",
+      "batch": 20
+    },
+    {
+      "cat": "government",
+      "cat_name": "党政与公共管理",
+      "title": "政务服务中心窗口主管",
+      "slug": "government-service-window-supervisor",
+      "entry": "政务服务机关或事业岗位招聘",
+      "route": "窗口业务→流程优化与服务管理→窗口主管",
+      "gate": "外包雇员、事业单位与公务员岗位不同",
+      "refs": [
+        "S12",
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-132",
+      "batch": 20
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "公安特警",
+      "slug": "police-special-tactics-officer",
+      "entry": "公安机关人民警察相关职位录用",
+      "route": "公安民警→符合条件的特警岗位→骨干／管理",
+      "gate": "体能与岗位专项条件按当年职位表核验",
+      "refs": [
+        "S07",
+        "S17"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-133",
+      "batch": 11
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "公安网络安全执法民警",
+      "slug": "cybercrime-enforcement-police",
+      "entry": "公安机关网安类公务员职位",
+      "route": "公安民警→网络安全执法岗位→业务骨干",
+      "gate": "与企业网络安全工程师及取证技术岗分开",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-134",
+      "batch": 14
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "公安出入境管理民警",
+      "slug": "immigration-management-police",
+      "entry": "公安出入境管理部门人民警察职位",
+      "route": "公安正式录用→出入境业务→管理岗位",
+      "gate": "公安出入境和国家移民管理局职位分开",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-135",
+      "batch": 14
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "海警执法人员",
+      "slug": "coast-guard-enforcement-officer",
+      "entry": "海警相关招录／培养制度",
+      "route": "符合身份条件→海警执法岗位→执法管理经历",
+      "gate": "军队、海警与地方海事执法身份不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-136",
+      "batch": 18
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "海事行政执法人员",
+      "slug": "maritime-administrative-enforcement",
+      "entry": "海事管理机构公务员相关职位",
+      "route": "海事机关招录→水上交通行政执法→业务骨干",
+      "gate": "行政海事职责不同于海警海上执法",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-137",
+      "batch": 16
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "铁路公安民警",
+      "slug": "railway-police-officer",
+      "entry": "铁路公安机关人民警察职位招录",
+      "route": "人民警察入职→铁路治安警务→专业骨干",
+      "gate": "铁路公安机构与地方派出所职责有所不同",
+      "refs": [
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-138",
+      "batch": 17
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "消防监督执法人员",
+      "slug": "fire-prevention-enforcement-officer",
+      "entry": "消防救援系统相关干部和执法岗位",
+      "route": "消防救援或相关干部岗位→防火监督检查→专业执法骨干",
+      "gate": "执法权与政府专职消防员辅助工作须区分",
+      "refs": [
+        "S13",
+        "S14"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-139",
+      "batch": 13
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "危险化学品安全监管人员",
+      "slug": "hazmat-safety-regulator",
+      "entry": "应急管理系统相关公职岗位招录",
+      "route": "安全生产监管→危化品专项监管→专业骨干",
+      "gate": "行政监管与企业注册安全工程师职责不同",
+      "refs": [
+        "S14",
+        "S17"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-140",
+      "batch": 15
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "防汛抗旱应急指挥调度员",
+      "slug": "flood-emergency-dispatcher",
+      "entry": "应急管理部门或专业岗位招录",
+      "route": "应急值守→防汛会商调度→项目／指挥岗位",
+      "gate": "防汛专业岗位与法定行政指挥权不同",
+      "refs": [
+        "S14",
+        "S17"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-141",
+      "batch": 18
+    },
+    {
+      "cat": "public-safety",
+      "cat_name": "公共安全",
+      "title": "司法行政强制隔离戒毒警察",
+      "slug": "judicial-detox-police",
+      "entry": "司法行政系统人民警察公开招录",
+      "route": "入警训练→戒毒场所执法岗位→业务／管理",
+      "gate": "与监狱人民警察、法院法警不同；以省级招录公告为准",
+      "refs": [
+        "S07"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-142",
+      "batch": 12
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "特殊教育学校教师",
+      "slug": "special-education-teacher",
+      "entry": "教师资格与特殊教育学校公开招聘",
+      "route": "教师资格→特殊教育任教→学科骨干",
+      "gate": "任教学段、学科与特殊教育专业条件",
+      "refs": [
+        "S11",
+        "S12"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-143",
+      "batch": 11
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "职业院校实训指导教师",
+      "slug": "vocational-practice-instructor",
+      "entry": "职业教育专业实践背景及岗位招聘",
+      "route": "行业实践→实训指导岗位→实训教学骨干",
+      "gate": "与中职理论教师资格及高校职称不等同",
+      "refs": [
+        "S11",
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-144",
+      "batch": 14
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "国际中文教育教师",
+      "slug": "international-chinese-teacher",
+      "entry": "中文教学训练及境内外机构招聘",
+      "route": "中文教学岗位→课程建设→教研／项目负责人",
+      "gate": "国际中文教师证书在不同雇主处效力不同",
+      "refs": [
+        "S11"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-145",
+      "batch": 12
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校实验技术人员",
+      "slug": "university-lab-technician",
+      "entry": "高校实验岗位公开招聘",
+      "route": "实验技术员→大型仪器／实验平台骨干→高级实验岗位",
+      "gate": "高校教师系列职称与实验技术系列不同",
+      "refs": [
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-146",
+      "batch": 15
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校教学秘书",
+      "slug": "university-academic-secretary",
+      "entry": "高校行政或教辅岗位招聘",
+      "route": "教学事务→学院教务统筹→教学管理骨干",
+      "gate": "学校人事类型和行政职务须核验",
+      "refs": [
+        "S12"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-147",
+      "batch": 19
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校学院院长",
+      "slug": "university-dean",
+      "entry": "高校学术管理与领导岗位选任",
+      "route": "学术或管理任职→学院领导班子→院长",
+      "gate": "教授职称不必然获得院长行政职务",
+      "refs": [
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-148",
+      "batch": 15
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "高校教学副校长",
+      "slug": "university-vice-president-academic",
+      "entry": "高校领导干部选任",
+      "route": "教学管理／学院领导经历→高校教学分管领导",
+      "gate": "校级领导职务不是教授职称的自然延伸",
+      "refs": [
+        "S12"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-149",
+      "batch": 18
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "学科竞赛指导教师",
+      "slug": "subject-competition-coach",
+      "entry": "学校任教或机构教学岗位",
+      "route": "学科教师→竞赛指导项目→竞赛教研负责人",
+      "gate": "竞赛成绩不能替代学校教师资格",
+      "refs": [
+        "S11"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-150",
+      "batch": 13
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "研学旅行指导师",
+      "slug": "study-tour-instructor",
+      "entry": "教育研学项目单位岗位招聘",
+      "route": "研学活动助理→课程策划与安全管理→项目主管",
+      "gate": "研学服务、导游执照与学校教师资格不同",
+      "refs": [
+        "S11",
+        "S05"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-151",
+      "batch": 17
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "教育技术应用工程师",
+      "slug": "education-technology-specialist",
+      "entry": "教育信息化或软件相关岗位招聘",
+      "route": "教育技术服务→平台应用与培训→教育技术项目负责人",
+      "gate": "信息化技术岗不是法定教师职称",
+      "refs": [
+        "S12",
+        "S16"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-152",
+      "batch": 16
+    },
+    {
+      "cat": "education",
+      "cat_name": "教育与学术",
+      "title": "科技馆科普活动策划师",
+      "slug": "science-museum-education-designer",
+      "entry": "科技馆、科普机构公开招聘",
+      "route": "科学传播项目→展教课程设计→科普项目主管",
+      "gate": "科学传播岗位不同于学校编制教师",
+      "refs": [
+        "S12",
+        "S16"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-153",
+      "batch": 18
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "中医执业医师",
+      "slug": "traditional-chinese-medicine-physician",
+      "entry": "中医医学教育和医师资格考试",
+      "route": "符合报考条件→中医医师资格→执业注册→中医临床岗位",
+      "gate": "中医执业类别与临床口腔类别区分",
+      "refs": [
+        "S09",
+        "S10"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-154",
+      "batch": 11
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "口腔执业医师",
+      "slug": "dentist-physician",
+      "entry": "口腔医学教育与医师资格考试",
+      "route": "资格考试→执业注册→口腔诊疗岗位→专科骨干",
+      "gate": "口腔医师不得视作口腔卫生技师",
+      "refs": [
+        "S09",
+        "S10"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-155",
+      "batch": 13
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "麻醉科医师",
+      "slug": "anesthesiologist",
+      "entry": "临床医学教育、医师资格及麻醉专科培养",
+      "route": "临床医师准入→麻醉专科训练→麻醉科医师",
+      "gate": "麻醉专科胜任与医师执业注册两套要求",
+      "refs": [
+        "S09",
+        "S10"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-156",
+      "batch": 19
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "急诊科医师",
+      "slug": "emergency-physician",
+      "entry": "临床医学教育及相关医师执业资格",
+      "route": "医师资格注册→急诊诊疗岗位→急诊专科骨干",
+      "gate": "医师执业类别与急诊岗排班不能混同",
+      "refs": [
+        "S09"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-157",
+      "batch": 17
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "精神科医师",
+      "slug": "psychiatrist",
+      "entry": "临床医学教育和精神医学专业培养",
+      "route": "临床医师资格→精神科执业岗位→专业技术骨干",      "gate": "特殊专科能力及医疗机构要求需核验",
+      "refs": [
+        "S09"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-158",
+      "batch": 18
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "助产士",
+      "slug": "midwife",
+      "entry": "护理／助产专业教育及相关执业资格",
+      "route": "取得适用执业资格→助产岗位→母婴护理骨干",
+      "gate": "助产与注册护士职责和岗位要求须按法规核对",
+      "refs": [
+        "S10"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-159",
+      "batch": 16
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "专科护士",
+      "slug": "specialist-nurse",
+      "entry": "注册护士并参加专科能力培训",
+      "route": "临床护理→专科培训与实践→专科护理岗位",
+      "gate": "不同专科护士培养和认证并非一项全国统一法定执照",
+      "refs": [
+        "S10"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-160",
+      "batch": 14
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "呼吸治疗师",
+      "slug": "respiratory-therapist",
+      "entry": "呼吸治疗相关专业或医疗机构招聘",
+      "route": "呼吸治疗岗位→重症呼吸治疗实践→高级治疗骨干",
+      "gate": "是否有全国统一准入证书须逐岗核查",
+      "refs": [
+        "S10"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-161",
+      "batch": 20
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "公共营养师",
+      "slug": "public-nutritionist",
+      "entry": "营养相关教育和技能评价",
+      "route": "营养实践→职业技能等级评价→营养服务岗位",
+      "gate": "技能等级证不自动授予医师执业资格",
+      "refs": [
+        "S05"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-162",
+      "batch": 15
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "健康管理师",
+      "slug": "health-management-specialist",
+      "entry": "健康服务行业招聘与技能培训",
+      "route": "健康服务岗位→健康管理方案设计→服务项目管理",
+      "gate": "证书种类与国家准入资格目录必须区分",
+      "refs": [
+        "S05"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-163",
+      "batch": 20
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "预防接种门诊医务人员",
+      "slug": "vaccination-clinic-clinician",
+      "entry": "符合医疗机构相应资格与岗位培训",
+      "route": "执业医护身份→预防接种岗位培训→接种服务",
+      "gate": "接种人员法定资质与疫苗管理要求须专项核查",
+      "refs": [
+        "S09",
+        "S10"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-164",
+      "batch": 19
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "医院感染管理专员",
+      "slug": "hospital-infection-control-officer",
+      "entry": "医护／公共卫生背景及医院感染管理岗位",
+      "route": "医疗业务→感染防控培训→院感项目负责人",
+      "gate": "医院院感岗位不等于公共卫生执业医师",
+      "refs": [
+        "S09",
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-165",
+      "batch": 16
+    },
+    {
+      "cat": "healthcare",
+      "cat_name": "医疗与卫生",
+      "title": "医疗器械注册事务专员",
+      "slug": "medical-device-regulatory-affairs",
+      "entry": "医疗器械企业法规与质量体系岗位招聘",
+      "route": "注册事务助理→产品注册申报→法规事务负责人",
+      "gate": "产品注册人主体义务与员工个人资质不同",
+      "refs": [
+        "S19"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-166",
+      "batch": 12
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "云平台工程师",
+      "slug": "cloud-platform-engineer",
+      "entry": "计算机及云计算技术岗位招聘",
+      "route": "云资源运维→自动化交付→高级平台工程师",
+      "gate": "厂商认证不是法定岗位许可证",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-167",
+      "batch": 14
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "大模型应用工程师",
+      "slug": "llm-application-engineer",
+      "entry": "软件工程与生成式AI能力招聘",
+      "route": "应用集成→RAG与评测→大模型平台应用架构",
+      "gate": "研究岗位与应用开发岗位不同",
+      "refs": [
+        "S03",
+        "S16"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-168",
+      "batch": 12
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "AI智能体应用开发工程师",
+      "slug": "ai-agent-application-engineer",
+      "entry": "软件开发／AI应用项目能力",
+      "route": "工作流智能体应用开发→工具接入与可靠性→智能体平台负责人",
+      "gate": "2026公示的新工种不能误当已经正式公布的法定资格",
+      "refs": [
+        "S02",
+        "S16"
+      ],
+      "priority": "P0",
+      "status": "逐岗待核验",
+      "id": "JR-169",
+      "batch": 11
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "计算机视觉研发工程师",
+      "slug": "computer-vision-research-engineer",
+      "entry": "计算机／数学基础与视觉项目成果",
+      "route": "视觉模型工程→训练部署→计算机视觉技术负责人",
+      "gate": "不混同一般AI算法工程师研究范围",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-170",
+      "batch": 19
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "自然语言处理研发工程师",
+      "slug": "nlp-research-engineer",
+      "entry": "机器学习与语言技术项目能力",
+      "route": "语料与模型训练→NLP系统→语言智能技术负责人",
+      "gate": "模型开发与数据标注岗位不同",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-171",
+      "batch": 19
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "推荐算法工程师",
+      "slug": "recommender-systems-engineer",
+      "entry": "统计机器学习及推荐业务实践",
+      "route": "召回排序建模→线上评测→推荐系统负责人",
+      "gate": "算法实验、线上评估与策略合规需核查",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-172",
+      "batch": 16
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "自动驾驶感知工程师",
+      "slug": "autonomous-driving-perception-engineer",
+      "entry": "智能汽车感知与算法研发招聘",
+      "route": "传感器数据处理→感知模型→车载感知模块负责人",
+      "gate": "车规验证与岗位聘用不是国家驾驶许可",
+      "refs": [
+        "S03",
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-173",
+      "batch": 18
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "数据库内核工程师",
+      "slug": "database-kernel-engineer",
+      "entry": "系统软件／数据库内核研发能力",
+      "route": "存储引擎研发→查询优化→数据库内核架构",
+      "gate": "数据库证书与真实系统研发经验不同",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-174",
+      "batch": 20
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "区块链系统工程师",
+      "slug": "blockchain-systems-engineer",
+      "entry": "分布式系统与密码学背景招聘",
+      "route": "链上系统开发→安全与共识研发→平台架构",
+      "gate": "企业软件岗位非统一国家准入资格",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-175",
+      "batch": 20
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "软件测试开发工程师",
+      "slug": "software-test-development-engineer",
+      "entry": "软件开发和自动化测试经验",
+      "route": "测试工程→自动化平台→质量工程负责人",
+      "gate": "测试开发职级取决于企业绩效",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-176",
+      "batch": 20
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "系统性能优化工程师",
+      "slug": "systems-performance-engineer",
+      "entry": "操作系统和软件性能工程能力",
+      "route": "性能分析→容量建模→性能优化负责人",
+      "gate": "与站点可靠性工程师研究边界需区分",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-177",
+      "batch": 20
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "FPGA逻辑设计工程师",
+      "slug": "fpga-design-engineer",
+      "entry": "数字电路与可编程逻辑开发背景",
+      "route": "RTL开发→FPGA验证→复杂模块负责人",
+      "gate": "FPGA与ASIC集成电路设计路线不同",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-178",
+      "batch": 13
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "电池管理系统工程师",
+      "slug": "battery-management-systems-engineer",
+      "entry": "电子电气与动力电池技术岗位",
+      "route": "BMS软件／硬件开发→系统验证→BMS负责人",
+      "gate": "动力电池安全与行业标准需按产品核验",
+      "refs": [
+        "S03"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-179",
+      "batch": 17
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "储能系统集成工程师",
+      "slug": "energy-storage-systems-engineer",
+      "entry": "电力电子／储能系统招聘",
+      "route": "储能方案→系统集成与调试→技术总负责",
+      "gate": "储能工程师与储能电站运维管理员不同",
+      "refs": [
+        "S03"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-180",
+      "batch": 15
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "光伏系统设计工程师",
+      "slug": "photovoltaic-systems-design-engineer",
+      "entry": "电气工程与新能源专业背景",
+      "route": "组件／逆变器方案→光伏系统设计→项目主设",
+      "gate": "专业人员不一定等于注册电气工程师",
+      "refs": [
+        "S03"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-181",
+      "batch": 20
+    },
+    {
+      "cat": "technology",
+      "cat_name": "科技与工程",
+      "title": "数字孪生工程技术人员（拟新增）",
+      "slug": "digital-twin-engineering-proposed",
+      "entry": "软件仿真／工业数据背景招聘",
+      "route": "数字建模→仿真与数据集成→数字孪生系统专家",
+      "gate": "2026年公示拟新增，最终职业名称和标准需重新核验",
+      "refs": [
+        "S02"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-182",
+      "batch": 17
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "企业战略分析师",
+      "slug": "corporate-strategy-analyst",
+      "entry": "金融／管理／数据分析能力招聘",
+      "route": "商业研究→战略规划→企业战略项目负责人",
+      "gate": "企业职位与证券投顾监管资格不同",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-183",
+      "batch": 17
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "商业数据分析师",
+      "slug": "business-intelligence-analyst",
+      "entry": "统计或业务数据岗位招聘",
+      "route": "数据报表→经营分析与实验→BI负责人",
+      "gate": "与数据科学家、数据工程师岗位边界不同",
+      "refs": [
+        "S16"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-184",
+      "batch": 14
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "供应链规划经理",
+      "slug": "supply-chain-planning-manager",
+      "entry": "供应链／制造及运营岗位招聘",
+      "route": "需求预测→计划协同→供应链规划经理",
+      "gate": "职业技能等级与企业经理任命不等同",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-185",
+      "batch": 13
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "采购经理",
+      "slug": "procurement-manager",
+      "entry": "采购项目与供应商管理经验",
+      "route": "采购专员→品类采购→采购经理",
+      "gate": "采购权限、内控制度和企业职级分开",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-186",
+      "batch": 20
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "项目管理办公室经理",
+      "slug": "pmo-manager",
+      "entry": "项目管理与组织协调岗位招聘",
+      "route": "项目协调→项目集管理→PMO经理",
+      "gate": "企业项目经理不等于法定注册建造师",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-187",
+      "batch": 17
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "品牌策略经理",
+      "slug": "brand-strategy-manager",
+      "entry": "市场营销与品牌规划经验",
+      "route": "品牌专员→品牌组合策略→品牌策略经理",
+      "gate": "品牌岗位没有统一法律准入资格",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-188",
+      "batch": 19
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "用户增长运营负责人",
+      "slug": "growth-operations-lead",
+      "entry": "增长实验和产品运营能力招聘",
+      "route": "运营数据分析→增长活动→增长负责人",
+      "gate": "2024新职业用户增长运营师与企业负责人职务区分",
+      "refs": [
+        "S03"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-189",
+      "batch": 15
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "人力资源业务伙伴（HRBP）",
+      "slug": "hr-business-partner",
+      "entry": "人力资源管理经验及招聘",
+      "route": "人力资源专员→HRBP→高级业务伙伴",
+      "gate": "企业HRBP不是公务员人社岗位",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-190",
+      "batch": 11
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "薪酬绩效经理",
+      "slug": "compensation-performance-manager",
+      "entry": "薪酬统计及组织绩效经验",
+      "route": "薪酬专员→绩效体系设计→薪酬绩效经理",
+      "gate": "薪酬数据合规与企业任命程序须核查",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-191",
+      "batch": 16
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "企业可持续发展经理",
+      "slug": "corporate-sustainability-manager",
+      "entry": "ESG／环境管理／企业治理背景",
+      "route": "ESG项目→信息披露与战略→可持续发展经理",
+      "gate": "监管披露义务与员工个人职业证书分离",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-192",
+      "batch": 12
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "物流运营经理",
+      "slug": "logistics-operations-manager",
+      "entry": "物流仓储与运营项目经验",
+      "route": "物流基层岗位→运营协调→物流运营经理",
+      "gate": "危险品运输等特殊岗位有另外准入制度",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-193",
+      "batch": 19
+    },
+    {
+      "cat": "business",
+      "cat_name": "商业与金融",
+      "title": "创业公司首席运营官",
+      "slug": "startup-chief-operating-officer",
+      "entry": "企业经营管理及创业项目经验",
+      "route": "业务负责人→跨部门运营统筹→COO",
+      "gate": "企业高管任命不是固定法定职业晋升链",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-194",
+      "batch": 18
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "社区养老服务运营主管",
+      "slug": "community-eldercare-operations-lead",
+      "entry": "养老机构及社区服务项目招聘",
+      "route": "养老服务项目→排班质量管理→运营主管",
+      "gate": "与2025新增职业养老服务师不是同一名称",
+      "refs": [
+        "S04"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-195",
+      "batch": 13
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "残疾人就业辅导员",
+      "slug": "disability-employment-counselor",
+      "entry": "残疾人就业服务机构岗位招聘",
+      "route": "职业辅导→就业支持项目→项目骨干",
+      "gate": "就业服务技能与国家心理咨询执业不同",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-196",
+      "batch": 14
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "儿童福利机构督导员",
+      "slug": "child-welfare-supervisor",
+      "entry": "儿童福利／社会工作专业与机构招聘",
+      "route": "儿童服务一线→个案督导→机构项目主管",
+      "gate": "社会工作者证书不当然等于机构管理任命",
+      "refs": [
+        "S01",
+        "S12"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-197",
+      "batch": 11
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "公益基金会项目官员",
+      "slug": "nonprofit-foundation-program-officer",
+      "entry": "公益项目管理与基金会招聘",
+      "route": "公益项目助理→执行与评估→项目官员",
+      "gate": "基金会组织治理与一般公司职位不同",
+      "refs": [
+        "S01"
+      ],
+      "priority": "P1",
+      "status": "逐岗待核验",
+      "id": "JR-198",
+      "batch": 12
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "自然保护地生态巡护员",
+      "slug": "protected-area-ranger",
+      "entry": "自然保护地单位或服务机构招聘",
+      "route": "生态巡护→监测记录→巡护项目骨干",
+      "gate": "保护地公务员、事业岗位与合同巡护员区分",
+      "refs": [
+        "S01",
+        "S12"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-199",
+      "batch": 15
+    },
+    {
+      "cat": "public-service",
+      "cat_name": "社会事业",
+      "title": "非物质文化遗产保护专员",
+      "slug": "intangible-cultural-heritage-officer",
+      "entry": "文化遗产保护机构与项目招聘",
+      "route": "非遗普查／档案→保护项目→非遗保护专员",
+      "gate": "专业技术岗位与非遗代表性传承人不是同一身份",
+      "refs": [
+        "S01",
+        "S12"
+      ],
+      "priority": "P2",
+      "status": "逐岗待核验",
+      "id": "JR-200",
+      "batch": 16
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "职业分类大典2022版及八大类、1639种职业",
+      "publisher": "人社部中国就业网",
+      "published": "2022-10-08",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-08/361551.shtml",
+      "scope": "跨领域职业分类，不直接证明单个职位的任职路线"
+    },
+    {
+      "id": "S02",
+      "title": "2026年12个新职业及若干新工种公示",
+      "publisher": "人社部中国就业网",
+      "published": "2026-07-10",
+      "url": "https://chinajob.mohrss.gov.cn/c/2026-07-10/569764.shtml",
+      "scope": "拟新增与正式发布必须区分"
+    },
+    {
+      "id": "S03",
+      "title": "2024年19个新职业正式发布",
+      "publisher": "人力资源社会保障部",
+      "published": "2024-07-31",
+      "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202407/t20240731_523281.html",
+      "scope": "人工智能、储能和用户增长等领域参考"
+    },
+    {
+      "id": "S04",
+      "title": "2025年第七批17个新职业正式发布",
+      "publisher": "人社部中国就业网",
+      "published": "2025-09-17",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2025-09-17/450921.shtml",
+      "scope": "养老、跨境电商等职业名称参考"
+    },
+    {
+      "id": "S05",
+      "title": "国家职业资格目录（2021年版）公布",
+      "publisher": "人社部中国就业网",
+      "published": "2021-12-03",
+      "url": "https://chinajob.mohrss.gov.cn/h5/c/2021-12-03/333839.shtml",
+      "scope": "准入类与水平评价职业资格区分"
+    },
+    {
+      "id": "S06",
+      "title": "2027年军队文职人员公开招考报考指南",
+      "publisher": "军队人才网",
+      "published": "2026-11",
+      "url": "https://81rc.81.cn/sy/gzdt_210283/16497835_2.html",
+      "scope": "文职人员招录与军官培养须分开；军官岗位需另查"
+    },
+    {
+      "id": "S07",
+      "title": "江苏2027年度司法行政系统公务员（人民警察）招录简章",
+      "publisher": "苏州市政府（转载）",
+      "published": "2026-11-02",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202611/65e7af443fda4b86b00fc39744e96ff3.shtml",
+      "scope": "强制隔离戒毒人民警察招录的地方年度实例"
+    },
+    {
+      "id": "S08",
+      "title": "司法部行政复议申请指南",
+      "publisher": "司法部",
+      "published": "2026-09-17",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/hdjl/hdjlwmly/wmlycjwt/202604/t20260407_533556.html",
+      "scope": "复议业务职责参考，不直接证明招聘资格"
+    },
+    {
+      "id": "S09",
+      "title": "2026年医师资格考试委员会公告",
+      "publisher": "国家卫生健康委员会",
+      "published": "2026-01-26",
+      "url": "https://www.nhc.gov.cn/yzygj/c100067/202601/134520df641b4e99b8f8db7c64abc7f3.shtml",
+      "scope": "临床、口腔和中医类医师准入考试参考"
+    },
+    {
+      "id": "S10",
+      "title": "中华人民共和国医师法（来自第一批核验来源）",
+      "publisher": "全国人大常委会／商务部法规库",
+      "published": "2021-08",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=90461",
+      "scope": "执业资格、注册及医学岗位合法性"
+    },
+    {
+      "id": "S11",
+      "title": "2026年下半年中小学教师资格考试面试通知",
+      "publisher": "教育部教育考试院",
+      "published": "2026-10",
+      "url": "https://www.neea.edu.cn/html1/report/2610/14-1.htm",
+      "scope": "教师资格考试与招聘区别"
+    },
+    {
+      "id": "S12",
+      "title": "进一步做好事业单位公开招聘工作的通知",
+      "publisher": "人社部／中组部",
+      "published": "2024-08",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202409/t20240905_525231.html",
+      "scope": "事业单位招聘、岗位聘任的总体参考"
+    },
+    {
+      "id": "S13",
+      "title": "国家消防救援局主要职责",
+      "publisher": "国家消防救援局",
+      "published": "网站公开资料",
+      "url": "https://www.119.gov.cn/jg/index.shtml",
+      "scope": "消防监督与救援组织职责"
+    },
+    {
+      "id": "S14",
+      "title": "国家消防救援局2026年消防防消一体新闻发布会",
+      "publisher": "应急管理部",
+      "published": "2026-04-08",
+      "url": "https://www.mem.gov.cn/xw/xwfbh/2026n2y27xwfbh_1/",
+      "scope": "消防监督检查与辅助人员执法界限"
+    },
+    {
+      "id": "S15",
+      "title": "2026年度消防员招录公告",
+      "publisher": "应急管理部（益阳市网站转载）",
+      "published": "2026-06-07",
+      "url": "https://www.yiyang.gov.cn/tyjrswj/32546/32554/content_2181431.html",
+      "scope": "消防员资格和队伍身份；不适用所有消防干部"
+    },
+    {
+      "id": "S16",
+      "title": "职业数字展馆上线与数字职业展示",
+      "publisher": "人力资源社会保障部",
+      "published": "2024-10-28",
+      "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202410/t20241028_528521.html",
+      "scope": "技术、新能源及其他职业的分类与展示参考"
+    },
+    {
+      "id": "S17",
+      "title": "2018修订公务员法（来自第一批核验来源）",
+      "publisher": "国家统计局法规库",
+      "published": "2018-12-29",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "scope": "公务员录用与职务职级的制度背景"
+    },
+    {
+      "id": "S18",
+      "title": "2026年国家统一法律职业资格考试公告（第一批资料）",
+      "publisher": "司法部",
+      "published": "2026-06",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwxxgk/fdzdgknr/fdzdgknrtzwj/202606/t20260605_536058.html",
+      "scope": "法律职业资格入口；不代替律师或法官执业任用"
+    },
+    {
+      "id": "S19",
+      "title": "医疗器械注册与备案管理办法",
+      "publisher": "国家市场监督管理总局",
+      "published": "2021-08-31",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_568880e3ee344c45b38d073bba1c53ad.html",
+      "scope": "医疗器械产品注册责任与企业法规事务"
+    },
+    {
+      "id": "S20",
+      "title": "消防干部交流任职政策答复",
+      "publisher": "应急管理部",
+      "published": "2024-01-30",
+      "url": "https://www.mem.gov.cn/gk/jytabljggk/rddbjydfzy/2023_5984/202401/t20240130_476704.shtml",
+      "scope": "消防救援干部与行政警察岗位的身份差异"
+    },
+    {
+      "id": "S21",
+      "title": "司法部关于地方行政复议员制度的公开说明",
+      "publisher": "司法部",
+      "published": "2025-12",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/jgsz/jgszjgtj/jgtjxzfyyysj/xzfyyysjtjxw/202512/t20251211_529266.html",
+      "scope": "地方复议员和辅助岗位差别，非全国统一资格断言"
+    },
+    {
+      "id": "S22",
+      "title": "2026拟新增数字孪生职业仍为公示状态",
+      "publisher": "人社部中国就业网",
+      "published": "2026-07-10",
+      "url": "https://chinajob.mohrss.gov.cn/c/2026-07-10/569764.shtml",
+      "scope": "数字孪生目标应标注“拟新增”与待核实"
+    },
+    {
+      "id": "S23",
+      "title": "2026年军校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "published": "2026-06-23",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "scope": "现役军官培养与2027文职招录制度区分"
+    },
+    {
+      "id": "S24",
+      "title": "2026年度空军飞行学员招收简章",
+      "publisher": "阳光高考／东部空军招飞",
+      "published": "2025-09-05",
+      "url": "https://gaokao.chsi.com.cn/gkxx/kjzf/202509/20250905/2293401119.html",
+      "scope": "2026年度华东地区空军招飞条件，不推定全国长期一致"
+    },
+    {
+      "id": "S25",
+      "title": "司法鉴定人登记管理办法",
+      "publisher": "辽宁省司法厅转载",
+      "published": "2005-09-30",
+      "url": "https://sft.ln.gov.cn/sft/ywgz/ggflfw/2025021215543550573/index.shtml",
+      "scope": "司法鉴定人执业证与机构登记的准入条件"
+    },
+    {
+      "id": "S26",
+      "title": "基层法律服务工作者管理办法（第138号令）",
+      "publisher": "北京市人民政府转载",
+      "published": "2017-12-25",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_60770.html",
+      "scope": "法律服务工作者执业资格，与律师资格分别建模"
+    },
+    {
+      "id": "S27",
+      "title": "法律援助相关办案指派规定",
+      "publisher": "中华人民共和国司法部",
+      "published": "2026-04",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/zwfw/zwfwbszn/bsznflyz/202604/t20260417_533999.html",
+      "scope": "律师与法律援助机构的承办和指派关系"
+    }
+  ]
+}
