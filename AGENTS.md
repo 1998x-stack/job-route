@@ -43,7 +43,7 @@ python scripts/smoke.py
 git diff --exit-code -- data/
 ```
 
-`--write` deliberately regenerates generated files; commit generated changes before CI. CI checks drift without modifying tracked source.
+`--write` deliberately regenerates generated files; commit generated changes before CI. CI checks drift without modifying tracked source. The dedicated `ci.yml` workflow gates quality independently from `pages.yml` deployment; the latter needs Pages enabled in Settings.
 
 ## 5. UI and accessibility
 

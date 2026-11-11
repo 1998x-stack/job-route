@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/1998x-stack/job-route/actions/workflows/pages.yml"><img alt="Career Atlas CI" src="https://github.com/1998x-stack/job-route/actions/workflows/pages.yml/badge.svg"></a>
+  <a href="https://github.com/1998x-stack/job-route/actions/workflows/ci.yml"><img alt="Career Atlas CI" src="https://github.com/1998x-stack/job-route/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://1998x-stack.github.io/job-route/">Web Atlas</a> ·
   <a href="./AGENTS.md">Agent guide</a> ·
   <a href="./schema/career-route.schema.json">JSON Schema</a>
@@ -88,7 +88,7 @@ node scripts/generate.mjs --write
 python scripts/validate.py && node scripts/generate.mjs --check && python scripts/build.py
 ```
 
-Open `dist/index.html` via a static HTTP server to preview (e.g., `python -m http.server 8000 -d dist`). A PR runs CI automatically; merging to `main` builds and deploys the latest career catalog.
+Open `dist/index.html` via a static HTTP server to preview (e.g., `python -m http.server 8000 -d dist`). A PR runs dedicated CI automatically; successful CI on `main` triggers the separate Pages deployment workflow. Pages must be enabled in repository Settings before the first publish.
 
 ## 🔬 Research contract
 
