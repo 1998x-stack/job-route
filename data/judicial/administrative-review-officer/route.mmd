@@ -1,0 +1,27 @@
+flowchart TB
+    %% 行政复议办案人员 — 2026-11-11
+    n_civil_entry["行政机关公务员职位录用"]
+    n_transfer_entry["有资格的机关干部转任"]
+    n_legal_qual["取得国家统一法律职业资格"]
+    n_induction["参加统一职前培训"]
+    n_casework["行政复议案件办理"]
+    n_specialism["复议专业化与业务考核"]
+    n_target["行政复议专业办案岗位"]
+    n_civil_entry -.->|"资格与程序"| n_legal_qual
+    n_legal_qual -.->|"资格与程序"| n_induction
+    n_induction -.->|"岗位发展"| n_casework
+    n_casework -.->|"岗位发展"| n_specialism
+    n_specialism -.->|"符合条件发展"| n_target
+    n_transfer_entry -.->|"资格与程序"| n_legal_qual
+    n_casework -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil_entry entry
+    class n_transfer_entry entry
+    class n_legal_qual milestone
+    class n_induction milestone
+    class n_casework role
+    class n_specialism role
+    class n_target target

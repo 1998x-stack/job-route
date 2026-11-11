@@ -1,0 +1,30 @@
+flowchart TB
+    %% 基层法律服务工作者 — 2026-11-11
+    n_exam_entry["法律本科及省级考试渠道"]
+    n_recognized_entry["符合规定的执业资格替代渠道"]
+    n_ethical["资格、品行与身体条件审核"]
+    n_intern["基层法律服务所实习及经验核验"]
+    n_approval["司法行政机关核准执业"]
+    n_serve["依法开展基层法律服务"]
+    n_quality["业务能力与服务质量发展"]
+    n_target["合法执业基层法律服务工作者"]
+    n_exam_entry -.->|"资格与程序"| n_ethical
+    n_ethical -.->|"资格与程序"| n_intern
+    n_intern -.->|"资格与程序"| n_approval
+    n_approval -.->|"岗位发展"| n_serve
+    n_serve -.->|"岗位发展"| n_quality
+    n_quality -.->|"符合条件发展"| n_target
+    n_recognized_entry -.->|"资格与程序"| n_ethical
+    n_serve -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_exam_entry entry
+    class n_recognized_entry entry
+    class n_ethical milestone
+    class n_intern milestone
+    class n_approval milestone
+    class n_serve role
+    class n_quality role
+    class n_target target

@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "id": "international-chinese-teacher",
+  "title": "国际中文教育教师",
+  "subtitle": "语言教学能力、机构招聘、教师资格与课程发展",
+  "category": "education",
+  "jurisdiction": "中国大陆与海外国际中文教学机构；以2026年国际中文教师证书计划为参照",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "国际中文教育教师可以通过语言教育、跨文化教学与国际中文教师能力认定等途径进入不同教育机构；《国际中文教师证书》是能力证明而非普遍强制的国际职业许可，所在地法律与招聘条件仍须分别满足。",
+  "target": "target",
+  "entry_points": [
+    "education_degree",
+    "experienced_teacher"
+  ],
+  "nodes": [
+    {
+      "id": "education_degree",
+      "label": "中文／教育相关专业训练",
+      "kind": "entry",
+      "description": "语言学、教育学、汉语言文学及相关教学经验可作为发展基础，专业要求以当地雇主为准。",
+      "source_ids": []
+    },
+    {
+      "id": "experienced_teacher",
+      "label": "已有语言教学或跨文化经历",
+      "kind": "entry",
+      "description": "已有中文教学、语言培训或海外教育服务经历者，可依据机构要求申请相关岗位。",
+      "source_ids": []
+    },
+    {
+      "id": "teaching_skill",
+      "label": "第二语言教学法与跨文化能力",
+      "kind": "milestone",
+      "description": "系统掌握教学设计、二语习得、跨文化沟通与不同水平学习者评估等专业能力。",
+      "source_ids": []
+    },
+    {
+      "id": "certificate",
+      "label": "可选的国际中文教师能力认定",
+      "kind": "milestone",
+      "description": "《国际中文教师证书》考试提供教学能力证明，仅供有关机构招聘参考；并非全球统一执业许可。",
+      "source_ids": [
+        "certificate_notice",
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "employer",
+      "label": "雇主招聘与所在地资格审核",
+      "kind": "milestone",
+      "description": "境内学校、海外大学与语言机构的教师资格、签证及学历要求可能不同。",
+      "source_ids": [
+        "certificate_notice"
+      ]
+    },
+    {
+      "id": "classroom",
+      "label": "国际中文课程与课堂教学",
+      "kind": "role",
+      "description": "设计语言学习课程、评估汉语交际能力并适应多语言文化背景开展课堂教学。",
+      "source_ids": []
+    },
+    {
+      "id": "curriculum",
+      "label": "课程研发与教研合作",
+      "kind": "role",
+      "description": "积累教材研发、教学评价及教师培训经验，形成教研或项目组织能力。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "国际中文教育教师岗位",
+      "kind": "target",
+      "description": "获得相关教育机构的合法聘用并具备岗位所需教学能力，长期从事国际中文教育与专业发展。",
+      "source_ids": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "education_degree",
+      "to": "teaching_skill",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「中文／教育相关专业训练」转向「第二语言教学法与跨文化能力」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "teaching_skill",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「第二语言教学法与跨文化能力」转向「雇主招聘与所在地资格审核」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "certificate_notice"
+      ]
+    },
+    {
+      "from": "employer",
+      "to": "classroom",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「雇主招聘与所在地资格审核」转向「国际中文课程与课堂教学」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "classroom",
+      "to": "curriculum",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「国际中文课程与课堂教学」转向「课程研发与教研合作」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "curriculum",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「课程研发与教研合作」转向「国际中文教育教师岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "experienced_teacher",
+      "to": "teaching_skill",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「已有语言教学或跨文化经历」转向「第二语言教学法与跨文化能力」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "teaching_skill",
+      "to": "certificate",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「第二语言教学法与跨文化能力」转向「可选的国际中文教师能力认定」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "certificate_notice",
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "certificate",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「可选的国际中文教师能力认定」转向「雇主招聘与所在地资格审核」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "certificate_notice"
+      ]
+    },
+    {
+      "from": "classroom",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「国际中文课程与课堂教学」转向「国际中文教育教师岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "degree",
+      "title": "教育专业培养与机构招聘",
+      "description": "从中文与教育专业学习积累教学能力，经雇主及所在地准入审核后开展教学。",
+      "node_ids": [
+        "education_degree",
+        "teaching_skill",
+        "employer",
+        "classroom",
+        "curriculum",
+        "target"
+      ]
+    },
+    {
+      "id": "certificate_route",
+      "title": "在职教师与自愿证书路线",
+      "description": "已有语言教学背景者可自愿参加能力认定考试，仍须满足独立的岗位及地区准入规则。",
+      "node_ids": [
+        "experienced_teacher",
+        "teaching_skill",
+        "certificate",
+        "employer",
+        "classroom",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "教育部中外语言交流合作中心2021年声明明确《国际中文教师证书》是能力认定，可供招聘参考，不是从事国际中文教学的职业资格认证。",
+    "2026年证书考试已采用初级、中级等分级，具体考试条件、笔试和面试以当次官方通知为准。",
+    "国内公办学校法定教师资格或海外当地教师执照要求须独立满足，持国际中文教师证书不自动替代。"
+  ],
+  "caveats": [
+    "2026年11月新增初级笔试报名时间为10月20—29日，已结束；不要误导用户该窗口仍开放。",
+    "海外工作涉及当地教师职业许可、雇佣资格和签证政策；不能给出各国统一标准。",
+    "国际中文教师能力证书不代表教学机构保证录用或可自动晋升院校负责人。"
+  ],
+  "sources": [
+    {
+      "id": "certificate_notice",
+      "title": "关于《国际中文教师证书》的声明",
+      "publisher": "教育部中外语言交流合作中心",
+      "url": "https://www.chineseteacher.org.cn/ctcsolNotice/detail.do?cnid=1200660",
+      "published": "2021-09-28"
+    },
+    {
+      "id": "exam_2026",
+      "title": "2026年11月国际中文教师证书笔试（初级）报名通知",
+      "publisher": "国际中文教师证书考试服务网",
+      "url": "https://www.chineseteacher.org.cn/ctcsolNotice/detail.do?cnid=1205540",
+      "published": "2026-10-13"
+    }
+  ]
+}

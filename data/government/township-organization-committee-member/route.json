@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0.0",
+  "id": "township-organization-committee-member",
+  "title": "乡镇党委组织委员",
+  "subtitle": "基层组织工作岗位、党委委员选举与职责分工",
+  "category": "government",
+  "jurisdiction": "中国大陆；乡镇党组织，依2018年农村基层组织工作条例及2020年基层党组织选举条例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "乡镇党委组织委员属于乡镇党委班子中负责相关组织工作的委员职责分工，核心是党内组织程序和党组织工作职责，不能当作按公务员工龄自然晋升的行政职级。",
+  "target": "target",
+  "entry_points": [
+    "party_cadre",
+    "cross_cadre"
+  ],
+  "nodes": [
+    {
+      "id": "party_cadre",
+      "label": "乡镇党务和基层机关工作",
+      "kind": "entry",
+      "description": "在乡镇基层党组织或相关机关依法任职，积累党员教育、干部组织等党务工作经验。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "id": "cross_cadre",
+      "label": "符合条件的干部交流",
+      "kind": "entry",
+      "description": "已有基层党政机关工作经历的党员干部可按党内与干部任用制度参与组织交流选任。",
+      "source_ids": [
+        "cadre_rule"
+      ]
+    },
+    {
+      "id": "party_member",
+      "label": "党员身份与履职资格核验",
+      "kind": "milestone",
+      "description": "符合基层党委委员候选人资格、党员组织关系及上级党组织规定的条件。",
+      "source_ids": [
+        "election_rule"
+      ]
+    },
+    {
+      "id": "nomination",
+      "label": "党委委员候选人推荐与审查",
+      "kind": "milestone",
+      "description": "按党内规定进行候选人推荐、组织审核和提名，普通公务员考试无法直接授予党委委员身份。",
+      "source_ids": [
+        "election_rule"
+      ]
+    },
+    {
+      "id": "committee_election",
+      "label": "乡镇党委委员依法选举产生",
+      "kind": "milestone",
+      "description": "一般在党员大会或党员代表大会产生乡镇基层党委委员，并履行党内选举程序。",
+      "source_ids": [
+        "election_rule",
+        "rural_rule"
+      ]
+    },
+    {
+      "id": "org_assignment",
+      "label": "党委组织委员职责分工",
+      "kind": "role",
+      "description": "按乡镇党委组织设置与工作分工负责发展党员、基层组织建设等组织事务。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "id": "professional",
+      "label": "基层组织工作专业积累",
+      "kind": "role",
+      "description": "根据党委部署参与党员教育管理、基层组织评估和组织建设相关治理协调。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "乡镇党委组织委员岗位",
+      "kind": "target",
+      "description": "通过符合党内组织程序的委员身份与组织工作分工承担乡镇党委组织委员职责。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "party_cadre",
+      "to": "party_member",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「乡镇党务和基层机关工作」转向「党员身份与履职资格核验」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "election_rule"
+      ]
+    },
+    {
+      "from": "party_member",
+      "to": "nomination",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「党员身份与履职资格核验」转向「党委委员候选人推荐与审查」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "election_rule"
+      ]
+    },
+    {
+      "from": "nomination",
+      "to": "committee_election",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「党委委员候选人推荐与审查」转向「乡镇党委委员依法选举产生」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "election_rule",
+        "rural_rule"
+      ]
+    },
+    {
+      "from": "committee_election",
+      "to": "org_assignment",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「乡镇党委委员依法选举产生」转向「党委组织委员职责分工」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "from": "org_assignment",
+      "to": "professional",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「党委组织委员职责分工」转向「基层组织工作专业积累」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "from": "professional",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「基层组织工作专业积累」转向「乡镇党委组织委员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    },
+    {
+      "from": "cross_cadre",
+      "to": "party_member",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「符合条件的干部交流」转向「党员身份与履职资格核验」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "election_rule"
+      ]
+    },
+    {
+      "from": "org_assignment",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「党委组织委员职责分工」转向「乡镇党委组织委员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "rural_rule"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "grassroots",
+      "title": "基层党务干部路线",
+      "description": "基层工作经历经身份审查、党内提名及委员选举，符合工作分工时履行组织委员职责。",
+      "node_ids": [
+        "party_cadre",
+        "party_member",
+        "nomination",
+        "committee_election",
+        "org_assignment",
+        "professional",
+        "target"
+      ]
+    },
+    {
+      "id": "cadre_exchange",
+      "title": "符合资格的干部交流路线",
+      "description": "满足干部交流条件与党内选举程序后接受组织工作分工，不把交流安排视为自动当选党委委员。",
+      "node_ids": [
+        "cross_cadre",
+        "party_member",
+        "nomination",
+        "committee_election",
+        "org_assignment",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中国共产党农村基层组织工作条例》规定乡镇党委每届任期五年，党委一般设置7—9名委员且应设组织委员、宣传委员。",
+    "《中国共产党基层组织选举工作条例》规定基层委员会委员通过党内选举产生，候选人应按组织规定提名与审查。",
+    "乡镇党委组织委员身份、行政领导职务和公务员职级分别处理；不能以职级晋升直接得出党委委员职务。"
+  ],
+  "caveats": [
+    "具体职数、副书记和组织委员分工因乡镇规模、地方党委批准设置及换届情况而有差异。",
+    "选举资格、组织推荐与工作分工是不同步骤，个人不能靠自选岗位直接取得该职务。",
+    "若党内组织机构调整，需核对地方现行组织设置及换届政策。"
+  ],
+  "sources": [
+    {
+      "id": "rural_rule",
+      "title": "中国共产党农村基层组织工作条例（2018年修订）",
+      "publisher": "中国共产党新闻网·人民网（转载中共中央条例）",
+      "url": "https://dangjian.people.com.cn/n1/2019/0111/c117092-30515995.html",
+      "published": "2018-12-28"
+    },
+    {
+      "id": "election_rule",
+      "title": "中国共产党基层组织选举工作条例",
+      "publisher": "国家发展和改革委员会（转载中共中央条例）",
+      "url": "https://www.ndrc.gov.cn/fggz/fgdj/zydj/202008/t20200819_1236326_ext.html",
+      "published": "2020-07-13"
+    },
+    {
+      "id": "cadre_rule",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "人力资源和社会保障部（转载）",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/dflz/lzgd/201903/t20190321_312665.html",
+      "published": "2019-03-03"
+    }
+  ]
+}

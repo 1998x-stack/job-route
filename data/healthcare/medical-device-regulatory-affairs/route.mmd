@@ -1,0 +1,31 @@
+flowchart TB
+    %% 医疗器械注册事务专员 — 2026-11-11
+    n_bio_engineering["医学工程与产品研发背景"]
+    n_quality_staff["质量管理或法规质量岗位转型"]
+    n_regulation["法规分类与产品生命周期理解"]
+    n_document["产品注册／备案资料准备"]
+    n_quality["质量体系与申报真实性核查"]
+    n_reg_affairs["药监沟通与申报事务管理"]
+    n_specialist["法规事务项目负责人方向"]
+    n_target["医疗器械注册事务专员岗位"]
+    n_bio_engineering -.->|"资格与程序"| n_regulation
+    n_regulation -.->|"岗位发展"| n_document
+    n_document -.->|"岗位发展"| n_quality
+    n_quality -.->|"岗位发展"| n_reg_affairs
+    n_reg_affairs -.->|"符合条件发展"| n_target
+    n_quality_staff -.->|"资格与程序"| n_regulation
+    n_document -.->|"岗位发展"| n_reg_affairs
+    n_reg_affairs -.->|"岗位发展"| n_specialist
+    n_specialist -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_bio_engineering entry
+    class n_quality_staff entry
+    class n_regulation milestone
+    class n_document role
+    class n_quality role
+    class n_reg_affairs role
+    class n_specialist role
+    class n_target target

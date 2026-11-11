@@ -1,0 +1,30 @@
+flowchart TB
+    %% 企业可持续发展经理 — 2026-11-11
+    n_environment["环境与EHS管理背景"]
+    n_finance_governance["财务审计与公司治理背景"]
+    n_esg_literacy["了解ESG与可持续报告框架"]
+    n_data["可持续发展数据与内控流程"]
+    n_disclosure["可持续发展披露编制与核验"]
+    n_strategy["可持续发展计划与治理协作"]
+    n_lead["跨部门ESG项目负责人方向"]
+    n_target["企业可持续发展经理岗位"]
+    n_environment -.->|"资格与程序"| n_esg_literacy
+    n_esg_literacy -.->|"岗位发展"| n_data
+    n_data -.->|"岗位发展"| n_disclosure
+    n_disclosure -.->|"岗位发展"| n_strategy
+    n_strategy -.->|"符合条件发展"| n_target
+    n_finance_governance -.->|"资格与程序"| n_esg_literacy
+    n_data -.->|"岗位发展"| n_lead
+    n_lead -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_environment entry
+    class n_finance_governance entry
+    class n_esg_literacy milestone
+    class n_data role
+    class n_disclosure role
+    class n_strategy role
+    class n_lead role
+    class n_target target

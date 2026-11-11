@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0.0",
+  "id": "medical-device-regulatory-affairs",
+  "title": "医疗器械注册事务专员",
+  "subtitle": "医疗器械法规、技术申报与企业质量体系的专业岗位",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆；医疗器械注册申请人或备案人相关企业岗位",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "医疗器械注册事务专员是企业内负责法规研究、申报材料和产品审评协作的岗位，依规须掌握相关专业知识；依法承担产品注册申请与质量主体责任的是注册申请人、注册人或备案人，而不是某个员工单独持有的“注册专员证”。",
+  "target": "target",
+  "entry_points": [
+    "bio_engineering",
+    "quality_staff"
+  ],
+  "nodes": [
+    {
+      "id": "bio_engineering",
+      "label": "医学工程与产品研发背景",
+      "kind": "entry",
+      "description": "从生物医学工程、医疗器械研发或临床评价相关学习实践积累技术基础。",
+      "source_ids": []
+    },
+    {
+      "id": "quality_staff",
+      "label": "质量管理或法规质量岗位转型",
+      "kind": "entry",
+      "description": "在医疗器械企业从质量体系、技术文件或合规事务进入法规注册方向。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "id": "regulation",
+      "label": "法规分类与产品生命周期理解",
+      "kind": "milestone",
+      "description": "核实产品分类、适用标准、风险管理、临床评价和技术审评基本要求。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "id": "document",
+      "label": "产品注册／备案资料准备",
+      "kind": "role",
+      "description": "按产品实际类别编制技术要求、检验、临床评价等申报资料，并组织企业内部核验。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "质量体系与申报真实性核查",
+      "kind": "role",
+      "description": "与研发、质量和临床团队协作保证资料真实完整、可追溯，注册申请人为责任主体。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "id": "reg_affairs",
+      "label": "药监沟通与申报事务管理",
+      "kind": "role",
+      "description": "按省级或国家药监部门权限协助企业提交申报、回复审评意见与变更跟进。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "id": "specialist",
+      "label": "法规事务项目负责人方向",
+      "kind": "role",
+      "description": "在雇主岗位安排下可能负责多产品申报项目，企业职级不等于国家准入许可。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "医疗器械注册事务专员岗位",
+      "kind": "target",
+      "description": "在企业职责授权下合规完成注册／备案资料管理和法规沟通，配合注册人或备案人履行法定责任。",
+      "source_ids": [
+        "device_rule"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "bio_engineering",
+      "to": "regulation",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「医学工程与产品研发背景」转向「法规分类与产品生命周期理解」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "regulation",
+      "to": "document",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「法规分类与产品生命周期理解」转向「产品注册／备案资料准备」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "document",
+      "to": "quality",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「产品注册／备案资料准备」转向「质量体系与申报真实性核查」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "quality",
+      "to": "reg_affairs",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「质量体系与申报真实性核查」转向「药监沟通与申报事务管理」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "reg_affairs",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「药监沟通与申报事务管理」转向「医疗器械注册事务专员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "quality_staff",
+      "to": "regulation",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "由「质量管理或法规质量岗位转型」转向「法规分类与产品生命周期理解」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "document",
+      "to": "reg_affairs",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「产品注册／备案资料准备」转向「药监沟通与申报事务管理」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    },
+    {
+      "from": "reg_affairs",
+      "to": "specialist",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "由「药监沟通与申报事务管理」转向「法规事务项目负责人方向」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "specialist",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "由「法规事务项目负责人方向」转向「医疗器械注册事务专员岗位」取决于资格、单位岗位、考察或组织程序，并非自动晋升。",
+      "source_ids": [
+        "device_rule"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "technical",
+      "title": "研发／工程进入注册法规",
+      "description": "技术人员掌握产品法规后参与注册资料与审评协作，在企业管理体系内承担申报事务。",
+      "node_ids": [
+        "bio_engineering",
+        "regulation",
+        "document",
+        "quality",
+        "reg_affairs",
+        "target"
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "质量体系到法规事务",
+      "description": "从企业质量或法规相关工作出发，积累注册分类与申报能力后发展为注册事务岗位。",
+      "node_ids": [
+        "quality_staff",
+        "regulation",
+        "document",
+        "reg_affairs",
+        "specialist",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "国家市场监督管理总局令第47号《医疗器械注册与备案管理办法》第14条规定申请人、备案人应为能承担法律责任的企业或研制机构。",
+    "第16条规定办理注册备案事项的人员应具有相应专业知识、熟悉管理法规；这并未规定统一的个人执业资格许可。",
+    "医疗器械注册与备案依据产品类别、国产进口属性和监督机关分工办理，企业产品注册证不是员工个人职业证书。"
+  ],
+  "caveats": [
+    "负责注册事务的企业员工不等同于法律上的医疗器械注册人或备案人。",
+    "具体申报技术要求随产品、类别、标准以及法规迭代变化，不能照搬一个项目的完整资质结论。",
+    "本岗位可与研发、质量、临床评价交叉，但不等同于执业医师、医疗器械审评员或药监公务员。"
+  ],
+  "sources": [
+    {
+      "id": "device_rule",
+      "title": "医疗器械注册与备案管理办法（2021年公布）",
+      "publisher": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_568880e3ee344c45b38d073bba1c53ad.html",
+      "published": "2021-08-26"
+    }
+  ]
+}

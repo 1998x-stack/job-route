@@ -1,0 +1,30 @@
+flowchart TB
+    %% 公益基金会项目官员 — 2026-11-11
+    n_social_project["社会工作与公益项目背景"]
+    n_program_ops["机构运营与项目管理背景"]
+    n_foundation_law["理解基金会章程与慈善法规"]
+    n_project_design["公益需求评估与项目设计"]
+    n_implementation["项目执行与资金使用记录"]
+    n_evaluation["影响评估、审计与信息公开协作"]
+    n_program_manager["项目官员与项目组合管理方向"]
+    n_target["公益基金会项目官员岗位"]
+    n_social_project -.->|"资格与程序"| n_foundation_law
+    n_foundation_law -.->|"岗位发展"| n_project_design
+    n_project_design -.->|"岗位发展"| n_implementation
+    n_implementation -.->|"岗位发展"| n_evaluation
+    n_evaluation -.->|"符合条件发展"| n_target
+    n_program_ops -.->|"资格与程序"| n_foundation_law
+    n_implementation -.->|"岗位发展"| n_program_manager
+    n_program_manager -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_social_project entry
+    class n_program_ops entry
+    class n_foundation_law milestone
+    class n_project_design role
+    class n_implementation role
+    class n_evaluation role
+    class n_program_manager role
+    class n_target target
