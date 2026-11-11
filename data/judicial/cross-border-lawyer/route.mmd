@@ -1,0 +1,33 @@
+flowchart TB
+    %% 涉外法律服务律师 — 2026-11-11
+    n_new_lawyer["法律职业资格、律所实习与律师许可"]
+    n_licensed_lawyer["已有执业证的国内业务律师转型"]
+    n_law_license["取得有效中国内地律师执业证"]
+    n_foundation["外语、比较法和国际交易规则"]
+    n_practice["跨境合同与项目法律服务"]
+    n_compliance["项目尽调、争议与冲突检查"]
+    n_training["涉外业务专项培训与专业化"]
+    n_leadership["跨境业务团队与项目管理"]
+    n_target["合法执业的涉外法律服务律师"]
+    n_new_lawyer -.->|"程序资格"| n_law_license
+    n_law_license -.->|"程序资格"| n_foundation
+    n_foundation -.->|"典型技能积累"| n_practice
+    n_practice -.->|"典型技能积累"| n_compliance
+    n_compliance -.->|"典型技能积累"| n_training
+    n_training -.->|"资格满足后任职"| n_target
+    n_licensed_lawyer -.->|"程序资格"| n_law_license
+    n_compliance -.->|"典型技能积累"| n_leadership
+    n_leadership -.->|"资格满足后任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_new_lawyer entry
+    class n_licensed_lawyer entry
+    class n_law_license milestone
+    class n_foundation milestone
+    class n_practice role
+    class n_compliance role
+    class n_training role
+    class n_leadership role
+    class n_target target

@@ -1,0 +1,30 @@
+flowchart TB
+    %% 军队航天专业技术人员 — 2026-11-11
+    n_civilian_applicant["2027军事航天部队文职岗位招考"]
+    n_military_student["符合条件的军队院校军官培养渠道"]
+    n_screen["对应入口资格和身份审核"]
+    n_appointment["取得合法军队人员岗位身份"]
+    n_technical["航天相关专业技术研究与支撑"]
+    n_assurance["工程质量与信息安全管理"]
+    n_progression["项目技术骨干及专业发展"]
+    n_target["军队航天领域专业技术岗位"]
+    n_civilian_applicant -.->|"程序资格"| n_screen
+    n_screen -.->|"程序资格"| n_appointment
+    n_appointment -.->|"典型技能积累"| n_technical
+    n_technical -.->|"典型技能积累"| n_assurance
+    n_assurance -.->|"典型技能积累"| n_progression
+    n_progression -.->|"资格满足后任职"| n_target
+    n_military_student -.->|"程序资格"| n_screen
+    n_assurance -.->|"资格满足后任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civilian_applicant entry
+    class n_military_student entry
+    class n_screen milestone
+    class n_appointment milestone
+    class n_technical role
+    class n_assurance role
+    class n_progression role
+    class n_target target

@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0.0",
+  "id": "national-statistics-officer",
+  "title": "国家统计系统公务员",
+  "subtitle": "国家统计局机关与国家调查队系统：公务员、参公身份及2024统计法要求",
+  "category": "government",
+  "jurisdiction": "中国大陆国家统计局机关与国家统计局调查队系统；按实际职位区分公务员及参公身份",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "国家统计系统包括国家统计局机关、直属调查队及其他事业单位等不同人员体系。实际招录由中央机关及其直属机构考试录用程序及职位表决定，2026年统计局调查队公示特别写明拟录用“参公单位工作人员”。2024年修正《统计法》强化统计资料真实性、统计监督和防范造假，专业统计职务与公务员职级不能相互等同。",
+  "target": "target",
+  "entry_points": [
+    "central_exam",
+    "survey_exam"
+  ],
+  "nodes": [
+    {
+      "id": "central_exam",
+      "label": "中央机关统计管理职位招考",
+      "kind": "entry",
+      "description": "按当年国家公务员考试职位表报考国家统计局机关具体岗位，核查职位性质、专业学历等条件。",
+      "source_ids": [
+        "recruit_info"
+      ]
+    },
+    {
+      "id": "survey_exam",
+      "label": "国家统计局调查队系统考录",
+      "kind": "entry",
+      "description": "报考国家调查总队、地市及县调查队职位，尤其核查“参公事业单位”编制身份与岗位条件。",
+      "source_ids": [
+        "recruit_2026"
+      ]
+    },
+    {
+      "id": "eligibility",
+      "label": "资格初审、笔面试、体检与考察",
+      "kind": "milestone",
+      "description": "依据中央机关招考和具体职位表完成综合选拔及公示，职位与参公身份由录用结果及有关编制确定。",
+      "source_ids": [
+        "recruit_2026",
+        "recruit_info"
+      ]
+    },
+    {
+      "id": "status",
+      "label": "依法明确录用单位与人员身份",
+      "kind": "milestone",
+      "description": "区分行政机关公务员、参公管理单位工作人员、其他事业单位聘用及政府购买服务。",
+      "source_ids": [
+        "recruit_2026"
+      ]
+    },
+    {
+      "id": "stat_law",
+      "label": "统计法、调查制度与数据质量培训",
+      "kind": "role",
+      "description": "学习2024修正《统计法》及调查制度、统计保密义务与统计造假风险。",
+      "source_ids": [
+        "stats_law",
+        "stats_explain"
+      ]
+    },
+    {
+      "id": "survey",
+      "label": "统计调查组织与数据分析",
+      "kind": "role",
+      "description": "在职责内开展调查设计、样本质量、数据审核与统计分析，禁止虚报瞒报和违规干预。",
+      "source_ids": [
+        "stats_law"
+      ]
+    },
+    {
+      "id": "publications",
+      "label": "统计报告、质量控制及公共沟通",
+      "kind": "role",
+      "description": "规范汇总、分析、发布与保密管理，未经授权不得泄露统计调查对象的商业秘密与个人信息。",
+      "source_ids": [
+        "stats_law"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "统计业务骨干与机关管理方向",
+      "kind": "role",
+      "description": "依法按职位、职级和人员制度评价选任，统计师专业职称与公务员领导职务不是同一体系。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "国家统计系统合法任职岗位",
+      "kind": "target",
+      "description": "在经正式招考或依法交流取得的公务员、参公或其他明确岗位身份中从事统计业务及管理。",
+      "source_ids": [
+        "stats_law",
+        "recruit_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "central_exam",
+      "to": "eligibility",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「中央机关统计管理职位招考」至「资格初审、笔面试、体检与考察」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2026",
+        "recruit_info"
+      ]
+    },
+    {
+      "from": "eligibility",
+      "to": "status",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「资格初审、笔面试、体检与考察」至「依法明确录用单位与人员身份」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "status",
+      "to": "stat_law",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「依法明确录用单位与人员身份」至「统计法、调查制度与数据质量培训」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "stats_law",
+        "stats_explain"
+      ]
+    },
+    {
+      "from": "stat_law",
+      "to": "survey",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「统计法、调查制度与数据质量培训」至「统计调查组织与数据分析」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "stats_law"
+      ]
+    },
+    {
+      "from": "survey",
+      "to": "publications",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「统计调查组织与数据分析」至「统计报告、质量控制及公共沟通」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "stats_law"
+      ]
+    },
+    {
+      "from": "publications",
+      "to": "lead",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「统计报告、质量控制及公共沟通」至「统计业务骨干与机关管理方向」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「统计业务骨干与机关管理方向」至「国家统计系统合法任职岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "stats_law",
+        "recruit_2026"
+      ]
+    },
+    {
+      "from": "survey_exam",
+      "to": "eligibility",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「国家统计局调查队系统考录」至「资格初审、笔面试、体检与考察」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2026",
+        "recruit_info"
+      ]
+    },
+    {
+      "from": "publications",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「统计报告、质量控制及公共沟通」至「国家统计系统合法任职岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "stats_law",
+        "recruit_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "agency",
+      "title": "统计局机关公务员路线",
+      "description": "通过公务员考试及职位要求进入统计机关，从统计法、调查技术和政策工作积累专业治理能力。",
+      "node_ids": [
+        "central_exam",
+        "eligibility",
+        "status",
+        "stat_law",
+        "survey",
+        "publications",
+        "lead",
+        "target"
+      ]
+    },
+    {
+      "id": "survey_team",
+      "title": "国家调查队参公岗位路线",
+      "description": "经国家调查队系统职位考试录用，在参公管理制度下履行统计调查与数据质量工作。",
+      "node_ids": [
+        "survey_exam",
+        "eligibility",
+        "status",
+        "stat_law",
+        "survey",
+        "publications",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年国家统计局调查队系统拟录用公示明确人员为“参公单位工作人员”，经笔试、面试、体检及考察，不应全部标注为行政机关普通公务员。",
+    "2024年9月13日《统计法》以修正方式修改，修改内容当日施行；全国人大法工委与国家统计局均强调加强防范和惩治统计造假。",
+    "国家统计局官方招录栏目并列机关和调查队系统公告，职位性质及人员身份须看当年职位表和招录单位。",
+    "统计专业资格、技术职称和公务员职务职级独立，统计岗位不因持专业职称即获得行政执法权限。"
+  ],
+  "caveats": [
+    "国家统计局调查队具有垂直管理特征，不应与地方政府统计局或企业统计分析职位混为一体。",
+    "国家统计局机关中的参公岗位亦需按具体岗位认定，不可因“机关”二字全部推断为行政编。",
+    "2027年国考各职位数量、门槛和工作地点需回到中央机关正式职位表，非官方报考统计人数只供参考，不能作为确定制度事实。"
+  ],
+  "sources": [
+    {
+      "id": "stats_law",
+      "title": "中华人民共和国统计法（2024年第二次修正）",
+      "publisher": "国家统计局浙江调查总队（转载人大法条）",
+      "url": "https://zjzd.stats.gov.cn/gjtjjhzdcd/zwgk/xxgkml/tjfg/art/2026/art_400e943b877a4dbc9f4b869a2c2b2609.html",
+      "published": "2024-09-13"
+    },
+    {
+      "id": "stats_explain",
+      "title": "关于新修改统计法施行时间的说明",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/gk/tjfg/tjfl/202410/t20241024_1957127.html",
+      "published": "2024-10-24"
+    },
+    {
+      "id": "recruit_2026",
+      "title": "国家统计局调查队系统2026年拟录用参公单位工作人员公示",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202605/t20260514_1963696.html",
+      "published": "2026-05-14"
+    },
+    {
+      "id": "recruit_info",
+      "title": "国家统计局公务员招录信息目录",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/xxgk/rsxx/gwyzl2020/",
+      "published": "2026-05-18"
+    }
+  ]
+}

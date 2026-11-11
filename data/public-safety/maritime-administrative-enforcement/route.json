@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0.0",
+  "id": "maritime-administrative-enforcement",
+  "title": "海事行政执法人员",
+  "subtitle": "2027海事系统公务员招考、海事执法证件及与海警制度的区分",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆交通运输部直属海事管理机构；2027年度13家直属海事局招录资格审查为实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "海事行政执法人员通常是在依法具备海事监管职责的海事机关中从事水上交通安全、船舶船员管理及相应行政监管的工作人员。2027年度直属海事局公务员招录有专门资格审查说明，依法开展海事执法还要求《海事行政执法证》。这与人民武装警察部队海警机构的海上维权执法是不同执法体系。",
+  "target": "target",
+  "entry_points": [
+    "exam",
+    "exchange"
+  ],
+  "nodes": [
+    {
+      "id": "exam",
+      "label": "2027年度直属海事局公务员考录",
+      "kind": "entry",
+      "description": "报考中央机关及直属机构国考中的海事系统职位，逐岗核查航海、法学、语言或技术专业要求。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "exchange",
+      "label": "符合条件的行政机关干部交流",
+      "kind": "entry",
+      "description": "已有合法行政机关任职身份者如符合组织交流和海事专业要求，可依法调整到海事业务岗位；不保证转岗。",
+      "source_ids": [
+        "enforcement_license"
+      ]
+    },
+    {
+      "id": "hire",
+      "label": "职位资格审查、考试与正式任用",
+      "kind": "milestone",
+      "description": "按2027国考与直属海事局要求完成材料核验、笔试面试、体检及考察，航海资历放宽仅适用于特定专业职位。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "certificate",
+      "label": "海事行政执法证件培训和资格",
+      "kind": "milestone",
+      "description": "依交通运输部令第1号参加资格培训及考试，依法取得《海事行政执法证》后方可从事海事执法。",
+      "source_ids": [
+        "enforcement_license"
+      ]
+    },
+    {
+      "id": "maritime_law",
+      "label": "海上交通安全法与行政程序理解",
+      "kind": "role",
+      "description": "学习海上交通安全管理、船舶与船员行政制度、行政执法记录及监管边界。",
+      "source_ids": [
+        "maritime_law"
+      ]
+    },
+    {
+      "id": "inspection",
+      "label": "海事监督检查和现场执法业务",
+      "kind": "role",
+      "description": "在职责授权内规范检查水上交通安全和船舶活动并出示执法证件，不越权行使海警海上治安刑事职权。",
+      "source_ids": [
+        "enforcement_license",
+        "maritime_law"
+      ]
+    },
+    {
+      "id": "documents",
+      "label": "执法文书、救助协同及质量治理",
+      "kind": "role",
+      "description": "参加依法行政文书审核、水上安全风险提示和事故调查协作，具体权限由海事机构法定职责决定。",
+      "source_ids": [
+        "maritime_law"
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "海事监管专业骨干及机关管理",
+      "kind": "role",
+      "description": "在专业培训与岗位考核条件下承担更复杂监管任务；行政领导职务或职级由公职制度独立管理。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法海事行政执法岗位",
+      "kind": "target",
+      "description": "经海事机关合法招录及执法资格确认，在海事机构法定职责内履行行政管理执法，而不是海警军警岗位。",
+      "source_ids": [
+        "enforcement_license",
+        "maritime_law"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "exam",
+      "to": "hire",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「2027年度直属海事局公务员考录」至「职位资格审查、考试与正式任用」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "hire",
+      "to": "certificate",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「职位资格审查、考试与正式任用」至「海事行政执法证件培训和资格」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "enforcement_license"
+      ]
+    },
+    {
+      "from": "certificate",
+      "to": "maritime_law",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「海事行政执法证件培训和资格」至「海上交通安全法与行政程序理解」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "maritime_law"
+      ]
+    },
+    {
+      "from": "maritime_law",
+      "to": "inspection",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「海上交通安全法与行政程序理解」至「海事监督检查和现场执法业务」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "enforcement_license",
+        "maritime_law"
+      ]
+    },
+    {
+      "from": "inspection",
+      "to": "documents",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「海事监督检查和现场执法业务」至「执法文书、救助协同及质量治理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "maritime_law"
+      ]
+    },
+    {
+      "from": "documents",
+      "to": "leadership",
+      "label": "典型技能积累",
+      "evidence": "conditional",
+      "note": "从「执法文书、救助协同及质量治理」至「海事监管专业骨干及机关管理」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "leadership",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「海事监管专业骨干及机关管理」至「合法海事行政执法岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "enforcement_license",
+        "maritime_law"
+      ]
+    },
+    {
+      "from": "exchange",
+      "to": "hire",
+      "label": "程序资格",
+      "evidence": "conditional",
+      "note": "从「符合条件的行政机关干部交流」至「职位资格审查、考试与正式任用」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "inspection",
+      "to": "target",
+      "label": "资格满足后任职",
+      "evidence": "conditional",
+      "note": "从「海事监督检查和现场执法业务」至「合法海事行政执法岗位」取决于法定资格、岗位条件或独立选聘考核，绝非自动晋升。",
+      "source_ids": [
+        "enforcement_license",
+        "maritime_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "recruit",
+      "title": "公务员考录与海事执法任职",
+      "description": "由2027海事国考职位录用、取得海事执法证后依法从事海事监管和专业业务。",
+      "node_ids": [
+        "exam",
+        "hire",
+        "certificate",
+        "maritime_law",
+        "inspection",
+        "documents",
+        "leadership",
+        "target"
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "适岗公职干部交流与执法资格",
+      "description": "符合人员管理条件的公职干部经海事岗位资格审核，另考核取得执法证后参与监管。",
+      "node_ids": [
+        "exchange",
+        "hire",
+        "certificate",
+        "maritime_law",
+        "inspection",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年10月14日交通运输部海事局发布2027直属海事系统国考资格审查说明，适用于上海、天津、辽宁等13家直属海事局；部分专业船长、轮机长岗位具有特殊年龄条件。",
+    "《交通运输行政执法证件管理规定》第二条规定海事执法人员应当持有《海事行政执法证》，第五条要求执行公务出示证件；该2011年规章目前在交通运输部网站发布。",
+    "《中华人民共和国海上交通安全法》2021年修订后由海事管理机构承担法定海上交通安全监管职责。",
+    "《海警法》规定海警机构为人民武装警察部队海警部队，海事行政人员不自动具有海警警察身份与执法权限。"
+  ],
+  "caveats": [
+    "2027年海事系统国考并不保证每一个职位都属于一线执法岗位，机关管理、船员考试和其他技术岗位应逐项核验。",
+    "民航海事、民用船长证书、海警与海事局职位之间没有自动互换制度。",
+    "2011年海事证件规章如有此后替代的统一证件标准，仍需核对交通运输部的实时证件管理通知。"
+  ],
+  "sources": [
+    {
+      "id": "recruit_2027",
+      "title": "交通运输部直属海事系统2027年度考录公务员资格审查说明",
+      "publisher": "交通运输部海事局／上海海事局",
+      "url": "https://www.sh.msa.gov.cn/ryklu/107800.jhtml",
+      "published": "2026-10-14"
+    },
+    {
+      "id": "enforcement_license",
+      "title": "交通运输行政执法证件管理规定（2011年第1号）",
+      "publisher": "中华人民共和国交通运输部",
+      "url": "https://xxgk.mot.gov.cn/2020/gz/202112/t20211227_3633455.html",
+      "published": "2011-01-04"
+    },
+    {
+      "id": "maritime_law",
+      "title": "中华人民共和国海上交通安全法（2021年修订）",
+      "publisher": "商务部全球法规网（转载全国人大法律）",
+      "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=88906",
+      "published": "2021-04-29"
+    },
+    {
+      "id": "coast_guard",
+      "title": "中华人民共和国海警法",
+      "publisher": "新华网（受权发布全国人大法律）",
+      "url": "https://www.xinhuanet.com/politics/2021-01/23/c_1127015293.htm",
+      "published": "2021-01-22"
+    }
+  ]
+}
