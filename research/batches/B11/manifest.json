@@ -1,0 +1,110 @@
+{
+  "batch": "B11",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "skill": "skills/job-route/SKILL.md",
+  "research_status": "published",
+  "roles": [
+    {
+      "id": "JR-105",
+      "category": "military",
+      "slug": "military-civilian-administrative",
+      "title": "军队管理类文职人员",
+      "route_file": "data/military/military-civilian-administrative/route.json",
+      "report_file": "data/military/military-civilian-administrative/report.md",
+      "mermaid_file": "data/military/military-civilian-administrative/route.mmd",
+      "svg_file": "data/military/military-civilian-administrative/route.svg"
+    },
+    {
+      "id": "JR-106",
+      "category": "military",
+      "slug": "military-civilian-technical",
+      "title": "军队专业技术类文职人员",
+      "route_file": "data/military/military-civilian-technical/route.json",
+      "report_file": "data/military/military-civilian-technical/report.md",
+      "mermaid_file": "data/military/military-civilian-technical/route.mmd",
+      "svg_file": "data/military/military-civilian-technical/route.svg"
+    },
+    {
+      "id": "JR-112",
+      "category": "judicial",
+      "slug": "forensic-appraiser",
+      "title": "司法鉴定人",
+      "route_file": "data/judicial/forensic-appraiser/route.json",
+      "report_file": "data/judicial/forensic-appraiser/report.md",
+      "mermaid_file": "data/judicial/forensic-appraiser/route.mmd",
+      "svg_file": "data/judicial/forensic-appraiser/route.svg"
+    },
+    {
+      "id": "JR-121",
+      "category": "government",
+      "slug": "subdistrict-office-director",
+      "title": "街道办事处主任",
+      "route_file": "data/government/subdistrict-office-director/route.json",
+      "report_file": "data/government/subdistrict-office-director/report.md",
+      "mermaid_file": "data/government/subdistrict-office-director/route.mmd",
+      "svg_file": "data/government/subdistrict-office-director/route.svg"
+    },
+    {
+      "id": "JR-133",
+      "category": "public-safety",
+      "slug": "police-special-tactics-officer",
+      "title": "公安特警",
+      "route_file": "data/public-safety/police-special-tactics-officer/route.json",
+      "report_file": "data/public-safety/police-special-tactics-officer/report.md",
+      "mermaid_file": "data/public-safety/police-special-tactics-officer/route.mmd",
+      "svg_file": "data/public-safety/police-special-tactics-officer/route.svg"
+    },
+    {
+      "id": "JR-143",
+      "category": "education",
+      "slug": "special-education-teacher",
+      "title": "特殊教育学校教师",
+      "route_file": "data/education/special-education-teacher/route.json",
+      "report_file": "data/education/special-education-teacher/report.md",
+      "mermaid_file": "data/education/special-education-teacher/route.mmd",
+      "svg_file": "data/education/special-education-teacher/route.svg"
+    },
+    {
+      "id": "JR-154",
+      "category": "healthcare",
+      "slug": "traditional-chinese-medicine-physician",
+      "title": "中医执业医师",
+      "route_file": "data/healthcare/traditional-chinese-medicine-physician/route.json",
+      "report_file": "data/healthcare/traditional-chinese-medicine-physician/report.md",
+      "mermaid_file": "data/healthcare/traditional-chinese-medicine-physician/route.mmd",
+      "svg_file": "data/healthcare/traditional-chinese-medicine-physician/route.svg"
+    },
+    {
+      "id": "JR-169",
+      "category": "technology",
+      "slug": "ai-agent-application-engineer",
+      "title": "AI智能体应用开发工程师",
+      "route_file": "data/technology/ai-agent-application-engineer/route.json",
+      "report_file": "data/technology/ai-agent-application-engineer/report.md",
+      "mermaid_file": "data/technology/ai-agent-application-engineer/route.mmd",
+      "svg_file": "data/technology/ai-agent-application-engineer/route.svg"
+    },
+    {
+      "id": "JR-190",
+      "category": "business",
+      "slug": "hr-business-partner",
+      "title": "人力资源业务伙伴（HRBP）",
+      "route_file": "data/business/hr-business-partner/route.json",
+      "report_file": "data/business/hr-business-partner/report.md",
+      "mermaid_file": "data/business/hr-business-partner/route.mmd",
+      "svg_file": "data/business/hr-business-partner/route.svg"
+    },
+    {
+      "id": "JR-197",
+      "category": "public-service",
+      "slug": "child-welfare-supervisor",
+      "title": "儿童福利机构督导员",
+      "route_file": "data/public-service/child-welfare-supervisor/route.json",
+      "report_file": "data/public-service/child-welfare-supervisor/report.md",
+      "mermaid_file": "data/public-service/child-welfare-supervisor/route.mmd",
+      "svg_file": "data/public-service/child-welfare-supervisor/route.svg"
+    }
+  ]
+}
