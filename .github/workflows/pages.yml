@@ -1,70 +1,42 @@
-name: Career Atlas · Validate & Publish
-
+name: Deploy Job Route Pages
 on:
-  pull_request:
-  push:
+  workflow_run:
+    workflows: ["Career Atlas CI"]
+    types: [completed]
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
-
+  pages: write
+  id-token: write
 concurrency:
-  group: job-route-${{ github.ref }}
+  group: job-route-pages
   cancel-in-progress: true
-
 jobs:
-  validate:
-    name: Schema / evidence / SVG / site
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - name: Install strict validation and Markdown renderer
-        run: python -m pip install -r requirements.txt
-      - name: Validate graph, evidence, sources and reports
-        run: python scripts/validate.py
-      - name: Assert committed Mermaid and SVG are up-to-date
-        run: node scripts/generate.mjs --check
-      - name: Regression tests
-        run: python -m unittest discover -s tests -v
-      - name: Build static website
-        run: python scripts/build.py
-      - name: Verify HTML, links and assets
-        run: python scripts/smoke.py
-
   deploy:
-    name: Deploy GitHub Pages
-    needs: validate
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    name: Publish verified site
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install build dependencies
+      - name: Install dependencies
         run: python -m pip install -r requirements.txt
-      - name: Compile static website
+      - name: Build static career atlas
         run: python scripts/build.py
-      - name: Configure Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist
-      - name: Deploy Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
