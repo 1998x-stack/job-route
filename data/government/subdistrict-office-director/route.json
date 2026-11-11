@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0.0",
+  "id": "subdistrict-office-director",
+  "title": "街道办事处主任",
+  "subtitle": "基层治理岗位、干部选任与区政府任命",
+  "category": "government",
+  "jurisdiction": "中国大陆·普通城市街道（以北京市地方规定为例）",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "街道办事处是市辖区或不设区市人民政府的派出机关，主任属于行政领导岗位，不是经单一招聘考试即可直接获得；基层工作、干部交流与法定任命是不同环节。",
+  "target": "target",
+  "entry_points": [
+    "civil_exam",
+    "cadre_transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil_exam",
+      "label": "地方公务员录用",
+      "kind": "entry",
+      "description": "经符合条件的地方公务员录用或选调进入机关工作，积累基层治理相关经历。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "cadre_transfer",
+      "label": "符合条件的机关干部交流",
+      "kind": "entry",
+      "description": "经机关内部干部交流或调任进入街道岗位，不能以非编岗位工作自动取得公务员领导职务。",
+      "source_ids": [
+        "cadre_rules"
+      ]
+    },
+    {
+      "id": "grassroots",
+      "label": "基层机关履职",
+      "kind": "milestone",
+      "description": "在区县机关、街道办或其他基层岗位积累公共服务、社区协调与行政管理经历。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "id": "section_role",
+      "label": "街道业务及管理岗位",
+      "kind": "role",
+      "description": "负责民生保障、基层治理、城市管理等事务的业务或管理职务。",
+      "source_ids": [
+        "beijing_street"
+      ]
+    },
+    {
+      "id": "deputy",
+      "label": "街道领导班子相关岗位",
+      "kind": "role",
+      "description": "符合资格时可能担任副主任等街道领导岗位，但不是所有主任的必经前职。",
+      "source_ids": [
+        "beijing_street"
+      ]
+    },
+    {
+      "id": "nomination",
+      "label": "领导干部选拔任用程序",
+      "kind": "milestone",
+      "description": "按照干部管理权限履行考察、讨论决定或相关任用手续。",
+      "source_ids": [
+        "cadre_rules"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "街道办事处主任",
+      "kind": "target",
+      "description": "主持街道办事处行政工作；以北京为例，街道实行主任负责制，具体任命按法定干部管理权限执行。",
+      "source_ids": [
+        "beijing_street",
+        "local_org"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil_exam",
+      "to": "grassroots",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「地方公务员录用」转向「基层机关履职」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "from": "grassroots",
+      "to": "section_role",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「基层机关履职」转向「街道业务及管理岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "beijing_street"
+      ]
+    },
+    {
+      "from": "section_role",
+      "to": "deputy",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「街道业务及管理岗位」转向「街道领导班子相关岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "beijing_street"
+      ]
+    },
+    {
+      "from": "deputy",
+      "to": "nomination",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「街道领导班子相关岗位」转向「领导干部选拔任用程序」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "cadre_rules"
+      ]
+    },
+    {
+      "from": "nomination",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「领导干部选拔任用程序」转向「街道办事处主任」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "beijing_street",
+        "local_org"
+      ]
+    },
+    {
+      "from": "cadre_transfer",
+      "to": "grassroots",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「符合条件的机关干部交流」转向「基层机关履职」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "local_org"
+      ]
+    },
+    {
+      "from": "section_role",
+      "to": "nomination",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「街道业务及管理岗位」转向「领导干部选拔任用程序」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "cadre_rules"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "grassroots",
+      "title": "基层公务员成长方向",
+      "description": "公务员通过基层岗位、街道管理工作及干部考察后进入街道主任岗位的条件性路径。",
+      "node_ids": [
+        "civil_exam",
+        "grassroots",
+        "section_role",
+        "deputy",
+        "nomination",
+        "target"
+      ]
+    },
+    {
+      "id": "cadre_exchange",
+      "title": "跨机关干部交流方向",
+      "description": "已有机关任职干部经依法交流到街道，再根据干部管理权限获得领导任用。",
+      "node_ids": [
+        "cadre_transfer",
+        "grassroots",
+        "section_role",
+        "nomination",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《地方组织法》第85、86条明确街道办事处的派出机关属性及其公共服务、公共管理等职能。",
+    "北京市《街道办事处条例》明确街道办事处实行主任负责制，并说明其辖区综合管理职责。",
+    "县处级或乡科级领导职务的具体层级因地方机构规格而异，不能将所有街道主任强行标为统一行政级别。",
+    "担任主任须走干部管理权限对应的选任及任命程序，不是公务员职级自动增长。"
+  ],
+  "caveats": [
+    "街道办主任与街道党工委书记是不同党政职务，不能混为一谈。",
+    "北京地方规定用于说明制度实例，不自动适用于每一个城市街道。",
+    "社区工作者、网格员或其他聘用身份不会仅凭任职时间转化为街道办主任。"
+  ],
+  "sources": [
+    {
+      "id": "local_org",
+      "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）",
+      "publisher": "山东省高级人民法院网站",
+      "url": "https://www.sdcourt.gov.cn/jningweisfy/385991/385992/8661225/index.html",
+      "published": "2022-03-11"
+    },
+    {
+      "id": "beijing_street",
+      "title": "北京市街道办事处条例",
+      "publisher": "北京市人民代表大会常务委员会",
+      "url": "https://www.bjrd.gov.cn/rdzl/dfxfgk/dfxfg/202101/t20210106_2200218.html",
+      "published": "2019-11-27"
+    },
+    {
+      "id": "cadre_rules",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "新华社",
+      "url": "https://www.xinhuanet.com/politics/2019-03/17/c_1124245012.htm",
+      "published": "2019-03-17"
+    },
+    {
+      "id": "civil_law",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局法规资料",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}

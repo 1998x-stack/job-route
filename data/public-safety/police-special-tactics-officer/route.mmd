@@ -1,0 +1,26 @@
+flowchart TB
+    %% 公安特警 — 2026-11-11
+    n_special_exam["公安特警专项职位招录"]
+    n_internal_select["已有民警内部岗位选配"]
+    n_police_identity["依法录用的人民警察身份"]
+    n_special_assessment["专项岗位资格与能力评估"]
+    n_training["专业警务训练"]
+    n_frontline["公安特警执法勤务岗位"]
+    n_target["公安特警岗位任职"]
+    n_special_exam -.->|"资格与手续"| n_police_identity
+    n_police_identity -.->|"资格与手续"| n_special_assessment
+    n_special_assessment -.->|"岗位履历"| n_training
+    n_training -.->|"岗位履历"| n_frontline
+    n_frontline -.->|"符合条件后发展"| n_target
+    n_internal_select -.->|"资格与手续"| n_special_assessment
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_special_exam entry
+    class n_internal_select entry
+    class n_police_identity milestone
+    class n_special_assessment milestone
+    class n_training role
+    class n_frontline role
+    class n_target target

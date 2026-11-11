@@ -1,0 +1,29 @@
+flowchart TB
+    %% 司法鉴定人 — 2026-11-11
+    n_academic["相关专业学历与从业实践"]
+    n_senior_title["相关专业高级职称或行业资格"]
+    n_experience["专业经验与能力积累"]
+    n_institution["确定拟执业司法鉴定机构"]
+    n_registration["省级司法行政审核登记"]
+    n_certificate["取得司法鉴定人执业证"]
+    n_practice["独立承担鉴定工作"]
+    n_target["依法执业的司法鉴定人"]
+    n_academic -.->|"资格与手续"| n_experience
+    n_experience -.->|"资格与手续"| n_institution
+    n_institution -.->|"资格与手续"| n_registration
+    n_registration -.->|"资格与手续"| n_certificate
+    n_certificate -.->|"岗位履历"| n_practice
+    n_practice -.->|"符合条件后发展"| n_target
+    n_senior_title -.->|"资格与手续"| n_experience
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_academic entry
+    class n_senior_title entry
+    class n_experience milestone
+    class n_institution milestone
+    class n_registration milestone
+    class n_certificate milestone
+    class n_practice role
+    class n_target target

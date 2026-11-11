@@ -1,0 +1,30 @@
+flowchart TB
+    %% 军队专业技术类文职人员 — 2026-11-11
+    n_open_exam["专业技术类文职公开招考"]
+    n_direct_intro["专业人才直接引进"]
+    n_qualification["专业条件与资格审核"]
+    n_appointed["取得专业技术类文职身份"]
+    n_domain_work["专业技术履职"]
+    n_technical_grade["专业技术岗位等级发展"]
+    n_project_role["学术技术骨干与项目岗位"]
+    n_target["专业技术文职发展"]
+    n_open_exam -.->|"资格与手续"| n_qualification
+    n_qualification -.->|"资格与手续"| n_appointed
+    n_appointed -.->|"岗位履历"| n_domain_work
+    n_domain_work -.->|"岗位履历"| n_technical_grade
+    n_technical_grade -.->|"符合条件后发展"| n_target
+    n_direct_intro -.->|"资格与手续"| n_qualification
+    n_domain_work -.->|"岗位履历"| n_project_role
+    n_project_role -.->|"符合条件后发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_open_exam entry
+    class n_direct_intro entry
+    class n_qualification milestone
+    class n_appointed milestone
+    class n_domain_work role
+    class n_technical_grade role
+    class n_project_role role
+    class n_target target

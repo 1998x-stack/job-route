@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "id": "military-civilian-technical",
+  "title": "军队专业技术类文职人员",
+  "subtitle": "专业技术岗位录用、专业技术等级与任职发展",
+  "category": "military",
+  "jurisdiction": "中国大陆·军队文职专业技术岗位",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "专业技术类文职通过岗位招考或特定人才引进进入军事科研、教学、工程及医疗等非现役岗位，依法按专业技术岗位等级管理，不等于取得军官军衔。",
+  "target": "target",
+  "entry_points": [
+    "open_exam",
+    "direct_intro"
+  ],
+  "nodes": [
+    {
+      "id": "open_exam",
+      "label": "专业技术类文职公开招考",
+      "kind": "entry",
+      "description": "根据年度军队人才网公布的专业技术岗位报考，符合专业资格与职位具体要求。",
+      "source_ids": [
+        "military_reg",
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "direct_intro",
+      "label": "专业人才直接引进",
+      "kind": "entry",
+      "description": "符合高层次或特殊专业人才条件者可考虑依法直接引进，实际由岗位计划决定。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "专业条件与资格审核",
+      "kind": "milestone",
+      "description": "按岗位要求核验学历、专业、职称或执业资格，参加相应选拔程序。",
+      "source_ids": [
+        "military_reg",
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "appointed",
+      "label": "取得专业技术类文职身份",
+      "kind": "milestone",
+      "description": "在军队文职人员制度下聘用或任职，不因此成为现役军官。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "id": "domain_work",
+      "label": "专业技术履职",
+      "kind": "role",
+      "description": "根据具体单位岗位从事科研、工程技术、教育教学或医药卫生工作，遵守相应专业伦理。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "id": "technical_grade",
+      "label": "专业技术岗位等级发展",
+      "kind": "role",
+      "description": "按专业技术岗位等级制度和岗位聘任条件管理，条例规定等级为一至十三级。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "id": "project_role",
+      "label": "学术技术骨干与项目岗位",
+      "kind": "role",
+      "description": "在科研教学工程等领域积累绩效和专业成果，是否任骨干岗位取决于单位需求与考核。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "专业技术文职发展",
+      "kind": "target",
+      "description": "在专业技术岗位等级、特定专业岗位和相关项目职责中发展，不推定自动获得职称或管理职位。",
+      "source_ids": [
+        "military_reg"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "open_exam",
+      "to": "qualification",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「专业技术类文职公开招考」转向「专业条件与资格审核」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg",
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "appointed",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「专业条件与资格审核」转向「取得专业技术类文职身份」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "from": "appointed",
+      "to": "domain_work",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「取得专业技术类文职身份」转向「专业技术履职」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "from": "domain_work",
+      "to": "technical_grade",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「专业技术履职」转向「专业技术岗位等级发展」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "from": "technical_grade",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「专业技术岗位等级发展」转向「专业技术文职发展」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg"
+      ]
+    },
+    {
+      "from": "direct_intro",
+      "to": "qualification",
+      "label": "资格与手续",
+      "evidence": "conditional",
+      "note": "从「专业人才直接引进」转向「专业条件与资格审核」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg",
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "domain_work",
+      "to": "project_role",
+      "label": "岗位履历",
+      "evidence": "conditional",
+      "note": "从「专业技术履职」转向「学术技术骨干与项目岗位」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "project_role",
+      "to": "target",
+      "label": "符合条件后发展",
+      "evidence": "conditional",
+      "note": "从「学术技术骨干与项目岗位」转向「专业技术文职发展」须依本岗资格、机构要求和实际程序审核；不是任何人的自动晋升。",
+      "source_ids": [
+        "military_reg"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "exam_to_grade",
+      "title": "公开招考与专业等级路线",
+      "description": "从公开招考专业技术职位入职，形成技术成果及绩效，按岗位等级制度发展。",
+      "node_ids": [
+        "open_exam",
+        "qualification",
+        "appointed",
+        "domain_work",
+        "technical_grade",
+        "target"
+      ]
+    },
+    {
+      "id": "talent_to_project",
+      "title": "专业人才引进与项目路线",
+      "description": "符合直接引进条件者，经资格及组织程序进入专业岗位，再依能力和工作需要承担技术项目。",
+      "node_ids": [
+        "direct_intro",
+        "qualification",
+        "appointed",
+        "domain_work",
+        "project_role",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《文职人员条例》第十五条规定专业技术类文职实行岗位职务层级和专业技术岗位等级管理；专业技术岗位等级共13级。",
+    "2027年度公开招考以管理类和专业技术类为主体，具体应聘条件依岗位计划，不得将所有科研、医疗或教学岗位视为同一资格。",
+    "职业资格、专业技术职称、岗位等级及实际聘任分别审核，不因拥有毕业证自动取得相应等级。"
+  ],
+  "caveats": [
+    "专业技术类文职不同于现役专业技术军官，也不同于管理类文职的文员等级。",
+    "从事医疗、教育等准入类专业还需符合对应行业的法定执业要求。",
+    "直接引进适用于条例明确的特殊人才范围，实际岗位并非自动开放。"
+  ],
+  "sources": [
+    {
+      "id": "military_reg",
+      "title": "中国人民解放军文职人员条例（2022年修订）",
+      "publisher": "国家行政法规库",
+      "url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1526",
+      "published": "2022-12-10"
+    },
+    {
+      "id": "recruit_2027",
+      "title": "2027年军队文职人员公开招考公告",
+      "publisher": "宁强县退役军人事务局",
+      "url": "https://www.nq.gov.cn/nqzd/nqzwgk/sbfw/yfaz/202611/afdc9ff4595a4ad98f1beacc2d3e3d47.shtml",
+      "published": "2026-11-04"
+    }
+  ]
+}
