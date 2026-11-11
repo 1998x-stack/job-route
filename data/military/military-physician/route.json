@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0.0",
+  "id": "military-physician",
+  "title": "军队医疗岗位军医",
+  "subtitle": "军队医学人才招录、医师资格及军队医疗岗位的双重准入",
+  "category": "military",
+  "jurisdiction": "中国大陆·军队医院及军队医疗机构；以2027年度军医院直招军官公告为例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "军队医疗岗位需要区分现役军官、军队文职人员与依法从事诊疗的医师身份；医师资格考试、执业注册和军队岗位选拔属于不同程序。2026年医师资格考试公告明确军队现役及文职人员须加试军事医学。",
+  "target": "target",
+  "entry_points": [
+    "medical_academy",
+    "direct_officer"
+  ],
+  "nodes": [
+    {
+      "id": "medical_academy",
+      "label": "军队院校医学培养",
+      "kind": "entry",
+      "description": "通过符合条件的军队医学教育和军官培养渠道积累临床能力，是否任现役军官以具体培养与任命为准。",
+      "source_ids": [
+        "college_policy"
+      ]
+    },
+    {
+      "id": "direct_officer",
+      "label": "军队医院直接选拔招录军官",
+      "kind": "entry",
+      "description": "符合军队医院特定岗位专业、学历和政治身体条件的毕业生，按年度直接选拔招录公告报考。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "医学与军队岗位资格审查",
+      "kind": "milestone",
+      "description": "分别核验学历、相应医学专业条件、军队岗位招录程序和人员身份；军官与文职不得混为同一渠道。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "医师资格考试与取得资格",
+      "kind": "milestone",
+      "description": "符合相应医师资格考试报考条件，通过法定考试；军队现役和文职考生按公告加试军事医学。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "registration",
+      "label": "按军地适用规则办理医师执业注册",
+      "kind": "milestone",
+      "description": "取得医师资格不意味着已获准执业；军队相关执业注册管理应按适用现行制度和主管机关核查。",
+      "source_ids": [
+        "physician_registration"
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "军队医疗岗位临床服务",
+      "kind": "role",
+      "description": "在核准执业范围内开展患者诊疗与医学保障工作，遵守医疗质量、保密、职业伦理等要求。",
+      "source_ids": [
+        "physician_registration"
+      ]
+    },
+    {
+      "id": "development",
+      "label": "临床专科与科研教学发展",
+      "kind": "role",
+      "description": "根据专业训练、科研及教学业绩发展专业能力，卫生专业技术职务和军衔不是同一序列。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "军队医疗岗位合法执业军医",
+      "kind": "target",
+      "description": "具有合法适用的军队岗位身份和医师执业资格，依法在军队医疗机构承担医务职责。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "medical_academy",
+      "to": "selection",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「军队院校医学培养」到「医学与军队岗位资格审查」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "selection",
+      "to": "qualification",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「医学与军队岗位资格审查」到「医师资格考试与取得资格」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "registration",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「医师资格考试与取得资格」到「按军地适用规则办理医师执业注册」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "physician_registration"
+      ]
+    },
+    {
+      "from": "registration",
+      "to": "clinical",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「按军地适用规则办理医师执业注册」到「军队医疗岗位临床服务」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "physician_registration"
+      ]
+    },
+    {
+      "from": "clinical",
+      "to": "development",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「军队医疗岗位临床服务」到「临床专科与科研教学发展」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "development",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「临床专科与科研教学发展」到「军队医疗岗位合法执业军医」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "direct_officer",
+      "to": "selection",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「军队医院直接选拔招录军官」到「医学与军队岗位资格审查」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "recruit_2027"
+      ]
+    },
+    {
+      "from": "clinical",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「军队医疗岗位临床服务」到「军队医疗岗位合法执业军医」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "academy",
+      "title": "军医院校培养路径",
+      "description": "从军队医学培养进入岗位管理体系，依法取得医师资格并按适用要求注册后承担诊疗职责。",
+      "node_ids": [
+        "medical_academy",
+        "selection",
+        "qualification",
+        "registration",
+        "clinical",
+        "development",
+        "target"
+      ]
+    },
+    {
+      "id": "officer",
+      "title": "军队医院直招军官路径",
+      "description": "符合定向医学院校和职位条件者，通过军官直接选拔程序并独立满足医师资格和注册条件。",
+      "node_ids": [
+        "direct_officer",
+        "selection",
+        "qualification",
+        "registration",
+        "clinical",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "军队医院的军官直接选拔招录有单独岗位计划和资格审查，医师执业资格不能替代军官录用任命。",
+    "国家卫健委2026年医师资格考试公告明确军队现役人员、文职人员加试军事医学。",
+    "依法从事医师执业应取得医师资格并完成相应执业注册；2026年修订注册办法应结合军队适用专门规定核对。"
+  ],
+  "caveats": [
+    "2000年《军队医师执业管理办法》公开文本沿用已调整的军区和原军队机关名称，不可直接将历史办证流程认定为2026年现行军队内部程序。",
+    "军队文职医师不是现役军官；军官军衔、卫生专业技术岗位与医学职称之间不能直接对应。",
+    "任何军事医疗任务、机密机构岗位及内部任免细节不在公开研究范围内。"
+  ],
+  "sources": [
+    {
+      "id": "recruit_2027",
+      "title": "海军军医大学第二附属医院2027年度直接选拔招录军官公告",
+      "publisher": "上海市退役军人事务局（转载军医院公告）",
+      "url": "https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20260922/893a543ea8a24db08fb751827a6345ea.html",
+      "published": "2026-09-22"
+    },
+    {
+      "id": "exam_2026",
+      "title": "国家卫生健康委员会医师资格考试委员会2026年第1号公告",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/yzygj/c100067/202601/134520df641b4e99b8f8db7c64abc7f3.shtml",
+      "published": "2026-01-26"
+    },
+    {
+      "id": "physician_registration",
+      "title": "医师执业注册管理办法（2026年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202608/t20260819_538650.html",
+      "published": "2026-06-05"
+    },
+    {
+      "id": "college_policy",
+      "title": "2026年军校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "published": "2026-06-23"
+    }
+  ]
+}

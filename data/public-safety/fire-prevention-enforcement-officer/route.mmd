@@ -1,0 +1,30 @@
+flowchart TB
+    %% 消防监督执法人员 — 2026-11-11
+    n_cadre["消防救援系统干部岗位"]
+    n_public_transfer["符合规定的行政执法岗位交流"]
+    n_institution["消防救援机构岗位资格核验"]
+    n_law_certificate["取得行政执法证件"]
+    n_supervision["依法开展消防监督检查"]
+    n_rectification["隐患整改和执法程序管理"]
+    n_quality["执法质量与专业能力发展"]
+    n_target["合法消防监督执法岗位"]
+    n_cadre -.->|"资格与程序"| n_institution
+    n_institution -.->|"资格与程序"| n_law_certificate
+    n_law_certificate -.->|"岗位发展"| n_supervision
+    n_supervision -.->|"岗位发展"| n_rectification
+    n_rectification -.->|"岗位发展"| n_quality
+    n_quality -.->|"符合条件发展"| n_target
+    n_public_transfer -.->|"资格与程序"| n_institution
+    n_rectification -.->|"符合条件发展"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_cadre entry
+    class n_public_transfer entry
+    class n_institution milestone
+    class n_law_certificate milestone
+    class n_supervision role
+    class n_rectification role
+    class n_quality role
+    class n_target target

@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0.0",
+  "id": "human-resources-government-officer",
+  "title": "人社部门公务员",
+  "subtitle": "公务员考试、社会保障和就业政策业务与机关任用",
+  "category": "government",
+  "jurisdiction": "中国大陆·市县人力资源社会保障行政机关；芜湖市2026职责作为实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "人社部门公务员经国家或地方公务员招录与依法交流进入机关，从就业、社会保险、劳动关系、事业单位人事等公共管理领域发展；与企业HRBP、人力资源服务机构员工、社保经办事业单位人员不是同一身份。",
+  "target": "target",
+  "entry_points": [
+    "civil_exam",
+    "transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil_exam",
+      "label": "地方公务员考试录用",
+      "kind": "entry",
+      "description": "关注各省市公务员职位表中的人社局机关职位，符合专业学历等条件并经录用程序任职。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "transfer",
+      "label": "其他机关符合条件的公务员转任",
+      "kind": "entry",
+      "description": "正式公务员可在符合法定职位、回避和任职权限时交流转任至人社机关。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "onboard",
+      "label": "人社行政业务与公务员身份核验",
+      "kind": "milestone",
+      "description": "按录用或转任进入行政机关岗位，核验是否为公务员而非事业单位或劳务派遣聘用。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "employment",
+      "label": "就业促进与职业技能政策岗位",
+      "kind": "role",
+      "description": "参与公共就业服务政策、技能人才项目、人才流动和就业援助等业务。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "id": "insurance",
+      "label": "社会保险与劳动关系业务岗位",
+      "kind": "role",
+      "description": "参与养老失业工伤保险政策、劳动关系及相关基金监督协调职责。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "id": "analysis",
+      "label": "人社政策研究与治理实践",
+      "kind": "role",
+      "description": "积累政策解释、统计评估、公共服务优化和依法行政能力。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "机关科室或综合管理岗位",
+      "kind": "role",
+      "description": "在职位空缺、领导职务资格和组织选任条件下可能负责相关行政管理工作。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "人社部门正式公务员职业发展",
+      "kind": "target",
+      "description": "依法在行政机关从事公共就业、人社政策或社会保障行政管理，职级和领导职务分开管理。",
+      "source_ids": [
+        "civil_law",
+        "hr_duties"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil_exam",
+      "to": "onboard",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「地方公务员考试录用」到「人社行政业务与公务员身份核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "from": "onboard",
+      "to": "employment",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「人社行政业务与公务员身份核验」到「就业促进与职业技能政策岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "from": "employment",
+      "to": "analysis",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「就业促进与职业技能政策岗位」到「人社政策研究与治理实践」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "from": "analysis",
+      "to": "leadership",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「人社政策研究与治理实践」到「机关科室或综合管理岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "from": "leadership",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「机关科室或综合管理岗位」到「人社部门正式公务员职业发展」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "civil_law",
+        "hr_duties"
+      ]
+    },
+    {
+      "from": "transfer",
+      "to": "onboard",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「其他机关符合条件的公务员转任」到「人社行政业务与公务员身份核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "civil_law"
+      ]
+    },
+    {
+      "from": "onboard",
+      "to": "insurance",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「人社行政业务与公务员身份核验」到「社会保险与劳动关系业务岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    },
+    {
+      "from": "insurance",
+      "to": "analysis",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「社会保险与劳动关系业务岗位」到「人社政策研究与治理实践」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "hr_duties"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "employment",
+      "title": "公共就业与人才政策方向",
+      "description": "公务员录用后从就业、人才服务和政策分析岗位积累经验，逐步承担综合业务。",
+      "node_ids": [
+        "civil_exam",
+        "onboard",
+        "employment",
+        "analysis",
+        "leadership",
+        "target"
+      ]
+    },
+    {
+      "id": "insurance",
+      "title": "社会保险与劳动关系方向",
+      "description": "其他公务员转任后积累社保与劳动关系管理经验，可向综合性行政业务发展。",
+      "node_ids": [
+        "transfer",
+        "onboard",
+        "insurance",
+        "analysis",
+        "leadership",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "公务员身份由《公务员法》规定，招录职位表与组织手续决定入职；企业人力资源管理师证书不是机关任用的替代条件。",
+    "2026年芜湖市人社局机构职责覆盖就业促进、社会保障、事业单位人员管理、劳动争议协调和专业技术人员管理等行政职能。",
+    "社保经办机构或公共就业服务机构中的事业编制和行政机关公务员身份需要分别核实。"
+  ],
+  "caveats": [
+    "同一地区的人社局可能包含机关、参公单位和事业单位岗位，不能把全部人员称为普通行政公务员。",
+    "公务员职级与部门科长等领导职务并不等同，职级晋升不会自动任命处室负责人。",
+    "报考条件因国家、地方、专业、工作经历和年份而不同，应查当年具体职位表。"
+  ],
+  "sources": [
+    {
+      "id": "hr_duties",
+      "title": "芜湖市人力资源和社会保障局机构简介（2026年）",
+      "publisher": "芜湖市人民政府",
+      "url": "https://rsj.wuhu.gov.cn/jggk/jgjj/index.html",
+      "published": "2026-04-03"
+    },
+    {
+      "id": "civil_law",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局法规资料",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}

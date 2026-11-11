@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0.0",
+  "id": "supply-chain-planning-manager",
+  "title": "供应链规划经理",
+  "subtitle": "需求预测、产销协同、库存规划及跨职能供应链管理",
+  "category": "business",
+  "jurisdiction": "中国大陆·制造、零售和供应链服务企业；岗位招聘作为行业实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "供应链规划经理是企业岗位而非需要国家统一许可的职业身份，典型发展围绕需求预测、产销协同S&OP、供应与库存规划和跨部门指标治理。岗位职级与供应链职业培训证书是不同制度。",
+  "target": "target",
+  "entry_points": [
+    "supply",
+    "data"
+  ],
+  "nodes": [
+    {
+      "id": "supply",
+      "label": "供应链运营与物流业务岗位",
+      "kind": "entry",
+      "description": "从采购、库存控制、物流运营或计划助理工作入门，掌握企业业务和供应链基本指标。",
+      "source_ids": [
+        "meituan"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据分析、工业工程或财务计划背景",
+      "kind": "entry",
+      "description": "拥有统计、工业工程、BI或财务分析背景者可转入需求预测与库存规划岗位。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "id": "demand",
+      "label": "需求预测与预测误差分析",
+      "kind": "milestone",
+      "description": "运用历史销量、客户订单与业务活动调整预测，追踪预测偏差和更新假设。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "id": "sop",
+      "label": "产销协同与供需平衡",
+      "kind": "role",
+      "description": "协同销售、财务、生产和采购团队形成S&OP与中长期供需方案。",
+      "source_ids": [
+        "meituan",
+        "rokid"
+      ]
+    },
+    {
+      "id": "inventory",
+      "label": "库存健康与供应链风险管理",
+      "kind": "role",
+      "description": "开展安全库存、周转、缺货风险、备货和库存调拨优化。",
+      "source_ids": [
+        "meituan"
+      ]
+    },
+    {
+      "id": "planning",
+      "label": "计划系统与主数据治理",
+      "kind": "role",
+      "description": "参与ERP、APS或BI计划系统，维护SKU和需求预测口径与版本管理。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "规划团队与绩效协同",
+      "kind": "role",
+      "description": "承担跨品类或跨区域供应链规划管理工作，是否任经理由雇主职位要求决定。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "供应链规划经理岗位",
+      "kind": "target",
+      "description": "在雇主授权下统筹需求计划、供需平衡、库存与资源协调并持续提升预测和履约质量。",
+      "source_ids": [
+        "meituan",
+        "rokid"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "supply",
+      "to": "demand",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「供应链运营与物流业务岗位」到「需求预测与预测误差分析」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "from": "demand",
+      "to": "sop",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「需求预测与预测误差分析」到「产销协同与供需平衡」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "meituan",
+        "rokid"
+      ]
+    },
+    {
+      "from": "sop",
+      "to": "inventory",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「产销协同与供需平衡」到「库存健康与供应链风险管理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "meituan"
+      ]
+    },
+    {
+      "from": "inventory",
+      "to": "management",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「库存健康与供应链风险管理」到「规划团队与绩效协同」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "management",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「规划团队与绩效协同」到「供应链规划经理岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "meituan",
+        "rokid"
+      ]
+    },
+    {
+      "from": "data",
+      "to": "demand",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「数据分析、工业工程或财务计划背景」到「需求预测与预测误差分析」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "from": "sop",
+      "to": "planning",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「产销协同与供需平衡」到「计划系统与主数据治理」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "rokid"
+      ]
+    },
+    {
+      "from": "planning",
+      "to": "management",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「计划系统与主数据治理」到「规划团队与绩效协同」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "operations",
+      "title": "供应链运营到规划经理",
+      "description": "从库存采购运营积累需求计划、S&OP及库存治理能力，逐步承担跨部门规划岗位。",
+      "node_ids": [
+        "supply",
+        "demand",
+        "sop",
+        "inventory",
+        "management",
+        "target"
+      ]
+    },
+    {
+      "id": "analyst",
+      "title": "数据和工业工程到规划经理",
+      "description": "从预测与分析工作切入，搭建供需协同流程、计划系统和组织管理能力。",
+      "node_ids": [
+        "data",
+        "demand",
+        "sop",
+        "planning",
+        "management",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "美团及其他企业公开招聘职位显示供应链规划职责包含S&OP、需求预测、仓容与备货协同，属于雇主内部岗位说明。",
+    "专业认证CPIM、CSCP等可能成为企业加分项，但不是全国性法定经理执业许可证。",
+    "制造和零售企业对学历、经验、数字化工具、计划周期的条件差异明显。"
+  ],
+  "caveats": [
+    "不将企业岗位招聘中的工作年限、专业学历等个案条件描述为全国统一制度。",
+    "采购经理、物流运营主管和供应链规划经理的职责存在交叉，但绩效指标和组织权限不同。",
+    "企业职务不属于公务员职级或国家职业技能等级。"
+  ],
+  "sources": [
+    {
+      "id": "meituan",
+      "title": "供应链管理岗应届岗位职责",
+      "publisher": "美团招聘官网",
+      "url": "https://zhaopin.meituan.com/web/position/detail?highlightType=campus&jobUnionId=4694853346",
+      "published": "2026-08-17"
+    },
+    {
+      "id": "rokid",
+      "title": "供应链计划管理部总监岗位招聘——需求、产销协同与库存管理",
+      "publisher": "中国供应链管理专业招聘信息平台SCOM",
+      "url": "https://www.chinascom.com/pagezhuanzai?article_id=2846",
+      "published": "2026-09-17"
+    }
+  ]
+}

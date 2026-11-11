@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "id": "subject-competition-coach",
+  "title": "学科竞赛指导教师",
+  "subtitle": "学校教师资格、竞赛项目教学、教练员岗位及赛事合规",
+  "category": "education",
+  "jurisdiction": "中国大陆·中小学学科竞赛教学和指导；参考教育部2025—2028学年竞赛清单",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "学科竞赛指导教师通常是中学教学工作中的学科特长指导岗位，公办学校正式教师须依法取得适用教师资格；竞赛教练的聘任条件由学校确定，竞赛奖项不等于教师资格，更不能将竞赛结果作为中小学招生入学及高考加分依据。",
+  "target": "target",
+  "entry_points": [
+    "teacher",
+    "subject_expert"
+  ],
+  "nodes": [
+    {
+      "id": "teacher",
+      "label": "正式学科教师任教岗位",
+      "kind": "entry",
+      "description": "通过适用教师资格与公办学校聘用等程序进入学校，逐步积累某学科课堂教学经验。",
+      "source_ids": [
+        "teacher_qual"
+      ]
+    },
+    {
+      "id": "subject_expert",
+      "label": "学科科研与竞赛背景人才",
+      "kind": "entry",
+      "description": "具有学科专业成绩或教育教学经验者，符合学校教师资格及招聘要求时可应聘竞赛指导岗位。",
+      "source_ids": [
+        "example_job"
+      ]
+    },
+    {
+      "id": "eligibility",
+      "label": "教师资格和岗位招聘核验",
+      "kind": "milestone",
+      "description": "学校教育教学岗位需具备对应学段的教师资格并按聘用程序进入；竞赛成绩不替代法定资格。",
+      "source_ids": [
+        "teacher_qual"
+      ]
+    },
+    {
+      "id": "course",
+      "label": "学科课程与竞赛辅导设计",
+      "kind": "role",
+      "description": "掌握学科核心知识、拓展课程、训练计划与学习反馈，并遵守减负和学生健康原则。",
+      "source_ids": []
+    },
+    {
+      "id": "compliance",
+      "label": "获批赛事清单和教育合规审查",
+      "kind": "milestone",
+      "description": "根据教育部公布的2025—2028学年赛事清单和全国性竞赛活动管理办法，核对合法竞赛范围。",
+      "source_ids": [
+        "competition_list",
+        "competition_rules"
+      ]
+    },
+    {
+      "id": "coach",
+      "label": "学科竞赛指导实践",
+      "kind": "role",
+      "description": "在学校授权的教学计划中指导学生参加合规活动，注重公平、公正、适龄和非应试过度训练。",
+      "source_ids": [
+        "competition_rules"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "学科教研与教师协作",
+      "kind": "role",
+      "description": "参与教学研究、课程资源开发或教练培训，骨干教师评审与领导聘任另有规定。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "学校学科竞赛指导教师岗位",
+      "kind": "target",
+      "description": "合法担任教学和竞赛指导工作，持续提升学科教学及合规竞赛组织能力。",
+      "source_ids": [
+        "teacher_qual",
+        "competition_list"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "teacher",
+      "to": "eligibility",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「正式学科教师任教岗位」到「教师资格和岗位招聘核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "teacher_qual"
+      ]
+    },
+    {
+      "from": "eligibility",
+      "to": "course",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「教师资格和岗位招聘核验」到「学科课程与竞赛辅导设计」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "course",
+      "to": "compliance",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「学科课程与竞赛辅导设计」到「获批赛事清单和教育合规审查」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "competition_list",
+        "competition_rules"
+      ]
+    },
+    {
+      "from": "compliance",
+      "to": "coach",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「获批赛事清单和教育合规审查」到「学科竞赛指导实践」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "competition_rules"
+      ]
+    },
+    {
+      "from": "coach",
+      "to": "research",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「学科竞赛指导实践」到「学科教研与教师协作」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "research",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「学科教研与教师协作」到「学校学科竞赛指导教师岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "teacher_qual",
+        "competition_list"
+      ]
+    },
+    {
+      "from": "subject_expert",
+      "to": "eligibility",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「学科科研与竞赛背景人才」到「教师资格和岗位招聘核验」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "teacher_qual"
+      ]
+    },
+    {
+      "from": "coach",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「学科竞赛指导实践」到「学校学科竞赛指导教师岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "teacher_qual",
+        "competition_list"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "teacher_path",
+      "title": "在职教师兼任竞赛指导",
+      "description": "已有对应学段教师资格者，经校内安排开展课程和赛事指导，在教学实践中发展。",
+      "node_ids": [
+        "teacher",
+        "eligibility",
+        "course",
+        "compliance",
+        "coach",
+        "research",
+        "target"
+      ]
+    },
+    {
+      "id": "expert_path",
+      "title": "学科特长人才进入学校教学",
+      "description": "具备竞赛或科研专长的申请人仍须取得教师资格并经过学校招聘，再接受赛事合规管理。",
+      "node_ids": [
+        "subject_expert",
+        "eligibility",
+        "course",
+        "compliance",
+        "coach",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《教师资格条例》明确在各级各类学校和教育机构专门从事教育教学工作应依法取得相应教师资格。",
+    "2025—2028学年教育部核准全国性面向中小学生竞赛活动共47项，原则上赛事结果不得用于中小学招生入学或高考加分。",
+    "2022年《面向中小学生的全国性竞赛活动管理办法》规范赛事组织，不创设统一的全国“竞赛教练员执业证”。"
+  ],
+  "caveats": [
+    "高中数学、物理、化学、生物和信息学竞赛教练的实际任职要求依学校招聘、主办机构与所在地区规范。",
+    "学生参赛获奖不是指导教师岗位录用、编制或职称晋升的自动条件。",
+    "校外培训、商业机构与公办学校的人员身份、业务边界和监管要求不能互换。"
+  ],
+  "sources": [
+    {
+      "id": "teacher_qual",
+      "title": "教师资格条例（国务院令第188号）",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyxzfg/202204/t20220422_620496.html",
+      "published": "1995-12-12"
+    },
+    {
+      "id": "competition_list",
+      "title": "2025—2028学年面向中小学生的全国性竞赛活动名单通知",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/srcsite/A29/202510/t20251029_1418393.html",
+      "published": "2025-10-22"
+    },
+    {
+      "id": "competition_rules",
+      "title": "面向中小学生的全国性竞赛活动管理办法",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/srcsite/A29/202203/t20220314_607247.html",
+      "published": "2022-03-03"
+    },
+    {
+      "id": "example_job",
+      "title": "学科竞赛教练员校招岗位示例",
+      "publisher": "四川大学就业指导中心",
+      "url": "https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eN-Kuba2yGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv",
+      "published": "2026-09-23"
+    }
+  ]
+}

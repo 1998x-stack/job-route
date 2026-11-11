@@ -1,0 +1,110 @@
+{
+  "batch": "B13",
+  "volume": 2,
+  "verified_on": "2026-11-11",
+  "research_status": "published",
+  "skill": "skills/job-route/SKILL.md",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "roles": [
+    {
+      "id": "JR-104",
+      "category": "military",
+      "slug": "military-physician",
+      "title": "军队医疗岗位军医",
+      "route_file": "data/military/military-physician/route.json",
+      "report_file": "data/military/military-physician/report.md",
+      "mermaid_file": "data/military/military-physician/route.mmd",
+      "svg_file": "data/military/military-physician/route.svg"
+    },
+    {
+      "id": "JR-111",
+      "category": "judicial",
+      "slug": "corporate-compliance-manager",
+      "title": "企业合规经理",
+      "route_file": "data/judicial/corporate-compliance-manager/route.json",
+      "report_file": "data/judicial/corporate-compliance-manager/report.md",
+      "mermaid_file": "data/judicial/corporate-compliance-manager/route.mmd",
+      "svg_file": "data/judicial/corporate-compliance-manager/route.svg"
+    },
+    {
+      "id": "JR-126",
+      "category": "government",
+      "slug": "county-health-commission-director",
+      "title": "县卫生健康局局长",
+      "route_file": "data/government/county-health-commission-director/route.json",
+      "report_file": "data/government/county-health-commission-director/report.md",
+      "mermaid_file": "data/government/county-health-commission-director/route.mmd",
+      "svg_file": "data/government/county-health-commission-director/route.svg"
+    },
+    {
+      "id": "JR-128",
+      "category": "government",
+      "slug": "human-resources-government-officer",
+      "title": "人社部门公务员",
+      "route_file": "data/government/human-resources-government-officer/route.json",
+      "report_file": "data/government/human-resources-government-officer/report.md",
+      "mermaid_file": "data/government/human-resources-government-officer/route.mmd",
+      "svg_file": "data/government/human-resources-government-officer/route.svg"
+    },
+    {
+      "id": "JR-139",
+      "category": "public-safety",
+      "slug": "fire-prevention-enforcement-officer",
+      "title": "消防监督执法人员",
+      "route_file": "data/public-safety/fire-prevention-enforcement-officer/route.json",
+      "report_file": "data/public-safety/fire-prevention-enforcement-officer/report.md",
+      "mermaid_file": "data/public-safety/fire-prevention-enforcement-officer/route.mmd",
+      "svg_file": "data/public-safety/fire-prevention-enforcement-officer/route.svg"
+    },
+    {
+      "id": "JR-150",
+      "category": "education",
+      "slug": "subject-competition-coach",
+      "title": "学科竞赛指导教师",
+      "route_file": "data/education/subject-competition-coach/route.json",
+      "report_file": "data/education/subject-competition-coach/report.md",
+      "mermaid_file": "data/education/subject-competition-coach/route.mmd",
+      "svg_file": "data/education/subject-competition-coach/route.svg"
+    },
+    {
+      "id": "JR-155",
+      "category": "healthcare",
+      "slug": "dentist-physician",
+      "title": "口腔执业医师",
+      "route_file": "data/healthcare/dentist-physician/route.json",
+      "report_file": "data/healthcare/dentist-physician/report.md",
+      "mermaid_file": "data/healthcare/dentist-physician/route.mmd",
+      "svg_file": "data/healthcare/dentist-physician/route.svg"
+    },
+    {
+      "id": "JR-178",
+      "category": "technology",
+      "slug": "fpga-design-engineer",
+      "title": "FPGA逻辑设计工程师",
+      "route_file": "data/technology/fpga-design-engineer/route.json",
+      "report_file": "data/technology/fpga-design-engineer/report.md",
+      "mermaid_file": "data/technology/fpga-design-engineer/route.mmd",
+      "svg_file": "data/technology/fpga-design-engineer/route.svg"
+    },
+    {
+      "id": "JR-185",
+      "category": "business",
+      "slug": "supply-chain-planning-manager",
+      "title": "供应链规划经理",
+      "route_file": "data/business/supply-chain-planning-manager/route.json",
+      "report_file": "data/business/supply-chain-planning-manager/report.md",
+      "mermaid_file": "data/business/supply-chain-planning-manager/route.mmd",
+      "svg_file": "data/business/supply-chain-planning-manager/route.svg"
+    },
+    {
+      "id": "JR-195",
+      "category": "public-service",
+      "slug": "community-eldercare-operations-lead",
+      "title": "社区养老服务运营主管",
+      "route_file": "data/public-service/community-eldercare-operations-lead/route.json",
+      "report_file": "data/public-service/community-eldercare-operations-lead/report.md",
+      "mermaid_file": "data/public-service/community-eldercare-operations-lead/route.mmd",
+      "svg_file": "data/public-service/community-eldercare-operations-lead/route.svg"
+    }
+  ]
+}

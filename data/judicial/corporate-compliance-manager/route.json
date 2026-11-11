@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "id": "corporate-compliance-manager",
+  "title": "企业合规经理",
+  "subtitle": "法务、审计与风控进入企业合规管理体系的专业路径",
+  "category": "judicial",
+  "jurisdiction": "中国大陆·企业内控合规岗位；国资委《中央企业合规管理办法》仅适用于中央企业",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "企业合规经理是企业内部组织与管理岗位，不是统一的法定执业资格。《中央企业合规管理办法》明确中央企业的合规责任组织体系；GB/T 35770-2022 提供通用合规体系标准，但不能把国资委中央企业规则强加于所有民营企业。",
+  "target": "target",
+  "entry_points": [
+    "legal",
+    "risk"
+  ],
+  "nodes": [
+    {
+      "id": "legal",
+      "label": "法务与法律事务岗位",
+      "kind": "entry",
+      "description": "从企业法务、法律研究或相关职业经验转入企业合规业务，了解适用法律与组织职责。",
+      "source_ids": [
+        "sasac"
+      ]
+    },
+    {
+      "id": "risk",
+      "label": "审计、风控与业务管理岗位",
+      "kind": "entry",
+      "description": "从内审、风险管理、财务合规或业务运营工作积累风险识别与控制实践。",
+      "source_ids": [
+        "standard"
+      ]
+    },
+    {
+      "id": "basics",
+      "label": "合规要求与业务流程识别",
+      "kind": "milestone",
+      "description": "识别法律、监管、行业准则与公司制度要求；辨别适用中央企业的专门规定和一般企业标准。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "id": "risk_register",
+      "label": "建立合规风险识别与评估台账",
+      "kind": "role",
+      "description": "对业务场景开展合规风险识别、政策冲突分析和责任分工，形成可追溯评估结论。",
+      "source_ids": [
+        "sasac"
+      ]
+    },
+    {
+      "id": "controls",
+      "label": "制度流程与培训宣贯",
+      "kind": "role",
+      "description": "设置合规审查流程、举报处理、员工培训和定期检查机制，推动合规责任落实。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "id": "monitor",
+      "label": "调查整改与合规监测",
+      "kind": "role",
+      "description": "对违规线索及控制缺陷进行复盘、整改跟踪并向适当治理层汇报，保持合法保密。",
+      "source_ids": [
+        "sasac"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "合规管理岗位与跨团队协同",
+      "kind": "role",
+      "description": "在企业聘用与组织授权下牵头合规体系建设，领导职务须由雇主任命而不是取得标准证书。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业合规经理岗位",
+      "kind": "target",
+      "description": "在组织授权下统筹合规风险、制度、审查和整改，对相关业务提供合规管理支持。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "legal",
+      "to": "basics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「法务与法律事务岗位」到「合规要求与业务流程识别」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "from": "basics",
+      "to": "risk_register",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「合规要求与业务流程识别」到「建立合规风险识别与评估台账」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac"
+      ]
+    },
+    {
+      "from": "risk_register",
+      "to": "controls",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「建立合规风险识别与评估台账」到「制度流程与培训宣贯」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "from": "controls",
+      "to": "lead",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「制度流程与培训宣贯」到「合规管理岗位与跨团队协同」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「合规管理岗位与跨团队协同」到「企业合规经理岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "from": "risk",
+      "to": "basics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「审计、风控与业务管理岗位」到「合规要求与业务流程识别」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "from": "basics",
+      "to": "controls",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「合规要求与业务流程识别」到「制度流程与培训宣贯」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac",
+        "standard"
+      ]
+    },
+    {
+      "from": "controls",
+      "to": "monitor",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「制度流程与培训宣贯」到「调查整改与合规监测」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "sasac"
+      ]
+    },
+    {
+      "from": "monitor",
+      "to": "lead",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「调查整改与合规监测」到「合规管理岗位与跨团队协同」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    }
+  ],
+  "pathways": [
+    {
+      "id": "law",
+      "title": "法务转向合规管理",
+      "description": "法律事务人员熟悉公司监管义务、风险台账与流程内控后进入综合合规管理岗位。",
+      "node_ids": [
+        "legal",
+        "basics",
+        "risk_register",
+        "controls",
+        "lead",
+        "target"
+      ]
+    },
+    {
+      "id": "audit",
+      "title": "内审风控转向合规管理",
+      "description": "通过内部审计和风险管控背景，积累违规调查、整改及跨部门协调能力。",
+      "node_ids": [
+        "risk",
+        "basics",
+        "controls",
+        "monitor",
+        "lead",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "国资委令第42号《中央企业合规管理办法》自2022年10月1日起施行，适用范围为国资委监管的中央企业。",
+    "GB/T 35770-2022《合规管理体系 要求及使用指南》属国家推荐性标准，等同采用ISO 37301:2021，不是个人执业许可。",
+    "具体企业是否设首席合规官、合规经理、总法律顾问等岗位，由其法律适用、企业治理与管理制度决定。"
+  ],
+  "caveats": [
+    "企业合规经理不等于执业律师、司法鉴定人或监管机关行政人员。",
+    "中央企业强制规则、上市公司监管要求和民营企业内部合规政策的适用范围不同。",
+    "不能把企业内部员工职位、专业证书与监管部门的行政执法权混同。"
+  ],
+  "sources": [
+    {
+      "id": "sasac",
+      "title": "中央企业合规管理办法（国资委令第42号）",
+      "publisher": "国务院国资委",
+      "url": "https://wap.sasac.gov.cn/n2588035/n2588320/n2588335/c26018430/content.html",
+      "published": "2022-08-23"
+    },
+    {
+      "id": "standard",
+      "title": "GB/T 35770-2022 合规管理体系 要求及使用指南",
+      "publisher": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=EB58F4DA9034B2A2E05397BE0A0A7D33",
+      "published": "2022-10-12"
+    }
+  ]
+}

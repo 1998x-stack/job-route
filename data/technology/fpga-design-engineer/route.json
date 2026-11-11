@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "id": "fpga-design-engineer",
+  "title": "FPGA逻辑设计工程师",
+  "subtitle": "数字电路、RTL开发验证与可编程逻辑系统工程",
+  "category": "technology",
+  "jurisdiction": "中国大陆·FPGA电子工程与软硬件开发企业岗位；2026公开招聘为实例",
+  "last_verified": "2026-11-11",
+  "status": "published",
+  "summary": "FPGA逻辑设计工程师是雇主依据数字硬件和可编程逻辑能力招聘的工程技术岗位，不存在全国统一的FPGA执业许可。典型工作包含RTL编码、仿真验证、综合布局布线、时序收敛和板级联调，与ASIC芯片流片职位有共通技能但非相同身份。",
+  "target": "target",
+  "entry_points": [
+    "electronic",
+    "embedded"
+  ],
+  "nodes": [
+    {
+      "id": "electronic",
+      "label": "数字电路与电子信息专业培养",
+      "kind": "entry",
+      "description": "电子信息、自动化、通信等相关专业训练可建立数字逻辑、计算机体系结构和信号处理基础。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "id": "embedded",
+      "label": "嵌入式与软硬件协同实践",
+      "kind": "entry",
+      "description": "有嵌入式开发、接口协议和板级调试项目经验者可按企业岗位要求转向FPGA设计。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "id": "fundamentals",
+      "label": "HDL与同步数字设计基础",
+      "kind": "milestone",
+      "description": "熟练掌握Verilog或SystemVerilog、时钟复位、状态机与时序路径基本原则。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "id": "rtl",
+      "label": "RTL逻辑架构与编码",
+      "kind": "role",
+      "description": "根据功能需求实现模块设计、信号接口、寄存器传输逻辑和代码审查。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "id": "simulation",
+      "label": "功能仿真和验证",
+      "kind": "role",
+      "description": "编写testbench、约束和验证测试，排查跨时钟域、复位及接口协议故障。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "id": "timing",
+      "label": "综合实现与时序收敛",
+      "kind": "role",
+      "description": "进行资源与约束分析，结合布局布线结果优化面积、功耗及关键路径。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "id": "board",
+      "label": "板级调试与系统集成",
+      "kind": "role",
+      "description": "配合硬件、固件和系统团队完成实际板卡调试与软硬件联调。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "id": "module_lead",
+      "label": "复杂模块及架构负责人方向",
+      "kind": "role",
+      "description": "根据团队项目需求承担模块接口和系统架构协调，企业职级另由雇主选任。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "FPGA逻辑设计工程师岗位",
+      "kind": "target",
+      "description": "可独立完成可编程逻辑开发、验证与调试，基于真实工程结果承担相应岗位职责。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "electronic",
+      "to": "fundamentals",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「数字电路与电子信息专业培养」到「HDL与同步数字设计基础」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "from": "fundamentals",
+      "to": "rtl",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「HDL与同步数字设计基础」到「RTL逻辑架构与编码」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "from": "rtl",
+      "to": "simulation",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「RTL逻辑架构与编码」到「功能仿真和验证」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "from": "simulation",
+      "to": "timing",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「功能仿真和验证」到「综合实现与时序收敛」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "from": "timing",
+      "to": "board",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「综合实现与时序收敛」到「板级调试与系统集成」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "from": "board",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「板级调试与系统集成」到「FPGA逻辑设计工程师岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    },
+    {
+      "from": "embedded",
+      "to": "fundamentals",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "从「嵌入式与软硬件协同实践」到「HDL与同步数字设计基础」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_nankai"
+      ]
+    },
+    {
+      "from": "simulation",
+      "to": "module_lead",
+      "label": "岗位发展",
+      "evidence": "conditional",
+      "note": "从「功能仿真和验证」到「复杂模块及架构负责人方向」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "module_lead",
+      "to": "target",
+      "label": "符合条件发展",
+      "evidence": "conditional",
+      "note": "从「复杂模块及架构负责人方向」到「FPGA逻辑设计工程师岗位」取决于对应资格、空缺职位或机构选任，不是必然晋升。",
+      "source_ids": [
+        "job_hebut"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "electronic_route",
+      "title": "电子信息专业设计路径",
+      "description": "专业培养后依次经历RTL、验证、时序优化和板级集成，按能力应聘FPGA岗位。",
+      "node_ids": [
+        "electronic",
+        "fundamentals",
+        "rtl",
+        "simulation",
+        "timing",
+        "board",
+        "target"
+      ]
+    },
+    {
+      "id": "embedded_route",
+      "title": "嵌入式工程跨岗路径",
+      "description": "具备嵌入式接口与板级调试基础者，补足硬件描述语言与验证能力后承担FPGA模块。",
+      "node_ids": [
+        "embedded",
+        "fundamentals",
+        "rtl",
+        "simulation",
+        "module_lead",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年公开招聘岗位示例具体要求包括Verilog/SystemVerilog、Testbench、Vivado/Quartus、时序分析、跨时钟域和板级调试等技能；这些是雇主示例而非全国强制要求。",
+    "FPGA可编程逻辑开发、ASIC设计与芯片量产验证存在交集，但工艺、流程和职业组织角色并不相同。",
+    "某雇主要求硕士学历不代表每个FPGA职位都具有同样学历门槛。"
+  ],
+  "caveats": [
+    "不将厂商工具证书或电子设计竞赛奖项表述成全国法定FPGA工程师资格。",
+    "逻辑仿真通过不等于系统交付成功，实际必须经过时序、板级和软硬件验证。",
+    "企业复杂模块负责人需要项目经验与管理授权，并不是固定工作年限的自动晋升。"
+  ],
+  "sources": [
+    {
+      "id": "job_hebut",
+      "title": "软件工程师（FPGA方向）岗位招聘——银河航天",
+      "publisher": "河北工业大学就业服务中心",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80804.html",
+      "published": "2026-09-17"
+    },
+    {
+      "id": "job_nankai",
+      "title": "嵌入式固件工程师（FPGA方向）招聘——天准科技",
+      "publisher": "南开大学就业服务中心",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/117879.html",
+      "published": "2026-09-04"
+    }
+  ]
+}

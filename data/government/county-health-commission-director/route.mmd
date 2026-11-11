@@ -1,0 +1,30 @@
+flowchart TB
+    %% 县卫生健康局局长 — 2026-11-11
+    n_civil["县级公务员招录与机关履职"]
+    n_exchange["符合条件的机关干部交流任职"]
+    n_public_health["卫生行政业务与地方治理"]
+    n_section_lead["部门业务与乡科级领导岗位"]
+    n_nomination["组织选拔与考察提名"]
+    n_appointment["县人大常委会依法任命"]
+    n_governance["履行全县卫生健康行政职责"]
+    n_target["县卫生健康局局长"]
+    n_civil -.->|"资格与程序"| n_public_health
+    n_public_health -.->|"岗位发展"| n_section_lead
+    n_section_lead -.->|"资格与程序"| n_nomination
+    n_nomination -.->|"资格与程序"| n_appointment
+    n_appointment -.->|"岗位发展"| n_governance
+    n_governance -.->|"符合条件发展"| n_target
+    n_exchange -.->|"资格与程序"| n_public_health
+    n_public_health -.->|"资格与程序"| n_nomination
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil entry
+    class n_exchange entry
+    class n_public_health milestone
+    class n_section_lead role
+    class n_nomination milestone
+    class n_appointment milestone
+    class n_governance role
+    class n_target target

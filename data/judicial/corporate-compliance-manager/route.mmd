@@ -1,0 +1,31 @@
+flowchart TB
+    %% 企业合规经理 — 2026-11-11
+    n_legal["法务与法律事务岗位"]
+    n_risk["审计、风控与业务管理岗位"]
+    n_basics["合规要求与业务流程识别"]
+    n_risk_register["建立合规风险识别与评估台账"]
+    n_controls["制度流程与培训宣贯"]
+    n_monitor["调查整改与合规监测"]
+    n_lead["合规管理岗位与跨团队协同"]
+    n_target["企业合规经理岗位"]
+    n_legal -.->|"资格与程序"| n_basics
+    n_basics -.->|"岗位发展"| n_risk_register
+    n_risk_register -.->|"岗位发展"| n_controls
+    n_controls -.->|"岗位发展"| n_lead
+    n_lead -.->|"符合条件发展"| n_target
+    n_risk -.->|"资格与程序"| n_basics
+    n_basics -.->|"岗位发展"| n_controls
+    n_controls -.->|"岗位发展"| n_monitor
+    n_monitor -.->|"岗位发展"| n_lead
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_legal entry
+    class n_risk entry
+    class n_basics milestone
+    class n_risk_register role
+    class n_controls role
+    class n_monitor role
+    class n_lead role
+    class n_target target
