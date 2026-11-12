@@ -1,0 +1,30 @@
+flowchart TB
+    %% 科技馆科普活动策划师 — 2026-11-12
+    n_entry_a["科学传播或教育活动岗位招聘"]
+    n_entry_b["科普助理见习或志愿活动积累经验"]
+    n_step_0["明确岗位身份与场馆责任"]
+    n_step_1["科学内容与展教目标策划"]
+    n_step_2["科普课程与互动展品开发"]
+    n_step_3["活动安全与效果反馈"]
+    n_step_4["项目策划骨干与管理"]
+    n_target["科技馆科普活动策划师目标岗位"]
+    n_entry_a -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_1
+    n_step_1 -.->|"业务能力积累"| n_step_2
+    n_step_2 -.->|"业务能力积累"| n_step_3
+    n_step_3 -.->|"业务能力积累"| n_step_4
+    n_step_4 -.->|"条件性任职"| n_target
+    n_entry_b -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_2
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_entry_a entry
+    class n_entry_b entry
+    class n_step_0 milestone
+    class n_step_1 role
+    class n_step_2 role
+    class n_step_3 role
+    class n_step_4 role
+    class n_target target

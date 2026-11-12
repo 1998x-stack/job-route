@@ -1,0 +1,30 @@
+flowchart TB
+    %% 自动驾驶感知工程师 — 2026-11-12
+    n_entry_a["智能汽车感知算法研发应聘"]
+    n_entry_b["嵌入式感知与传感器工程转岗"]
+    n_step_0["感知算法与传感器基础"]
+    n_step_1["模型训练与多传感器融合"]
+    n_step_2["车端部署与系统集成"]
+    n_step_3["功能安全与产品验证协作"]
+    n_step_4["项目技术骨干与质量责任"]
+    n_target["自动驾驶感知工程师目标岗位"]
+    n_entry_a -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_1
+    n_step_1 -.->|"业务能力积累"| n_step_2
+    n_step_2 -.->|"业务能力积累"| n_step_3
+    n_step_3 -.->|"业务能力积累"| n_step_4
+    n_step_4 -.->|"条件性任职"| n_target
+    n_entry_b -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_2
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_entry_a entry
+    class n_entry_b entry
+    class n_step_0 milestone
+    class n_step_1 role
+    class n_step_2 role
+    class n_step_3 role
+    class n_step_4 role
+    class n_target target

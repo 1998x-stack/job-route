@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-vice-president-academic",
+  "title": "高校教学副校长",
+  "subtitle": "中国大陆国家举办的普通高等学校分管教学副校长，其他性质高校依章程核查",
+  "category": "education",
+  "jurisdiction": "中国大陆；中国大陆国家举办的普通高等学校分管教学副校长，其他性质高校依章程核查",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "高校分管教学的副校长是校级领导班子成员，按干部管理权限选拔任用并依据学校分工统筹教学、专业建设、人才培养及质量保障。2026年修订《高等学校领导人员管理办法》自8月12日发布即施行，对校级领导的资格条件和组织任用有专门规定；教授职称、学院院长职务和副校长任用不能自动互换。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "从高校学术及教学管理领域接受组织考察",
+      "kind": "entry",
+      "description": "具有相应教学科研或院系、学生管理经历的高校管理与专业人员，可在满足资格条件时按组织选任程序进入候选范围。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "高校领导岗位与机关相关干部交流",
+      "kind": "entry",
+      "description": "符合干部管理和高校领导人员资格的管理干部，可按适用交流任用程序纳入学校领导班子调整。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "校级领导资格与管理经历审核",
+      "kind": "milestone",
+      "description": "2026新版规定涉及学历、工作经历、院系管理及专业技术岗位等要求，具体情况与例外条件需按条款评估。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "干部推荐、考察和决策",
+      "kind": "role",
+      "description": "由主管部门党委及组织人事机关按干部管理权限履行选任、任用和监督程序。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "依法取得学校副校长职务",
+      "kind": "role",
+      "description": "经正式任职并明确分管教学职责；教授、副教授等职称与领导职位属于不同体系。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "教学政策和人才培养统筹",
+      "kind": "role",
+      "description": "协调培养方案、教学质量保障、专业建设、学科合作和教学科研资源配置。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "院校治理与廉洁管理",
+      "kind": "role",
+      "description": "参与学校集体决策、预算和学术伦理监督，担任校长或书记须另行选任。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "高校教学副校长目标岗位",
+      "kind": "target",
+      "description": "高校分管教学的副校长是校级领导班子成员，按干部管理权限选拔任用并依据学校分工统筹教学、专业建设、人才培养及质量保障。2026年修订《高等学校领导人员管理办法》自8月12日发布即施行，对校级领导的资格条件和组织任用有专门规定；教授职称、学院院长职务和副校长任用不能自动互换。",
+      "source_ids": [
+        "leadership",
+        "charter"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「从高校学术及教学管理领域接受组织考察」到「校级领导资格与管理经历审核」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「校级领导资格与管理经历审核」到「干部推荐、考察和决策」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「干部推荐、考察和决策」到「依法取得学校副校长职务」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「依法取得学校副校长职务」到「教学政策和人才培养统筹」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「教学政策和人才培养统筹」到「院校治理与廉洁管理」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「院校治理与廉洁管理」到「高校教学副校长目标岗位」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership",
+        "charter"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「高校领导岗位与机关相关干部交流」到「校级领导资格与管理经历审核」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「校级领导资格与管理经历审核」到「依法取得学校副校长职务」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "leadership"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "专业培养与正式任职路线",
+      "description": "具有相应教学科研或院系、学生管理经历的高校管理与专业人员，可在满足资格条件时按组织选任程序进入候选范围。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关从业经历与条件性转任",
+      "description": "符合干部管理和高校领导人员资格的管理干部，可按适用交流任用程序纳入学校领导班子调整。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年8月12日发布施行的《高等学校领导人员管理办法》明确适用于国家举办的普通高校领导班子成员。",
+    "该办法第六条规定校级领导人员基本资格并对从专业技术岗位直接提任领导人员列出独立条件，不能视为教授自动升任。",
+    "高校内部院系负责人选任按干部权限参照第二、三章，但校级领导班子成员与院系负责人适用层次仍有区别。"
+  ],
+  "caveats": [
+    "公办高校、民办高校和中外合作办学机构在章程与任职程序上可能有差异。",
+    "‘分管教学’是学校领导班子工作分工，不一定是任命文件中单独的法定职务名称。",
+    "不根据学校个别领导履历推断全国最低任职年龄或必经职务。"
+  ],
+  "sources": [
+    {
+      "id": "leadership",
+      "title": "高等学校领导人员管理办法（2026年修订）",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202609/t20260916_1451003.html",
+      "published": "2026-08-12"
+    },
+    {
+      "id": "charter",
+      "title": "北京航空航天大学章程",
+      "publisher": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/srcsite/A02/zfs_gdxxzc/201410/t20141020_182090.html",
+      "published": "2014-10-20"
+    }
+  ]
+}
