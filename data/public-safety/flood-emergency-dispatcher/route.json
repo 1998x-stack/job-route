@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "id": "flood-emergency-dispatcher",
+  "title": "防汛抗旱应急指挥调度员",
+  "subtitle": "中国大陆防汛抗旱指挥办事机构及应急部门值守、信息支持岗位",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆；中国大陆防汛抗旱指挥办事机构及应急部门值守、信息支持岗位",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "防汛抗旱调度员是应急管理、防汛办事机构或专业服务项目中的信息值守和会商支持岗位，并不自动取得政府防汛抗旱行政指挥权。2022年国家防汛抗旱应急预案明确国家防办设在应急管理部，与旧《防汛条例》对部分机构设置的表述存在版本差异，研究须明确两种来源的适用背景。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "应急管理机关法定招聘职位",
+      "kind": "entry",
+      "description": "按照公务员录用或参公岗位安排进入应急防汛业务部门，实际机构职能和人员身份依职位表核对。",
+      "source_ids": [
+        "plan",
+        "agency"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "水文、气象与GIS技术辅助岗位",
+      "kind": "entry",
+      "description": "在合法技术项目或岗位聘用中从事监测预警、信息收集和会商支持，不因此成为防汛行政负责人。",
+      "source_ids": [
+        "plan",
+        "material"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "依法确认岗位和调度授权",
+      "kind": "milestone",
+      "description": "区分国家防总、地方指挥部的行政责任人和防汛办日常信息工作人员。",
+      "source_ids": [
+        "plan",
+        "responsibility"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "汛情旱情监测信息汇总",
+      "kind": "role",
+      "description": "协同水文、气象和水利部门校验预警及值守日志，确保数据与传递时间可追溯。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "会商材料与指令传达",
+      "kind": "role",
+      "description": "按授权编制会商纪要和应急信息传达，不越权发布转移或蓄滞洪区启用命令。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "防汛物资台账协同",
+      "kind": "role",
+      "description": "按2026国家防办通知辅助物资数据更新与调拨申请，统一调用由有权机构决定。",
+      "source_ids": [
+        "material"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "复盘、预案和技术骨干",
+      "kind": "role",
+      "description": "参加演练、质量改进及跨部门联动，专业经历不自动赋予行政指挥权。",
+      "source_ids": [
+        "responsibility"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "防汛抗旱应急指挥调度员目标岗位",
+      "kind": "target",
+      "description": "防汛抗旱调度员是应急管理、防汛办事机构或专业服务项目中的信息值守和会商支持岗位，并不自动取得政府防汛抗旱行政指挥权。2022年国家防汛抗旱应急预案明确国家防办设在应急管理部，与旧《防汛条例》对部分机构设置的表述存在版本差异，研究须明确两种来源的适用背景。",
+      "source_ids": [
+        "plan",
+        "responsibility"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「应急管理机关法定招聘职位」到「依法确认岗位和调度授权」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan",
+        "responsibility"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「依法确认岗位和调度授权」到「汛情旱情监测信息汇总」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「汛情旱情监测信息汇总」到「会商材料与指令传达」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「会商材料与指令传达」到「防汛物资台账协同」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "material"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「防汛物资台账协同」到「复盘、预案和技术骨干」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "responsibility"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「复盘、预案和技术骨干」到「防汛抗旱应急指挥调度员目标岗位」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan",
+        "responsibility"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「水文、气象与GIS技术辅助岗位」到「依法确认岗位和调度授权」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan",
+        "responsibility"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「依法确认岗位和调度授权」到「会商材料与指令传达」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "plan"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "公开准入与专业发展路径",
+      "description": "按照公务员录用或参公岗位安排进入应急防汛业务部门，实际机构职能和人员身份依职位表核对。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关经历与条件性转岗路径",
+      "description": "在合法技术项目或岗位聘用中从事监测预警、信息收集和会商支持，不因此成为防汛行政负责人。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "国务院办公厅2022年国家防汛抗旱应急预案明确国家防办设置在应急管理部。",
+    "国家防总2026年通报2810名防汛抗旱责任人，依法确定的行政负责人与值班工作人员有不同责任。",
+    "应急管理部2026年物资通知强调统一台账和快速调拨流程；技术岗位应服从法定指挥链。"
+  ],
+  "caveats": [
+    "不能单凭旧《防汛条例》的旧机构表述推断2026年国家防办所在部门。",
+    "事业编、公务员、合同技术人员和防汛指挥负责人不属于同一人员制度。",
+    "不提供未经授权的实际洪水调度指令和危险操作流程。"
+  ],
+  "sources": [
+    {
+      "id": "plan",
+      "title": "国务院办公厅关于印发国家防汛抗旱应急预案的通知",
+      "publisher": "生态环境部（转载国务院办公厅文件）",
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202207/t20220707_987881.shtml",
+      "published": "2022-07-07"
+    },
+    {
+      "id": "responsibility",
+      "title": "国家防总通报2026年全国防汛抗旱责任人名单",
+      "publisher": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/xw/yjglbgzdt/202604/t20260426_601788.shtml",
+      "published": "2026-04-26"
+    },
+    {
+      "id": "material",
+      "title": "国家防办部署防汛抗旱物资储备管理工作",
+      "publisher": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/xw/yjglbgzdt/202607/t20260724_677941.shtml",
+      "published": "2026-07-24"
+    },
+    {
+      "id": "agency",
+      "title": "中华人民共和国应急管理部机构及职责",
+      "publisher": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/jg/",
+      "published": "2018-04-16"
+    }
+  ]
+}

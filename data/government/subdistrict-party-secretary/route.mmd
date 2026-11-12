@@ -1,0 +1,30 @@
+flowchart TB
+    %% 街道党工委书记 — 2026-11-12
+    n_entry_a["机关基层党建与治理干部经历"]
+    n_entry_b["相关党政领导干部组织交流"]
+    n_step_0["核对干部任用资格"]
+    n_step_1["组织推荐、考察和讨论决定"]
+    n_step_2["党委作出党工委书记任命"]
+    n_step_3["履行党建与社区治理领导责任"]
+    n_step_4["依法履职和干部监督"]
+    n_target["街道党工委书记目标岗位"]
+    n_entry_a -.->|"资格与身份核验"| n_step_0
+    n_step_0 -.->|"业务经验积累"| n_step_1
+    n_step_1 -.->|"业务经验积累"| n_step_2
+    n_step_2 -.->|"业务经验积累"| n_step_3
+    n_step_3 -.->|"业务经验积累"| n_step_4
+    n_step_4 -.->|"条件性任职"| n_target
+    n_entry_b -.->|"资格与身份核验"| n_step_0
+    n_step_0 -.->|"业务经验积累"| n_step_2
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_entry_a entry
+    class n_entry_b entry
+    class n_step_0 milestone
+    class n_step_1 role
+    class n_step_2 role
+    class n_step_3 role
+    class n_step_4 role
+    class n_target target
