@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pmo-manager",
+  "title": "项目管理办公室经理",
+  "subtitle": "项目组合治理、标准化PMO运营与注册建造师工程施工项目身份分离",
+  "category": "business",
+  "jurisdiction": "中国大陆各行业企业项目管理办公室（PMO）岗位；天津利安隆2026招聘作为具体实例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "项目管理办公室（PMO）经理属于企业经营管理岗位，负责项目组合治理、进度与风险、管理流程和跨部门资源协调，并非全国统一法定个人执业资格。2026年天津利安隆有PMO项目管理专员招聘，说明企业如何建立标准、绩效和项目经理培养体系；注册建造师则依法针对建设工程施工单位项目负责人等特定职责，不能把所有企业PMO岗位等同于注册建造师。",
+  "target": "target",
+  "entry_points": [
+    "project_admin",
+    "technical_manager"
+  ],
+  "nodes": [
+    {
+      "id": "project_admin",
+      "label": "项目协调与运营岗位经历",
+      "kind": "entry",
+      "description": "从项目专员、运营、流程协调及交付报告岗位积累甘特计划、风险台账和跨部门沟通能力。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "technical_manager",
+      "label": "研发、IT与工程项目交付经历",
+      "kind": "entry",
+      "description": "已有软件、制造或设备工程项目经验者，可以按企业职务要求转向项目组合管理和PMO治理。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "framework",
+      "label": "项目管理方法论与治理体系",
+      "kind": "milestone",
+      "description": "明确项目生命周期、里程碑、成本进度、风险登记、变更和升级机制；各组织可采用不同框架。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "planning",
+      "label": "项目组合计划与进度报告",
+      "kind": "role",
+      "description": "协调资源配置、交付依赖、项目进度与管理层报告，定期检查偏差及调整依据。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "risk",
+      "label": "风险管理与问题升级协调",
+      "kind": "role",
+      "description": "建立跨项目风险台账、障碍升级和复盘，支持关键项目质量与内部控制。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "PMO标准流程与信息系统",
+      "kind": "role",
+      "description": "推动项目管理标准、绩效体系、项目经理培养和数字化工具应用，按权限管理项目数据。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "组织战略目标与项目组合联动",
+      "kind": "role",
+      "description": "根据组织目标衡量项目业务价值及资源优先级，协同战略部门调整治理计划。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "企业PMO团队经理与负责人",
+      "kind": "role",
+      "description": "依公司聘任和具体业务职责担任PMO经理，建设工程中需要法定执业者的施工项目另核资格。",
+      "source_ids": [
+        "constructor_rule"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "企业项目管理办公室经理岗位",
+      "kind": "target",
+      "description": "合法受雇统筹项目组合管理、流程和绩效治理；与工程施工项目法定注册执业身份区分。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "project_admin",
+      "to": "framework",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「项目协调与运营岗位经历」到「项目管理方法论与治理体系」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "framework",
+      "to": "planning",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「项目管理方法论与治理体系」到「项目组合计划与进度报告」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "planning",
+      "to": "risk",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「项目组合计划与进度报告」到「风险管理与问题升级协调」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "risk",
+      "to": "governance",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「风险管理与问题升级协调」到「PMO标准流程与信息系统」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "governance",
+      "to": "strategy",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「PMO标准流程与信息系统」到「组织战略目标与项目组合联动」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "strategy",
+      "to": "team",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「组织战略目标与项目组合联动」到「企业PMO团队经理与负责人」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "constructor_rule"
+      ]
+    },
+    {
+      "from": "team",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「企业PMO团队经理与负责人」到「企业项目管理办公室经理岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "technical_manager",
+      "to": "framework",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「研发、IT与工程项目交付经历」到「项目管理方法论与治理体系」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    },
+    {
+      "from": "strategy",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「组织战略目标与项目组合联动」到「企业项目管理办公室经理岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "pmo_job"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "project_path",
+      "title": "项目协调成长为PMO经理",
+      "description": "从项目专员与报告工作学习项目治理、跨团队协调及组织标准，符合条件时担任PMO负责人。",
+      "node_ids": [
+        "project_admin",
+        "framework",
+        "planning",
+        "risk",
+        "governance",
+        "strategy",
+        "team",
+        "target"
+      ]
+    },
+    {
+      "id": "technical_path",
+      "title": "技术项目交付向组织级PMO转型",
+      "description": "从研发和工程项目交付积累计划、质量与跨项目协同，再按企业职务聘任承担PMO管理。",
+      "node_ids": [
+        "technical_manager",
+        "framework",
+        "planning",
+        "risk",
+        "governance",
+        "strategy",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年10月8日河北工业大学就业平台转载天津利安隆PMO岗位，明确建立项目管理标准、项目绩效体系、项目经理培养及数字化工具的职责；仅作为该企业真实招聘样例。",
+    "《注册建造师管理规定》对建设工程施工单位特定项目负责人设置执业许可，法定适用对象不能推广至IT、消费品和企业战略PMO全部岗位。",
+    "PMP、Prince2等行业项目管理认证及企业内部项目经理等级可能有帮助，但不是每家公司的PMO经理统一法定准入证书。"
+  ],
+  "caveats": [
+    "‘PMO经理’和‘施工单位项目经理’在职责、项目属性、职业许可上不能直接等同，若实际承担受限制的建设工程执业则应独立满足建造师规定。",
+    "职位招聘样例是某公司项目管理专员，不是对全国经理最低经验或薪酬水平的统计。",
+    "项目组合预算、商业机密和员工绩效信息需在企业授权与合法数据使用范围内处理。"
+  ],
+  "sources": [
+    {
+      "id": "pmo_job",
+      "title": "天津利安隆新材料股份有限公司项目管理专员（PMO）招聘",
+      "publisher": "河北工业大学就业服务中心（转载雇主）",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/81687.html",
+      "published": "2026-10-08"
+    },
+    {
+      "id": "constructor_rule",
+      "title": "注册建造师管理规定（住房城乡建设部现行修订文本）",
+      "publisher": "中华人民共和国住房和城乡建设部",
+      "url": "https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2022/art_17337_763849.html",
+      "published": "2016-09-13"
+    }
+  ]
+}

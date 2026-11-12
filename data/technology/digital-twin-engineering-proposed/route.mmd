@@ -1,0 +1,36 @@
+flowchart TB
+    %% 数字孪生工程技术人员（2026已正式发布） — 2026-11-12
+    n_modeling["工业建模与仿真工程背景"]
+    n_data["软件与工业数据集成背景"]
+    n_definition["核实2026正式职业及岗位职责"]
+    n_model["物理系统与数字模型构建"]
+    n_integration["工业数据接入与模型同步"]
+    n_simulation["仿真验证与场景分析"]
+    n_production["工程实施、维护和可观测性"]
+    n_expert["跨团队工程方案技术骨干"]
+    n_target["数字孪生工程技术岗位"]
+    n_modeling -.->|"资格与程序"| n_definition
+    n_definition -.->|"岗位经验积累"| n_model
+    n_model -.->|"岗位经验积累"| n_integration
+    n_integration -.->|"岗位经验积累"| n_simulation
+    n_simulation -.->|"岗位经验积累"| n_production
+    n_production -.->|"岗位经验积累"| n_expert
+    n_expert -.->|"符合条件任职"| n_target
+    n_data -.->|"资格与程序"| n_definition
+    n_definition -.->|"岗位经验积累"| n_integration
+    n_integration -.->|"岗位经验积累"| n_model
+    n_model -.->|"岗位经验积累"| n_simulation
+    n_production -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_modeling entry
+    class n_data entry
+    class n_definition milestone
+    class n_model role
+    class n_integration role
+    class n_simulation role
+    class n_production role
+    class n_expert role
+    class n_target target

@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0.0",
+  "id": "corporate-strategy-analyst",
+  "title": "企业战略分析师",
+  "subtitle": "战略专题研究、竞争情报与企业经营决策支持；区分证券投资咨询执业",
+  "category": "business",
+  "jurisdiction": "中国大陆互联网、制造和服务企业战略规划部门；以滴滴2026招聘岗位为样例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "企业战略分析师是企业内部战略规划和经营研究岗位，常分析行业竞争、业务增长方向、资源配置和新业务可行性。滴滴2026年公开职位包含高级战略分析师和战略分析经理，其工作由企业自主设置。企业内部战略研究不自动具有证券投资咨询业务执业权，岗位职级、金融职业资格和商业数据分析证书需分别核验。",
+  "target": "target",
+  "entry_points": [
+    "finance",
+    "data"
+  ],
+  "nodes": [
+    {
+      "id": "finance",
+      "label": "财务管理、经济学和行业研究背景",
+      "kind": "entry",
+      "description": "从财务分析、企业管理咨询、行业竞争研究或公司战略规划初岗积累业务分析与决策写作能力。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "商业数据分析与运营策略背景",
+      "kind": "entry",
+      "description": "从数据分析、产品运营或商业策略工作理解经营数据、用户行为及市场模型，转向公司战略部门。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "economics",
+      "label": "企业战略框架和数据可信度",
+      "kind": "milestone",
+      "description": "掌握行业格局、单位经济模型、市场规模分析和假设验证，并建立来源质量评估方法。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "竞争环境与行业前景研究",
+      "kind": "role",
+      "description": "研究行业经营模式、技术变革、竞品和市场结构，合理区分事实与战略假设。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "case",
+      "label": "新业务机会与战略项目评估",
+      "kind": "role",
+      "description": "建立投入回报、风险情景、增长机会和业务协同的研究报告，不向公众无资格提供受监管投资建议。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "planning",
+      "label": "中长期策略、资源配置与复盘",
+      "kind": "role",
+      "description": "将项目分析转化为管理层报告、经营目标与可检验的执行计划，注意商业秘密保护。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "战略报告与跨部门沟通",
+      "kind": "role",
+      "description": "协调产品、运营、财务和业务部门形成多情景分析，保存假设和数据血缘。",
+      "source_ids": []
+    },
+    {
+      "id": "lead",
+      "label": "资深战略分析及项目负责人",
+      "kind": "role",
+      "description": "根据真实岗位需求和公司任用承担复杂项目或团队管理，不自动获得公司高级管理人员身份。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业战略分析师岗位",
+      "kind": "target",
+      "description": "在企业聘任下运用可核验行业研究和经营分析支持组织战略决策，不越权开展受监管金融咨询。",
+      "source_ids": [
+        "didi_job"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "finance",
+      "to": "economics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「财务管理、经济学和行业研究背景」到「企业战略框架和数据可信度」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "economics",
+      "to": "research",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「企业战略框架和数据可信度」到「竞争环境与行业前景研究」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "research",
+      "to": "case",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「竞争环境与行业前景研究」到「新业务机会与战略项目评估」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "case",
+      "to": "planning",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「新业务机会与战略项目评估」到「中长期策略、资源配置与复盘」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "planning",
+      "to": "governance",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「中长期策略、资源配置与复盘」到「战略报告与跨部门沟通」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "governance",
+      "to": "lead",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「战略报告与跨部门沟通」到「资深战略分析及项目负责人」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「资深战略分析及项目负责人」到「企业战略分析师岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "data",
+      "to": "economics",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「商业数据分析与运营策略背景」到「企业战略框架和数据可信度」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    },
+    {
+      "from": "governance",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「战略报告与跨部门沟通」到「企业战略分析师岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "didi_job"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "economics_path",
+      "title": "财务与管理咨询进入战略团队",
+      "description": "从经济与行业研究能力到竞争分析、项目评估，再按组织岗位负责战略方案和管理层沟通。",
+      "node_ids": [
+        "finance",
+        "economics",
+        "research",
+        "case",
+        "planning",
+        "governance",
+        "lead",
+        "target"
+      ]
+    },
+    {
+      "id": "data_path",
+      "title": "运营策略与数据分析转型",
+      "description": "通过业务数据和市场研究进入战略分析岗位，形成管理层决策支持和目标管理能力。",
+      "node_ids": [
+        "data",
+        "economics",
+        "research",
+        "case",
+        "planning",
+        "governance",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "滴滴2026年公开招聘职位包含‘高级战略分析师’及‘战略分析经理’，职责包括行业趋势研究、竞争对标、评估新业务机会与战略决策支持；为特定企业的岗位样例。",
+    "企业战略分析与依法需要资质的证券投资咨询服务性质不同，岗位任命不自动赋予对外发布受监管证券投资建议的权限。",
+    "战略研究者不自动成为公司董事、法定代表人、投资顾问或注册会计师，具体财务审计与投资业务应遵循独立职业制度。"
+  ],
+  "caveats": [
+    "战略分析职位可位于企业战略部、经营分析部、CEO办公室或投资发展部门，不存在跨所有企业统一的管理晋升阶梯。",
+    "岗位案例中的学历及工作经验不能作为全国法定强制要求，原页面的‘更新时间’并非国家职业标准生效日期。",
+    "市场规模、增长率和投资回报估计可能受选择偏差和模型误差影响，应标示假设和风险而非给出确定承诺。"
+  ],
+  "sources": [
+    {
+      "id": "didi_job",
+      "title": "滴滴招聘：高级战略分析师与战略分析经理岗位列表（2026-10-23更新）",
+      "publisher": "滴滴出行招聘官网",
+      "url": "https://talent.didiglobal.com/social/neitui/4074",
+      "published": "2026-10-23"
+    },
+    {
+      "id": "pipl",
+      "title": "中华人民共和国个人信息保护法",
+      "publisher": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "published": "2021-08-20"
+    }
+  ]
+}

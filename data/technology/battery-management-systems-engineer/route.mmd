@@ -1,0 +1,34 @@
+flowchart TB
+    %% 电池管理系统工程师 — 2026-11-12
+    n_electronics["电子电气及嵌入式工程教育"]
+    n_battery_test["电池测试与汽车系统工程背景"]
+    n_architecture["BMS架构及标准适用分析"]
+    n_hardware["采集与保护电路设计"]
+    n_software["SOC／SOH估计与控制软件"]
+    n_verification["BMS软件硬件集成及验证"]
+    n_regulatory["2026强制标准与修订计划追踪"]
+    n_lead["BMS系统架构及技术管理"]
+    n_target["企业电池管理系统工程师"]
+    n_electronics -.->|"资格与程序"| n_architecture
+    n_architecture -.->|"岗位经验积累"| n_hardware
+    n_hardware -.->|"岗位经验积累"| n_software
+    n_software -.->|"岗位经验积累"| n_verification
+    n_verification -.->|"岗位经验积累"| n_regulatory
+    n_regulatory -.->|"岗位经验积累"| n_lead
+    n_lead -.->|"符合条件任职"| n_target
+    n_battery_test -.->|"资格与程序"| n_architecture
+    n_architecture -.->|"岗位经验积累"| n_software
+    n_regulatory -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_electronics entry
+    class n_battery_test entry
+    class n_architecture milestone
+    class n_hardware role
+    class n_software role
+    class n_verification role
+    class n_regulatory role
+    class n_lead role
+    class n_target target
