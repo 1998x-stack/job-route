@@ -1,0 +1,122 @@
+{
+  "batch": "B18",
+  "volume": 2,
+  "verified_on": "2026-11-12",
+  "research_status": "published",
+  "method": "deep-source-research-v5",
+  "skill": "skills/job-route/SKILL.md",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "items": 10,
+  "roles": [
+    {
+      "id": "JR-113",
+      "category": "judicial",
+      "slug": "court-enforcement-assistant",
+      "title": "法院执行辅助人员",
+      "research_focus": "合同制辅助岗位≠员额法官或司法警察",
+      "route_file": "data/judicial/court-enforcement-assistant/route.json",
+      "report_file": "data/judicial/court-enforcement-assistant/report.md",
+      "mermaid_file": "data/judicial/court-enforcement-assistant/route.mmd",
+      "svg_file": "data/judicial/court-enforcement-assistant/route.svg"
+    },
+    {
+      "id": "JR-119",
+      "category": "government",
+      "slug": "provincial-general-office-secretary",
+      "title": "省政府办公厅综合文秘干部",
+      "research_focus": "普通机关考录和在编公务员省直遴选分离",
+      "route_file": "data/government/provincial-general-office-secretary/route.json",
+      "report_file": "data/government/provincial-general-office-secretary/report.md",
+      "mermaid_file": "data/government/provincial-general-office-secretary/route.mmd",
+      "svg_file": "data/government/provincial-general-office-secretary/route.svg"
+    },
+    {
+      "id": "JR-122",
+      "category": "government",
+      "slug": "subdistrict-party-secretary",
+      "title": "街道党工委书记",
+      "research_focus": "区委等上级党委选任≠街道办事处主任",
+      "route_file": "data/government/subdistrict-party-secretary/route.json",
+      "report_file": "data/government/subdistrict-party-secretary/report.md",
+      "mermaid_file": "data/government/subdistrict-party-secretary/route.mmd",
+      "svg_file": "data/government/subdistrict-party-secretary/route.svg"
+    },
+    {
+      "id": "JR-136",
+      "category": "public-safety",
+      "slug": "coast-guard-enforcement-officer",
+      "title": "海警执法人员",
+      "research_focus": "武警海警与交通海事区分；2+2联合培养调整",
+      "route_file": "data/public-safety/coast-guard-enforcement-officer/route.json",
+      "report_file": "data/public-safety/coast-guard-enforcement-officer/report.md",
+      "mermaid_file": "data/public-safety/coast-guard-enforcement-officer/route.mmd",
+      "svg_file": "data/public-safety/coast-guard-enforcement-officer/route.svg"
+    },
+    {
+      "id": "JR-141",
+      "category": "public-safety",
+      "slug": "flood-emergency-dispatcher",
+      "title": "防汛抗旱应急指挥调度员",
+      "research_focus": "信息值守不拥有行政指挥权；2022预案机构变更",
+      "route_file": "data/public-safety/flood-emergency-dispatcher/route.json",
+      "report_file": "data/public-safety/flood-emergency-dispatcher/report.md",
+      "mermaid_file": "data/public-safety/flood-emergency-dispatcher/route.mmd",
+      "svg_file": "data/public-safety/flood-emergency-dispatcher/route.svg"
+    },
+    {
+      "id": "JR-149",
+      "category": "education",
+      "slug": "university-vice-president-academic",
+      "title": "高校教学副校长",
+      "research_focus": "2026新高校领导管理办法、教授职称不自动升任",
+      "route_file": "data/education/university-vice-president-academic/route.json",
+      "report_file": "data/education/university-vice-president-academic/report.md",
+      "mermaid_file": "data/education/university-vice-president-academic/route.mmd",
+      "svg_file": "data/education/university-vice-president-academic/route.svg"
+    },
+    {
+      "id": "JR-153",
+      "category": "education",
+      "slug": "science-museum-education-designer",
+      "title": "科技馆科普活动策划师",
+      "research_focus": "2024科普法下区分雇员、见习与志愿服务",
+      "route_file": "data/education/science-museum-education-designer/route.json",
+      "report_file": "data/education/science-museum-education-designer/report.md",
+      "mermaid_file": "data/education/science-museum-education-designer/route.mmd",
+      "svg_file": "data/education/science-museum-education-designer/route.svg"
+    },
+    {
+      "id": "JR-158",
+      "category": "healthcare",
+      "slug": "psychiatrist",
+      "title": "精神科医师",
+      "research_focus": "2025国家附条件精神卫生加注、2026地方实施",
+      "route_file": "data/healthcare/psychiatrist/route.json",
+      "report_file": "data/healthcare/psychiatrist/report.md",
+      "mermaid_file": "data/healthcare/psychiatrist/route.mmd",
+      "svg_file": "data/healthcare/psychiatrist/route.svg"
+    },
+    {
+      "id": "JR-173",
+      "category": "technology",
+      "slug": "autonomous-driving-perception-engineer",
+      "title": "自动驾驶感知工程师",
+      "research_focus": "2027才施行的企业准入与GB 44721—2026",
+      "route_file": "data/technology/autonomous-driving-perception-engineer/route.json",
+      "report_file": "data/technology/autonomous-driving-perception-engineer/report.md",
+      "mermaid_file": "data/technology/autonomous-driving-perception-engineer/route.mmd",
+      "svg_file": "data/technology/autonomous-driving-perception-engineer/route.svg"
+    },
+    {
+      "id": "JR-194",
+      "category": "business",
+      "slug": "startup-chief-operating-officer",
+      "title": "创业公司首席运营官",
+      "research_focus": "COO头衔与公司法经理、董事、法定代表人不同",
+      "route_file": "data/business/startup-chief-operating-officer/route.json",
+      "report_file": "data/business/startup-chief-operating-officer/report.md",
+      "mermaid_file": "data/business/startup-chief-operating-officer/route.mmd",
+      "svg_file": "data/business/startup-chief-operating-officer/route.svg"
+    }
+  ]
+}

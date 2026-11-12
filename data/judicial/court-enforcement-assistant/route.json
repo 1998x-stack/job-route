@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "id": "court-enforcement-assistant",
+  "title": "法院执行辅助人员",
+  "subtitle": "中国大陆人民法院；2026年广州、北京招聘实例",
+  "category": "judicial",
+  "jurisdiction": "中国大陆；中国大陆人民法院；2026年广州、北京招聘实例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "法院执行辅助人员受法院正式聘用岗位安排，在执行法官指导下处理材料、保全和执行事务，身份可能为合同制法官助理、政府聘员或书记员。此岗位并非员额法官、司法警察或执行裁判权持有人。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "参加法院聘用制法官助理招聘",
+      "kind": "entry",
+      "description": "依具体法院招聘公告参加资格、笔试和面试；职位要求按地区与当年核验。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "从法律事务支持岗位应聘",
+      "kind": "entry",
+      "description": "已有书记员、法律服务或档案工作者可重新参加适用招聘，不自动转为法院公务员。",
+      "source_ids": [
+        "zengcheng"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "确认合法聘用身份",
+      "kind": "milestone",
+      "description": "识别劳动合同制、政府聘员、法院公务员及司法警察身份差异。",
+      "source_ids": [
+        "guangzhou",
+        "zengcheng"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "案件材料流转和文书",
+      "kind": "role",
+      "description": "在法官指导下协助接收、整理、送达及归档执行材料。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "执行保全及异议事务支持",
+      "kind": "role",
+      "description": "辅助执行法官开展保全、异议复议文件准备和执行实施等支持工作。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "程序保密与质量核验",
+      "kind": "role",
+      "description": "规范个人信息保护、文书期限与证据流转，不能独立作出强制执行司法决定。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "内部专业发展",
+      "kind": "role",
+      "description": "依据机构岗位管理承担培训和质量工作，转法官或司法警察须独立履行法定程序。",
+      "source_ids": [
+        "zengcheng"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "法院执行辅助人员目标岗位",
+      "kind": "target",
+      "description": "法院执行辅助人员受法院正式聘用岗位安排，在执行法官指导下处理材料、保全和执行事务，身份可能为合同制法官助理、政府聘员或书记员。此岗位并非员额法官、司法警察或执行裁判权持有人。",
+      "source_ids": [
+        "guangzhou",
+        "zengcheng"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「参加法院聘用制法官助理招聘」到「确认合法聘用身份」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou",
+        "zengcheng"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「确认合法聘用身份」到「案件材料流转和文书」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「案件材料流转和文书」到「执行保全及异议事务支持」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「执行保全及异议事务支持」到「程序保密与质量核验」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「程序保密与质量核验」到「内部专业发展」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "zengcheng"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「内部专业发展」到「法院执行辅助人员目标岗位」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou",
+        "zengcheng"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「从法律事务支持岗位应聘」到「确认合法聘用身份」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou",
+        "zengcheng"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「确认合法聘用身份」到「执行保全及异议事务支持」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "guangzhou"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "公开准入与专业发展路径",
+      "description": "依具体法院招聘公告参加资格、笔试和面试；职位要求按地区与当年核验。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关经历与条件性转岗路径",
+      "description": "已有书记员、法律服务或档案工作者可重新参加适用招聘，不自动转为法院公务员。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "广州中院2026年合同制法官助理职责明确包含配合执行法官办理保全、异议复议和执行实施。",
+    "广州增城区2026年法院聘员公告同样列有执行相关辅助事务；岗位学历与年龄条件因法院而异。",
+    "正式员额法官、法院公务员辅助人员、合同制聘员和司法警察并不因工作内容交叉而具有相同身份。"
+  ],
+  "caveats": [
+    "各地法院招录条件不能互相套用，2026年已结束的公告不代表当前开放报名。",
+    "不得以法院合同制职位介绍为依据承诺自动转编或成为法官。",
+    "不披露涉案隐私及未公开的执行信息。"
+  ],
+  "sources": [
+    {
+      "id": "guangzhou",
+      "title": "广州市中级人民法院2026年公开招聘劳动合同制审判辅助人员公告",
+      "publisher": "广州市中级人民法院",
+      "url": "https://www.gzcourt.gov.cn/fygg/zpgg/2026/05/29122915894.html",
+      "published": "2026-05-29"
+    },
+    {
+      "id": "zengcheng",
+      "title": "广州市增城区人民法院2026年公开招聘政府聘员公告",
+      "publisher": "广州市增城区人民政府",
+      "url": "https://www.zc.gov.cn/zx/ztjj/rcfw/zpxx/content/post_11009147.html",
+      "published": "2026-09-17"
+    },
+    {
+      "id": "beijing",
+      "title": "北京市法院系统2026年聘用制审判辅助人员招聘公告",
+      "publisher": "北京市人民政府",
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202604/t20260409_4578302.html",
+      "published": "2026-04-09"
+    }
+  ]
+}

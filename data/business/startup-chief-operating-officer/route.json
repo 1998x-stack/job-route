@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "id": "startup-chief-operating-officer",
+  "title": "创业公司首席运营官（COO）",
+  "subtitle": "中国大陆创业公司与成长型企业，按公司章程、董事会授权及实际劳动关系判定",
+  "category": "business",
+  "jurisdiction": "中国大陆；中国大陆创业公司与成长型企业，按公司章程、董事会授权及实际劳动关系判定",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "创业公司首席运营官（COO）通常负责业务流程、运营效率、跨部门项目交付和经营指标协同，职位名称由企业设置，并非全国统一法定职业许可。《公司法》2023年修订于2024年7月1日实施，规定公司经理的聘任和授权；但COO不必然就是公司法中的‘经理’，是否属于高级管理人员或章程列明的高管须按公司章程和实际授权认定。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "运营负责人跨部门发展",
+      "kind": "entry",
+      "description": "在产品、供应链、销售或服务交付等业务中承担部门管理，积累组织协同与经营预算能力后依董事会或组织授权被聘任。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "创始团队成员承担运营职能",
+      "kind": "entry",
+      "description": "创业合伙人或创始成员可依公司章程与组织决定担任COO，创始股东身份并不自动产生总经理或董事权限。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "公司治理架构及岗位权限确认",
+      "kind": "milestone",
+      "description": "核查公司组织形式、股东会/董事会权责、经理和COO的章程定义以及正式聘任手续。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "经营计划与资源组织",
+      "kind": "role",
+      "description": "协调跨部门业务执行、增长策略、成本控制与交付服务，在授权范围内管理预算。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "流程优化与绩效报告",
+      "kind": "role",
+      "description": "建立可核验KPI、业务流程和运营管理节奏，依法处理员工与客户数据。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "企业风险及劳动合规管理",
+      "kind": "role",
+      "description": "审查合同履约、数据保护、内部控制与利益冲突；法定代表人身份、董事和高管身份各自独立。",
+      "source_ids": [
+        "company",
+        "pipl"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "COO岗位正式聘任和持续治理",
+      "kind": "role",
+      "description": "依章程或董事会/有权组织正式任用并确定授权范围，后续CEO职位不因担任COO自动获得。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "创业公司首席运营官（COO）目标岗位",
+      "kind": "target",
+      "description": "创业公司首席运营官（COO）通常负责业务流程、运营效率、跨部门项目交付和经营指标协同，职位名称由企业设置，并非全国统一法定职业许可。《公司法》2023年修订于2024年7月1日实施，规定公司经理的聘任和授权；但COO不必然就是公司法中的‘经理’，是否属于高级管理人员或章程列明的高管须按公司章程和实际授权认定。",
+      "source_ids": [
+        "company",
+        "pipl"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「运营负责人跨部门发展」到「公司治理架构及岗位权限确认」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「公司治理架构及岗位权限确认」到「经营计划与资源组织」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「经营计划与资源组织」到「流程优化与绩效报告」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "pipl"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「流程优化与绩效报告」到「企业风险及劳动合规管理」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company",
+        "pipl"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「企业风险及劳动合规管理」到「COO岗位正式聘任和持续治理」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「COO岗位正式聘任和持续治理」到「创业公司首席运营官（COO）目标岗位」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company",
+        "pipl"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「创始团队成员承担运营职能」到「公司治理架构及岗位权限确认」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "company"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「公司治理架构及岗位权限确认」到「流程优化与绩效报告」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "pipl"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "专业培养与正式任职路线",
+      "description": "在产品、供应链、销售或服务交付等业务中承担部门管理，积累组织协同与经营预算能力后依董事会或组织授权被聘任。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关从业经历与条件性转任",
+      "description": "创业合伙人或创始成员可依公司章程与组织决定担任COO，创始股东身份并不自动产生总经理或董事权限。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《公司法》（2023年修订）自2024年7月1日起施行，第74条规定有限责任公司可以设经理，由董事会决定聘任或解聘。",
+    "公司法对经理等高管规定法定规则，但COO英文头衔不是全国统一的法定机构或必备职位，是否视作高管依具体章程和权限。",
+    "创业合伙人、股东、董事、法定代表人、经理及COO头衔是不同法律与组织身份；需以任命、章程及登记材料分别核查。"
+  ],
+  "caveats": [
+    "不同创业公司可以不设COO，组织负责人和董事会成员身份不能据头衔直接推断。",
+    "企业人事授权与法定代表人对外代表权不同；COO不能因公司内部头衔自动代公司签署所有合同。",
+    "不把未经核实的创业案例、估算薪资和所谓‘从主管3年到COO’路径当成证据。"
+  ],
+  "sources": [
+    {
+      "id": "company",
+      "title": "中华人民共和国公司法（2023年修订）",
+      "publisher": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_067c072db6ef4679a2e0180996be4cf8.html",
+      "published": "2023-12-29"
+    },
+    {
+      "id": "pipl",
+      "title": "中华人民共和国个人信息保护法",
+      "publisher": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "published": "2021-08-20"
+    }
+  ]
+}

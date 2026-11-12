@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "id": "psychiatrist",
+  "title": "精神科医师",
+  "subtitle": "中国大陆依法登记精神科诊疗科目的医疗机构；适用2026医师注册规章与2025精神卫生转岗政策",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆；中国大陆依法登记精神科诊疗科目的医疗机构；适用2026医师注册规章与2025精神卫生转岗政策",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "精神科医师必须依法具有适用临床或中医类别医师资格并完成对应执业范围注册，医疗机构亦应有精神科或精神心理相关诊疗科目。除了精神医学专业培养，2025年国家卫健委推出符合条件的既有医师附条件加注精神卫生专业执业范围，2026年湖北、云南、湖南等制定地方实施办法，不能将其误写成任何注册医师可无条件转入精神科。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "精神医学/临床医学专业培养",
+      "kind": "entry",
+      "description": "完成相应医学教育和医师资格考试，经合法注册并按医院要求参加精神科专业培养和岗位考核。",
+      "source_ids": [
+        "physician",
+        "register"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "非精神卫生专业临床医师依法附条件转岗",
+      "kind": "entry",
+      "description": "已有符合规定的临床或中医类别执业医师，可按2025国家通知及当地2026实施细则申请加注或变更精神卫生执业范围。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "合法医师资格与执业注册",
+      "kind": "milestone",
+      "description": "按2026修订《医师执业注册管理办法》确认执业证、地点及范围，未经注册不得独立从事医师诊疗。",
+      "source_ids": [
+        "register"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "精神科专业培训与资历核对",
+      "kind": "role",
+      "description": "核查精神科住培或政策允许的转岗培训/学历条件，湖北等地方加注还有机构及临床实践要求。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "执业范围加注或变更审批",
+      "kind": "role",
+      "description": "由主管卫生行政机关按适用制度办理精神卫生专业范围注册，医院必须具备相应合法科目。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "合法精神医疗岗位服务",
+      "kind": "role",
+      "description": "在执业范围和医院授权内开展精神卫生评估、诊疗和转诊，尊重患者权利及保密义务。",
+      "source_ids": [
+        "national_transfer"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "专科带教及质量发展",
+      "kind": "role",
+      "description": "通过临床质量、学术训练和医院岗位考核承担专业骨干职责，职称与医院领导职务另行评定。",
+      "source_ids": [
+        "register"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "精神科医师目标岗位",
+      "kind": "target",
+      "description": "精神科医师必须依法具有适用临床或中医类别医师资格并完成对应执业范围注册，医疗机构亦应有精神科或精神心理相关诊疗科目。除了精神医学专业培养，2025年国家卫健委推出符合条件的既有医师附条件加注精神卫生专业执业范围，2026年湖北、云南、湖南等制定地方实施办法，不能将其误写成任何注册医师可无条件转入精神科。",
+      "source_ids": [
+        "register",
+        "national_transfer"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「精神医学/临床医学专业培养」到「合法医师资格与执业注册」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "register"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「合法医师资格与执业注册」到「精神科专业培训与资历核对」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「精神科专业培训与资历核对」到「执业范围加注或变更审批」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「执业范围加注或变更审批」到「合法精神医疗岗位服务」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "national_transfer"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「合法精神医疗岗位服务」到「专科带教及质量发展」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "register"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「专科带教及质量发展」到「精神科医师目标岗位」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "register",
+        "national_transfer"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「非精神卫生专业临床医师依法附条件转岗」到「合法医师资格与执业注册」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "register"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「合法医师资格与执业注册」到「执业范围加注或变更审批」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "national_transfer",
+        "hubei"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "专业培养与正式任职路线",
+      "description": "完成相应医学教育和医师资格考试，经合法注册并按医院要求参加精神科专业培养和岗位考核。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关从业经历与条件性转任",
+      "description": "已有符合规定的临床或中医类别执业医师，可按2025国家通知及当地2026实施细则申请加注或变更精神卫生执业范围。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2026年修订《医师执业注册管理办法》规定取得有效医师执业注册证书是执业前提。",
+    "2025年国家卫健委国卫办医政发〔2025〕4号允许符合条件的既有医师附条件加注精神卫生专业执业范围，需单位同意和主管机关注册。",
+    "湖北省2026年实施细则明确已注册范围、医疗机构科目与专业培训等条件；不能套用至其他省份。"
+  ],
+  "caveats": [
+    "附条件加注不是对所有医师自动开放的第二执业范围，部分地区另有时限或培训规定。",
+    "精神科医生、心理咨询师、精神科护士及临床心理治疗人员是不同身份。",
+    "本报告是职业研究，不提供患者诊断、精神药物用法或医疗处置建议。"
+  ],
+  "sources": [
+    {
+      "id": "register",
+      "title": "医师执业注册管理办法（2026年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202608/t20260819_538650.html",
+      "published": "2026-06-05"
+    },
+    {
+      "id": "national_transfer",
+      "title": "关于开展医疗机构医师附条件注册精神卫生专业执业范围有关工作的通知",
+      "publisher": "山西省卫生健康委员会（转载国家卫健委）",
+      "url": "https://wjw.shanxi.gov.cn/tzgg/sjzcwj/202504/t20250407_9803751.shtml",
+      "published": "2025-03-25"
+    },
+    {
+      "id": "hubei",
+      "title": "湖北省医疗机构医师附条件注册精神卫生专业执业范围实施方案（试行）",
+      "publisher": "湖北省卫生健康委员会",
+      "url": "https://wjw.hubei.gov.cn/norms/202606/t20260616_5959278.shtml",
+      "published": "2026-04-20"
+    },
+    {
+      "id": "physician",
+      "title": "中华人民共和国医师法",
+      "publisher": "北京市卫生健康委员会",
+      "url": "https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230407_2992842.html",
+      "published": "2021-08-20"
+    }
+  ]
+}

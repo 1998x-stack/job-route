@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="834" height="949" viewBox="0 0 834 949" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">自动驾驶感知工程师 — 职业路线图</title>
+<desc id="svg-desc">共 2 条典型或条件性发展路径，箭头不代表保证晋升。</desc>
+<rect width="834" height="949" rx="24" fill="#f7fafc"/>
+<text x="32" y="46" font-size="25" font-weight="800" fill="#11283f" font-family="Noto Sans SC,Arial,sans-serif">自动驾驶感知工程师</text>
+<text x="32" y="77" font-size="14" fill="#587083" font-family="Noto Sans SC,Arial,sans-serif">CAREER PATH MAP   ·   2026-11-12   ·   条件性路径，不保证晋升</text>
+<rect x="28" y="104" width="358" height="811" rx="17" fill="#ffffff" stroke="#dce5eb"/>
+<text x="46" y="136" font-size="18" font-weight="700" fill="#19364b" font-family="Noto Sans SC,Arial,sans-serif">专业培养与正式任职路线</text>
+<rect x="45" y="167" width="324" height="64" rx="11" fill="#eaf3ff" stroke="#3478d5" stroke-width="1"/>
+<rect x="57" y="184" width="7" height="30" rx="3.5" fill="#3478d5"/>
+<text x="77" y="195" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">智能汽车感知算法研发应聘</text>
+<text x="77" y="215" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">进入渠道</text>
+<path d="M 207 231 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 257 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="269" width="324" height="64" rx="11" fill="#fff4df" stroke="#d7a24c" stroke-width="1"/>
+<rect x="57" y="286" width="7" height="30" rx="3.5" fill="#d7a24c"/>
+<text x="77" y="297" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">感知算法与传感器基础</text>
+<text x="77" y="317" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">取得相应身份</text>
+<path d="M 207 333 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 359 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="371" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="57" y="388" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="77" y="399" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">模型训练与多传感器融合</text>
+<text x="77" y="419" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 207 435 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 461 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="473" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="57" y="490" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="77" y="501" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">车端部署与系统集成</text>
+<text x="77" y="521" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 207 537 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 563 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="575" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="57" y="592" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="77" y="603" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">功能安全与产品验证协作</text>
+<text x="77" y="623" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 207 639 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 665 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="677" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="57" y="694" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="77" y="705" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">项目技术骨干与质量责任</text>
+<text x="77" y="725" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 207 741 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 202 767 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="45" y="779" width="324" height="64" rx="11" fill="#ddf6e9" stroke="#138463" stroke-width="2"/>
+<rect x="57" y="796" width="7" height="30" rx="3.5" fill="#138463"/>
+<text x="77" y="807" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">自动驾驶感知工程师目标岗位</text>
+<text x="77" y="827" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">目标职务 · 依法选拔</text>
+<rect x="418" y="104" width="358" height="811" rx="17" fill="#ffffff" stroke="#dce5eb"/>
+<text x="436" y="136" font-size="18" font-weight="700" fill="#19364b" font-family="Noto Sans SC,Arial,sans-serif">相关从业经历与条件性转任</text>
+<rect x="435" y="167" width="324" height="64" rx="11" fill="#eaf3ff" stroke="#3478d5" stroke-width="1"/>
+<rect x="447" y="184" width="7" height="30" rx="3.5" fill="#3478d5"/>
+<text x="467" y="195" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">嵌入式感知与传感器工程转岗</text>
+<text x="467" y="215" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">进入渠道</text>
+<path d="M 597 231 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 592 257 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="435" y="269" width="324" height="64" rx="11" fill="#fff4df" stroke="#d7a24c" stroke-width="1"/>
+<rect x="447" y="286" width="7" height="30" rx="3.5" fill="#d7a24c"/>
+<text x="467" y="297" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">感知算法与传感器基础</text>
+<text x="467" y="317" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">取得相应身份</text>
+<path d="M 597 333 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 592 359 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="435" y="371" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="447" y="388" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="467" y="399" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">车端部署与系统集成</text>
+<text x="467" y="419" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 597 435 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 592 461 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="435" y="473" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="447" y="490" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="467" y="501" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">功能安全与产品验证协作</text>
+<text x="467" y="521" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 597 537 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 592 563 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="435" y="575" width="324" height="64" rx="11" fill="#e9f7f6" stroke="#21948e" stroke-width="1"/>
+<rect x="447" y="592" width="7" height="30" rx="3.5" fill="#21948e"/>
+<text x="467" y="603" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">项目技术骨干与质量责任</text>
+<text x="467" y="623" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">典型岗位 · 非自动晋任</text>
+<path d="M 597 639 v 27" stroke="#9db0ba" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" fill="none"/>
+<path d="M 592 665 l5 7 l5 -7" stroke="#9db0ba" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="435" y="677" width="324" height="64" rx="11" fill="#ddf6e9" stroke="#138463" stroke-width="2"/>
+<rect x="447" y="694" width="7" height="30" rx="3.5" fill="#138463"/>
+<text x="467" y="705" font-size="15" font-weight="700" fill="#18374d" font-family="Noto Sans SC,Arial,sans-serif">自动驾驶感知工程师目标岗位</text>
+<text x="467" y="725" font-size="11" fill="#526b7a" font-family="Noto Sans SC,Arial,sans-serif">目标职务 · 依法选拔</text>
+<text x="32" y="937" font-size="11" fill="#657b89" font-family="Noto Sans SC,Arial,sans-serif">资料来源与证据属性请参阅同目录 route.json / report.md · 虚线箭头表示仅为典型或条件性转换</text>
+</svg>

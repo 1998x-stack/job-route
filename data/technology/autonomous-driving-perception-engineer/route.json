@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "id": "autonomous-driving-perception-engineer",
+  "title": "自动驾驶感知工程师",
+  "subtitle": "中国大陆自动驾驶与智能汽车工程研发岗位；清华2026研发招聘、工信部2026汽车准入制度",
+  "category": "technology",
+  "jurisdiction": "中国大陆；中国大陆自动驾驶与智能汽车工程研发岗位；清华2026研发招聘、工信部2026汽车准入制度",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "自动驾驶感知工程师是企业或科研机构从事相机、雷达、BEV感知、障碍物识别、车道线分析与车端模型部署的研发岗位。清华大学2026年公开招聘给出真实技术职责；工信部2026年新版车辆企业审查要求要到2027年1月1日才施行，GB 44721—2026自动驾驶系统安全强标要到2027年7月1日施行。这些是企业/产品安全要求，不是个人自动驾驶工程师执业许可证或驾驶证。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "智能汽车感知算法研发应聘",
+      "kind": "entry",
+      "description": "从计算机视觉、机器学习、车辆工程等研究和实践背景参与2026清华相关工程岗位招聘。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "嵌入式感知与传感器工程转岗",
+      "kind": "entry",
+      "description": "已有摄像头、雷达、嵌入式C++和车载系统经验者补足模型与数据质量，按企业岗位需求转向感知系统。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "感知算法与传感器基础",
+      "kind": "milestone",
+      "description": "掌握图像识别、BEV空间表示、摄像头/雷达数据校准与数据质量。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "模型训练与多传感器融合",
+      "kind": "role",
+      "description": "研究目标检测、车道线与道路参与者识别，独立验证模型偏差及场景覆盖性。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "车端部署与系统集成",
+      "kind": "role",
+      "description": "将感知推理部署到合适车载计算平台并监测性能、实时性及稳定性。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "功能安全与产品验证协作",
+      "kind": "role",
+      "description": "按当时已施行要求完成工程测试；2027才施行的新版企业准入与强标属于即将实施要求。",
+      "source_ids": [
+        "miit_2026",
+        "standard_2026"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "项目技术骨干与质量责任",
+      "kind": "role",
+      "description": "统筹模型、车辆验证、数据安全和研发协作，法定车辆产品准入由相应生产企业承担。",
+      "source_ids": [
+        "quality"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "自动驾驶感知工程师目标岗位",
+      "kind": "target",
+      "description": "自动驾驶感知工程师是企业或科研机构从事相机、雷达、BEV感知、障碍物识别、车道线分析与车端模型部署的研发岗位。清华大学2026年公开招聘给出真实技术职责；工信部2026年新版车辆企业审查要求要到2027年1月1日才施行，GB 44721—2026自动驾驶系统安全强标要到2027年7月1日施行。这些是企业/产品安全要求，不是个人自动驾驶工程师执业许可证或驾驶证。",
+      "source_ids": [
+        "tsinghua",
+        "miit_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「智能汽车感知算法研发应聘」到「感知算法与传感器基础」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「感知算法与传感器基础」到「模型训练与多传感器融合」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「模型训练与多传感器融合」到「车端部署与系统集成」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「车端部署与系统集成」到「功能安全与产品验证协作」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "miit_2026",
+        "standard_2026"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「功能安全与产品验证协作」到「项目技术骨干与质量责任」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "quality"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「项目技术骨干与质量责任」到「自动驾驶感知工程师目标岗位」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua",
+        "miit_2026"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「嵌入式感知与传感器工程转岗」到「感知算法与传感器基础」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「感知算法与传感器基础」到「车端部署与系统集成」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "tsinghua"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "专业培养与正式任职路线",
+      "description": "从计算机视觉、机器学习、车辆工程等研究和实践背景参与2026清华相关工程岗位招聘。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关从业经历与条件性转任",
+      "description": "已有摄像头、雷达、嵌入式C++和车载系统经验者补足模型与数据质量，按企业岗位需求转向感知系统。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "清华大学2026年3月感知算法工程师招聘包括BEV研发、传感器、ROS、Orin与C++部署等具体技能，但学历门槛仅为该岗位例子。",
+    "工信部2026修订车辆生产企业与产品准入审查要求自2027年1月1日实施，不是2026年11月的既有生效文本。",
+    "GB 44721—2026《智能网联汽车 自动驾驶系统安全要求》2026年7月30日发布，拟于2027年7月1日实施。",
+    "工信部2026年车辆产品质量提升行动强调组合驾驶辅助与自动驾驶功能的测试、数据及安全评估。"
+  ],
+  "caveats": [
+    "2027法规和产品强标的未来生效时间不能被提前改写为现行法律要求。",
+    "自动驾驶感知模型研发、车辆生产准入、驾驶员驾驶证与道路测试审批独立。",
+    "涉及车辆控制和道路安全，测试必须在合法授权与安全审查下进行，不提供危险的系统保护绕过程序。"
+  ],
+  "sources": [
+    {
+      "id": "tsinghua",
+      "title": "清华大学智能绿色车辆与交通全国重点实验室2026年自动驾驶感知算法工程师招聘",
+      "publisher": "清华大学智能绿色车辆与交通全国重点实验室",
+      "url": "https://www.ase.tsinghua.edu.cn/peoples/joinus/2026nianzhinenglusecheliangyujiaotongquanguozhongdianshiyanshiquanzhirenyuangangweizhaopin-zhinengwanglianzidongjiashiganzhisuanfagongchengshi",
+      "published": "2026-03-05"
+    },
+    {
+      "id": "miit_2026",
+      "title": "道路机动车辆生产企业和产品准入审查要求解读（2027生效）",
+      "publisher": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/jgsj/zbys/qcgy/art/2026/art_9b5b1e465c6742f6980a9ad90db3162a.html",
+      "published": "2026-01-21"
+    },
+    {
+      "id": "standard_2026",
+      "title": "GB 44721—2026智能网联汽车自动驾驶系统安全要求发布",
+      "publisher": "工业和信息化部江西省通信管理局（转载）",
+      "url": "https://jxca.miit.gov.cn/xwdt/bwyw/art/2026/art_7d3731bf655b4635b4bdc73ac94362cb.html",
+      "published": "2026-08-04"
+    },
+    {
+      "id": "quality",
+      "title": "工信部等四部门道路机动车辆产品生产一致性和质量提升专项行动通知",
+      "publisher": "工业和信息化部",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_8d0f546dabb440189c0ceea0bea099fc.html",
+      "published": "2026-08-27"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "id": "subdistrict-party-secretary",
+  "title": "街道党工委书记",
+  "subtitle": "中国大陆街道党工委；以北京市石景山区公开规则及干部选拔条例解释",
+  "category": "government",
+  "jurisdiction": "中国大陆；中国大陆街道党工委；以北京市石景山区公开规则及干部选拔条例解释",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "街道党工委是区委等上级党委的派出机关，党工委书记主持党工委工作，由有干部管理权限的党委按党内组织程序选任。党工委书记不等于街道办事处主任或居委会主任，其领导职务、职级及行政身份必须区别。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "机关基层党建与治理干部经历",
+      "kind": "entry",
+      "description": "先依法通过公务员或适用渠道进入机关，形成党建组织、基层治理经验，经考察才可能进入领导岗位。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "相关党政领导干部组织交流",
+      "kind": "entry",
+      "description": "在街道办或区县机关履职的干部可按组织任用权限交流和考察，不能通过社会岗位招聘直接取得书记职务。",
+      "source_ids": [
+        "cadre",
+        "local"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "核对干部任用资格",
+      "kind": "milestone",
+      "description": "根据干部管理权限、任职资格、回避和考核审核履历。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "组织推荐、考察和讨论决定",
+      "kind": "role",
+      "description": "由有权限的上级党委及组织部门按规定落实选任程序。",
+      "source_ids": [
+        "cadre",
+        "local"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "党委作出党工委书记任命",
+      "kind": "role",
+      "description": "石景山区公开规则写明街道党工委书记、副书记任免由区委决定；其他地区须核对地方制度。",
+      "source_ids": [
+        "local"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "履行党建与社区治理领导责任",
+      "kind": "role",
+      "description": "主持党工委全面工作，贯彻民主集中制并协调区域公共服务和基层组织。",
+      "source_ids": [
+        "local"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "依法履职和干部监督",
+      "kind": "role",
+      "description": "履行纪律与工作责任；升迁与干部考察另有独立程序。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "街道党工委书记目标岗位",
+      "kind": "target",
+      "description": "街道党工委是区委等上级党委的派出机关，党工委书记主持党工委工作，由有干部管理权限的党委按党内组织程序选任。党工委书记不等于街道办事处主任或居委会主任，其领导职务、职级及行政身份必须区别。",
+      "source_ids": [
+        "local",
+        "cadre"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「机关基层党建与治理干部经历」到「核对干部任用资格」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「核对干部任用资格」到「组织推荐、考察和讨论决定」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "cadre",
+        "local"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「组织推荐、考察和讨论决定」到「党委作出党工委书记任命」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "local"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「党委作出党工委书记任命」到「履行党建与社区治理领导责任」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "local"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「履行党建与社区治理领导责任」到「依法履职和干部监督」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「依法履职和干部监督」到「街道党工委书记目标岗位」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "local",
+        "cadre"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「相关党政领导干部组织交流」到「核对干部任用资格」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "cadre"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「核对干部任用资格」到「党委作出党工委书记任命」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "local"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "公开准入与专业发展路径",
+      "description": "先依法通过公务员或适用渠道进入机关，形成党建组织、基层治理经验，经考察才可能进入领导岗位。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关经历与条件性转岗路径",
+      "description": "在街道办或区县机关履职的干部可按组织任用权限交流和考察，不能通过社会岗位招聘直接取得书记职务。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "北京市石景山区公开的2018年街道党工委议事规则明确书记、副书记任免由区委决定。",
+    "《党政领导干部选拔任用工作条例》对干部任用条件、考察、集体决策与管理权限作出规定。",
+    "党工委书记是党内组织职务，不能以街道行政办事处主任的招聘或任命直接替代。"
+  ],
+  "caveats": [
+    "石景山区规则属地方样例，其委员数及街道机构规格不能推广到全国。",
+    "党内领导职务、行政职务、职级并不保证对应统一级别。",
+    "不猜测个人非公开的组织选拔过程。"
+  ],
+  "sources": [
+    {
+      "id": "local",
+      "title": "北京市石景山区街道党工委议事规则",
+      "publisher": "共产党员网",
+      "url": "https://www.12371.cn/2018/10/31/ARTI1540982404212945.shtml",
+      "published": "2018-10-31"
+    },
+    {
+      "id": "cadre",
+      "title": "党政领导干部选拔任用工作条例",
+      "publisher": "人力资源和社会保障部",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/dflz/lzgd/201903/t20190321_312665.html",
+      "published": "2019-03-03"
+    }
+  ]
+}

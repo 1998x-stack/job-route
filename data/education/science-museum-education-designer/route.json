@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "id": "science-museum-education-designer",
+  "title": "科技馆科普活动策划师",
+  "subtitle": "中国大陆科技馆与科学传播机构；2026常德科技馆见习及中国科技馆志愿项目为业务实例",
+  "category": "education",
+  "jurisdiction": "中国大陆；中国大陆科技馆与科学传播机构；2026常德科技馆见习及中国科技馆志愿项目为业务实例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "科技馆科普活动策划师是科普机构内设计、组织和评估科普课程、互动展教与公众活动的业务岗位。2024修订《科学技术普及法》已施行，明确科技馆应当开展科普活动；2026年常德科技馆招聘科普助理见习人员，中国科技馆也有科普策划志愿工作，需严格区分正式雇佣、就业见习及志愿身份。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "科学传播或教育活动岗位招聘",
+      "kind": "entry",
+      "description": "科学、教育、展览设计等背景人员可申请科技馆及科普机构正式招聘，编制或劳动关系以单位公告为准。",
+      "source_ids": [
+        "law",
+        "changde"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "科普助理见习或志愿活动积累经验",
+      "kind": "entry",
+      "description": "经2026就业见习、讲解或志愿项目积累展教实践，见习和志愿经历不自动转为正式编制。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "明确岗位身份与场馆责任",
+      "kind": "milestone",
+      "description": "核对事业单位、合同制、就业见习和志愿服务的法律关系与人员要求。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "科学内容与展教目标策划",
+      "kind": "role",
+      "description": "围绕科学方法、知识与科技伦理设计活动内容，依据2024科普法坚持公众可理解与参与。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "科普课程与互动展品开发",
+      "kind": "role",
+      "description": "设计探究任务、互动展示、讲解文案和传播材料，遵守无障碍与版权规范。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "活动安全与效果反馈",
+      "kind": "role",
+      "description": "协作场馆运营保障观众安全，对不同年龄群体收集反馈并评估理解效果。",
+      "source_ids": [
+        "volunteer"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "项目策划骨干与管理",
+      "kind": "role",
+      "description": "通过活动组织和课程质量发展，项目主管仍由机构聘用或选任决定。",
+      "source_ids": [
+        "changde"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "科技馆科普活动策划师目标岗位",
+      "kind": "target",
+      "description": "科技馆科普活动策划师是科普机构内设计、组织和评估科普课程、互动展教与公众活动的业务岗位。2024修订《科学技术普及法》已施行，明确科技馆应当开展科普活动；2026年常德科技馆招聘科普助理见习人员，中国科技馆也有科普策划志愿工作，需严格区分正式雇佣、就业见习及志愿身份。",
+      "source_ids": [
+        "law",
+        "changde"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「科学传播或教育活动岗位招聘」到「明确岗位身份与场馆责任」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「明确岗位身份与场馆责任」到「科学内容与展教目标策划」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「科学内容与展教目标策划」到「科普课程与互动展品开发」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「科普课程与互动展品开发」到「活动安全与效果反馈」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "volunteer"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「活动安全与效果反馈」到「项目策划骨干与管理」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "changde"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「项目策划骨干与管理」到「科技馆科普活动策划师目标岗位」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "law",
+        "changde"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格及身份",
+      "evidence": "conditional",
+      "note": "从「科普助理见习或志愿活动积累经验」到「明确岗位身份与场馆责任」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务能力积累",
+      "evidence": "conditional",
+      "note": "从「明确岗位身份与场馆责任」到「科普课程与互动展品开发」须独立满足招聘、资格、合规及组织任职要求，不能视为自动晋升。",
+      "source_ids": [
+        "changde",
+        "volunteer"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "专业培养与正式任职路线",
+      "description": "科学、教育、展览设计等背景人员可申请科技馆及科普机构正式招聘，编制或劳动关系以单位公告为准。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关从业经历与条件性转任",
+      "description": "经2026就业见习、讲解或志愿项目积累展教实践，见习和志愿经历不自动转为正式编制。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "2024年12月25日修订通过的《科学技术普及法》自公布之日起施行，第二十八条明确科技馆等应组织科普教育活动。",
+    "常德市科学技术馆2026年8月招聘科普助理就业见习人员，职责包括科普活动策划、展厅讲解和科普文案，见习期限3至12个月。",
+    "中国科技馆2026年度志愿岗位也包含科普课程协作，但志愿身份不代表正式聘用或取得中小学教师资格。"
+  ],
+  "caveats": [
+    "国家科普法的场馆职责不能理解为创设‘科技馆科普活动策划师’个人强制性执业资格。",
+    "科技馆正式员工、志愿者、就业见习人员和学校教师不能混同。",
+    "对未成年人活动须落实场馆安全和隐私保护，不能因知识科普而忽略风险管理。"
+  ],
+  "sources": [
+    {
+      "id": "law",
+      "title": "中华人民共和国科学技术普及法（2024年修订）",
+      "publisher": "中华人民共和国科学技术部",
+      "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/flfg/202412/t20241226_192778.html",
+      "published": "2024-12-25"
+    },
+    {
+      "id": "changde",
+      "title": "常德市科学技术馆2026年科普助理就业见习岗位招聘公告",
+      "publisher": "常德市科学技术馆",
+      "url": "https://www.cdast.org.cn/zhdt/tzgg/content_3167572",
+      "published": "2026-08-10"
+    },
+    {
+      "id": "volunteer",
+      "title": "中国科技馆2026年度志愿者招募通告",
+      "publisher": "中国科学技术馆",
+      "url": "https://www.cstm.org.cn/zyz/tzgg/art/2026/art_698bc1d6f46a4a31ba77076dc7cc53d4.html",
+      "published": "2026-03-05"
+    }
+  ]
+}

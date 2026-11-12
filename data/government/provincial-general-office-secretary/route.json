@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "id": "provincial-general-office-secretary",
+  "title": "省政府办公厅综合文秘干部",
+  "subtitle": "中国大陆省政府办公厅行政机关；以甘肃省2026公开遴选和工作落实制度为例",
+  "category": "government",
+  "jurisdiction": "中国大陆；中国大陆省政府办公厅行政机关；以甘肃省2026公开遴选和工作落实制度为例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "省政府办公厅综合文字干部承担政策研究、公文草拟、会务、部门协调及政务信息汇总。综合文秘是一类业务方向而非统一职级；社会公众报考公务员与已有公务员通过省直机关公开遴选是不同渠道，办公厅所属事业单位人员也不自动具有公务员身份。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "依法考录省直机关综合文字职位",
+      "kind": "entry",
+      "description": "符合省级公务员职位表要求者通过录用考试，只有实际录用机关及岗位决定人员身份。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "在编公务员参加省直公开遴选",
+      "kind": "entry",
+      "description": "具备相应基层年限及岗位资格的地方公务员可按甘肃2026省直遴选公告申请，社会企业求职者不适用。",
+      "source_ids": [
+        "gansu"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "职位和公务员身份审核",
+      "kind": "milestone",
+      "description": "明确职位表、机构性质、行政编制及任用程序，不能将秘书职业培训视为机关录用。",
+      "source_ids": [
+        "gansu",
+        "civil"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "综合公文与调研材料",
+      "kind": "role",
+      "description": "草拟政策材料、会议资料和工作报告，公文签发由有权机关负责人决定。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "部门协调和督查督办",
+      "kind": "role",
+      "description": "根据省政府工作部署协助责任分解、进展汇总和跨部门沟通。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "政务信息报送与值班",
+      "kind": "role",
+      "description": "按授权协助重要信息核实报送，不以文秘身份独立发出行政指挥命令。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "业务骨干及职务职级管理",
+      "kind": "role",
+      "description": "通过工作考核积累政策协调能力，公务员职级与领导职务另依选任制度。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "省政府办公厅综合文秘干部目标岗位",
+      "kind": "target",
+      "description": "省政府办公厅综合文字干部承担政策研究、公文草拟、会务、部门协调及政务信息汇总。综合文秘是一类业务方向而非统一职级；社会公众报考公务员与已有公务员通过省直机关公开遴选是不同渠道，办公厅所属事业单位人员也不自动具有公务员身份。",
+      "source_ids": [
+        "gansu",
+        "gov_plan"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「依法考录省直机关综合文字职位」到「职位和公务员身份审核」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gansu",
+        "civil"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「职位和公务员身份审核」到「综合公文与调研材料」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「综合公文与调研材料」到「部门协调和督查督办」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「部门协调和督查督办」到「政务信息报送与值班」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「政务信息报送与值班」到「业务骨干及职务职级管理」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "civil"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「业务骨干及职务职级管理」到「省政府办公厅综合文秘干部目标岗位」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gansu",
+        "gov_plan"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「在编公务员参加省直公开遴选」到「职位和公务员身份审核」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gansu",
+        "civil"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「职位和公务员身份审核」到「部门协调和督查督办」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "gov_plan"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "公开准入与专业发展路径",
+      "description": "符合省级公务员职位表要求者通过录用考试，只有实际录用机关及岗位决定人员身份。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关经历与条件性转岗路径",
+      "description": "具备相应基层年限及岗位资格的地方公务员可按甘肃2026省直遴选公告申请，社会企业求职者不适用。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "甘肃2026省直公开遴选以已登记备案在编公务员和符合条件参公人员为主要对象，需符合基层经历等条件。",
+    "2026甘肃省政府工作报告任务分解明确省政府办公厅负责落实台账和督查督办，提供具体业务例证。",
+    "公务员录用、机关内部岗位安排及公开遴选不能互换；综合文秘也不是法定‘副处级’身份。"
+  ],
+  "caveats": [
+    "甘肃遴选是地区年度样例，不能推断各省2027招聘条件。",
+    "不把省政府领导个人秘书、机要岗位和综合文稿职位混称同一岗位。",
+    "无权发布公文或调动行政资源的文稿人员，不可冒充行政指挥主体。"
+  ],
+  "sources": [
+    {
+      "id": "gansu",
+      "title": "甘肃省2026年度省直机关公开遴选和公开选调公务员公告",
+      "publisher": "甘肃省委组织部",
+      "url": "https://www.gsjn.gov.cn/zfxxgk/fdzdgknr/zkxx/art/2026/art_5a5d5d0967ca41a48c5e196c2977c19d.html",
+      "published": "2026-03-29"
+    },
+    {
+      "id": "gov_plan",
+      "title": "甘肃省人民政府关于分解落实2026年政府工作报告主要目标和重点工作的通知",
+      "publisher": "甘肃省人民政府",
+      "url": "https://zwfw.gansu.gov.cn/qingyang/zczx/sjzcxw/art/2026/art_cb97aaf479d84b0484a2a1849af0e137.html",
+      "published": "2026-01-30"
+    },
+    {
+      "id": "civil",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局（转载法律）",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}

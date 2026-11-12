@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0.0",
+  "id": "coast-guard-enforcement-officer",
+  "title": "海警执法人员",
+  "subtitle": "中国大陆中国海警机构；武警警官与军校培养，区别交通运输海事行政执法",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆；中国大陆中国海警机构；武警警官与军校培养，区别交通运输海事行政执法",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "《海警法》规定人民武装警察部队海警部队为海警机构，统一履行海上维权执法职责。武警警官、文职人员、民用海事公务员的人员身份和业务权限不同。2025年海警学院相关本科专业调整为部分‘2+2’联合培养，2026—2027武警警官直招是另一公开入口，但不能保证直招人员被分配至海警单位。",
+  "target": "target",
+  "entry_points": [
+    "entry_a",
+    "entry_b"
+  ],
+  "nodes": [
+    {
+      "id": "entry_a",
+      "label": "军事院校海警相关专业培养",
+      "kind": "entry",
+      "description": "按当年武警工程大学、海军大连舰艇学院等专业计划核对海警培养目标，完成政治身体考核及军校培养。",
+      "source_ids": [
+        "academy",
+        "military"
+      ]
+    },
+    {
+      "id": "entry_b",
+      "label": "武警2026—2027年警官直接选拔",
+      "kind": "entry",
+      "description": "符合应届毕业生资格者按武警警官直招公告申报具体职位；实际海警岗位应以原始计划核对。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "id": "step_0",
+      "label": "身份及岗位资格审查",
+      "kind": "milestone",
+      "description": "分清现役武警警官、军队文职与交通运输部门海事公务员的组织关系。",
+      "source_ids": [
+        "law",
+        "recruit"
+      ]
+    },
+    {
+      "id": "step_1",
+      "label": "军警培养与正式任职",
+      "kind": "role",
+      "description": "按合法培养、体检、政治考核和组织分配取得相应人员身份。",
+      "source_ids": [
+        "academy",
+        "recruit"
+      ]
+    },
+    {
+      "id": "step_2",
+      "label": "海警法业务与执法纪律",
+      "kind": "role",
+      "description": "学习海警机构法定职责、程序保障及执法对象合法权益。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "step_3",
+      "label": "经组织安排开展海警业务",
+      "kind": "role",
+      "description": "在公开制度范围内履行海警机构授权工作，不披露非公开部署。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "id": "step_4",
+      "label": "专业骨干与组织管理",
+      "kind": "role",
+      "description": "依武警人员管理和岗位选任发展，警衔不自动换算成职务。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "id": "target",
+      "label": "海警执法人员目标岗位",
+      "kind": "target",
+      "description": "《海警法》规定人民武装警察部队海警部队为海警机构，统一履行海上维权执法职责。武警警官、文职人员、民用海事公务员的人员身份和业务权限不同。2025年海警学院相关本科专业调整为部分‘2+2’联合培养，2026—2027武警警官直招是另一公开入口，但不能保证直招人员被分配至海警单位。",
+      "source_ids": [
+        "law",
+        "academy"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry_a",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「军事院校海警相关专业培养」到「身份及岗位资格审查」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law",
+        "recruit"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_1",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「身份及岗位资格审查」到「军警培养与正式任职」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "academy",
+        "recruit"
+      ]
+    },
+    {
+      "from": "step_1",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「军警培养与正式任职」到「海警法业务与执法纪律」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "step_2",
+      "to": "step_3",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「海警法业务与执法纪律」到「经组织安排开展海警业务」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law"
+      ]
+    },
+    {
+      "from": "step_3",
+      "to": "step_4",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「经组织安排开展海警业务」到「专业骨干与组织管理」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "recruit"
+      ]
+    },
+    {
+      "from": "step_4",
+      "to": "target",
+      "label": "条件性任职",
+      "evidence": "conditional",
+      "note": "从「专业骨干与组织管理」到「海警执法人员目标岗位」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law",
+        "academy"
+      ]
+    },
+    {
+      "from": "entry_b",
+      "to": "step_0",
+      "label": "资格与身份核验",
+      "evidence": "conditional",
+      "note": "从「武警2026—2027年警官直接选拔」到「身份及岗位资格审查」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law",
+        "recruit"
+      ]
+    },
+    {
+      "from": "step_0",
+      "to": "step_2",
+      "label": "业务经验积累",
+      "evidence": "conditional",
+      "note": "从「身份及岗位资格审查」到「海警法业务与执法纪律」须独立满足适用招聘、岗位资格、机构授权及组织考核，不保证晋升。",
+      "source_ids": [
+        "law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "primary",
+      "title": "公开准入与专业发展路径",
+      "description": "按当年武警工程大学、海军大连舰艇学院等专业计划核对海警培养目标，完成政治身体考核及军校培养。",
+      "node_ids": [
+        "entry_a",
+        "step_0",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "相关经历与条件性转岗路径",
+      "description": "符合应届毕业生资格者按武警警官直招公告申报具体职位；实际海警岗位应以原始计划核对。",
+      "node_ids": [
+        "entry_b",
+        "step_0",
+        "step_2",
+        "step_3",
+        "step_4",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《海警法》第二条明确海警部队属于武警部队，海警局及下属机构与海事局不是同一个体系。",
+    "海警学院2025招生调整明确部分本科专业转为与武警工程大学、海军大连舰艇学院‘2+2’联合培养。",
+    "军队人才网2026—2027武警警官直招公告面向符合条件的应届生，但不能推断全部武警职位均对应海警岗位。"
+  ],
+  "caveats": [
+    "2025联合培养安排并非2026全部专业的确定招生名额，须查看当年计划。",
+    "武警警官报名已过2026年9月常规窗口，不能承诺现在仍可报名。",
+    "不涉及海警执法战术、海上部署或内部训练。"
+  ],
+  "sources": [
+    {
+      "id": "law",
+      "title": "中华人民共和国海警法",
+      "publisher": "共产党员网（全国人大法律）",
+      "url": "https://www.12371.cn/2021/01/23/ARTI1611368612525782.shtml",
+      "published": "2021-01-22"
+    },
+    {
+      "id": "academy",
+      "title": "武警海警学院2025年招生调整告知信",
+      "publisher": "央广网",
+      "url": "https://military.cnr.cn/zdgz/20250616/t20250616_527214501.shtml",
+      "published": "2025-06-16"
+    },
+    {
+      "id": "recruit",
+      "title": "2026—2027年度武警部队直接选拔招录警官公告",
+      "publisher": "军队人才网",
+      "url": "https://81rc.81.cn/sy/gzdt_210283/16484209.html",
+      "published": "2026-09-07"
+    },
+    {
+      "id": "military",
+      "title": "2026年军队院校招生政策解读",
+      "publisher": "中华人民共和国国防部",
+      "url": "https://www.mod.gov.cn/gfbw/gffw/zs/16469121.html",
+      "published": "2026-06-23"
+    }
+  ]
+}

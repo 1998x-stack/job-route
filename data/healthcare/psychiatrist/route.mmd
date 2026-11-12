@@ -1,0 +1,30 @@
+flowchart TB
+    %% 精神科医师 — 2026-11-12
+    n_entry_a["精神医学/临床医学专业培养"]
+    n_entry_b["非精神卫生专业临床医师依法附条件转岗"]
+    n_step_0["合法医师资格与执业注册"]
+    n_step_1["精神科专业培训与资历核对"]
+    n_step_2["执业范围加注或变更审批"]
+    n_step_3["合法精神医疗岗位服务"]
+    n_step_4["专科带教及质量发展"]
+    n_target["精神科医师目标岗位"]
+    n_entry_a -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_1
+    n_step_1 -.->|"业务能力积累"| n_step_2
+    n_step_2 -.->|"业务能力积累"| n_step_3
+    n_step_3 -.->|"业务能力积累"| n_step_4
+    n_step_4 -.->|"条件性任职"| n_target
+    n_entry_b -.->|"资格及身份"| n_step_0
+    n_step_0 -.->|"业务能力积累"| n_step_2
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_entry_a entry
+    class n_entry_b entry
+    class n_step_0 milestone
+    class n_step_1 role
+    class n_step_2 role
+    class n_step_3 role
+    class n_step_4 role
+    class n_target target
