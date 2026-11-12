@@ -1,0 +1,33 @@
+flowchart TB
+    %% 破产管理人项目负责人 — 2026-11-12
+    n_law_firm["律所破产及重整法律业务"]
+    n_accounting["会计师事务所与清算审计背景"]
+    n_roster["确认所在机构是否入管理人名册"]
+    n_court["由受理法院依法指定管理人"]
+    n_takeover["财产账册接管与债权调查支持"]
+    n_meetings["债权人会议与报告协作"]
+    n_restructuring["重整方案与风险管理协作"]
+    n_lead["机构内部案件项目负责人"]
+    n_target["破产管理人机构内项目负责人"]
+    n_law_firm -.->|"资格与程序"| n_roster
+    n_roster -.->|"资格与程序"| n_court
+    n_court -.->|"岗位经验积累"| n_takeover
+    n_takeover -.->|"岗位经验积累"| n_meetings
+    n_meetings -.->|"岗位经验积累"| n_restructuring
+    n_restructuring -.->|"岗位经验积累"| n_lead
+    n_lead -.->|"符合条件任职"| n_target
+    n_accounting -.->|"资格与程序"| n_roster
+    n_meetings -.->|"岗位经验积累"| n_lead
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_law_firm entry
+    class n_accounting entry
+    class n_roster milestone
+    class n_court milestone
+    class n_takeover role
+    class n_meetings role
+    class n_restructuring role
+    class n_lead role
+    class n_target target

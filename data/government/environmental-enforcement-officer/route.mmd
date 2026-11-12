@@ -1,0 +1,33 @@
+flowchart TB
+    %% 生态环境行政执法人员 — 2026-11-12
+    n_civil["生态环境机关公职职位招录"]
+    n_transfer["适格行政执法干部交流"]
+    n_employer["确认法定执法主体与职务身份"]
+    n_certificate["取得有效行政执法证件"]
+    n_new_code["学习2026生态环境法典"]
+    n_inspections["依法开展污染防治监督检查"]
+    n_penalty_case["行政处罚文书与审查协作"]
+    n_professional["专业监管与执法能力发展"]
+    n_target["合法生态环境行政执法岗位"]
+    n_civil -.->|"资格与程序"| n_employer
+    n_employer -.->|"资格与程序"| n_certificate
+    n_certificate -.->|"资格与程序"| n_new_code
+    n_new_code -.->|"岗位经验积累"| n_inspections
+    n_inspections -.->|"岗位经验积累"| n_penalty_case
+    n_penalty_case -.->|"岗位经验积累"| n_professional
+    n_professional -.->|"符合条件任职"| n_target
+    n_transfer -.->|"资格与程序"| n_employer
+    n_penalty_case -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_civil entry
+    class n_transfer entry
+    class n_employer milestone
+    class n_certificate milestone
+    class n_new_code milestone
+    class n_inspections role
+    class n_penalty_case role
+    class n_professional role
+    class n_target target

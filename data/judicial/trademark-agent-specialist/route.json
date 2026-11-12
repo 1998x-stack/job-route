@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "id": "trademark-agent-specialist",
+  "title": "商标代理专业人员",
+  "subtitle": "2026商标法已修订、2027实施；机构备案与代理从业人员身份",
+  "category": "judicial",
+  "jurisdiction": "中国大陆·已依法登记及备案的商标代理机构、律师事务所；2026年11月核验",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "商标代理从业人员在依法备案的商标代理机构指派下承办商标申请、异议、无效宣告、续展等业务。2022年《商标代理监督管理规定》对机构备案和个人行为分别提出要求，不存在可替代机构备案的统一“商标代理师个人执业许可证”。2026年6月通过的全面修订《商标法》要到2027年1月1日施行，须区分已公布和已生效的规则。",
+  "target": "target",
+  "entry_points": [
+    "ip_entry",
+    "legal_entry"
+  ],
+  "nodes": [
+    {
+      "id": "ip_entry",
+      "label": "知识产权代理机构招聘",
+      "kind": "entry",
+      "description": "通过知识产权服务机构合法招聘进入助理岗位，熟悉商标分类、检索与法律文书，工作应由符合规定的机构安排。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "id": "legal_entry",
+      "label": "法务／品牌保护岗位转入",
+      "kind": "entry",
+      "description": "有企业法务或品牌保护经验者，可依商标代理机构岗位和人员行为规范应聘代理事务，不以专利代理师资格替代。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "id": "org_check",
+      "label": "核查机构登记及备案状态",
+      "kind": "milestone",
+      "description": "依2022年部门规章第五条核查商标代理机构是否及时备案、有效期及延续；人员不能以个人名义承接代理业务。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "id": "law_training",
+      "label": "商标法与利益冲突培训",
+      "kind": "milestone",
+      "description": "掌握商标注册、异议、撤销、无效及代理伦理，并分别标记2027年施行的新法规则。",
+      "source_ids": [
+        "agent_rule",
+        "new_law"
+      ]
+    },
+    {
+      "id": "application",
+      "label": "商标申请与材料质量管理",
+      "kind": "role",
+      "description": "接受机构指派协助提交商标注册、变更、续展等资料，核查委托合同、代理范围与材料真实性。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "id": "dispute",
+      "label": "商标异议与争议处理协作",
+      "kind": "role",
+      "description": "协助处理异议、复审和无效宣告等非诉商标事务；诉讼代理需要另核法定身份与权限。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "id": "ethics",
+      "label": "防恶意申请与保密审查",
+      "kind": "role",
+      "description": "依法审查明知或应知恶意申请情形、利益冲突和商业秘密，不接受个人私下委托。",
+      "source_ids": [
+        "agent_rule",
+        "new_law"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "商标项目及质量管理方向",
+      "kind": "role",
+      "description": "在机构内部按经验和聘任可能担任团队管理，负责人岗位不等于国家个人执业牌照。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合规商标代理专业岗位",
+      "kind": "target",
+      "description": "作为依法备案机构的工作人员受指派办理商标代理事务，遵守现行法规并为2027新法调整流程。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ip_entry",
+      "to": "org_check",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「知识产权代理机构招聘」到「核查机构登记及备案状态」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "from": "org_check",
+      "to": "law_training",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「核查机构登记及备案状态」到「商标法与利益冲突培训」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule",
+        "new_law"
+      ]
+    },
+    {
+      "from": "law_training",
+      "to": "application",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「商标法与利益冲突培训」到「商标申请与材料质量管理」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "from": "application",
+      "to": "dispute",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「商标申请与材料质量管理」到「商标异议与争议处理协作」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "from": "dispute",
+      "to": "ethics",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「商标异议与争议处理协作」到「防恶意申请与保密审查」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule",
+        "new_law"
+      ]
+    },
+    {
+      "from": "ethics",
+      "to": "team",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「防恶意申请与保密审查」到「商标项目及质量管理方向」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "team",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「商标项目及质量管理方向」到「合规商标代理专业岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "from": "legal_entry",
+      "to": "org_check",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「法务／品牌保护岗位转入」到「核查机构登记及备案状态」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule"
+      ]
+    },
+    {
+      "from": "application",
+      "to": "ethics",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「商标申请与材料质量管理」到「防恶意申请与保密审查」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "agent_rule",
+        "new_law"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "service",
+      "title": "知识产权代理机构发展",
+      "description": "从机构助理岗位学习法律与质量控制，受指派处理申请及争议工作，在岗位需求下发展。",
+      "node_ids": [
+        "ip_entry",
+        "org_check",
+        "law_training",
+        "application",
+        "dispute",
+        "ethics",
+        "team",
+        "target"
+      ]
+    },
+    {
+      "id": "legal",
+      "title": "法律及品牌保护转型",
+      "description": "法务人员经合法机构聘用和规则培训，从商标申请及风险防控业务进入专业代理岗位。",
+      "node_ids": [
+        "legal_entry",
+        "org_check",
+        "law_training",
+        "application",
+        "ethics",
+        "team",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《商标代理监督管理规定》2022年12月1日施行，第五条要求代理机构备案（有效期三年）；第十六条禁止代理从业人员以个人名义自行接受委托或同时在两家以上机构从业。",
+    "2026年6月26日修订通过《商标法》，主席令第77号规定2027年1月1日起施行。截至2026年11月新法尚未生效。",
+    "商标代理机构备案、商标代理人员职业能力与专利代理师法定职业资格不是同一法律制度；机构中的律师另遵守律师执业规则。"
+  ],
+  "caveats": [
+    "新法第六十五至六十八条虽强化备案与代理行为要求，但尚不可作为2026年11月已生效处罚依据。",
+    "不同商标代理岗位是否涉及诉讼代理，必须独立核查律师执业及诉讼法要求。",
+    "商标申请获准与否取决于主管机关审查和权利冲突，不以代理工作年限保证成功率。"
+  ],
+  "sources": [
+    {
+      "id": "agent_rule",
+      "title": "商标代理监督管理规定（市场监管总局第63号令）",
+      "publisher": "国家知识产权局",
+      "url": "https://www.cnipa.gov.cn/art/2026/3/5/art_2422_205030.html",
+      "published": "2022-10-27"
+    },
+    {
+      "id": "new_law",
+      "title": "中华人民共和国商标法（2026年修订）",
+      "publisher": "国家知识产权局",
+      "url": "https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html",
+      "published": "2026-06-26"
+    },
+    {
+      "id": "effective",
+      "title": "中华人民共和国主席令第七十七号（商标法2027-01-01生效）",
+      "publisher": "国家知识产权局",
+      "url": "https://www.cnipa.gov.cn/art/2026/6/26/art_3685_206934.html",
+      "published": "2026-06-26"
+    }
+  ]
+}

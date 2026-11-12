@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "id": "environmental-enforcement-officer",
+  "title": "生态环境行政执法人员",
+  "subtitle": "2026年8月生态环境法典生效与9月处罚规章修正下的政府执法职业",
+  "category": "government",
+  "jurisdiction": "中国大陆各级生态环境主管部门与依法设立的生态环境综合行政执法机构",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "生态环境行政执法人员在法定生态环境机关及综合行政执法队伍内依法开展现场检查、案件调查和行政处罚等工作，须确认正式身份、执法授权和行政执法证件。2026年8月15日《生态环境法典》施行，2026年9月20日生态环境部令第39号修正《生态环境行政处罚办法》，不能沿用2023旧处罚条款不加版本说明。",
+  "target": "target",
+  "entry_points": [
+    "civil",
+    "transfer"
+  ],
+  "nodes": [
+    {
+      "id": "civil",
+      "label": "生态环境机关公职职位招录",
+      "kind": "entry",
+      "description": "通过公务员或依法适用的综合行政执法岗位招聘录用，核对行政机关、参公事业或辅助岗位身份及岗位条件。",
+      "source_ids": [
+        "civil_service"
+      ]
+    },
+    {
+      "id": "transfer",
+      "label": "适格行政执法干部交流",
+      "kind": "entry",
+      "description": "已有合格公务员或执法人员经合法职位交流、机构安排和资格审核进入生态环境行政执法体系。",
+      "source_ids": [
+        "law_update"
+      ]
+    },
+    {
+      "id": "employer",
+      "label": "确认法定执法主体与职务身份",
+      "kind": "milestone",
+      "description": "由有行政执法职责的生态环境机关依法任用，辅助人员和第三方检测公司不因协助检查拥有行政处罚权。",
+      "source_ids": [
+        "penalty",
+        "law_update"
+      ]
+    },
+    {
+      "id": "certificate",
+      "label": "取得有效行政执法证件",
+      "kind": "milestone",
+      "description": "参照生态环境部行政执法证件管理办法与地方相应证件制度，按权限取得有效证件。",
+      "source_ids": [
+        "license_2026"
+      ]
+    },
+    {
+      "id": "new_code",
+      "label": "学习2026生态环境法典",
+      "kind": "milestone",
+      "description": "理解2026年3月12日通过、8月15日实施的法典与新规则取代关系，按业务范围适用具体条款。",
+      "source_ids": [
+        "code_2026",
+        "law_update"
+      ]
+    },
+    {
+      "id": "inspections",
+      "label": "依法开展污染防治监督检查",
+      "kind": "role",
+      "description": "在权限和行政程序允许时参与污染排放、环境违法线索调查与取证，完整记录并保护企业合法权益。",
+      "source_ids": [
+        "penalty"
+      ]
+    },
+    {
+      "id": "penalty_case",
+      "label": "行政处罚文书与审查协作",
+      "kind": "role",
+      "description": "按2026修订的《生态环境行政处罚办法》和《行政处罚法》处理证据、告知、陈述申辩等程序。",
+      "source_ids": [
+        "penalty"
+      ]
+    },
+    {
+      "id": "professional",
+      "label": "专业监管与执法能力发展",
+      "kind": "role",
+      "description": "参与风险评估、业务培训与合法监测数据审核，人员职级、领导任用和执法证件分别管理。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法生态环境行政执法岗位",
+      "kind": "target",
+      "description": "在有法定职责的生态环境机构和有效执法资格下执行职责，不能以技术资格替代行政执法权。",
+      "source_ids": [
+        "penalty",
+        "license_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "civil",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「生态环境机关公职职位招录」到「确认法定执法主体与职务身份」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty",
+        "law_update"
+      ]
+    },
+    {
+      "from": "employer",
+      "to": "certificate",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「确认法定执法主体与职务身份」到「取得有效行政执法证件」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "license_2026"
+      ]
+    },
+    {
+      "from": "certificate",
+      "to": "new_code",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「取得有效行政执法证件」到「学习2026生态环境法典」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "code_2026",
+        "law_update"
+      ]
+    },
+    {
+      "from": "new_code",
+      "to": "inspections",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「学习2026生态环境法典」到「依法开展污染防治监督检查」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty"
+      ]
+    },
+    {
+      "from": "inspections",
+      "to": "penalty_case",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「依法开展污染防治监督检查」到「行政处罚文书与审查协作」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty"
+      ]
+    },
+    {
+      "from": "penalty_case",
+      "to": "professional",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「行政处罚文书与审查协作」到「专业监管与执法能力发展」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "professional",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「专业监管与执法能力发展」到「合法生态环境行政执法岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty",
+        "license_2026"
+      ]
+    },
+    {
+      "from": "transfer",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「适格行政执法干部交流」到「确认法定执法主体与职务身份」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty",
+        "law_update"
+      ]
+    },
+    {
+      "from": "penalty_case",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「行政处罚文书与审查协作」到「合法生态环境行政执法岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "penalty",
+        "license_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "recruit",
+      "title": "政府行政执法招录路线",
+      "description": "经相关机关职位招录和个人执法资格审核，学习新法后参与监督检查及处罚程序工作。",
+      "node_ids": [
+        "civil",
+        "employer",
+        "certificate",
+        "new_code",
+        "inspections",
+        "penalty_case",
+        "professional",
+        "target"
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "已任干部与执法岗位交流路线",
+      "description": "符合组织和职位条件的人员转任生态环境执法岗位，重新确认授权与证件后依法工作。",
+      "node_ids": [
+        "transfer",
+        "employer",
+        "certificate",
+        "new_code",
+        "inspections",
+        "penalty_case",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《中华人民共和国生态环境法典》2026年3月12日通过，自8月15日起施行。",
+    "生态环境部令第39号2026年9月20日公布并自公布之日起施行，对《生态环境行政处罚办法》作出修订，修订后的规章引用《生态环境法典》。",
+    "生态环境部2026年10月14日公布下半年核发行政执法证件人员名单，证明行政执法证件有单独管理与核发程序；地方证件应遵循当地适用制度。",
+    "环境检测工程师、环保企业合规官和政府行政执法人员身份与法定职权不同。"
+  ],
+  "caveats": [
+    "2023年处罚办法在2026年9月修订，不能直接将2023年版作为当前完整法条且遗漏生态环境法典。",
+    "生态环境部核发的执法证件公开名单不能被理解为包含全国所有县市级执法人员，各地证件管理权限须另核对。",
+    "仅讨论合规执法程序，不涉及规避监管、污染排放操作或敏感现场部署。"
+  ],
+  "sources": [
+    {
+      "id": "code_2026",
+      "title": "生态环境法典第七十号主席令（2026年8月15日起施行）",
+      "publisher": "中华人民共和国教育部（转载新华社）",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202603/t20260313_1430758.html",
+      "published": "2026-03-12"
+    },
+    {
+      "id": "law_update",
+      "title": "关于修改和废止部分规章的决定（生态环境部令39号）",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202609/t20260922_1170492.html",
+      "published": "2026-09-20"
+    },
+    {
+      "id": "penalty",
+      "title": "生态环境行政处罚办法（2026年修正现行全文）",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/gzk/gz/202305/t20230516_1030105.shtml",
+      "published": "2026-09-20"
+    },
+    {
+      "id": "license_2026",
+      "title": "2026年下半年生态环境部核发行政执法证件人员名单",
+      "publisher": "生态环境部",
+      "url": "https://www.mee.gov.cn/ywgz/sthjzf/dwgl/202610/t20261014_1183008.shtml",
+      "published": "2026-10-14"
+    },
+    {
+      "id": "civil_service",
+      "title": "中华人民共和国公务员法",
+      "publisher": "国家统计局（转载）",
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250310_1958920.html",
+      "published": "2018-12-29"
+    }
+  ]
+}

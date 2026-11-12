@@ -1,0 +1,33 @@
+flowchart TB
+    %% 铁路公安民警 — 2026-11-12
+    n_exam["铁路公安2027国考职位报考"]
+    n_exchange["正式公安民警适格交流转任"]
+    n_selection["国考与公安专业科目考试"]
+    n_identity["取得铁路公安人民警察身份"]
+    n_police_law_study["铁路治安与警务程序训练"]
+    n_station["车站及线路等铁路治安警务"]
+    n_records["执法文书与专业能力发展"]
+    n_lead["铁路公安警务骨干发展"]
+    n_target["正式铁路公安人民警察岗位"]
+    n_exam -.->|"资格与程序"| n_selection
+    n_selection -.->|"资格与程序"| n_identity
+    n_identity -.->|"岗位经验积累"| n_police_law_study
+    n_police_law_study -.->|"岗位经验积累"| n_station
+    n_station -.->|"岗位经验积累"| n_records
+    n_records -.->|"岗位经验积累"| n_lead
+    n_lead -.->|"符合条件任职"| n_target
+    n_exchange -.->|"资格与程序"| n_selection
+    n_records -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_exam entry
+    class n_exchange entry
+    class n_selection milestone
+    class n_identity milestone
+    class n_police_law_study role
+    class n_station role
+    class n_records role
+    class n_lead role
+    class n_target target

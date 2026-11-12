@@ -1,0 +1,33 @@
+flowchart TB
+    %% 商标代理专业人员 — 2026-11-12
+    n_ip_entry["知识产权代理机构招聘"]
+    n_legal_entry["法务／品牌保护岗位转入"]
+    n_org_check["核查机构登记及备案状态"]
+    n_law_training["商标法与利益冲突培训"]
+    n_application["商标申请与材料质量管理"]
+    n_dispute["商标异议与争议处理协作"]
+    n_ethics["防恶意申请与保密审查"]
+    n_team["商标项目及质量管理方向"]
+    n_target["合规商标代理专业岗位"]
+    n_ip_entry -.->|"资格与程序"| n_org_check
+    n_org_check -.->|"资格与程序"| n_law_training
+    n_law_training -.->|"岗位经验积累"| n_application
+    n_application -.->|"岗位经验积累"| n_dispute
+    n_dispute -.->|"岗位经验积累"| n_ethics
+    n_ethics -.->|"岗位经验积累"| n_team
+    n_team -.->|"符合条件任职"| n_target
+    n_legal_entry -.->|"资格与程序"| n_org_check
+    n_application -.->|"岗位经验积累"| n_ethics
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_ip_entry entry
+    class n_legal_entry entry
+    class n_org_check milestone
+    class n_law_training milestone
+    class n_application role
+    class n_dispute role
+    class n_ethics role
+    class n_team role
+    class n_target target
