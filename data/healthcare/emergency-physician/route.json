@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0.0",
+  "id": "emergency-physician",
+  "title": "急诊科医师",
+  "subtitle": "2026医师资格考试、2026执业注册修订及急诊住培专科成长",
+  "category": "healthcare",
+  "jurisdiction": "中国大陆具备急诊科设置的医疗机构；医师法、2026资格考试与注册规章适用",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "急诊科医师是具有合法临床类别医师资格并完成执业注册、在医疗机构急诊专业岗位诊疗的医生。医师资格考试、执业证注册、急诊专业的住院医师规范化培训和医院排班聘任，是四个不同制度环节；单纯轮转急诊科或持护理急救证书不等于成为急诊医师。",
+  "target": "target",
+  "entry_points": [
+    "medical_degree",
+    "licensed"
+  ],
+  "nodes": [
+    {
+      "id": "medical_degree",
+      "label": "临床医学学历和合法医师考试路径",
+      "kind": "entry",
+      "description": "经过符合医师资格考试要求的临床医学教育、实习和资格审核，参加国家医师资格考试。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "licensed",
+      "label": "已注册临床医师合法专科转岗",
+      "kind": "entry",
+      "description": "已持有适用有效医师执业证的临床医师，可依专业培训、注册范围和医院招聘条件申请急诊岗位。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "通过临床类别医师资格考试",
+      "kind": "milestone",
+      "description": "符合《医师法》及2026资格考试公告要求，通过实践技能和医学综合考试，取得对应医师资格。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "id": "registration",
+      "label": "完成医师执业注册及专业核验",
+      "kind": "milestone",
+      "description": "按2026年修订《医师执业注册管理办法》取得有效执业证，依执业地点和范围合法履职。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "id": "residency",
+      "label": "急诊科住院医师规范化培训",
+      "kind": "milestone",
+      "description": "在适用住培制度下进入相关专业培训或按已有医师资历完成相应专科能力考核。",
+      "source_ids": [
+        "residency_2026"
+      ]
+    },
+    {
+      "id": "assessment",
+      "label": "急诊临床与团队能力评估",
+      "kind": "role",
+      "description": "在急诊科合法岗位中积累急危重症评估、转诊协作、病历质量和沟通安全，遵守医院专业准入。",
+      "source_ids": [
+        "residency_2026"
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "急诊科岗位临床医疗服务",
+      "kind": "role",
+      "description": "经医院安排在执业许可和医疗机构职责范围内承担急诊诊疗，与护理急救及院前救护人员岗位区分。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "急诊质量、培训及专科骨干",
+      "kind": "role",
+      "description": "通过临床质量改善、教研或跨专业协作积累能力；主治医师评聘、主任职务和医疗技术准入分别判断。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "合法执业急诊科医师",
+      "kind": "target",
+      "description": "具有相应临床执业资格及注册、符合急诊科岗位培训和医疗机构聘用要求，依法承担急诊医师职责。",
+      "source_ids": [
+        "register_2026"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "medical_degree",
+      "to": "qualification",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「临床医学学历和合法医师考试路径」到「通过临床类别医师资格考试」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "exam_2026"
+      ]
+    },
+    {
+      "from": "qualification",
+      "to": "registration",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「通过临床类别医师资格考试」到「完成医师执业注册及专业核验」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "from": "registration",
+      "to": "residency",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「完成医师执业注册及专业核验」到「急诊科住院医师规范化培训」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "residency_2026"
+      ]
+    },
+    {
+      "from": "residency",
+      "to": "assessment",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「急诊科住院医师规范化培训」到「急诊临床与团队能力评估」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "residency_2026"
+      ]
+    },
+    {
+      "from": "assessment",
+      "to": "clinical",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「急诊临床与团队能力评估」到「急诊科岗位临床医疗服务」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "from": "clinical",
+      "to": "quality",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「急诊科岗位临床医疗服务」到「急诊质量、培训及专科骨干」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "quality",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「急诊质量、培训及专科骨干」到「合法执业急诊科医师」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "register_2026"
+      ]
+    },
+    {
+      "from": "licensed",
+      "to": "registration",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「已注册临床医师合法专科转岗」到「完成医师执业注册及专业核验」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "register_2026"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "education",
+      "title": "医学培养—执业注册—急诊专科",
+      "description": "从医学教育和医师考试开始，依法注册并参加适用急诊专科培训，取得医院相应岗位任职。",
+      "node_ids": [
+        "medical_degree",
+        "qualification",
+        "registration",
+        "residency",
+        "assessment",
+        "clinical",
+        "quality",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "已注册临床医师急诊转岗",
+      "description": "既有合法临床医师在匹配执业范围、专业能力和医院招聘条件下进入急诊岗位。",
+      "node_ids": [
+        "licensed",
+        "registration",
+        "residency",
+        "assessment",
+        "clinical",
+        "quality",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "《医师执业注册管理办法》2026年6月5日修订，第二条强调医师执业应经注册取得执业证，未经注册不得从事医师执业活动。",
+    "2026年国家医师资格考试公告明确临床、口腔、公共卫生及中医等类别的相关资格考试；急诊科工作岗位本身并不取代临床类别医师执业注册。",
+    "2026年国家卫生健康委人才交流服务中心公布22个住培专业的临床实践考核培训，其中包括急诊科专业；具体住培及考核要求以适用政策为准。",
+    "岗位转型必须核查医师执业注册范围、医疗机构资质和急诊科招聘考核，不能只凭急诊轮转或公共急救培训证承诺独立执业。"
+  ],
+  "caveats": [
+    "不同医疗机构和住培对象的规培方式及豁免条件可能有差别，不可把某项培训班一律写成强制全国准入许可证。",
+    "急诊医生、急诊护士、急救员和院前医疗急救工作人员职责与职业资格不同。",
+    "本研究说明职业路径，不提供诊疗处方、药量或急危重症处置操作步骤。"
+  ],
+  "sources": [
+    {
+      "id": "register_2026",
+      "title": "医师执业注册管理办法（2026年修订）",
+      "publisher": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202608/t20260819_538650.html",
+      "published": "2026-06-05"
+    },
+    {
+      "id": "exam_2026",
+      "title": "2026年国家医师资格考试公告",
+      "publisher": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/yzygj/c100067/202601/134520df641b4e99b8f8db7c64abc7f3.shtml",
+      "published": "2026-01-26"
+    },
+    {
+      "id": "residency_2026",
+      "title": "2026年全国住培临床实践考核考官培训（含急诊专业）",
+      "publisher": "国家卫生健康委人才交流服务中心",
+      "url": "https://www.21wecan.com/wsrcw/TZGG/202603/1002911.shtml",
+      "published": "2026-03-17"
+    }
+  ]
+}

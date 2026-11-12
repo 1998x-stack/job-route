@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0.0",
+  "id": "railway-police-officer",
+  "title": "铁路公安民警",
+  "subtitle": "2027国家公务员公安岗位考试、铁路治安与人民警察身份",
+  "category": "public-safety",
+  "jurisdiction": "中国大陆铁路公安机关正式人民警察岗位；2027年度中央机关及直属机构考试为例",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "铁路公安民警属于铁路公安机关人民警察公务员，依法承担辖区铁路站车与线路相关警务职责。2027年中央机关国考对公安机关人民警察职位另有专业科目考试，铁路公安职位的专业、学历、体测及工作地点还须查真实招考职位表。不能把铁路企业安保、车站安检、铁路辅警和正式人民警察混为一体。",
+  "target": "target",
+  "entry_points": [
+    "exam",
+    "exchange"
+  ],
+  "nodes": [
+    {
+      "id": "exam",
+      "label": "铁路公安2027国考职位报考",
+      "kind": "entry",
+      "description": "依中央机关及直属机构2027年度招考简章，核查铁路公安局具体基层所队职位要求并在公告期内报名。",
+      "source_ids": [
+        "state_exam"
+      ]
+    },
+    {
+      "id": "exchange",
+      "label": "正式公安民警适格交流转任",
+      "kind": "entry",
+      "description": "具有合法人民警察身份者，在职位空缺和干部管理政策允许下经组织程序交流到铁路公安岗位。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "selection",
+      "label": "国考与公安专业科目考试",
+      "kind": "milestone",
+      "description": "公安机关人民警察报考者除行测申论还须按公告参加公安专业科目考试及适用体测、体检考察。",
+      "source_ids": [
+        "exam_guide",
+        "state_exam"
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "取得铁路公安人民警察身份",
+      "kind": "milestone",
+      "description": "经合法录用或交流成为正式人民警察，不等于铁路运输企业劳动用工或警务辅助岗位。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "police_law_study",
+      "label": "铁路治安与警务程序训练",
+      "kind": "role",
+      "description": "学习《人民警察法》与警务程序、铁路交通场景治安管理及旅客权益保护，按岗位授权执勤。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "station",
+      "label": "车站及线路等铁路治安警务",
+      "kind": "role",
+      "description": "在实际派驻与授权区域依法处理治安事件、开展秩序维护及警务服务，不推断非公开布防和装备。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "records",
+      "label": "执法文书与专业能力发展",
+      "kind": "role",
+      "description": "从规范记录、法律文书和群众沟通等方面提高合规能力，领导职务与警衔分别管理。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "铁路公安警务骨干发展",
+      "kind": "role",
+      "description": "在组织考察、岗位条件与实践基础上可能担任专业骨干，职级警衔和领导职位不可自动换算。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "正式铁路公安人民警察岗位",
+      "kind": "target",
+      "description": "经合法警察人员招录及任用在铁路公安机关履行法定职责，而非站务安保或企业辅警。",
+      "source_ids": [
+        "police_law",
+        "state_exam"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "exam",
+      "to": "selection",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「铁路公安2027国考职位报考」到「国考与公安专业科目考试」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "exam_guide",
+        "state_exam"
+      ]
+    },
+    {
+      "from": "selection",
+      "to": "identity",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「国考与公安专业科目考试」到「取得铁路公安人民警察身份」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "identity",
+      "to": "police_law_study",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「取得铁路公安人民警察身份」到「铁路治安与警务程序训练」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "police_law_study",
+      "to": "station",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「铁路治安与警务程序训练」到「车站及线路等铁路治安警务」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "station",
+      "to": "records",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「车站及线路等铁路治安警务」到「执法文书与专业能力发展」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law"
+      ]
+    },
+    {
+      "from": "records",
+      "to": "lead",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「执法文书与专业能力发展」到「铁路公安警务骨干发展」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「铁路公安警务骨干发展」到「正式铁路公安人民警察岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law",
+        "state_exam"
+      ]
+    },
+    {
+      "from": "exchange",
+      "to": "selection",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「正式公安民警适格交流转任」到「国考与公安专业科目考试」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "exam_guide",
+        "state_exam"
+      ]
+    },
+    {
+      "from": "records",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「执法文书与专业能力发展」到「正式铁路公安人民警察岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "police_law",
+        "state_exam"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "exam_track",
+      "title": "国家公务员招考进入铁路公安",
+      "description": "从2027铁路公安职位报名，通过国考和公安专业考核，依法录用并在铁路警务岗位积累经验。",
+      "node_ids": [
+        "exam",
+        "selection",
+        "identity",
+        "police_law_study",
+        "station",
+        "records",
+        "lead",
+        "target"
+      ]
+    },
+    {
+      "id": "transfer_track",
+      "title": "现役公安民警岗位交流",
+      "description": "正式人民警察依法经适用干部交流程序进入铁路公安，按岗位安排接受专项培训依法履职。",
+      "node_ids": [
+        "exchange",
+        "selection",
+        "identity",
+        "police_law_study",
+        "station",
+        "records",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "中央机关及其直属机构2027年度国考公告将公安机关人民警察职位列为需要加试专业科目并明确笔试日程和报考条件。",
+    "2027年度国考报考指南规定公安机关人民警察职位笔试成绩按照行测40%、申论30%、公安专业科目30%合成；仅适用于2027国考公安岗位。",
+    "铁路公安职位应核对国考招考简章及公安部补充公告；民间职位查询页面仅作为线索，不作为人员身份和精确门槛的最终依据。",
+    "人民警察正式身份、辅警、铁路车站安保员工为不同法律制度，铁路公安警衔及行政职级不是同一评价体系。"
+  ],
+  "caveats": [
+    "2027年国家公务员普通网上报名期已于2026年10月24日结束，不能引导用户继续通过该报名窗口申请。",
+    "铁路公安局与地方普通派出所的管辖职责、岗位地点及管理关系可能不同，招录要求以当年职位表为准。",
+    "具体警务部署、内部安保措施和敏感侦查工作不纳入职业研究。"
+  ],
+  "sources": [
+    {
+      "id": "state_exam",
+      "title": "中央机关及其直属机构2027年度考试录用公务员公告",
+      "publisher": "国家税务总局上海市税务局（转载中央机关公告）",
+      "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481763.html",
+      "published": "2026-10-14"
+    },
+    {
+      "id": "exam_guide",
+      "title": "中央机关及其直属机构2027年度考试录用公务员报考指南",
+      "publisher": "国家税务总局上海市税务局（转载中央报考指南）",
+      "url": "https://shanghai.chinatax.gov.cn/tax/xxgk/rsxx/202610/t481764.html",
+      "published": "2026-10-14"
+    },
+    {
+      "id": "police_law",
+      "title": "中华人民共和国人民警察法",
+      "publisher": "北京市公安局公安交通管理局（转载法律）",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/203770/index.html",
+      "published": "1995-02-28"
+    },
+    {
+      "id": "mps_notice",
+      "title": "公安部2027年度公务员招录补充公告（公告信息）",
+      "publisher": "北京大学法宝劳动法律法规库（转载公安部）",
+      "url": "https://labor.pkulaw.com/docbook/chl/5354028.html",
+      "published": "2026-10-14"
+    }
+  ]
+}

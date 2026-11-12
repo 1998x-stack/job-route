@@ -1,0 +1,33 @@
+flowchart TB
+    %% 项目管理办公室经理 — 2026-11-12
+    n_project_admin["项目协调与运营岗位经历"]
+    n_technical_manager["研发、IT与工程项目交付经历"]
+    n_framework["项目管理方法论与治理体系"]
+    n_planning["项目组合计划与进度报告"]
+    n_risk["风险管理与问题升级协调"]
+    n_governance["PMO标准流程与信息系统"]
+    n_strategy["组织战略目标与项目组合联动"]
+    n_team["企业PMO团队经理与负责人"]
+    n_target["企业项目管理办公室经理岗位"]
+    n_project_admin -.->|"资格与程序"| n_framework
+    n_framework -.->|"岗位经验积累"| n_planning
+    n_planning -.->|"岗位经验积累"| n_risk
+    n_risk -.->|"岗位经验积累"| n_governance
+    n_governance -.->|"岗位经验积累"| n_strategy
+    n_strategy -.->|"岗位经验积累"| n_team
+    n_team -.->|"符合条件任职"| n_target
+    n_technical_manager -.->|"资格与程序"| n_framework
+    n_strategy -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_project_admin entry
+    class n_technical_manager entry
+    class n_framework milestone
+    class n_planning role
+    class n_risk role
+    class n_governance role
+    class n_strategy role
+    class n_team role
+    class n_target target

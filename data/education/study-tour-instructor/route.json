@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "id": "study-tour-instructor",
+  "title": "研学旅游指导师（原称研学旅行指导师）",
+  "subtitle": "2026年正式职业标准、研学活动安全、教学服务与导游资格的制度界限",
+  "category": "education",
+  "jurisdiction": "中国大陆研学旅游服务单位、研学营地和旅行社；2026年国家职业标准4-13-04-04",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "研学旅行指导师是历史或市场仍常用的岗位称呼，国家职业标准于2026年采用正式名称“研学旅游指导师”（职业编码4-13-04-04）。2026年国家职业标准建立四级至一级职业技能要求，但技能等级证、旅行社导游执业及学校任课教师资格不是同一许可。",
+  "target": "target",
+  "entry_points": [
+    "tourism",
+    "teaching"
+  ],
+  "nodes": [
+    {
+      "id": "tourism",
+      "label": "旅游管理与研学旅行专业学习",
+      "kind": "entry",
+      "description": "从旅游服务、研学旅行管理与服务专业或研学课程学习积累行业活动知识，按雇主要求申请岗位。",
+      "source_ids": [
+        "edu_standard"
+      ]
+    },
+    {
+      "id": "teaching",
+      "label": "教学设计及活动运营从业经历",
+      "kind": "entry",
+      "description": "拥有非学历研学项目运营、学校活动组织或课程设计经验的人士可在合法机构招聘后参加行业技能培训。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "id": "employer",
+      "label": "研学服务机构岗位及责任审核",
+      "kind": "milestone",
+      "description": "核查机构业务范围、行程安全、带队人数、未成年人保护和保险责任，避免把培训证当法定旅游经营许可。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "2026研学旅游指导师标准学习",
+      "kind": "milestone",
+      "description": "学习人社部与文旅部2026年颁布的职业标准，包括课程策划、组织、体验指导和服务评价。",
+      "source_ids": [
+        "mct_standard",
+        "local_explain"
+      ]
+    },
+    {
+      "id": "curriculum",
+      "label": "研学项目与课程方案设计",
+      "kind": "role",
+      "description": "根据年龄特点、景区文化资源与学习目标设计课程、实践任务和参与者反馈。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "出行安全与未成年人保护",
+      "kind": "role",
+      "description": "协助行程风险评估、应急预案及服务质量管理；涉及实际导游服务时另核导游执业规定。",
+      "source_ids": [
+        "mct_standard",
+        "service_2025"
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "带队实施及效果评估",
+      "kind": "role",
+      "description": "在机构授权和岗位能力范围内实施现场活动、教育引导与复盘，避免缺乏资质的人员承担受限职责。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "id": "manager",
+      "label": "研学课程负责人方向",
+      "kind": "role",
+      "description": "在真实企业与机构招聘条件下组织研学产品和课程团队，经理岗位需独立聘任。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "研学旅游指导服务岗位",
+      "kind": "target",
+      "description": "依据现行职业标准与机构实际岗位在合法研学活动中开展课程实施、组织管理及安全协作。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "tourism",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「旅游管理与研学旅行专业学习」到「研学服务机构岗位及责任审核」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "employer",
+      "to": "skills",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「研学服务机构岗位及责任审核」到「2026研学旅游指导师标准学习」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard",
+        "local_explain"
+      ]
+    },
+    {
+      "from": "skills",
+      "to": "curriculum",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「2026研学旅游指导师标准学习」到「研学项目与课程方案设计」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "curriculum",
+      "to": "safety",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「研学项目与课程方案设计」到「出行安全与未成年人保护」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "safety",
+      "to": "delivery",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「出行安全与未成年人保护」到「带队实施及效果评估」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "manager",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「带队实施及效果评估」到「研学课程负责人方向」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "manager",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「研学课程负责人方向」到「研学旅游指导服务岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "teaching",
+      "to": "employer",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「教学设计及活动运营从业经历」到「研学服务机构岗位及责任审核」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    },
+    {
+      "from": "delivery",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「带队实施及效果评估」到「研学旅游指导服务岗位」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "mct_standard"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "tourism_track",
+      "title": "旅游服务与职业教育路线",
+      "description": "从研学专业与旅游服务经历进入机构，按照2026标准培训后设计课程、实施活动并发展管理能力。",
+      "node_ids": [
+        "tourism",
+        "employer",
+        "skills",
+        "curriculum",
+        "safety",
+        "delivery",
+        "manager",
+        "target"
+      ]
+    },
+    {
+      "id": "teaching_track",
+      "title": "课程设计与活动项目路线",
+      "description": "具有课程或活动运营背景者经机构聘用、职业标准训练与服务实践进入研学指导服务。",
+      "node_ids": [
+        "teaching",
+        "employer",
+        "skills",
+        "curriculum",
+        "safety",
+        "delivery",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "人社部、文化和旅游部2026年人社厅发〔2026〕21号公布施行《研学旅游指导师国家职业标准》，职业代码4-13-04-04，标准包括四级中级工至一级高级技师。",
+    "2025年2月教育部高职专科《研学旅行管理与服务》专业教学标准仍使用‘研学旅行’作为专业名称，与2026职业标准的‘研学旅游指导师’可同时存在。",
+    "职业技能标准提供能力评价框架，不意味着任何培训班证书都属于国家限制性职业资格或替代导游证、教师资格。",
+    "研学活动涉及旅行社业务时应按旅游法与旅行社管理规定履行旅游服务和人员资质要求；中小学教师任职属于独立教师资格。",
+    "LB/T 054-2025《研学旅游服务要求》2025年5月19日实施，替代LB/T 054-2016《研学旅行服务规范》；该旅游服务标准与2026年个人职业技能标准应分别判断。"
+  ],
+  "caveats": [
+    "不要将原候选名称‘研学旅行指导师’冒充2026职业标准的正式名称；历史专业名称和新职业标准名称也不能一概抹除。",
+    "行业培训证书、职业技能等级证书和法定导游资格证书属于不同类型，需辨认发证机构、评价性质和用途。",
+    "未成年人研学活动不能以取得某项培训证为由取消安全监督、监护同意和风险管理。",
+    "文旅部旅行社研学旅游服务要求适用特定机构和业务，不直接给学校所有教育教学活动设立相同的导游或旅行社经营许可。"
+  ],
+  "sources": [
+    {
+      "id": "mct_standard",
+      "title": "关于颁布景区运营管理师等2个国家职业标准的通知（研学旅游指导师）",
+      "publisher": "中华人民共和国文化和旅游部",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/rsxx/rcgl/202609/t20260924_967245.html",
+      "published": "2026-09-24"
+    },
+    {
+      "id": "local_explain",
+      "title": "景区运营管理师、研学旅游指导师国家职业标准颁布施行",
+      "publisher": "郑州市文化广电和旅游局",
+      "url": "https://wgl.zhengzhou.gov.cn/shce/10179494.jhtml",
+      "published": "2026-07-30"
+    },
+    {
+      "id": "edu_standard",
+      "title": "文旅部政协提案答复：研学旅行管理与服务专业与研学课程",
+      "publisher": "中华人民共和国文化和旅游部",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/zhgl/jytadf/202512/t20251217_963752.html",
+      "published": "2025-12-17"
+    },
+    {
+      "id": "service_2025",
+      "title": "关于发布《研学旅游服务要求》等3项文化和旅游行业标准的公告",
+      "publisher": "中华人民共和国文化和旅游部",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/hybz/202505/t20250519_960044.html",
+      "published": "2025-02-19"
+    }
+  ]
+}

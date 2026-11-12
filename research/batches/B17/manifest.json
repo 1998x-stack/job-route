@@ -1,0 +1,122 @@
+{
+  "batch": "B17",
+  "volume": 2,
+  "verified_on": "2026-11-12",
+  "research_status": "published",
+  "method": "deep-source-research-v4",
+  "skill": "skills/job-route/SKILL.md",
+  "source_document": "research/backlogs/2026/volume-02.json",
+  "items": 10,
+  "roles": [
+    {
+      "id": "JR-114",
+      "category": "judicial",
+      "slug": "trademark-agent-specialist",
+      "title": "商标代理专业人员",
+      "research_focus": "商标代理机构备案与2027才施行的新商标法",
+      "route_file": "data/judicial/trademark-agent-specialist/route.json",
+      "report_file": "data/judicial/trademark-agent-specialist/report.md",
+      "mermaid_file": "data/judicial/trademark-agent-specialist/route.mmd",
+      "svg_file": "data/judicial/trademark-agent-specialist/route.svg"
+    },
+    {
+      "id": "JR-115",
+      "category": "judicial",
+      "slug": "insolvency-administrator-project-lead",
+      "title": "破产管理人项目负责人",
+      "research_focus": "法院指定的管理人主体和机构内部项目负责人分开",
+      "route_file": "data/judicial/insolvency-administrator-project-lead/route.json",
+      "report_file": "data/judicial/insolvency-administrator-project-lead/report.md",
+      "mermaid_file": "data/judicial/insolvency-administrator-project-lead/route.mmd",
+      "svg_file": "data/judicial/insolvency-administrator-project-lead/route.svg"
+    },
+    {
+      "id": "JR-129",
+      "category": "government",
+      "slug": "environmental-enforcement-officer",
+      "title": "生态环境行政执法人员",
+      "research_focus": "2026生态环境法典与修订处罚规章、执法证件",
+      "route_file": "data/government/environmental-enforcement-officer/route.json",
+      "report_file": "data/government/environmental-enforcement-officer/report.md",
+      "mermaid_file": "data/government/environmental-enforcement-officer/route.mmd",
+      "svg_file": "data/government/environmental-enforcement-officer/route.svg"
+    },
+    {
+      "id": "JR-138",
+      "category": "public-safety",
+      "slug": "railway-police-officer",
+      "title": "铁路公安民警",
+      "research_focus": "2027国考与公安专业科目、警察法定身份",
+      "route_file": "data/public-safety/railway-police-officer/route.json",
+      "report_file": "data/public-safety/railway-police-officer/report.md",
+      "mermaid_file": "data/public-safety/railway-police-officer/route.mmd",
+      "svg_file": "data/public-safety/railway-police-officer/route.svg"
+    },
+    {
+      "id": "JR-151",
+      "category": "education",
+      "slug": "study-tour-instructor",
+      "title": "研学旅游指导师（原称研学旅行指导师）",
+      "research_focus": "2026职业标准及2025旅游服务标准；旧职业名更正",
+      "route_file": "data/education/study-tour-instructor/route.json",
+      "report_file": "data/education/study-tour-instructor/report.md",
+      "mermaid_file": "data/education/study-tour-instructor/route.mmd",
+      "svg_file": "data/education/study-tour-instructor/route.svg"
+    },
+    {
+      "id": "JR-157",
+      "category": "healthcare",
+      "slug": "emergency-physician",
+      "title": "急诊科医师",
+      "research_focus": "2026注册与考试、急诊住培和院内岗位独立",
+      "route_file": "data/healthcare/emergency-physician/route.json",
+      "report_file": "data/healthcare/emergency-physician/report.md",
+      "mermaid_file": "data/healthcare/emergency-physician/route.mmd",
+      "svg_file": "data/healthcare/emergency-physician/route.svg"
+    },
+    {
+      "id": "JR-179",
+      "category": "technology",
+      "slug": "battery-management-systems-engineer",
+      "title": "电池管理系统工程师",
+      "research_focus": "GB 38031-2025现行强标和GB/T 38661-2020仍现行",
+      "route_file": "data/technology/battery-management-systems-engineer/route.json",
+      "report_file": "data/technology/battery-management-systems-engineer/report.md",
+      "mermaid_file": "data/technology/battery-management-systems-engineer/route.mmd",
+      "svg_file": "data/technology/battery-management-systems-engineer/route.svg"
+    },
+    {
+      "id": "JR-182",
+      "category": "technology",
+      "slug": "digital-twin-engineering-proposed",
+      "title": "数字孪生工程技术人员（2026已正式发布）",
+      "research_focus": "2026年9月新职业发布，纠正7月‘拟新增’状态",
+      "route_file": "data/technology/digital-twin-engineering-proposed/route.json",
+      "report_file": "data/technology/digital-twin-engineering-proposed/report.md",
+      "mermaid_file": "data/technology/digital-twin-engineering-proposed/route.mmd",
+      "svg_file": "data/technology/digital-twin-engineering-proposed/route.svg"
+    },
+    {
+      "id": "JR-183",
+      "category": "business",
+      "slug": "corporate-strategy-analyst",
+      "title": "企业战略分析师",
+      "research_focus": "2026战略岗位真实招聘与金融咨询制度的界限",
+      "route_file": "data/business/corporate-strategy-analyst/route.json",
+      "report_file": "data/business/corporate-strategy-analyst/report.md",
+      "mermaid_file": "data/business/corporate-strategy-analyst/route.mmd",
+      "svg_file": "data/business/corporate-strategy-analyst/route.svg"
+    },
+    {
+      "id": "JR-187",
+      "category": "business",
+      "slug": "pmo-manager",
+      "title": "项目管理办公室经理",
+      "research_focus": "企业项目组合治理与注册建造师施工项目许可不同",
+      "route_file": "data/business/pmo-manager/route.json",
+      "report_file": "data/business/pmo-manager/report.md",
+      "mermaid_file": "data/business/pmo-manager/route.mmd",
+      "svg_file": "data/business/pmo-manager/route.svg"
+    }
+  ]
+}

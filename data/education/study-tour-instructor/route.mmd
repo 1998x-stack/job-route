@@ -1,0 +1,33 @@
+flowchart TB
+    %% 研学旅游指导师（原称研学旅行指导师） — 2026-11-12
+    n_tourism["旅游管理与研学旅行专业学习"]
+    n_teaching["教学设计及活动运营从业经历"]
+    n_employer["研学服务机构岗位及责任审核"]
+    n_skills["2026研学旅游指导师标准学习"]
+    n_curriculum["研学项目与课程方案设计"]
+    n_safety["出行安全与未成年人保护"]
+    n_delivery["带队实施及效果评估"]
+    n_manager["研学课程负责人方向"]
+    n_target["研学旅游指导服务岗位"]
+    n_tourism -.->|"资格与程序"| n_employer
+    n_employer -.->|"资格与程序"| n_skills
+    n_skills -.->|"岗位经验积累"| n_curriculum
+    n_curriculum -.->|"岗位经验积累"| n_safety
+    n_safety -.->|"岗位经验积累"| n_delivery
+    n_delivery -.->|"岗位经验积累"| n_manager
+    n_manager -.->|"符合条件任职"| n_target
+    n_teaching -.->|"资格与程序"| n_employer
+    n_delivery -.->|"符合条件任职"| n_target
+    classDef entry fill:#eaf4ff,stroke:#2563eb,color:#1e40af
+    classDef role fill:#f0fdfa,stroke:#0d9488,color:#115e59
+    classDef target fill:#d1fae5,stroke:#059669,color:#065f46,stroke-width:3px
+    classDef milestone fill:#fef3c7,stroke:#d97706,color:#92400e
+    class n_tourism entry
+    class n_teaching entry
+    class n_employer milestone
+    class n_skills milestone
+    class n_curriculum role
+    class n_safety role
+    class n_delivery role
+    class n_manager role
+    class n_target target

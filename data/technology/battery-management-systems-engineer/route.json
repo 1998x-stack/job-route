@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0.0",
+  "id": "battery-management-systems-engineer",
+  "title": "电池管理系统工程师",
+  "subtitle": "BMS架构、软件和硬件验证及2026已实施动力电池安全强标",
+  "category": "technology",
+  "jurisdiction": "中国大陆电动汽车动力电池及相关产品BMS研发企业；电化学储能等其他产品须重新核对标准",
+  "last_verified": "2026-11-12",
+  "status": "published",
+  "summary": "电池管理系统（BMS）工程师通常负责电池状态估计、采集电路、功能保护、通信、标定和系统验证，是企业工程研发岗位而非统一个人法定执业许可证。GB/T 38661-2020《电动汽车用电池管理系统技术条件》在2026年仍为现行标准，修订计划正在征求意见；GB 38031-2025动力蓄电池强制安全标准已于2026年7月1日实施，二者的规范对象和强制性不同。",
+  "target": "target",
+  "entry_points": [
+    "electronics",
+    "battery_test"
+  ],
+  "nodes": [
+    {
+      "id": "electronics",
+      "label": "电子电气及嵌入式工程教育",
+      "kind": "entry",
+      "description": "从电气工程、电子信息、控制系统或相关软件工程学习进入BMS采集与控制平台。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "id": "battery_test",
+      "label": "电池测试与汽车系统工程背景",
+      "kind": "entry",
+      "description": "已有电池性能验证、汽车电子或质量测试经验者可根据企业需求补齐BMS软件和硬件集成能力。",
+      "source_ids": [
+        "battery_std"
+      ]
+    },
+    {
+      "id": "architecture",
+      "label": "BMS架构及标准适用分析",
+      "kind": "milestone",
+      "description": "理解单体测量、系统电压电流采集、电池热状态和控制功能，并核对车辆类别与适用规范。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "id": "hardware",
+      "label": "采集与保护电路设计",
+      "kind": "role",
+      "description": "参与模拟采集、控制器硬件及通信接口设计，以安全和可靠性为基础进行工程评审。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "id": "software",
+      "label": "SOC／SOH估计与控制软件",
+      "kind": "role",
+      "description": "设计电池状态估算、故障识别、诊断与控制策略，保留校准和测试记录。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "id": "verification",
+      "label": "BMS软件硬件集成及验证",
+      "kind": "role",
+      "description": "在合适授权实验设施完成测试用例、接口联调、缺陷复现和质量追踪，遵守电气安全制度。",
+      "source_ids": [
+        "battery_std"
+      ]
+    },
+    {
+      "id": "regulatory",
+      "label": "2026强制标准与修订计划追踪",
+      "kind": "role",
+      "description": "按产品类型识别GB 38031-2025现行安全要求及GB/T 38661-2020的现行推荐性要求，未通过的修订计划不应提前生效。",
+      "source_ids": [
+        "battery_std",
+        "revision_plan"
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "BMS系统架构及技术管理",
+      "kind": "role",
+      "description": "在企业职务授权下负责跨硬件、软件和验证技术协作，工程职称与项目负责岗位独立。",
+      "source_ids": []
+    },
+    {
+      "id": "target",
+      "label": "企业电池管理系统工程师",
+      "kind": "target",
+      "description": "能够在相关产品适用的标准和安全体系下完成BMS研发、集成与验证，依真实工程成果承担岗位。",
+      "source_ids": [
+        "bms_std",
+        "battery_std"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "electronics",
+      "to": "architecture",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「电子电气及嵌入式工程教育」到「BMS架构及标准适用分析」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "from": "architecture",
+      "to": "hardware",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「BMS架构及标准适用分析」到「采集与保护电路设计」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "from": "hardware",
+      "to": "software",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「采集与保护电路设计」到「SOC／SOH估计与控制软件」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "from": "software",
+      "to": "verification",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「SOC／SOH估计与控制软件」到「BMS软件硬件集成及验证」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "battery_std"
+      ]
+    },
+    {
+      "from": "verification",
+      "to": "regulatory",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「BMS软件硬件集成及验证」到「2026强制标准与修订计划追踪」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "battery_std",
+        "revision_plan"
+      ]
+    },
+    {
+      "from": "regulatory",
+      "to": "lead",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「2026强制标准与修订计划追踪」到「BMS系统架构及技术管理」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": []
+    },
+    {
+      "from": "lead",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「BMS系统架构及技术管理」到「企业电池管理系统工程师」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std",
+        "battery_std"
+      ]
+    },
+    {
+      "from": "battery_test",
+      "to": "architecture",
+      "label": "资格与程序",
+      "evidence": "conditional",
+      "note": "「电池测试与汽车系统工程背景」到「BMS架构及标准适用分析」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "from": "architecture",
+      "to": "software",
+      "label": "岗位经验积累",
+      "evidence": "conditional",
+      "note": "「BMS架构及标准适用分析」到「SOC／SOH估计与控制软件」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std"
+      ]
+    },
+    {
+      "from": "regulatory",
+      "to": "target",
+      "label": "符合条件任职",
+      "evidence": "conditional",
+      "note": "「2026强制标准与修订计划追踪」到「企业电池管理系统工程师」需要独立满足适用职位、资格、权限与机构安排，非自动晋升。",
+      "source_ids": [
+        "bms_std",
+        "battery_std"
+      ]
+    }
+  ],
+  "pathways": [
+    {
+      "id": "embedded",
+      "title": "电子与嵌入式技术路线",
+      "description": "从数字采集、嵌入式控制学习BMS架构、软件和验证，并达到企业研发岗位所需能力。",
+      "node_ids": [
+        "electronics",
+        "architecture",
+        "hardware",
+        "software",
+        "verification",
+        "regulatory",
+        "lead",
+        "target"
+      ]
+    },
+    {
+      "id": "battery",
+      "title": "电池测试与车辆系统转型路线",
+      "description": "从动力电池测试与系统工程出发补齐BMS软件控制和标准验证能力，参与跨团队集成。",
+      "node_ids": [
+        "battery_test",
+        "architecture",
+        "software",
+        "verification",
+        "regulatory",
+        "target"
+      ]
+    }
+  ],
+  "requirements": [
+    "GB 38031-2025《电动汽车用动力蓄电池安全要求》是强制性国家标准，于2026年7月1日实施、全部代替GB 38031-2020；新申请型式批准的车型从该日起适用，旧有车型存在适用过渡安排。",
+    "GB/T 38661-2020《电动汽车用电池管理系统技术条件》截至2026年11月仍处于现行状态，2026国家标准修订计划尚在征求意见，不能将征求意见稿视为已正式替代。",
+    "GB/T是推荐性国家标准，GB 38031-2025是产品安全强制标准，不应混淆，也不因此给工程师个人新增执照。",
+    "电动汽车、储能电站、电动两轮车等电池产品适用标准与测试权限有所不同，应以技术领域及当地法律重新核查。"
+  ],
+  "caveats": [
+    "高压电池调试、热失控及破坏性测试存在严重人身安全风险，职业研究不提供测试操作步骤、保护绕过或故障触发程序。",
+    "产品认证、安全标准与个人工程岗位资格分属不同层级；持有BMS测试经验不能直接获得法定电工操作或工程施工资质。",
+    "BMS功能ASIL、安全等级等需依据特定汽车功能、系统架构和适用标准核实，不可从单一职位名称自动断言。"
+  ],
+  "sources": [
+    {
+      "id": "battery_std",
+      "title": "GB 38031-2025 电动汽车用动力蓄电池安全要求（现行）",
+      "publisher": "国家市场监督管理总局国家标准全文公开系统",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3AB693FAFF5D9716DF61C61D6FD2187A",
+      "published": "2025-03-28"
+    },
+    {
+      "id": "bms_std",
+      "title": "GB/T 38661-2020 电动汽车用电池管理系统技术条件（现行）",
+      "publisher": "国家市场监督管理总局国家标准全文公开系统",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=DB3ACC49AC4A146FAA311BB468ACA290",
+      "published": "2020-03-31"
+    },
+    {
+      "id": "revision_plan",
+      "title": "电动汽车用电池管理系统技术规范（2026修订计划，尚在征求意见）",
+      "publisher": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=49FD1852C7DFC31FE06397BE0A0A1304",
+      "published": "2026-01-28"
+    },
+    {
+      "id": "implementation",
+      "title": "工信部装备工业发展中心关于做好有关标准实施工作的通知",
+      "publisher": "工业和信息化部装备工业发展中心",
+      "url": "https://www.miit-eidc.org.cn/art/2025/10/27/art_1657_11783.html",
+      "published": "2025-10-27"
+    }
+  ]
+}
